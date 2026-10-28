@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finanzas Today · Tu cuenta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#F7F4EC; --ink:#14211B; --muted:#5B6660; --green:#0F6B4A; --green-soft:#DCEBDF; --card:#FFFFFF; --line:#E3DED1; --red:#B3261E; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; min-height: 100vh; }
+  header { padding: 24px 20px; max-width: 960px; margin: 0 auto; }
+  .logo { font-family: 'Fraunces', serif; font-weight: 800; font-size: 1.4rem; letter-spacing: -0.02em; color: var(--ink); text-decoration: none; }
+  .logo span { color: var(--green); }
+  .box { max-width: 420px; margin: 32px auto 64px; padding: 0 20px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 32px 28px; }
+  h1 { font-family: 'Fraunces', serif; font-size: 1.9rem; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 6px; }
+  .sub { color: var(--muted); margin-bottom: 24px; }
+  .tabs { display: flex; background: var(--bg); border-radius: 12px; padding: 4px; margin-bottom: 24px; }
+  .tabs button { flex: 1; font: inherit; font-weight: 600; border: 0; background: transparent; padding: 10px; border-radius: 9px; cursor: pointer; color: var(--muted); }
+  .tabs button.on { background: var(--card); color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  label { display: block; font-weight: 600; font-size: 0.9rem; margin: 14px 0 6px; }
+  input { width: 100%; font: inherit; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+  input:focus { outline: 2px solid var(--green); border-color: transparent; }
+  .btn { width: 100%; margin-top: 22px; font: inherit; font-weight: 600; background: var(--ink); color: #fff; border: 0; padding: 14px; border-radius: 12px; cursor: pointer; }
+  .btn:hover { background: var(--green); }
+  .btn:disabled { opacity: .6; cursor: default; }
+  .msg { margin-top: 16px; font-size: 0.93rem; padding: 12px 14px; border-radius: 10px; display: none; }
+  .msg.ok { display: block; background: var(--green-soft); color: var(--green); }
+  .msg.err { display: block; background: #FBE9E7; color: var(--red); }
+  .hint { font-size: 0.82rem; color: var(--muted); margin-top: 6px; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<header><a class="logo" href="index.html">Finanzas<span>Today</span></a></header>
+
+<div class="box">
+  <div class="card">
+    <h1 id="titulo">Crea tu cuenta gratis</h1>
+    <p class="sub" id="subtitulo">Suscríbete y entiende la economía de Colombia todos los días.</p>
+
+    <div class="tabs">
+      <button id="tab-registro" class="on" type="button">Crear cuenta</button>
+      <button id="tab-login" type="button">Iniciar sesión</button>
+    </div>
+
+    <form id="form">
+      <div id="campo-usuario">
+        <label for="usuario">Nombre de usuario</label>
+        <input id="usuario" autocomplete="username" maxlength="20" placeholder="ej. lorenzo">
+        <div class="hint">Así te vamos a saludar en la página.</div>
+      </div>
+      <label for="correo">Correo</label>
+      <input id="correo" type="email" autocomplete="email" required placeholder="tucorreo@gmail.com">
+      <label for="clave">Contraseña</label>
+      <input id="clave" type="password" autocomplete="new-password" required minlength="6" placeholder="Mínimo 6 caracteres">
+      <button class="btn" id="enviar" type="submit">Suscribirme</button>
+    </form>
+    <div class="msg" id="msg"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="config.js"></script>
+<script>
+  var modo = location.search.indexOf('login') >= 0 ? 'login' : 'registro';
+  var $ = function (id) { return document.getElementById(id); };
+
+  function mostrar(texto, tipo) { var m = $('msg'); m.textContent = texto; m.className = 'msg ' + tipo; }
+
+  function poner(m) {
+    modo = m;
+    var reg = m === 'registro';
+    $('tab-registro').classList.toggle('on', reg);
+    $('tab-login').classList.toggle('on', !reg);
+    $('campo-usuario').classList.toggle('hidden', !reg);
+    $('usuario').required = reg;
+    $('clave').autocomplete = reg ? 'new-password' : 'current-password';
+    $('titulo').textContent = reg ? 'Crea tu cuenta gratis' : 'Bienvenido de nuevo';
+    $('subtitulo').textContent = reg ? 'Suscríbete y entiende la economía de Colombia todos los días.' : 'Entra con tu correo y contraseña.';
+    $('enviar').textContent = reg ? 'Suscribirme' : 'Entrar';
+    $('msg').className = 'msg';
+  }
+  $('tab-registro').onclick = function () { poner('registro'); };
+  $('tab-login').onclick = function () { poner('login'); };
+  poner(modo);
+
+  if (!sb) mostrar('Falta configurar Supabase: pega tus claves en config.js.', 'err');
+
+  var inicio = location.href.replace(/login\.html.*$/, 'index.html');
+
+  $('form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    if (!sb) return;
+    var correo = $('correo').value.trim(), clave = $('clave').value;
+    $('enviar').disabled = true;
+    try {
+      if (modo === 'registro') {
+        var usuario = $('usuario').value.trim();
+        var r = await sb.auth.signUp({
+          email: correo, password: clave,
+          options: { data: { username: usuario }, emailRedirectTo: inicio }
+        });
+        if (r.error) throw r.error;
+        if (r.data.session) { location.href = inicio; return; }
+        mostrar('¡Listo! Te mandamos un correo para confirmar tu cuenta. Ábrelo y haz clic en el link.', 'ok');
+      } else {
+        var r2 = await sb.auth.signInWithPassword({ email: correo, password: clave });
+        if (r2.error) throw r2.error;
+        location.href = inicio;
+      }
+    } catch (err) {
+      var t = (err && err.message) || '';
+      if (/Invalid login/i.test(t)) t = 'Correo o contraseña incorrectos.';
+      else if (/already registered/i.test(t)) t = 'Ese correo ya tiene cuenta. Usa "Iniciar sesión".';
+      else if (/Email not confirmed/i.test(t)) t = 'Primero confirma tu correo con el link que te mandamos.';
+      else if (/at least 6/i.test(t)) t = 'La contraseña debe tener mínimo 6 caracteres.';
+      mostrar(t || 'Algo salió mal. Intenta de nuevo.', 'err');
+    } finally {
+      $('enviar').disabled = false;
+    }
+  });
+</script>
+</body>
+</html>
