@@ -124,34 +124,47 @@ def pedir_ia(instruccion, max_tokens=2000):
     return texto
 
 
+REFERENCIAS = {
+    "co": "TransMilenio, el tinto, la quincena, el trancón, la arepa, la Selección, Shakira, el reggaetón, el pico y placa",
+    "ve": "la arepa, el Metro de Caracas, la cola, el dólar paralelo, la Vinotinto, el béisbol, las hallacas, el pabellón",
+}
+
+
 def resumir(pais, noticias):
-    """Resumen corto del día con un comentario irónico, basado SOLO en los titulares."""
+    """Resumen corto del día con humor irónico estilo Morning Brew, basado SOLO en los titulares."""
     titulares = "\n".join(f"- [{n['categoria']}] {n['titulo']}" for n in noticias)
     instruccion = (
         f"Eres el editor de Finanzas Express, un newsletter de negocios para jóvenes de {NOMBRE_PAIS[pais]}. "
-        "Tu estilo es como el de Morning Brew: irónico, ingenioso, con sarcasmo inteligente y cero acartonado. "
-        "Escribes como un amigo que sabe mucho de negocios y se burla un poquito de lo absurdo de las noticias.\n\n"
+        "Escribes como Morning Brew: ingenioso, irónico, conversacional y fácil de leer, como un amigo que sabe "
+        "de negocios y te cuenta las noticias con un chiste bueno.\n\n"
         f"Titulares de hoy:\n{titulares}\n\n"
-        "GUÍA DE ESTILO:\n"
-        "- El título usa un juego de palabras, doble sentido o giro inesperado. Nada de títulos de periódico serio.\n"
-        "- El resumen tiene frases cortas y con ritmo. Explica lo importante y mete al menos un remate irónico.\n"
-        "- El comentario final es seco y sarcástico: una observación que haga sonreír o decir 'jaja, cierto'.\n"
-        "- Puedes usar expresiones cercanas (ej. 'plot twist', 'spoiler', 'nadie lo vio venir'), sin exagerar.\n\n"
-        "EJEMPLOS DEL TONO (inventados, no los copies, solo imita el estilo):\n"
-        '- Título: "El dólar se tomó el día libre"\n'
-        '- Resumen: "El dólar volvió a bajar y ya coquetea con los $3.100. Buenas noticias para tu próximo celular importado; '
-        'malas para los exportadores, que hoy reciben menos pesos por cada dólar. Alguien siempre pierde."\n'
+        "TÉCNICAS DE HUMOR (las que usa Morning Brew):\n"
+        "1. Juegos de palabras con frases, refranes o canciones que todo el mundo conoce.\n"
+        "2. Humor de situaciones del día a día que cualquier joven vive (plata, transporte, comida, trabajo, estudio).\n"
+        f"   Referencias locales que puedes usar: {REFERENCIAS[pais]}.\n"
+        "3. Comparaciones exageradas pero claras ('subió más rápido que...', 'más perdido que...').\n"
+        "4. Remates secos tipo 'la noticia que sorprendió exactamente a nadie' o 'plot twist:'.\n\n"
+        "REGLA DE ORO: cada chiste se tiene que entender en 3 segundos por un joven de 20 años. "
+        "Nada de metáforas raras o abstractas. Si el chiste necesita explicación, cámbialo por uno más simple.\n\n"
+        "EJEMPLOS DEL TONO (inventados; NO los copies, solo imita el estilo):\n"
+        '- Título: "El dólar bajó más rápido que tu quincena"\n'
+        '- Título: "Shakira no es la única que factura"\n'
+        '- Título: "Abuelo, ¿qué era un billete de mil?"\n'
+        '- Resumen: "El dólar volvió a bajar y ya está cerca de los $3.100. Traducción: tu próximo celular importado sale '
+        'un poquito más barato. Los exportadores, en cambio, hoy no están brindando."\n'
         '- Comentario: "Los bancos reportando ganancias récord: la noticia que sorprendió exactamente a nadie."\n'
-        '- Comentario: "Spoiler: la inflación no leyó el comunicado del Banco de la República."\n'
-        '- Comentario: "Ecopetrol sigue buscando gas. Nosotros seguimos buscando parqueadero en Bogotá. Cada quien con sus retos."\n\n'
+        '- Comentario: "Si el pasaje sigue subiendo, vamos a tener que pagar el bus a cuotas."\n\n'
         "Escribe el resumen del día en JSON con exactamente estas claves:\n"
-        '- "titulo": título corto con gancho (máximo 8 palabras).\n'
-        '- "resumen": 2 o 3 frases (máximo 60 palabras) con lo más importante del día, por qué le importa a un joven y un remate irónico.\n'
-        '- "comentario": UNA frase corta, irónica y sarcástica sobre las noticias del día (máximo 25 palabras).\n\n'
-        "REGLAS (obligatorias): usa SOLO la información de los titulares, no inventes cifras ni datos. "
+        '- "titulo": título corto con gancho, idealmente un juego de palabras (máximo 8 palabras).\n'
+        '- "resumen": 2 o 3 frases cortas (máximo 60 palabras): qué pasó, qué significa para un joven y un remate gracioso.\n'
+        '- "comentario": UNA frase corta, irónica y fácil de entender sobre el día (máximo 25 palabras).\n'
+        '- "imagen": el nombre de la empresa, persona pública, lugar o cosa principal del resumen, tal como se llamaría '
+        'su artículo en Wikipedia en español (ej. "Ecopetrol", "Petróleo", "Banco de la República (Colombia)", "Peso colombiano").\n\n'
+        "REGLAS (obligatorias): usa SOLO la información de los titulares; no inventes cifras ni datos. "
+        "Enfócate en lo que más le importa a alguien de este país. "
         "La ironía va contra situaciones, mercados, instituciones o lo absurdo del día, NUNCA contra personas concretas, "
         "víctimas, tragedias, muertes, enfermedades ni grupos sociales. No tomes partido político ni ataques a políticos. "
-        "Si una noticia es trágica, no hagas chistes sobre ella: elige otras. Español sencillo y neutro. "
+        "Si una noticia es trágica, no hagas chistes sobre ella: elige otra. Español sencillo y neutro. "
         "Responde SOLO con el JSON, sin texto adicional."
     )
     respuesta = pedir_ia(instruccion)
@@ -159,7 +172,29 @@ def resumir(pais, noticias):
     if inicio == -1 or fin == -1:
         raise RuntimeError(f"la IA no devolvió JSON. Respondió: {respuesta[:300]!r}")
     datos = json.loads(respuesta[inicio: fin + 1])
-    return {k: str(datos.get(k, "")).strip() for k in ("titulo", "resumen", "comentario")}
+    resumen = {k: str(datos.get(k, "")).strip() for k in ("titulo", "resumen", "comentario")}
+    resumen["imagen"] = buscar_imagen(str(datos.get("imagen", "")).strip())
+    return resumen
+
+
+def buscar_imagen(termino):
+    """Busca la foto principal del artículo de Wikipedia en español (fotos con licencia libre)."""
+    if not termino:
+        return None
+    h = {"User-Agent": "FinanzasExpress/1.0 (https://lemp200548.github.io/finanzas-today/)"}
+    try:
+        url = "https://es.wikipedia.org/w/api.php?" + urllib.parse.urlencode({
+            "action": "query", "generator": "search", "gsrsearch": termino, "gsrlimit": 1,
+            "prop": "pageimages|info", "piprop": "thumbnail", "pithumbsize": 900, "inprop": "url", "format": "json"})
+        with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=30) as r:
+            paginas = json.loads(r.read()).get("query", {}).get("pages", {})
+        for pag in paginas.values():
+            foto = (pag.get("thumbnail") or {}).get("source")
+            if foto:
+                return {"url": foto, "pagina": pag.get("fullurl", ""), "titulo": pag.get("title", termino)}
+    except Exception as e:
+        print(f"Sin foto para '{termino}': {e}")
+    return None
 
 
 def resumen_de(paises):

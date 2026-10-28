@@ -44,13 +44,18 @@ def bloque_pais(noticias, resumen, pais, con_titulo):
     if resumen and resumen.get("resumen"):
         ironia = (f'''<div style="margin-top:14px;padding-top:14px;border-top:1px solid #E4E6EB;font-style:italic;color:#8A5A00;font-size:16px;line-height:1.5">{html.escape(resumen.get("comentario", ""))}</div>'''
                   if resumen.get("comentario") else "")
+        img = resumen.get("imagen") or {}
+        foto = (f'''<img src="{html.escape(img["url"])}" alt="{html.escape(img.get("titulo", ""))}" width="556" style="display:block;width:100%;max-height:260px;object-fit:cover;border-radius:8px;margin-bottom:14px">'''
+                if img.get("url") else "")
         bloques += f'''
           <tr><td style="padding:10px 0 18px">
             <div style="background:#F8F7F3;border-left:4px solid #1F5BD8;border-radius:0 10px 10px 0;padding:20px 22px">
+              {foto}
               <div style="color:#1F5BD8;font-weight:800;font-size:12px;letter-spacing:1px;text-transform:uppercase">☕ El resumen del día</div>
               <div style="font-size:22px;font-weight:900;line-height:1.2;margin:8px 0 10px;letter-spacing:-0.5px">{html.escape(resumen.get("titulo", ""))}</div>
               <div style="font-size:16px;line-height:1.6;color:#222">{html.escape(resumen["resumen"])}</div>
               {ironia}
+              <div style="font-size:12px;color:#8A93A6;margin-top:12px">Por el equipo de Finanzas Express</div>
             </div>
           </td></tr>'''
         return bloques

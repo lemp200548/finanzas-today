@@ -90,12 +90,17 @@
   .resumen-dia { padding-top: 32px; }
   .resumen-dia .caja { background: var(--ink); color: #fff; border-radius: 14px; padding: 26px 30px; display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: start; }
   .resumen-dia .icono { font-size: 2.2rem; line-height: 1; }
+  .resumen-dia .caja.con-foto { grid-template-columns: auto 1fr 300px; }
+  .resumen-dia .foto { display: block; position: relative; align-self: stretch; min-height: 200px; border-radius: 10px; overflow: hidden; background: #222; text-decoration: none; }
+  .resumen-dia .foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .resumen-dia .foto span { position: absolute; left: 8px; bottom: 8px; font-size: 0.68rem; color: #fff; background: rgba(0,0,0,.55); padding: 2px 7px; border-radius: 4px; }
   .resumen-dia .t { font-size: 0.78rem; font-weight: 700; color: #9FB8F0; text-transform: uppercase; letter-spacing: 0.08em; }
   .resumen-dia h2 { font-weight: 900; font-size: clamp(1.4rem, 3vw, 1.9rem); letter-spacing: -0.03em; line-height: 1.15; margin: 6px 0 10px; }
   .resumen-dia p { color: #D9DEE8; font-size: 1.05rem; line-height: 1.55; max-width: 72ch; }
   .resumen-dia .ironia { margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.15); color: #F4BE6A; font-style: italic; }
   .resumen-dia .nota { font-size: 0.72rem; color: #8A93A6; margin-top: 10px; }
-  @media (max-width: 600px) { .resumen-dia .caja { grid-template-columns: 1fr; gap: 10px; padding: 22px; } }
+  @media (max-width: 860px) { .resumen-dia .caja.con-foto { grid-template-columns: auto 1fr; } .resumen-dia .foto { grid-column: 1 / -1; min-height: 220px; } }
+  @media (max-width: 600px) { .resumen-dia .caja, .resumen-dia .caja.con-foto { grid-template-columns: 1fr; gap: 10px; padding: 22px; } }
   .hidden { display: none !important; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 0 32px; }
   .grid .item.hide { display: none; }
@@ -169,8 +174,12 @@
       <h2 id="r-titulo"></h2>
       <p id="r-texto"></p>
       <p class="ironia" id="r-ironia"></p>
-      <div class="nota">Resumen hecho con IA a partir de los titulares del día.</div>
+      <div class="nota">Por el equipo de Finanzas Express</div>
     </div>
+    <a class="foto hidden" id="r-foto" href="#" target="_blank" rel="noopener">
+      <img id="r-img" alt="">
+      <span id="r-credito">Foto: Wikipedia</span>
+    </a>
   </div>
 </div>
 
@@ -278,6 +287,15 @@
     $('r-texto').textContent = r.resumen;
     $('r-ironia').textContent = r.comentario || '';
     $('r-ironia').classList.toggle('hidden', !r.comentario);
+    var foto = r.imagen && r.imagen.url;
+    $('r-foto').classList.toggle('hidden', !foto);
+    document.querySelector('.resumen-dia .caja').classList.toggle('con-foto', !!foto);
+    if (foto) {
+      $('r-img').src = r.imagen.url;
+      $('r-img').alt = r.imagen.titulo || '';
+      $('r-foto').href = r.imagen.pagina || '#';
+      $('r-credito').textContent = 'Foto: Wikipedia · ' + (r.imagen.titulo || '');
+    }
     $('resumen').classList.remove('hidden');
   }
 
