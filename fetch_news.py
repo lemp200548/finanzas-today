@@ -17,38 +17,55 @@ CO_DEPORTES = ["eltiempo.com", "semana.com", "elcolombiano.com", "futbolred.com"
 VE_DEPORTES = ["meridiano.net", "liderendeportes.com", "eluniversal.com", "elnacional.com", "elestimulo.com"]
 VE_PLANES = ["eluniversal.com", "elestimulo.com", "efectococuyo.com", "elnacional.com", "elpitazo.net"]
 
-# País -> categorías: nombre que se ve en la página -> (qué buscar, fuentes, días hacia atrás)
+# País -> categorías: nombre en la página -> (temas, palabra obligatoria, fuentes, días hacia atrás)
+# La búsqueda queda así: (tema1 OR tema2 OR ...) palabra_obligatoria
 PAISES = {
     "co": {
         "gl": "CO",
         "categorias": {
-            "Economía": ("dólar OR inflación OR \"Banco de la República\" OR economía Colombia", CO_NEGOCIOS, 1),
-            "Empresas": ("empresa OR compañía OR ventas OR utilidades OR adquisición OR fusión Colombia", CO_NEGOCIOS, 1),
-            "Petróleo y energía": ("Ecopetrol OR petróleo OR gas OR energía Colombia", CO_NEGOCIOS, 1),
-            "Sector financiero": ("bancos OR Bancolombia OR Davivienda OR Superfinanciera OR CDT OR \"Bolsa de Colombia\"", CO_NEGOCIOS, 1),
-            "Tecnología": ("tecnología OR \"inteligencia artificial\" OR fintech OR digital OR app Colombia", CO_TECNOLOGIA, 1),
-            "Emprendimiento": ("startup OR emprendimiento OR emprendedores OR \"ronda de inversión\" OR unicornio Colombia", CO_TECNOLOGIA, 3),
-            "Nuevos CEO": ("\"nuevo presidente\" OR \"nuevo CEO\" OR nombramiento OR \"asume la presidencia\" empresa", CO_NEGOCIOS, 2),
-            "Consultoría": ("consultoría OR consultora OR McKinsey OR Deloitte OR EY OR PwC OR KPMG Colombia", CO_NEGOCIOS, 3),
-            "Deportes": ("fútbol OR \"Selección Colombia\" OR \"Liga BetPlay\" OR ciclismo OR tenis OR deportes", CO_DEPORTES, 1),
-            "Planes en Bogotá": ("Bogotá planes OR concierto OR festival OR feria OR evento OR \"fin de semana\" OR restaurante", CO_PLANES, 3),
+            "Economía": ('dólar OR inflación OR "Banco de la República" OR economía OR PIB OR "tasas de interés"', "Colombia", CO_NEGOCIOS, 1),
+            "Empresas": ("empresa OR compañía OR ventas OR utilidades OR adquisición OR fusión", "Colombia", CO_NEGOCIOS, 1),
+            "Petróleo y energía": ("Ecopetrol OR petróleo OR gas OR energía OR minería", "Colombia", CO_NEGOCIOS, 1),
+            "Sector financiero": ('bancos OR Bancolombia OR Davivienda OR Superfinanciera OR CDT OR "Bolsa de Colombia" OR crédito', "Colombia", CO_NEGOCIOS, 1),
+            "Tecnología": ('tecnología OR "inteligencia artificial" OR fintech OR digital OR app', "Colombia", CO_TECNOLOGIA, 1),
+            "Emprendimiento": ('startup OR emprendimiento OR emprendedores OR "ronda de inversión" OR unicornio', "Colombia", CO_TECNOLOGIA, 3),
+            "Nuevos CEO": ('"nuevo presidente" OR "nuevo CEO" OR nombramiento OR "asume la presidencia" OR "nueva presidenta"', "Colombia", CO_NEGOCIOS, 2),
+            "Consultoría": ("consultoría OR consultora OR McKinsey OR Deloitte OR EY OR PwC OR KPMG", "Colombia", CO_NEGOCIOS, 3),
+            "Deportes": ('fútbol OR "Selección Colombia" OR "Liga BetPlay" OR ciclismo OR tenis OR deportes', "Colombia", CO_DEPORTES, 1),
+            "Planes en Bogotá": ('planes OR concierto OR festival OR feria OR evento OR "fin de semana" OR restaurante', "Bogotá", CO_PLANES, 3),
         },
     },
     "ve": {
         "gl": "VE",
         "categorias": {
-            "Economía": ("dólar OR BCV OR inflación OR bolívar OR economía Venezuela", VE_NEGOCIOS, 1),
-            "Empresas": ("empresa OR compañía OR ventas OR inversión OR comercio Venezuela", VE_NEGOCIOS, 1),
-            "Petróleo y energía": ("PDVSA OR petróleo OR Chevron OR gas OR electricidad Venezuela", VE_NEGOCIOS, 1),
-            "Sector financiero": ("bancos OR banca OR \"Bolsa de Valores de Caracas\" OR crédito OR Sudeban", VE_NEGOCIOS, 2),
-            "Tecnología": ("tecnología OR fintech OR digital OR app OR \"inteligencia artificial\" Venezuela", VE_NEGOCIOS, 3),
-            "Emprendimiento": ("emprendimiento OR emprendedores OR startup OR pymes Venezuela", VE_NEGOCIOS, 3),
-            "Nuevos CEO": ("\"nuevo presidente\" OR \"nuevo CEO\" OR nombramiento OR designado empresa Venezuela", VE_NEGOCIOS, 3),
-            "Deportes": ("fútbol OR Vinotinto OR béisbol OR LVBP OR baloncesto OR deportes Venezuela", VE_DEPORTES, 1),
-            "Planes en Caracas": ("Caracas planes OR concierto OR festival OR feria OR evento OR restaurante", VE_PLANES, 3),
+            "Economía": ("dólar OR BCV OR inflación OR bolívar OR economía OR precios", "Venezuela", VE_NEGOCIOS, 1),
+            "Empresas": ("empresa OR compañía OR ventas OR inversión OR comercio OR industria", "Venezuela", VE_NEGOCIOS, 1),
+            "Petróleo y energía": ("PDVSA OR petróleo OR Chevron OR gas OR electricidad OR crudo", "Venezuela", VE_NEGOCIOS, 1),
+            "Sector financiero": ('bancos OR banca OR "Bolsa de Valores de Caracas" OR crédito OR Sudeban', "Venezuela", VE_NEGOCIOS, 2),
+            "Tecnología": ('tecnología OR fintech OR digital OR app OR "inteligencia artificial" OR telecomunicaciones', "Venezuela", VE_NEGOCIOS, 3),
+            "Emprendimiento": ("emprendimiento OR emprendedores OR startup OR pymes OR emprendedor", "Venezuela", VE_NEGOCIOS, 3),
+            "Nuevos CEO": ('"nuevo presidente" OR "nuevo CEO" OR nombramiento OR designado OR "nueva presidenta"', "Venezuela", VE_NEGOCIOS, 3),
+            "Deportes": ("fútbol OR Vinotinto OR béisbol OR LVBP OR baloncesto OR deportes OR beisbol", "Venezuela", VE_DEPORTES, 1),
+            "Planes en Caracas": ("planes OR concierto OR festival OR feria OR evento OR restaurante", "Caracas", VE_PLANES, 3),
         },
     },
 }
+
+# Si el titular nombra otro país y no el propio, se descarta (evita noticias de Chile, Perú, etc.)
+OTROS_PAISES = ["Chile", "Perú", "Peru", "Brasil", "Argentina", "México", "Mexico", "Ecuador", "Bolivia", "Paraguay",
+                "Uruguay", "Panamá", "Costa Rica", "Guatemala", "Honduras", "El Salvador", "España", "Nicaragua",
+                "República Dominicana", "Cuba", "Brazil"]
+NOMBRES_PROPIOS = {"CO": ["Colombia", "colombian", "Bogotá", "Medellín", "Cali", "Barranquilla"],
+                   "VE": ["Venezuela", "venezolan", "Caracas", "Maracaibo", "Valencia"]}
+
+
+def es_de_otro_pais(titulo, gl):
+    t = titulo.lower()
+    if any(p.lower() in t for p in NOMBRES_PROPIOS[gl]):
+        return False
+    return any(re.search(r"\b" + re.escape(p.lower()) + r"\b", t) for p in OTROS_PAISES)
+
+
 POR_CATEGORIA = 6
 COL = timezone(timedelta(hours=-5))
 
@@ -81,9 +98,10 @@ def leer(xml_bytes):
 
 def noticias_de(pais):
     vistos, noticias = set(), []
-    for cat, (consulta, fuentes, dias) in pais["categorias"].items():
+    for cat, (temas, ancla, fuentes, dias) in pais["categorias"].items():
         try:
-            items = list(leer(buscar(consulta, fuentes, dias, pais["gl"])))
+            items = list(leer(buscar(f"({temas}) {ancla}", fuentes, dias, pais["gl"])))
+            items = [it for it in items if not es_de_otro_pais(it["titulo"], pais["gl"])]
         except Exception as e:
             print(f"[{pais['gl']} · {cat}] error: {e}")
             continue
@@ -161,7 +179,7 @@ def resumir(pais, noticias):
         '- "imagen": el nombre de la empresa, persona pública, lugar o cosa principal del resumen, tal como se llamaría '
         'su artículo en Wikipedia en español (ej. "Ecopetrol", "Petróleo", "Banco de la República (Colombia)", "Peso colombiano").\n\n'
         "REGLAS (obligatorias): usa SOLO la información de los titulares; no inventes cifras ni datos. "
-        "Enfócate en lo que más le importa a alguien de este país. "
+        f"Habla SOLO de noticias que pasan en {NOMBRE_PAIS[pais]} o que la afectan directamente; ignora las de otros países. "
         "La ironía va contra situaciones, mercados, instituciones o lo absurdo del día, NUNCA contra personas concretas, "
         "víctimas, tragedias, muertes, enfermedades ni grupos sociales. No tomes partido político ni ataques a políticos. "
         "Si una noticia es trágica, no hagas chistes sobre ella: elige otra. Español sencillo y neutro. "
