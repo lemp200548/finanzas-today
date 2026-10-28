@@ -128,15 +128,30 @@ def resumir(pais, noticias):
     """Resumen corto del día con un comentario irónico, basado SOLO en los titulares."""
     titulares = "\n".join(f"- [{n['categoria']}] {n['titulo']}" for n in noticias)
     instruccion = (
-        f"Eres el editor de Finanzas Express, un medio de noticias de negocios para jóvenes de {NOMBRE_PAIS[pais]}, "
-        "con un tono cercano y con humor, al estilo de los newsletters de negocios modernos.\n\n"
+        f"Eres el editor de Finanzas Express, un newsletter de negocios para jóvenes de {NOMBRE_PAIS[pais]}. "
+        "Tu estilo es como el de Morning Brew: irónico, ingenioso, con sarcasmo inteligente y cero acartonado. "
+        "Escribes como un amigo que sabe mucho de negocios y se burla un poquito de lo absurdo de las noticias.\n\n"
         f"Titulares de hoy:\n{titulares}\n\n"
+        "GUÍA DE ESTILO:\n"
+        "- El título usa un juego de palabras, doble sentido o giro inesperado. Nada de títulos de periódico serio.\n"
+        "- El resumen tiene frases cortas y con ritmo. Explica lo importante y mete al menos un remate irónico.\n"
+        "- El comentario final es seco y sarcástico: una observación que haga sonreír o decir 'jaja, cierto'.\n"
+        "- Puedes usar expresiones cercanas (ej. 'plot twist', 'spoiler', 'nadie lo vio venir'), sin exagerar.\n\n"
+        "EJEMPLOS DEL TONO (inventados, no los copies, solo imita el estilo):\n"
+        '- Título: "El dólar se tomó el día libre"\n'
+        '- Resumen: "El dólar volvió a bajar y ya coquetea con los $3.100. Buenas noticias para tu próximo celular importado; '
+        'malas para los exportadores, que hoy reciben menos pesos por cada dólar. Alguien siempre pierde."\n'
+        '- Comentario: "Los bancos reportando ganancias récord: la noticia que sorprendió exactamente a nadie."\n'
+        '- Comentario: "Spoiler: la inflación no leyó el comunicado del Banco de la República."\n'
+        '- Comentario: "Ecopetrol sigue buscando gas. Nosotros seguimos buscando parqueadero en Bogotá. Cada quien con sus retos."\n\n'
         "Escribe el resumen del día en JSON con exactamente estas claves:\n"
-        '- "titulo": un título corto y llamativo del día (máximo 8 palabras).\n'
-        '- "resumen": 2 o 3 frases (máximo 60 palabras) con lo más importante del día y por qué le importa a un joven.\n'
-        '- "comentario": UNA frase corta, irónica e ingeniosa sobre las noticias del día (máximo 25 palabras).\n\n'
-        "Reglas: usa SOLO la información de los titulares, no inventes cifras ni datos. El humor debe ser ligero: "
-        "no te burles de personas, tragedias ni víctimas, y no tomes partido político. Español sencillo. "
+        '- "titulo": título corto con gancho (máximo 8 palabras).\n'
+        '- "resumen": 2 o 3 frases (máximo 60 palabras) con lo más importante del día, por qué le importa a un joven y un remate irónico.\n'
+        '- "comentario": UNA frase corta, irónica y sarcástica sobre las noticias del día (máximo 25 palabras).\n\n'
+        "REGLAS (obligatorias): usa SOLO la información de los titulares, no inventes cifras ni datos. "
+        "La ironía va contra situaciones, mercados, instituciones o lo absurdo del día, NUNCA contra personas concretas, "
+        "víctimas, tragedias, muertes, enfermedades ni grupos sociales. No tomes partido político ni ataques a políticos. "
+        "Si una noticia es trágica, no hagas chistes sobre ella: elige otras. Español sencillo y neutro. "
         "Responde SOLO con el JSON, sin texto adicional."
     )
     respuesta = pedir_ia(instruccion)
