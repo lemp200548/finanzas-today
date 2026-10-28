@@ -43,7 +43,7 @@
 
 <div class="box">
   <div class="card">
-    <h1 id="titulo">Vuélvete más culto en 5 minutos</h1>
+    <h1 id="titulo">Vuélvete más informado en 3 minutos</h1>
     <p class="sub" id="subtitulo">Crea tu cuenta gratis y recibe las noticias cada mañana.</p>
 
     <div class="tabs">
@@ -88,7 +88,7 @@
     $('campos-registro').classList.toggle('hidden', !reg);
     $('usuario').required = reg;
     $('clave').autocomplete = reg ? 'new-password' : 'current-password';
-    $('titulo').textContent = reg ? 'Vuélvete más culto en 5 minutos' : 'Bienvenido de nuevo';
+    $('titulo').textContent = reg ? 'Vuélvete más informado en 3 minutos' : 'Bienvenido de nuevo';
     $('subtitulo').textContent = reg ? 'Crea tu cuenta gratis y recibe las noticias cada mañana.' : 'Entra con tu correo y contraseña.';
     $('enviar').textContent = reg ? 'Suscribirme gratis' : 'Entrar';
     $('msg').className = 'msg';

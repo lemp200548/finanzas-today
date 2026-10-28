@@ -62,7 +62,7 @@ def correo_html(noticias, pais):
   <tr><td style="padding:28px 28px 8px">
     <div style="font-size:26px;font-weight:900;letter-spacing:-1px">Finanzas<span style="color:#1F5BD8">Today</span></div>
     <div style="font-family:Menlo,monospace;font-size:11px;color:#5E6470;letter-spacing:1px;text-transform:uppercase;margin-top:6px">{fecha} · {nombre_pais}</div>
-    <div style="font-size:22px;font-weight:800;margin-top:18px;line-height:1.2">Vuélvete más culto en 5 minutos ☕</div>
+    <div style="font-size:22px;font-weight:800;margin-top:18px;line-height:1.2">Vuélvete más informado en 3 minutos ☕</div>
     <div style="color:#5E6470;font-size:15px;margin-top:6px">Esto es lo que tienes que saber hoy.</div>
   </td></tr>
   <tr><td style="padding:8px 28px 8px"><table width="100%" cellpadding="0" cellspacing="0">{bloques}</table></td></tr>
