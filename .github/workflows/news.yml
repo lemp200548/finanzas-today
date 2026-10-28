@@ -22,6 +22,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: python fetch_news.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       - run: |
           git config user.name "finanzas-today-bot"
           git config user.email "actions@github.com"
