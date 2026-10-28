@@ -127,16 +127,29 @@ MODELO = os.environ.get("MODELO_IA", "claude-haiku-5-5")
 NOMBRE_PAIS = {"co": "Colombia", "ve": "Venezuela"}
 
 
-def pedir_ia(instruccion, max_tokens=2000):
-    body = json.dumps({"model": MODELO, "max_tokens": max_tokens,
-                       "messages": [{"role": "user", "content": instruccion}]}).encode()
-    req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, method="POST", headers={
-        "x-api-key": ANTHROPIC_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json"})
+def pedir_ia(instruccion, max_tokens=4000):
+    """Llama a la IA sin modo 'pensar' (no hace falta y gasta el espacio de la respuesta)."""
+    def llamar(extra, tokens):
+        body = json.dumps({"model": MODELO, "max_tokens": tokens, **extra,
+                           "messages": [{"role": "user", "content": instruccion}]}).encode()
+        req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, method="POST", headers={
+            "x-api-key": ANTHROPIC_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json"})
+        with urllib.request.urlopen(req, timeout=180) as r:
+            return json.loads(r.read())
+
     try:
-        with urllib.request.urlopen(req, timeout=90) as r:
-            res = json.loads(r.read())
+        res = llamar({"thinking": {"type": "disabled"}}, max_tokens)
     except urllib.error.HTTPError as e:
-        raise RuntimeError(f"la API respondió {e.code}: {e.read().decode(errors='ignore')[:300]}")
+        detalle = e.read().decode(errors="ignore")[:300]
+        if e.code == 400:
+            # Si el modelo no acepta apagar el modo pensar, se reintenta con mucho más espacio
+            print(f"Aviso: se reintenta sin el parámetro 'thinking' ({detalle})")
+            try:
+                res = llamar({}, max_tokens * 4)
+            except urllib.error.HTTPError as e2:
+                raise RuntimeError(f"la API respondió {e2.code}: {e2.read().decode(errors='ignore')[:300]}")
+        else:
+            raise RuntimeError(f"la API respondió {e.code}: {detalle}")
     texto = "".join(b.get("text", "") for b in res.get("content", []) if b.get("type") == "text").strip()
     if not texto:
         tipos = [b.get("type") for b in res.get("content", [])]
@@ -264,7 +277,7 @@ def clasificar(pais, codigo, noticias):
         "Ante la duda, descarta. Es mejor mostrar menos noticias que noticias que no son del país.\n"
         'Responde SOLO con JSON con esta forma: {"0": "Economía", "1": "descartar", ...} incluyendo todos los números.'
     )
-    respuesta = pedir_ia(instruccion, max_tokens=4000)
+    respuesta = pedir_ia(instruccion, max_tokens=8000)
     inicio, fin = respuesta.find("{"), respuesta.rfind("}")
     decisiones = json.loads(respuesta[inicio: fin + 1])
     salida, cuenta, descartadas = [], {}, 0
