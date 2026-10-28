@@ -1,6 +1,6 @@
 """Busca las noticias del día y las guarda en news.json.
 Lo corre GitHub Actions todos los días (ver .github/workflows/news.yml)."""
-import json, os, re, urllib.request, urllib.parse, xml.etree.ElementTree as ET
+import json, os, re, urllib.request, urllib.error, urllib.parse, xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 
@@ -107,14 +107,21 @@ MODELO = os.environ.get("MODELO_IA", "claude-haiku-5-5")
 NOMBRE_PAIS = {"co": "Colombia", "ve": "Venezuela"}
 
 
-def pedir_ia(instruccion, max_tokens=400):
+def pedir_ia(instruccion, max_tokens=2000):
     body = json.dumps({"model": MODELO, "max_tokens": max_tokens,
                        "messages": [{"role": "user", "content": instruccion}]}).encode()
     req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, method="POST", headers={
         "x-api-key": ANTHROPIC_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        res = json.loads(r.read())
-    return "".join(b.get("text", "") for b in res.get("content", []) if b.get("type") == "text").strip()
+    try:
+        with urllib.request.urlopen(req, timeout=90) as r:
+            res = json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"la API respondió {e.code}: {e.read().decode(errors='ignore')[:300]}")
+    texto = "".join(b.get("text", "") for b in res.get("content", []) if b.get("type") == "text").strip()
+    if not texto:
+        tipos = [b.get("type") for b in res.get("content", [])]
+        raise RuntimeError(f"respuesta sin texto (stop_reason={res.get('stop_reason')}, bloques={tipos})")
+    return texto
 
 
 def resumir(pais, noticias):
@@ -132,9 +139,11 @@ def resumir(pais, noticias):
         "no te burles de personas, tragedias ni víctimas, y no tomes partido político. Español sencillo. "
         "Responde SOLO con el JSON, sin texto adicional."
     )
-    texto = pedir_ia(instruccion)
-    texto = texto[texto.find("{"): texto.rfind("}") + 1]
-    datos = json.loads(texto)
+    respuesta = pedir_ia(instruccion)
+    inicio, fin = respuesta.find("{"), respuesta.rfind("}")
+    if inicio == -1 or fin == -1:
+        raise RuntimeError(f"la IA no devolvió JSON. Respondió: {respuesta[:300]!r}")
+    datos = json.loads(respuesta[inicio: fin + 1])
     return {k: str(datos.get(k, "")).strip() for k in ("titulo", "resumen", "comentario")}
 
 
