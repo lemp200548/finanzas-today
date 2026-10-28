@@ -4,26 +4,56 @@ import json, re, urllib.request, urllib.parse, xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 
-# Periódicos de donde se toman las noticias
-FUENTES = "(site:larepublica.co OR site:portafolio.co OR site:bloomberglinea.com OR site:valoraanalitik.com OR site:eltiempo.com OR site:semana.com OR site:elcolombiano.com)"
+# ---------------- COLOMBIA ----------------
+CO_NEGOCIOS = ["larepublica.co", "portafolio.co", "bloomberglinea.com", "valoraanalitik.com",
+               "eltiempo.com", "semana.com", "elcolombiano.com", "forbes.co"]
+CO_TECNOLOGIA = CO_NEGOCIOS + ["impactotic.co", "enter.co"]
+CO_PLANES = ["eltiempo.com", "semana.com", "bogota.gov.co", "infobae.com", "civico.com", "timeout.com"]
 
-# Categorías: nombre que se ve en la página -> qué buscar
-CATEGORIAS = {
-    "Economía": "dólar OR inflación OR \"Banco de la República\" OR economía Colombia",
-    "Petróleo y energía": "Ecopetrol OR petróleo OR gas OR energía Colombia",
-    "Sector financiero": "bancos OR Bancolombia OR Davivienda OR Superfinanciera OR CDT",
-    "Nuevos CEO": "\"nuevo presidente\" OR \"nuevo CEO\" OR nombramiento OR \"asume la presidencia\" empresa",
-    "Consultoría": "consultoría OR consultora OR McKinsey OR Deloitte OR EY OR PwC OR KPMG Colombia",
-    "Bolsa y empresas": "\"Bolsa de Colombia\" OR acciones OR adquisición OR fusión empresa Colombia",
+# ---------------- VENEZUELA ----------------
+VE_NEGOCIOS = ["bancaynegocios.com", "finanzasdigital.com", "descifrado.com", "bloomberglinea.com",
+               "eluniversal.com", "elestimulo.com", "talcualdigital.com", "efectococuyo.com", "elnacional.com"]
+VE_PLANES = ["eluniversal.com", "elestimulo.com", "efectococuyo.com", "elnacional.com", "elpitazo.net"]
+
+# País -> categorías: nombre que se ve en la página -> (qué buscar, fuentes, días hacia atrás)
+PAISES = {
+    "co": {
+        "gl": "CO",
+        "categorias": {
+            "Economía": ("dólar OR inflación OR \"Banco de la República\" OR economía Colombia", CO_NEGOCIOS, 1),
+            "Empresas": ("empresa OR compañía OR ventas OR utilidades OR adquisición OR fusión Colombia", CO_NEGOCIOS, 1),
+            "Petróleo y energía": ("Ecopetrol OR petróleo OR gas OR energía Colombia", CO_NEGOCIOS, 1),
+            "Sector financiero": ("bancos OR Bancolombia OR Davivienda OR Superfinanciera OR CDT OR \"Bolsa de Colombia\"", CO_NEGOCIOS, 1),
+            "Tecnología": ("tecnología OR \"inteligencia artificial\" OR fintech OR digital OR app Colombia", CO_TECNOLOGIA, 1),
+            "Emprendimiento": ("startup OR emprendimiento OR emprendedores OR \"ronda de inversión\" OR unicornio Colombia", CO_TECNOLOGIA, 3),
+            "Nuevos CEO": ("\"nuevo presidente\" OR \"nuevo CEO\" OR nombramiento OR \"asume la presidencia\" empresa", CO_NEGOCIOS, 2),
+            "Consultoría": ("consultoría OR consultora OR McKinsey OR Deloitte OR EY OR PwC OR KPMG Colombia", CO_NEGOCIOS, 3),
+            "Planes en Bogotá": ("Bogotá planes OR concierto OR festival OR feria OR evento OR \"fin de semana\" OR restaurante", CO_PLANES, 3),
+        },
+    },
+    "ve": {
+        "gl": "VE",
+        "categorias": {
+            "Economía": ("dólar OR BCV OR inflación OR bolívar OR economía Venezuela", VE_NEGOCIOS, 1),
+            "Empresas": ("empresa OR compañía OR ventas OR inversión OR comercio Venezuela", VE_NEGOCIOS, 1),
+            "Petróleo y energía": ("PDVSA OR petróleo OR Chevron OR gas OR electricidad Venezuela", VE_NEGOCIOS, 1),
+            "Sector financiero": ("bancos OR banca OR \"Bolsa de Valores de Caracas\" OR crédito OR Sudeban", VE_NEGOCIOS, 2),
+            "Tecnología": ("tecnología OR fintech OR digital OR app OR \"inteligencia artificial\" Venezuela", VE_NEGOCIOS, 3),
+            "Emprendimiento": ("emprendimiento OR emprendedores OR startup OR pymes Venezuela", VE_NEGOCIOS, 3),
+            "Nuevos CEO": ("\"nuevo presidente\" OR \"nuevo CEO\" OR nombramiento OR designado empresa Venezuela", VE_NEGOCIOS, 3),
+            "Planes en Caracas": ("Caracas planes OR concierto OR festival OR feria OR evento OR restaurante", VE_PLANES, 3),
+        },
+    },
 }
 POR_CATEGORIA = 6
 COL = timezone(timedelta(hours=-5))
 
 
-def buscar(consulta):
-    q = f"{consulta} {FUENTES} when:1d"
+def buscar(consulta, fuentes, dias, gl):
+    sitios = " OR ".join("site:" + f for f in fuentes)
+    q = f"{consulta} ({sitios}) when:{dias}d"
     url = "https://news.google.com/rss/search?" + urllib.parse.urlencode(
-        {"q": q, "hl": "es-419", "gl": "CO", "ceid": "CO:es-419"})
+        {"q": q, "hl": "es-419", "gl": gl, "ceid": f"{gl}:es-419"})
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.read()
@@ -45,13 +75,13 @@ def leer(xml_bytes):
                "fecha": fecha.isoformat() if fecha else None}
 
 
-def main():
+def noticias_de(pais):
     vistos, noticias = set(), []
-    for cat, consulta in CATEGORIAS.items():
+    for cat, (consulta, fuentes, dias) in pais["categorias"].items():
         try:
-            items = list(leer(buscar(consulta)))
+            items = list(leer(buscar(consulta, fuentes, dias, pais["gl"])))
         except Exception as e:
-            print(f"[{cat}] error: {e}")
+            print(f"[{pais['gl']} · {cat}] error: {e}")
             continue
         items.sort(key=lambda n: n["fecha"] or "", reverse=True)
         n = 0
@@ -64,8 +94,13 @@ def main():
             n += 1
             if n >= POR_CATEGORIA:
                 break
-        print(f"[{cat}] {n} noticias")
-    salida = {"actualizado": datetime.now(COL).isoformat(), "noticias": noticias}
+        print(f"[{pais['gl']} · {cat}] {n} noticias")
+    return noticias
+
+
+def main():
+    paises = {codigo: noticias_de(pais) for codigo, pais in PAISES.items()}
+    salida = {"actualizado": datetime.now(COL).isoformat(), "paises": paises}
     with open("news.json", "w", encoding="utf-8") as f:
         json.dump(salida, f, ensure_ascii=False, indent=2)
 
