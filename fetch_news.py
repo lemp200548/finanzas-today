@@ -13,6 +13,8 @@ CO_PLANES = ["eltiempo.com", "semana.com", "bogota.gov.co", "infobae.com", "civi
 # ---------------- VENEZUELA ----------------
 VE_NEGOCIOS = ["bancaynegocios.com", "finanzasdigital.com", "descifrado.com", "bloomberglinea.com",
                "eluniversal.com", "elestimulo.com", "talcualdigital.com", "efectococuyo.com", "elnacional.com"]
+CO_DEPORTES = ["eltiempo.com", "semana.com", "elcolombiano.com", "futbolred.com", "infobae.com", "elespectador.com"]
+VE_DEPORTES = ["meridiano.net", "liderendeportes.com", "eluniversal.com", "elnacional.com", "elestimulo.com"]
 VE_PLANES = ["eluniversal.com", "elestimulo.com", "efectococuyo.com", "elnacional.com", "elpitazo.net"]
 
 # País -> categorías: nombre que se ve en la página -> (qué buscar, fuentes, días hacia atrás)
@@ -28,6 +30,7 @@ PAISES = {
             "Emprendimiento": ("startup OR emprendimiento OR emprendedores OR \"ronda de inversión\" OR unicornio Colombia", CO_TECNOLOGIA, 3),
             "Nuevos CEO": ("\"nuevo presidente\" OR \"nuevo CEO\" OR nombramiento OR \"asume la presidencia\" empresa", CO_NEGOCIOS, 2),
             "Consultoría": ("consultoría OR consultora OR McKinsey OR Deloitte OR EY OR PwC OR KPMG Colombia", CO_NEGOCIOS, 3),
+            "Deportes": ("fútbol OR \"Selección Colombia\" OR \"Liga BetPlay\" OR ciclismo OR tenis OR deportes", CO_DEPORTES, 1),
             "Planes en Bogotá": ("Bogotá planes OR concierto OR festival OR feria OR evento OR \"fin de semana\" OR restaurante", CO_PLANES, 3),
         },
     },
@@ -41,6 +44,7 @@ PAISES = {
             "Tecnología": ("tecnología OR fintech OR digital OR app OR \"inteligencia artificial\" Venezuela", VE_NEGOCIOS, 3),
             "Emprendimiento": ("emprendimiento OR emprendedores OR startup OR pymes Venezuela", VE_NEGOCIOS, 3),
             "Nuevos CEO": ("\"nuevo presidente\" OR \"nuevo CEO\" OR nombramiento OR designado empresa Venezuela", VE_NEGOCIOS, 3),
+            "Deportes": ("fútbol OR Vinotinto OR béisbol OR LVBP OR baloncesto OR deportes Venezuela", VE_DEPORTES, 1),
             "Planes en Caracas": ("Caracas planes OR concierto OR festival OR feria OR evento OR restaurante", VE_PLANES, 3),
         },
     },

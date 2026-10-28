@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Finanzas Today · Panel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --blue:#1F5BD8; --blue-dark:#1747AD; --ink:#111; --muted:#5E6470; --line:#E4E6EB; --paper:#fff; --cream:#F8F7F3; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter Tight', system-ui, sans-serif; background: var(--cream); color: var(--ink); line-height: 1.5; min-height: 100vh; }
+  .topbar { height: 8px; background: var(--blue); }
+  header { background: var(--paper); border-bottom: 1px solid var(--line); }
+  header .in { max-width: 1180px; margin: 0 auto; padding: 0 20px; height: 68px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { font-weight: 900; font-size: 1.5rem; letter-spacing: -0.04em; color: var(--ink); text-decoration: none; }
+  .logo span { color: var(--blue); }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; }
+  .box { max-width: 440px; margin: 40px auto 64px; padding: 0 20px; }
+  .card { background: var(--paper); border: 1px solid var(--ink); padding: 32px 28px; }
+  h1 { font-weight: 900; font-size: 2rem; letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 6px; }
+  .sub { color: var(--muted); margin-bottom: 22px; }
+  label { display: block; font-weight: 700; font-size: 0.9rem; margin: 14px 0 6px; }
+  input, select { width: 100%; font: inherit; color: var(--ink); padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 8px; background: #fff; }
+  input:focus, select:focus { outline: none; border-color: var(--blue); }
+  .btn { width: 100%; margin-top: 22px; font: inherit; font-weight: 800; background: var(--blue); color: #fff; border: 0; padding: 14px; border-radius: 8px; cursor: pointer; font-size: 1rem; }
+  .btn:hover { background: var(--blue-dark); }
+  .btn:disabled { opacity: .6; cursor: default; }
+  .msg { margin-top: 16px; font-size: 0.93rem; padding: 12px 14px; border-radius: 8px; display: none; }
+  .msg.ok { display: block; background: #E7F6EC; color: #17703A; }
+  .msg.err { display: block; background: #FDECEA; color: #B3261E; }
+  .hint { font-size: 0.8rem; color: var(--muted); margin-top: 6px; }
+  .hidden { display: none; }
+  .main { max-width: 1100px; margin: 32px auto 64px; padding: 0 20px; }
+  .head { display: flex; justify-content: space-between; align-items: end; gap: 12px; margin-bottom: 22px; flex-wrap: wrap; }
+  .head h1 { font-size: 2.2rem; }
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 18px; }
+  .kpi { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 18px; }
+  .kpi .l { font-size: 0.7rem; color: var(--muted); }
+  .kpi .v { font-size: 2.2rem; font-weight: 900; letter-spacing: -0.04em; line-height: 1.1; margin-top: 6px; }
+  .kpi.main-kpi { background: var(--blue); border-color: var(--blue); color: #fff; }
+  .kpi.main-kpi .l { color: rgba(255,255,255,.8); }
+  .panel { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 20px; margin-bottom: 18px; }
+  .panel h2 { font-size: 1.15rem; font-weight: 800; margin-bottom: 4px; }
+  .leyenda { font-size: 0.8rem; color: var(--muted); margin-bottom: 16px; display: flex; gap: 16px; }
+  .leyenda i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+  .chart { display: grid; grid-template-columns: repeat(14, 1fr); gap: 6px; align-items: end; height: 180px; }
+  .col { display: flex; gap: 2px; align-items: end; height: 100%; position: relative; }
+  .col .b { flex: 1; border-radius: 3px 3px 0 0; min-height: 2px; }
+  .col .vis { background: var(--blue); }
+  .col .reg { background: #F4A340; }
+  .col:hover::after { content: attr(data-tip); position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); background: var(--ink); color: #fff; font-size: 0.72rem; padding: 4px 8px; border-radius: 4px; white-space: nowrap; margin-bottom: 6px; }
+  .dias { display: grid; grid-template-columns: repeat(14, 1fr); gap: 6px; margin-top: 6px; font-size: 0.62rem; color: var(--muted); text-align: center; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+  th { text-align: left; font-size: 0.7rem; color: var(--muted); padding: 8px 6px; border-bottom: 1px solid var(--line); }
+  td { padding: 10px 6px; border-bottom: 1px solid var(--line); }
+  .wrap-table { overflow-x: auto; }
+  .aviso { background: #fff; border: 1px solid var(--ink); padding: 28px; max-width: 520px; }
+  a.link { color: var(--blue); font-weight: 700; }
+  .salir { font: inherit; font-size: 0.85rem; color: var(--muted); background: none; border: 0; cursor: pointer; text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<header><div class="in"><a class="logo" href="index.html">Finanzas<span>Today</span></a><button class="salir hidden" id="salir">Cerrar sesión</button></div></header>
+<div class="main">
+  <div id="estado" class="aviso">Cargando…</div>
+  <div id="panel" class="hidden">
+    <div class="head"><h1>Panel de administrador</h1><span class="mono" style="font-size:.72rem;color:var(--muted)" id="hora"></span></div>
+    <div class="kpis">
+      <div class="kpi main-kpi"><div class="l mono">Usuarios registrados</div><div class="v" id="k-usuarios">–</div></div>
+      <div class="kpi"><div class="l mono">Nuevos hoy</div><div class="v" id="k-uhoy">–</div></div>
+      <div class="kpi"><div class="l mono">Nuevos · 7 días</div><div class="v" id="k-u7">–</div></div>
+      <div class="kpi"><div class="l mono">Visitas hoy</div><div class="v" id="k-vhoy">–</div></div>
+      <div class="kpi"><div class="l mono">Personas hoy</div><div class="v" id="k-phoy">–</div></div>
+      <div class="kpi"><div class="l mono">Personas · 7 días</div><div class="v" id="k-p7">–</div></div>
+      <div class="kpi"><div class="l mono">Visitas totales</div><div class="v" id="k-vtot">–</div></div>
+    </div>
+    <div class="panel">
+      <h2>Últimos 14 días</h2>
+      <div class="leyenda"><span><i style="background:var(--blue)"></i>Visitas</span><span><i style="background:#F4A340"></i>Registros</span></div>
+      <div class="chart" id="chart"></div>
+      <div class="dias" id="dias"></div>
+    </div>
+    <div class="panel">
+      <h2>Últimos usuarios</h2>
+      <div class="wrap-table"><table><thead><tr><th class="mono">Usuario</th><th class="mono">Correo</th><th class="mono">País</th><th class="mono">Fecha</th></tr></thead><tbody id="usuarios"></tbody></table></div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="config.js"></script>
+<script>
+  var $ = function (id) { return document.getElementById(id); };
+  function esc(t) { var d = document.createElement('div'); d.textContent = t == null ? '' : String(t); return d.innerHTML; }
+  function num(n) { return Number(n || 0).toLocaleString('es-CO'); }
+
+  (async function () {
+    if (!sb) { $('estado').textContent = 'La página no está configurada.'; return; }
+    var s = await sb.auth.getSession();
+    if (!s.data.session) {
+      $('estado').innerHTML = 'Este panel es solo para el administrador. <a class="link" href="login.html?login&admin">Inicia sesión</a> con tu cuenta.';
+      return;
+    }
+    $('salir').classList.remove('hidden');
+    $('salir').onclick = async function () { await sb.auth.signOut(); location.reload(); };
+
+    var r = await sb.rpc('admin_stats');
+    if (r.error) {
+      $('estado').innerHTML = /autorizado/i.test(r.error.message)
+        ? 'Tu cuenta no tiene acceso a este panel.'
+        : 'No se pudieron cargar las estadísticas. ¿Ya corriste el archivo <b>setup.sql</b> en Supabase?<br><br><span class="mono" style="font-size:.7rem">' + esc(r.error.message) + '</span>';
+      return;
+    }
+    var d = r.data;
+    $('estado').classList.add('hidden');
+    $('panel').classList.remove('hidden');
+    $('hora').textContent = 'Actualizado ' + new Date().toLocaleString('es-CO', { hour: 'numeric', minute: '2-digit', day: 'numeric', month: 'short' });
+    $('k-usuarios').textContent = num(d.usuarios_total);
+    $('k-uhoy').textContent = num(d.usuarios_hoy);
+    $('k-u7').textContent = num(d.usuarios_7d);
+    $('k-vhoy').textContent = num(d.visitas_hoy);
+    $('k-phoy').textContent = num(d.visitantes_hoy);
+    $('k-p7').textContent = num(d.visitantes_7d);
+    $('k-vtot').textContent = num(d.visitas_total);
+
+    var dias = d.por_dia || [];
+    var max = Math.max(1, ...dias.map(function (x) { return Math.max(x.visitas, x.registros); }));
+    $('chart').innerHTML = dias.map(function (x) {
+      return '<div class="col" data-tip="' + x.visitas + ' visitas · ' + x.registros + ' registros">' +
+        '<div class="b vis" style="height:' + (x.visitas / max * 100) + '%"></div>' +
+        '<div class="b reg" style="height:' + (x.registros / max * 100) + '%"></div></div>';
+    }).join('');
+    $('dias').innerHTML = dias.map(function (x) { return '<span>' + x.dia.slice(8) + '/' + x.dia.slice(5, 7) + '</span>'; }).join('');
+
+    $('usuarios').innerHTML = (d.ultimos_usuarios || []).map(function (u) {
+      return '<tr><td><b>@' + esc(u.usuario || '—') + '</b></td><td>' + esc(u.email) + '</td><td>' + (u.pais === 've' ? '🇻🇪' : '🇨🇴') + '</td><td>' +
+        esc(new Date(u.creado).toLocaleString('es-CO', { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' })) + '</td></tr>';
+    }).join('') || '<tr><td colspan="4">Todavía no hay usuarios.</td></tr>';
+  })();
+</script>
+</body>
+</html>

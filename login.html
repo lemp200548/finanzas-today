@@ -6,45 +6,45 @@
 <title>Finanzas Today · Tu cuenta</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#061631; --card:#0E2A57; --line:rgba(255,255,255,0.10); --text:#F3F7FF; --muted:#A7B8D6; --blue:#3D8BFF; --sky:#8CC8FF; --field:#0A2149; }
+  :root { --blue:#1F5BD8; --blue-dark:#1747AD; --ink:#111; --muted:#5E6470; --line:#E4E6EB; --paper:#fff; --cream:#F8F7F3; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: var(--text); line-height: 1.6; min-height: 100vh;
-    background: radial-gradient(700px 400px at 80% 0%, rgba(61,139,255,0.30), transparent 70%), var(--bg);
-  }
-  header { padding: 20px; max-width: 1040px; margin: 0 auto; }
-  .logo { font-weight: 800; font-size: 1.3rem; letter-spacing: -0.03em; color: var(--text); text-decoration: none; }
+  body { font-family: 'Inter Tight', system-ui, sans-serif; background: var(--cream); color: var(--ink); line-height: 1.5; min-height: 100vh; }
+  .topbar { height: 8px; background: var(--blue); }
+  header { background: var(--paper); border-bottom: 1px solid var(--line); }
+  header .in { max-width: 1180px; margin: 0 auto; padding: 0 20px; height: 68px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { font-weight: 900; font-size: 1.5rem; letter-spacing: -0.04em; color: var(--ink); text-decoration: none; }
   .logo span { color: var(--blue); }
-  .box { max-width: 430px; margin: 32px auto 64px; padding: 0 20px; }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 32px 28px; box-shadow: 0 20px 60px rgba(0,0,0,0.35); }
-  h1 { font-weight: 800; font-size: 1.9rem; letter-spacing: -0.035em; line-height: 1.15; margin-bottom: 6px; }
-  .sub { color: var(--muted); margin-bottom: 24px; }
-  .tabs { display: flex; background: var(--field); border-radius: 12px; padding: 4px; margin-bottom: 24px; }
-  .tabs button { flex: 1; font: inherit; font-weight: 700; border: 0; background: transparent; padding: 10px; border-radius: 9px; cursor: pointer; color: var(--muted); }
-  .tabs button.on { background: var(--text); color: var(--bg); }
-  label { display: block; font-weight: 600; font-size: 0.9rem; margin: 14px 0 6px; }
-  input { width: 100%; font: inherit; color: var(--text); padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--field); }
-  input::placeholder { color: #6F86AD; }
-  input:focus { outline: 2px solid var(--blue); border-color: transparent; }
-  .btn { width: 100%; margin-top: 22px; font: inherit; font-weight: 700; background: var(--blue); color: #fff; border: 0; padding: 14px; border-radius: 12px; cursor: pointer; box-shadow: 0 8px 24px rgba(61,139,255,0.35); }
-  .btn:hover { background: #2F7BF0; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; }
+  .box { max-width: 440px; margin: 40px auto 64px; padding: 0 20px; }
+  .card { background: var(--paper); border: 1px solid var(--ink); padding: 32px 28px; }
+  h1 { font-weight: 900; font-size: 2rem; letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 6px; }
+  .sub { color: var(--muted); margin-bottom: 22px; }
+  label { display: block; font-weight: 700; font-size: 0.9rem; margin: 14px 0 6px; }
+  input, select { width: 100%; font: inherit; color: var(--ink); padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 8px; background: #fff; }
+  input:focus, select:focus { outline: none; border-color: var(--blue); }
+  .btn { width: 100%; margin-top: 22px; font: inherit; font-weight: 800; background: var(--blue); color: #fff; border: 0; padding: 14px; border-radius: 8px; cursor: pointer; font-size: 1rem; }
+  .btn:hover { background: var(--blue-dark); }
   .btn:disabled { opacity: .6; cursor: default; }
-  .msg { margin-top: 16px; font-size: 0.93rem; padding: 12px 14px; border-radius: 10px; display: none; }
-  .msg.ok { display: block; background: rgba(76, 217, 140, 0.15); color: #7EE8AE; }
-  .msg.err { display: block; background: rgba(255, 99, 99, 0.15); color: #FF9C9C; }
-  .hint { font-size: 0.82rem; color: var(--muted); margin-top: 6px; }
+  .msg { margin-top: 16px; font-size: 0.93rem; padding: 12px 14px; border-radius: 8px; display: none; }
+  .msg.ok { display: block; background: #E7F6EC; color: #17703A; }
+  .msg.err { display: block; background: #FDECEA; color: #B3261E; }
+  .hint { font-size: 0.8rem; color: var(--muted); margin-top: 6px; }
   .hidden { display: none; }
+  .tabs { display: flex; border: 1.5px solid var(--ink); border-radius: 8px; overflow: hidden; margin-bottom: 22px; }
+  .tabs button { flex: 1; font: inherit; font-weight: 700; border: 0; background: #fff; padding: 10px; cursor: pointer; color: var(--ink); }
+  .tabs button.on { background: var(--ink); color: #fff; }
 </style>
 </head>
 <body>
-<header><a class="logo" href="index.html">Finanzas<span>Today</span></a></header>
+<div class="topbar"></div>
+<header><div class="in"><a class="logo" href="index.html">Finanzas<span>Today</span></a></div></header>
 
 <div class="box">
   <div class="card">
-    <h1 id="titulo">Crea tu cuenta gratis</h1>
-    <p class="sub" id="subtitulo">Suscríbete y entiende los negocios de Colombia y Venezuela todos los días.</p>
+    <h1 id="titulo">Vuélvete más culto en 5 minutos</h1>
+    <p class="sub" id="subtitulo">Crea tu cuenta gratis y recibe las noticias cada mañana.</p>
 
     <div class="tabs">
       <button id="tab-registro" class="on" type="button">Crear cuenta</button>
@@ -52,16 +52,20 @@
     </div>
 
     <form id="form">
-      <div id="campo-usuario">
+      <div id="campos-registro">
         <label for="usuario">Nombre de usuario</label>
         <input id="usuario" autocomplete="username" maxlength="20" placeholder="ej. lorenzo">
-        <div class="hint">Así te vamos a saludar en la página.</div>
+        <label for="pais">¿De qué país quieres las noticias en tu correo?</label>
+        <select id="pais">
+          <option value="co">🇨🇴 Colombia</option>
+          <option value="ve">🇻🇪 Venezuela</option>
+        </select>
       </div>
       <label for="correo">Correo</label>
       <input id="correo" type="email" autocomplete="email" required placeholder="tucorreo@gmail.com">
       <label for="clave">Contraseña</label>
       <input id="clave" type="password" autocomplete="new-password" required minlength="6" placeholder="Mínimo 6 caracteres">
-      <button class="btn" id="enviar" type="submit">Suscribirme</button>
+      <button class="btn" id="enviar" type="submit">Suscribirme gratis</button>
     </form>
     <div class="msg" id="msg"></div>
   </div>
@@ -72,20 +76,21 @@
 <script>
   var modo = location.search.indexOf('login') >= 0 ? 'login' : 'registro';
   var $ = function (id) { return document.getElementById(id); };
-
   function mostrar(texto, tipo) { var m = $('msg'); m.textContent = texto; m.className = 'msg ' + tipo; }
+
+  try { if (localStorage.getItem('pais') === 've') $('pais').value = 've'; } catch (e) {}
 
   function poner(m) {
     modo = m;
     var reg = m === 'registro';
     $('tab-registro').classList.toggle('on', reg);
     $('tab-login').classList.toggle('on', !reg);
-    $('campo-usuario').classList.toggle('hidden', !reg);
+    $('campos-registro').classList.toggle('hidden', !reg);
     $('usuario').required = reg;
     $('clave').autocomplete = reg ? 'new-password' : 'current-password';
-    $('titulo').textContent = reg ? 'Crea tu cuenta gratis' : 'Bienvenido de nuevo';
-    $('subtitulo').textContent = reg ? 'Suscríbete y entiende los negocios de Colombia y Venezuela todos los días.' : 'Entra con tu correo y contraseña.';
-    $('enviar').textContent = reg ? 'Suscribirme' : 'Entrar';
+    $('titulo').textContent = reg ? 'Vuélvete más culto en 5 minutos' : 'Bienvenido de nuevo';
+    $('subtitulo').textContent = reg ? 'Crea tu cuenta gratis y recibe las noticias cada mañana.' : 'Entra con tu correo y contraseña.';
+    $('enviar').textContent = reg ? 'Suscribirme gratis' : 'Entrar';
     $('msg').className = 'msg';
   }
   $('tab-registro').onclick = function () { poner('registro'); };
@@ -95,6 +100,7 @@
   if (!sb) mostrar('Falta configurar Supabase: pega tus claves en config.js.', 'err');
 
   var inicio = location.href.replace(/login\.html.*$/, 'index.html');
+  var destino = location.search.indexOf('admin') >= 0 ? location.href.replace(/login\.html.*$/, 'admin.html') : inicio;
 
   $('form').addEventListener('submit', async function (e) {
     e.preventDefault();
@@ -103,18 +109,18 @@
     $('enviar').disabled = true;
     try {
       if (modo === 'registro') {
-        var usuario = $('usuario').value.trim();
         var r = await sb.auth.signUp({
           email: correo, password: clave,
-          options: { data: { username: usuario }, emailRedirectTo: inicio }
+          options: { data: { username: $('usuario').value.trim(), pais: $('pais').value, newsletter: true }, emailRedirectTo: inicio }
         });
         if (r.error) throw r.error;
+        try { localStorage.setItem('pais', $('pais').value); } catch (e) {}
         if (r.data.session) { location.href = inicio; return; }
         mostrar('¡Listo! Te mandamos un correo para confirmar tu cuenta. Ábrelo y haz clic en el link.', 'ok');
       } else {
         var r2 = await sb.auth.signInWithPassword({ email: correo, password: clave });
         if (r2.error) throw r2.error;
-        location.href = inicio;
+        location.href = destino;
       }
     } catch (err) {
       var t = (err && err.message) || '';
@@ -122,6 +128,7 @@
       else if (/already registered/i.test(t)) t = 'Ese correo ya tiene cuenta. Usa "Iniciar sesión".';
       else if (/Email not confirmed/i.test(t)) t = 'Primero confirma tu correo con el link que te mandamos.';
       else if (/at least 6/i.test(t)) t = 'La contraseña debe tener mínimo 6 caracteres.';
+      else if (/rate limit|too many/i.test(t)) t = 'Hay muchos registros en este momento. Intenta de nuevo en unos minutos.';
       mostrar(t || 'Algo salió mal. Intenta de nuevo.', 'err');
     } finally {
       $('enviar').disabled = false;
