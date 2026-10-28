@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-28T11:17:06.196512-05:00",
+  "actualizado": "2026-10-28T11:22:10.863000-05:00",
   "paises": {
     "co": [
       {
@@ -172,6 +172,20 @@
       },
       {
         "categoria": "Tecnología",
+        "titulo": "Temblor de 4.1 hoy 28 de octubre en Colombia: conozca magnitud, epicentro y detalles",
+        "fuente": "El Tiempo",
+        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOblpfRDJ1cUE5ZWtGUmljUGpJbm1hY3l4c0hYLXQtZ3JUdDNuUlMwRjd6dE1WbWctdUZ1SzZQamZkZ0RiSzhLWTBsbkNEeDk5RUx5VUdDQlFwRWd3dlhHdjVJckRDX1JWdmpKUE1TNmtfUWFYaUVWYmRsNVZaeGJSOUM5dHoycm5oOS1sem9xeHlkWVo1aWhEZHRaWUV4R3JQcThseUhzcEZxRlZzNXRYOUp4cTM5T2ltSDV3WHFBV1JONE42eEtnWGxSWjVnY1JfQ2hOQmZB?oc=5",
+        "fecha": "2026-10-28T10:53:22-05:00"
+      },
+      {
+        "categoria": "Tecnología",
+        "titulo": "Corte Suprema ordena proteger a ingeniera que denunció presunto abuso sexual del gerente del Hospital de Sincelejo",
+        "fuente": "El Tiempo",
+        "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQYmRJMW9vQlBJb3E1Q3AzZktVV2tkQ3ZzemxCbVBiS2NHU1JoTm9kWVp6OTFiNXdRcVhmdTR2cTB6V0xmeUNZR0lUVllXa01rWmxfRVh3SDRGdTA5WGtxWlgyT1k2eDZQblVtYzdENmFiWmM2VFg3c3RmMUdKenBxd1NlVjdkenhkVWhNX2prTmpUaUFGUjBUbWNBaDVyZWthREpzUTNMaF9QRDVzZXRyMm5IeGZHYzlYWUFxcVNfN1lQTmJUeUN5a1B0OGRsMWNCWmJCWXUxV084Zjl5dXdSc1VlWDZUOVNiaU1KZTZ3SUlSSjZqenNUSF9fMXBOOTM50gGGAkFVX3lxTE53aTZjemRWVElJNXZHVVpOR0hSdVQ4ZDgxQzVtMG9pQzAxTlV6aW05TDY3LUJIbTZ3bGl1OFpqT0h6bjhWZ29ubVNTZ2E5em9CTXBMeG9qempXYjdMdE5nUUNCMVlPLXloS0ZsUXBOY0VmZE91S2E3ckgtVGpoY3lvTWhUWWxqcnA0Z3RLUklXOU4zMTh1bnBWQkVQZjdhV19jOEhJVEpKZ2lJa3FRZ3BhNVFtQTVjeHVMYUZMR0lXOHNMTExzNE5iX0lLdVZlTWU2SzBSODNUZl9OdXNkQXU3XzhzajBPdUd1NE43N2tYdzBHbk8wQW8tNUViSTlGUXNuYzRROWc?oc=5",
+        "fecha": "2026-10-28T10:40:51-05:00"
+      },
+      {
+        "categoria": "Tecnología",
         "titulo": "'Los jóvenes no quieren trabajar ni ahorrar': fuerte crítica de una empresaria a las nuevas generaciones",
         "fuente": "El Tiempo",
         "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNcWFPb0N4MmNvRThhSkRPcmdDNktQejV5OGtpbndiZElINDVBWFJkb3RNNWxOQUJPSXRtUXl2SkhXUU5OMGoxS0xTNnRyVHd6dWp4OVRFX3VvZ2VJdEEwUmlBS2hDR1VfYjh4UktjYnNPVTAtNktGSWhYbGhfbHQwWWpsZS1peUh3MFdrMVhlMWxXUVpkMFJWSG1DaXNXeGp5VlgwOG95cFJRNzNSVEhZczR2LTJaUmxfVDJ1U3h4LS1wWnoyY3lHQ2hRYW9JTnE3WTFvcldhU3paQTUzckY0T1NB0gHnAUFVX3lxTE1BR1h0QjVldG9lZGhwelhybmktOTBxTUxMcFhtby1GaF9oQ0tybHIwMlZ3Z0Q4N3ZRVld3LXhUWjNjX0U4NGhBRDJONTlHQnhnNXEzcm1IZHdmMVI4cVZ1MGZYRm1jRmFiSkJrTkdPeEFNSE9fbm5iUnRYRkFITUVVeWV1bG1wSWMySjBfcEJTQV80OVkyMENQRWVVcWtLa0lFeUtSVmE0bm1FNUw4U0VvRHE3dWdKSmY2eU1BTzdEZDZYUklwS2xZVHJBRkUyRG12alBrZkZ1azhISDQ3b19TbzBWYUxvTQ?oc=5",
@@ -197,20 +211,6 @@
         "fuente": "El Tiempo",
         "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNc19xWThBdmxreVd5ZC00T1ppMWdVMlJFS2Eza2htSl96Zy05T2xwMm4xTlVoWE1PRTZlalhqV3pxQmJwNlNtekpoc2FLZ0NrT0kxRHNZQ1RFcGRTRHJKdDUySHpWaDJDNGpaM1AxRi1zNkZEMUE2em9ZTV85aVF2Y1dtRkNqTFU2cTY1T2ZidkltQVNtSTAxdUhvRnZBMUNOZ1drWURHNGZDX3pVY3k4TW10YUdqQjk3OE5qMUVJQ1NwaUpaOUE0aXI1Y0kzRGhJNkRvSUd1VkFfeWl1bmljNC1zU1QxVEJiTE1GYlRR0gHzAUFVX3lxTE5hQ1B6S2lfcEVCU1VQOHhpLVRhNnhSUUR4NXRBWW14TmNXUWdSREZ4VlFsSFZ5R1NzZ01hWE01NnJtWEVmMGJIY19LQzl5MElKOWprd0JLdVFKck9ZY2sxVC1LZEdveVZ0c2tYRFNpbllqUVpyNGZzX3d3ck11c281R2JWWE1oLWIzWDhrZnFWZVY5VGNQS3llUFdwX2RDVU5hNTJjY09vd3Q4S1dMOUpKa0I2a05SbnZhdzN1UTl3ckd5RmdaZ2t6TDE0dEx1ck50SFdkbklVbUJyTmpXb2l1Y0xyX3VDbkpKcHNuZlQzQ2Vfbw?oc=5",
         "fecha": "2026-10-28T08:10:43-05:00"
-      },
-      {
-        "categoria": "Tecnología",
-        "titulo": "¿Cuáles son los delitos en contra del hijo de Iván René Valenciano? Presidente Abelardo De La Espriella lo regañó en público",
-        "fuente": "El Tiempo",
-        "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOQnE2YUUtT2FrMU0tYXlWcURNYjEzRmtfWm9TMnRoTEpFTVk0cm5JdGxseG82THcyTVVRdkdMR0taRGZfZVJrUjlYVjdmWGZ3U3BKSWl5emdRcUxGRnJCTW5OaEYzQzFoS3BTNzR3UEw2TjNJbjFRNDVKV1h5Tzl0MDdjRC1ZQW91b21pZjFtM2hlU3hHalFKNEQ1S3NiTTMwNXh5S0pDcUNoOW81Ti15cjJ4UUkya0ZRclJXQTdHc3dzd3NBdG5zRmN5M1RiR1ZRS2ExdG1vc3RqNnNmR1NueW9EcE1MeUNoMXVGNGZNOEZFekp0MTlvMGJjUlVObFFIenJv0gGIAkFVX3lxTE5ObUJGUFlnVmNmM214Z19VYkhvN3pOc19wM3RKVHJISmsxbXlaNFQxa1ZMVDlaQ2JLTUFNVVJ2QzNTNElYRjZPVW5uRkk5XzZoUnZENXlQYTktQnQ3VWhpQlNjYkJOd0tSOGEtMnFQQkpSWjJOemVOb094ZzZQVE5jOGVpRzBaR245Ym5DV280T2laVl81VWlEb19YSkhla1BLeGg1ajl2T1VtcFd1WDljU085cmtNUTR6SkVMMVNLQ01vdXU0Zm5HbmhDenEwcFVHYklfcUpTc1ctLXJDVXdUd3J6eW15VVJXZmdlUjBXNjEzYy1DcWREZjhtbU9XUjFiOHdwZFNQSg?oc=5",
-        "fecha": "2026-10-28T07:55:18-05:00"
-      },
-      {
-        "categoria": "Tecnología",
-        "titulo": "¿Quién es el hijo de Iván René Valenciano capturado en Medellín? Sus antecedentes y presuntos vínculos con banda criminal",
-        "fuente": "El Tiempo",
-        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOdmdvMExaNjVQbk1vZWUxR1JtS1NlQUg4Zmx2UkxNNjZ6T2FpOTQySWg1Q0htU0Z1bnlzX0NiYW9VRnl1b3o5WDRRbWFYbEhyVXFzVklJM2pUMTlWa3FiTno2UjdBZXNqQ0ZZOUJ6R0tCUGlsbWZCeU05V3UtbkVYcGNROHBXWUoyM0ZjSVRiUk95b3VObzAwbC1xSXVnOFB1TnhKTmY0U1pzNXB4R2RvT3ZudjZ2dHlCZkZKYlVkbElIMUNSVnlJbnF2TFAwNlB3RkdjdFlfa09nTmFyTVp1TWs1VlJiNnNBZUh1TGtPdTRWYmlfeENuRFVNTU5LelI0X1NCbtIBigJBVV95cUxQcV9GRE9sd01MWnhDZHRoVHd5eGZyQ2c3SFNlaW9NbER5a3NNa0I3U0hQSzYxWkRPNWJEVEJDT3dha3RRMVFQS0ROeEFZR3NnRnZic3prV1VueG1kR25uZHRFRHBTYm51bUY3OERjWF9wbGZVeXZLNWtOLWo5UlRLWVNaUmF3MGRuZkhmUU9EbDNpYVZCLTBjOENTZEN0MF9XSUJ1R0V3N2RYa1Z2aHVwaTk5N3JMeDFQQzJ6WlhJeExXVGQyZ0NKZklRaWF4MmFoN19Ccko5QTRFRGRuMGxnS3pzYTRlaW45NGVoUmpFampWcnpHdFctYU5ZSGlZSkptY19SY2lWQ1A4UQ?oc=5",
-        "fecha": "2026-10-28T07:43:49-05:00"
       },
       {
         "categoria": "Emprendimiento",
@@ -319,6 +319,13 @@
       },
       {
         "categoria": "Consultoría",
+        "titulo": "Los negocios del multimillonario Guus Franke, el nuevo esposo de Ariadna Gutiérrez",
+        "fuente": "Bloomberg Línea",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbnR2WUx6dkc4NXpqOUJmeFhia3htby1NbllZaEFlc3lpVzFhNkt3Rk51OE1hVXdlc01MeEM1V2Fja3ZfeVRZUUV1VHctLXZlU1E2Y1F6UW53dXdub1NWLTBrQkVkSEFRLXNmcFhxeEJRcTcycldfenF1azQ4OHpPdGl5QW96eDVDSEd2WUpYR3VOaWJ1d2Z3Ti1CZjB5SDFubEpNY05Kel9YREc3bTY2cmdFaTFzQ0RUdzdBVFNKSzFxNUxtLWQ00gHbAUFVX3lxTE5fYVJKRzc5YjdUOURvcjk2R0ZabTQ0ZmVxcEt1ejcyRDdlVFJ1cnRQaDVsRjI0YUE0NUR5b2k3a05RcnhfWWUwMldCQmFzUGRkampaNkN5ZDRuZnJrd2I4TFhwZEJfNkVCVWYtaVEwZmpFa1EyejE5M2lnbXVZRU9FcW9HRnlYbUl0MGFUa05UbEF4V2MxazNONWtPSGVRX1pibHFvUUhTUlRaR1ZxMWR0MXloRmp5dWVpVHF4VEEwZHFrc28xb3pzS2F5dFVOMFc0UmVyZ01MRUhiNA?oc=5",
+        "fecha": "2026-10-27T16:05:17-05:00"
+      },
+      {
+        "categoria": "Consultoría",
         "titulo": "MinSalud activó plataforma para seguir atención de 1,8 millones de pacientes",
         "fuente": "LaRepublica.co",
         "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPczFwcHdpUk4zSFFaZlQ1VG5vTktseExFQ1VXOEpsTWdLMVNVeVVESmtqWFpZQVNNbUxWZ1RDSVBscFFsYXc4ZDA5c0hSOEpMUVFra0xOSWFDcFVvTXRHOHVjbnVNMnNCTWd1M1BINGdQaXFwRWJmOUQzcjFYOG51WDZkLVg2ZGx1d1l0SkVYdFY0dDlDNmNEQjdpNnFXV20tNURrWGQySVBwMFNRV05PblNVNWFOZmhxMUdMQdIBvAFBVV95cUxNdjRtdFdwV3h4OGtaZ04wSUpfdTA5M3FyWFh6NWRRVWF5dkJHdF9ac29CSzlEaHF2cGluczBLRVNvVU5VUC16cUJuX1lvT01BNG9kNk1fLWYtLVJVN0FTQ2JoUDdTdGZzYW5YYWJVTkszRFR2Z2JkMjEtcU1pQTBCR0ZreDNNOHpqeExNOXNaYVFsQ3NRTExoWFVTY3hNTFJjSndTaDlfS3ZHNDVIMGZkcUpuc0lUOU1iM3M2SA?oc=5",
@@ -330,13 +337,6 @@
         "fuente": "Portafolio.co",
         "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbHFqM21mZWlpMUt6UDVFZkpxNmJiSGZQMEk4ZGtRVlRSSzhFaFA4SlhDanJPQ0tzaVVuMWdrTUlZLV9VM01qSTJqLUZJWHd4UWNSWng1eEJKbW1JRjVqTGR0NmVyMzd6dTFjcGFhQUNqNkFjUUdQN0tua1oyc2JkQWdyQmdZRlJaQkl5bEhqRzBEX3pqVjFYeGkzVjRSYXg1RWtSY0liV3BZNlBUYkVWajRBZTBBOEZxOFhMQVp0UWVkb1dmeFJTeHFJdUt5dnNWejgyNDBBUlM0M3NlNHZkQ9IB5gFBVV95cUxQWFROQldzbDlHXzJiaVhyQ3JPVlRFRFI3cGVQWnhfTXpqV0ZEWjd6ZTR4bFNndmh5UDg0Z05ReDlzYVNsUU9TWjd1S2wzMVZSTVhpRnRXc1hMTmtlRTlZXzFGQUdVcTRKUmtkTkdfdjRKOV9taGlOUktnUmZiUHl1ZXA3WnI5T3RIa2M3M09kNmVIdlppVFpERlFVblMtSTNyMXZnSTNidlJaTDA4QzBkTXRFWE9lZU05Q19MWVJaeGVQUGVBSHhNSmdNME9PRjFyTEoyWlNDQzRfWmhPd0sySTM2Q0hJdw?oc=5",
         "fecha": "2026-10-27T11:56:39-05:00"
-      },
-      {
-        "categoria": "Consultoría",
-        "titulo": "Cuentas Claras / Hogares le bajan al consumo y comidas fuera de casa son las que más se restringen",
-        "fuente": "El Tiempo",
-        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNWjJOU3cySFBJZDJ1TktMZWhtLVhyNzN2ejBQRENqNHFRd2Ezcl9lN0dQNURMenVEam9hUFRnMWxfdHJ4S3FpbkZISXIta1NpWHY1MEVUcE5wb3lIQkVFY1ZXMHlieVUwcHJXQVNDSjJ1d3RMNXpuN0J6TnA2NU9NZEVvWHJ4TzF1SG91TGE1SW9BdzE2WmQ0LXZIaTM3M2ZKSW5YS2oxc3VQOEdfcVFfV2dYb1NyY014LTh4clF3dlZ6Y2R5clByQ0tTcHBrTk0xLU1OZGtOVjlMRS1zVnZFYtIB5gFBVV95cUxORk1qRjZBM3lRU3pVckhicVdvMi1EOUZQSTFMVTFnU2t2aS11elNvY29NS3AwOVQ4NENMSlN1cXlIbG93bjRsc2UtV19XdW5Nbk5KU3dOOGd1dGd0Q1JIbmFwYnFzcDdESjFUeVpfYkE1WEF5OTRFV1JrQzA4S0Vfd0c0aVlRMWtrSWlrMnVIWHVpck5zWDRZT0RGd054TjlrTzRTQUs3MWtXZFdNNVpWdkJUV0M0YVRCU2o1TGxBbXdsZGdDUGUyOHByeHpvQm44R0wzdHY2MlJPcjRoNjE0YUFWWXJCdw?oc=5",
-        "fecha": "2026-10-27T00:23:00-05:00"
       },
       {
         "categoria": "Deportes",
@@ -382,6 +382,20 @@
       },
       {
         "categoria": "Planes en Bogotá",
+        "titulo": "Vuelve el Tren de Navidad a Bogotá: cuánto cuesta el pasaje y cuándo se podrá disfrutar del show de juegos pirotécnicos",
+        "fuente": "Revista Semana",
+        "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQUmxHTmtfY2tadTlOSGJaX19tZ08ta1pISWcyYnhXWnJNTFM1TmlJWjJ0S0NtX1BCbHNlM3p2Q1VhME1qNV9ieDVVdE9sS2FRMF9RenFnb09ZU1FsNEw2ZEJNX21SYWJ4bDBWUmRSQ1NBaVNFc3FTenZRZ1RMelNBRVh1YUcxSGlrZGlHMFNCWmNsWWh2bE5YSGFtTm5PM3B2OVcydjlyWHhxTWY3dEFXaTlxa1ZCSU8tcUxtd3ZPNjBYaU5VQUlPMEJBckh1cWNZcU5FeVdVUVlON3dsOXRNZDl5UVc0dHBmZVlMREVCZGVmT1U1ZnplSW93?oc=5",
+        "fecha": "2026-10-28T11:17:28-05:00"
+      },
+      {
+        "categoria": "Planes en Bogotá",
+        "titulo": "Disfruta clases de salsa y bachata en el CEFE Chapinero de Bogotá: asiste gratis este jueves 29 de octubre",
+        "fuente": "Bogota.gov.co",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPc1pRWmtYNUo1cEQxa2dUVjFBeTZOSzdkd1hzd3JqT0dIQVpnN0NBcnd5cEgyWVJKNHZ4bnpUOE1zZGZLRlJtNlZDUDRkYTlnME1zOTRvcWVuMFVCaG9uOVlTTzVjWjhoWXQ3UHpXV3NCX1lqOFd5a0p2SmtxU3ItbnZQN1JHQXpYak9MV19CNmtzS2EwbnZkcjYtaWpOM0JISzgzNVk4eUJTeU1yazNtdWVmX2JKTWxhZlE?oc=5",
+        "fecha": "2026-10-28T11:13:00-05:00"
+      },
+      {
+        "categoria": "Planes en Bogotá",
         "titulo": "¿Vives en Puente Aranda? Agéndate y disfruta 'A 8 tiempos: la cara oculta' que llega a tu localidad el 13 de noviembre",
         "fuente": "Bogota.gov.co",
         "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPa0JpZ3RXWC1xbmowSkwway0zY3FDTkZSU0JKZ1BuZnZpXzkwZ0RwV24wNER0clVZRHczbE9GUVlfU290YUJPUElIUWFaNm5OWUJVRkdnRmIzN3I2Uy1GN1BvZEE0aDB3UzBlNDRtNi0yazVjbzJBVVliSmJmMmd1M1JucmYwTVVZWnBXMGVlblNwYUNLaUIxbEdZeDhoUlN3NkUtTkYtMGVXdw?oc=5",
@@ -407,20 +421,6 @@
         "fuente": "Bogota.gov.co",
         "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNd2prUWhsa3hGSlpBbVRYRDl2eWNkRFNZQi1POXotZFQ2aGFvblZDeTdoYl83N0VPX1NVZVU5RC1ER0cxTl9nek9KREkwNXdpMEQ2SVhJMmdZYTBqRHVaU3Mwd3R3T0JmUmlpaU1ZV0dlWDBiMmRQYTgyd08zS3ltWktPLXVlODNVbktwUVItTGJ2eXRmVHhleGxXVmtWNGFPNi1NY0ZHeDNna015VGIxTHRCbmU?oc=5",
         "fecha": "2026-10-28T09:35:00-05:00"
-      },
-      {
-        "categoria": "Planes en Bogotá",
-        "titulo": "Anuncio para Santa Fe y Millonarios: concierto se va de El Campín en noviembre y otro cambiaría de fecha",
-        "fuente": "Revista Semana",
-        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNajhhaThUcllSR3ZiR19iejJselpXWVItWG9BNDZ3LW8zeEpxenpGRm9VRm05MTZkYl9IN1hGZUFzMFBvS2lnUXJiNlNpZWx0SWdOMHlnazN4bUV6clh2eXMwWWNnbkR6SFFYYXljek5yVEJPdFNuRFV4YXUydFZ0TnhMaFllTkZyaTd1endLWVFmRTZXTlFuRnVpcEU4XzlPSS1pMUhGb2MzZzJJelp0RDdsX1VSTzBZUXRXdldSV2toaTY1YThDQ0IySHJ6LVE0LXptbGtudDRyLTRjdGtsd1g3MDF2bXPSAewBQVVfeXFMTS04TDlKbllTa2IyZmVTbEZramtYak9NOEdXeDVwenpQc2xRSEhmb1Y0Q29sQ3BJeHdwTFVYTDFLMUtZUkh0UHllMWFRUjdOdF9tR05UZTd0REVuWXE3SWhkaW4xSGpjaUFmVzJuaDgwTnFHS1JHeE5JOGU5Tm9Ua0FFT1hITVY0bGxxVlA4NUNQVFpTOWp5VWFmVURWU1BQenlOeUlIbWctcDk0MVEwY29TNVlVRnh5M004bHgwOTcxYVg4TFJuUjh4dDdFaEhaRmN5akhyMTcybEVkY05XYTVkWUdrbjM1ZzJoOXU?oc=5",
-        "fecha": "2026-10-28T09:23:08-05:00"
-      },
-      {
-        "categoria": "Planes en Bogotá",
-        "titulo": "Conoce los dos planes de ARTEFACTUM de Idartes con los que cierra octubre: contextos campesinos y sensibilidad femenina",
-        "fuente": "Bogota.gov.co",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPR0w0SXVpdDFqNmpEUTZBUU5SNFhaRHNvUFJHQUF3c2x4VXV2cDNzR2J2Y3Juel9QWVl3OGNoUlJtbGJiV2lQRTV5U1dSekdiWWZtMC1naVZibWJScDRGODdNMmM2cVE2U2k4aFBFcms5Qi1SbXZZZ2x5QmJWX2ZoUWhMTE1zSmtfeTgxMmRzcGlwbHRfMlBxYW9yR1MtUTVBUk0xOGpWREpoWmdJaTFRUzJsaFhtY0k?oc=5",
-        "fecha": "2026-10-28T08:48:12-05:00"
       }
     ],
     "ve": [
@@ -496,17 +496,17 @@
       },
       {
         "categoria": "Empresas",
-        "titulo": "Desde US$699 el boleto: Avior Airlines conectará a Anzoátegui con Miami a partir del #20Nov",
-        "fuente": "Banca y Negocios",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM2lHTmpHQTJuZDRHdDRvTXFHNF9od0VSZlNVU29rWmtkbnRiUTI5VGRzamlZc1FLd29aUGdMdTE1UjcxREhhZ1REcnRrVGs3YUF2LWNQMWlMcUp6ZVh2WmRkM3NiY05vUVctWDF6c01GbUdkNS1WM2R2aWhHQy00RjJRVnplaVl2YlFDYV9CSjQtNXJYZ255bFZqemFfMjVndXBTVGM5VjFZUWVQZHhoTW9WTnZ1cDBLaE13Ng?oc=5",
-        "fecha": "2026-10-27T15:00:25-05:00"
-      },
-      {
-        "categoria": "Empresas",
         "titulo": "Trump asegura que Venezuela le envió un millón de barriles de petróleo como “regalo” para EE.UU.",
         "fuente": "Bloomberg Línea",
         "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQMXVqOHRfckhPVWhhXzVHck13ckduS3BVNkFTWnE3YmRpUmVmaTFxbks4Q0VuMDIxUkx2amVHMDJiWERvTFlOUmhkV216QVNIYmtzdUlsRV9NRzVVTGVmOUNVS0dlYWpzNS1qSndUc1Jyemsxa09KMjhJdFB5Rm01MGE1dThaT2U0YjdVZDI3Z090b2JVQjkza1lZLUFCeTJxNkFvdXVSODk2M1VmcmhWam96WFhwT2wwVmpUM1BSSFU5Y19WWFJ2Y1U1YU9CREdZLUpLNWVaa0R2QWR0dkHSAfIBQVVfeXFMUF9vN1BlN01iV1N0Q0Q5Q2FXc0lYRGxBNWlyRlF3SEhjaDhUQkc0MXhjU05mZm5UdU5nbDJyU3hfelAwYUZuSHJVOE5LOFpNSy16eG1vV0pncnFROUVmbDhfaHZVRUpfNkhrNXdiNC1yVHBHc1VHd1VPN1BDYWlqR0ZpZ3hGUGwxSEE1RmxMbVFYOUJJY212RVpSNHF2WGE3QXhZaTBBYm9VVDYxa1hIQzBJOWJHRXYxY2ZQYlpDN0RBaHB5MlA5N3FqZDBROXQzUk14WVd2Q3RLeFAwbFdGOU9xOGp3WnRMUFdydTVHcTN3c1E?oc=5",
         "fecha": "2026-10-27T14:45:05-05:00"
+      },
+      {
+        "categoria": "Empresas",
+        "titulo": "Reuters: Primer cargamento de petróleo del acuerdo entre EE.UU. y Venezuela será vendido a Exxon y Citgo",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPVXEzVmQxMFJTM1lON1NrVHNiNU0zSnQtRTZhdklVYmI3VXRWZlJpYVdyNUdNV3FQR3dKUUUyTXZadDlENkNid3dBS2pjTlJXYmw4YWwzUWVLMlNKQU9aSmMwUURfMUdXZ2FBWWFETkxMdHdMVjNQOEhXQ0twY3lENXFKQzN5VW1hSU9LRGVob3lvOVZrVUdLU0UzM2k4a1luaXlGbVp6VGlkOUQxaFMtVWpQSm8ySkhwallnNE9hNDFSa2hCY2dMQ204Yzc4S2c?oc=5",
+        "fecha": "2026-10-27T14:19:04-05:00"
       },
       {
         "categoria": "Petróleo y energía",
@@ -566,13 +566,6 @@
       },
       {
         "categoria": "Sector financiero",
-        "titulo": "India descarta presiones de EEUU sobre sus compras de petróleo ruso",
-        "fuente": "Banca y Negocios",
-        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSDNaOV9JNXY2eU4xd0hpeEdDZTFHUUVVQVF5MGl1akFRRnlkWGh6alZhMVZldFc1RWhsTC1USGY0aDZXYmVDZEtIYjloVDJtMnZOcFlrVjZsYXY2UHhmMld5djBFWDkxT0ZtQk9vZ0laMGtBZ0ROYmxrNi1YWEhGOG9ncHFIZ0JKX0Vybmp1bVBMUEhKUnVEMUlVMTRvZWZz?oc=5",
-        "fecha": "2026-10-27T13:00:25-05:00"
-      },
-      {
-        "categoria": "Sector financiero",
         "titulo": "Venezuela y Acnur fortalecen su cooperación para proteger a refugiados y retornados",
         "fuente": "Banca y Negocios",
         "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVWpjQTd5WXgwek9DLU03aHVoX0pJVjFPZ29VbTVoazlKSExqcmNRelN4WENlX09NZHRnNFdvang1Zmg3dDNaNVJQVVgtMVllM1U5OFZZcFcwQ0JLUGlHU0lUa0ZZVlBPejB0cDlUSVA2RGFwaFNMQkktcGM1by1feHdpaXBGR0NfNUNsdHJBcUl6c00zWGJmVjZNVDRWSnl2QWlLaU5NWWJ4cGpBWVVpT3pfcXBDQQ?oc=5",
@@ -593,6 +586,13 @@
         "fecha": "2026-10-27T11:30:25-05:00"
       },
       {
+        "categoria": "Sector financiero",
+        "titulo": "#Análisis: Las nuevas reglas del juego no escritas para la Banca",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQURHcmRicEdlbHFGalhtZU1fYl9lalp3Q294akVJU2JkM0hzbXlfSi1IN1ZYT1VUT0tqV1VsdGh4d3hHc2RpX2NNaVczUXBoa2RSOEswTk9DczhVd0RBTVN3TFNNN1paaFpsLXRha1YwenZjSHZrUGZhZHJzWnpCNkhtRUdYT2NnTjM0eEpRYWQ0R3o3dFBMUGtB?oc=5",
+        "fecha": "2026-10-27T10:30:25-05:00"
+      },
+      {
         "categoria": "Tecnología",
         "titulo": "Gama avanza en su plan de expansión integral con la transformación de su sucursal San Bernardino",
         "fuente": "Banca y Negocios",
@@ -605,13 +605,6 @@
         "fuente": "Finanzas Digital",
         "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1TSndJZXByUWF1OVRZWmVfbVRNOXprQi15MTJ0UGtHT2k0cTFsYjJ2eWpDR2tIb05TSXBIa1FUNlotNUIyM25qS2ctUHZrNFBUZF9fajhRMVdxQV9Yck9PUkZYSGFzelRNaV9WSWdOZ3luQQ?oc=5",
         "fecha": "2026-10-27T09:56:20-05:00"
-      },
-      {
-        "categoria": "Tecnología",
-        "titulo": "Venezuela ofrece oportunidades de inversión, pero sigue siendo un \"desafío\" identificar los negocios",
-        "fuente": "Banca y Negocios",
-        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQNnVaY3BYNWJnZnJpU2g4ZFZsZURTT1E1UWUxM1VCbURicnczMkZ4NnJTRURXam54cDc5SmM3QjRXbXFldnR4anNubnBqV3FhUHVBNFJoMFJXcE9BckJWQ2ZzRndXRk9ZQzJHamVtQmlxMzZodHFwM080bjlpeTFTcWhuS2VNVTk4WUwtN01mVG0xSWFSVE5lME44SHdlZkxtZ2FERnRSUXdVc05UOGl3S05KS1JwbDdkUk9WSHlWUlY3UmNfRGVVLQ?oc=5",
-        "fecha": "2026-10-27T09:45:25-05:00"
       },
       {
         "categoria": "Tecnología",
@@ -633,6 +626,13 @@
         "fuente": "Banca y Negocios",
         "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaVNtZmJpb3BvSHdlYWgwUVV6V2FSVGNISkVvTXVENDdHd3ZWNUktcHg2SWI3R2xiUmNMTFBkZmd0eDJoRi1HX1pQRWZaYTRDTDZRb1B5TUZGT25GRmtuYkhtUVFwMGExY1ZDWkpfc0ROT0tfZXgwekVMbGY1eC1jWEwtaW54Q0d5emNnMzZzeUhOeEI4dmkxdU1RckpYV1RVZE81M20zNFVPMzl5ajRNT3RWc25Uc29MNldFWVd4S0NNYzZtdWh1SzJrVEc0dVdoYlJnTWoyTDhmZm81SG5sZUlkWQ?oc=5",
         "fecha": "2026-10-27T06:00:25-05:00"
+      },
+      {
+        "categoria": "Tecnología",
+        "titulo": "Latin Pagos: La reinvención del punto de venta en el nuevo mapa comercial venezolano",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPN25OeGlCekVLOHp3OUdaamNsTVpXR0N2endxSDVTd1NOUlFDU3l6MW5ad3dOLXJhUGh0SzVyWXpoUmVFdXBBTkhtS09WZW9nV1ZNcXpjaWNKeGNmcXNzdDBnTHBqLXNtOGE5dElMcjBaWUlvZEVYTmI4WXY3V2JVMURBcHl4ZDFwcWhRWGhOUjN5OFNzYjNTRXAxek9tV1kzQm54SkY5VjlwZ1RHdk1BbDQ1SVE?oc=5",
+        "fecha": "2026-10-27T02:20:55-05:00"
       },
       {
         "categoria": "Emprendimiento",
@@ -720,6 +720,13 @@
       },
       {
         "categoria": "Deportes",
+        "titulo": "Culminan obra vial de gran envergadura en la Troncal 5 del estado Táchira",
+        "fuente": "EL UNIVERSAL",
+        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZ3Y3ODZzVWRFODRZR2gta1ZnSm5vemZRUjBCcEc5VHNUN1Q0MGJTTFdjbTFDNXdMOGRxMEFvYVlIQVh5LWNMdlN5WjdOT2VfclB0WmFSTlJwOGNtVnZPdVRTOUZUd0N1aFRzSkEtZmhzaEdvemxMQzBiRTJrU09vaFJScE9WM2FiVjhJZ3VEZGs4Xy1QbHh5RDU4YW9hWmxtX3prT0l2YUtIR0xzREhSbUlaMGM2R0ZYSnJKeDR6NUVSc1NodkVaWXZnX3IyNTB0R0lfaWF3?oc=5",
+        "fecha": "2026-10-28T11:09:15-05:00"
+      },
+      {
+        "categoria": "Deportes",
         "titulo": "Oswaldo Felizzola afirma que el sector petrolero debe producir su propia energía eléctrica para aliviar la carga",
         "fuente": "EL UNIVERSAL",
         "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPaFhQaGNjVXlfS3lyQk1icjdvTDdUUXJLOFpfb05LRk5QR2FtZlVPa2d6VW5jNXN3Yy1RM3pBVGVUcjdqaWZxSllrQ0hzUklzbTFxRXA3bTNlZFFYMTVUZnB0R2NmT0piMWlUem1tNHlROUxrSWxyU0FSWWpLdXgwV1k2VTlTcGVuZWtrakluYjc0cFNrR2pjZVFFTkxSeVlmRnQtNHV4dlhPUnh6U2M2Q1pzWWtkX1RzenY3dF9RS1JzUmtjaDFRenhvSWFOeVItT3FtMmZyemw?oc=5",
@@ -754,18 +761,18 @@
         "fecha": "2026-10-28T10:11:36-05:00"
       },
       {
-        "categoria": "Deportes",
-        "titulo": "Asesor clave de Marco Rubio para asuntos de Venezuela y Cuba deja el Departamento de Estado para volver al sector privado",
-        "fuente": "EL UNIVERSAL",
-        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPc1RXSlJiUGl1MlQ0M2dmeVBQUDFSYlh4YzRQa0FvWU84aHBkXzdRUHZUQkt0ZnpGZEpUM3NIeEZYWDdYR3FEbmVrbkFWbk9MSjduRDRHeDl6UVlpcW1keFphUzA5V1lpRlFja2FJWFg3ME9qZS0tS3paYjJOTjhTX1d1bjBMeVdWcGFzUUNITU9Ka1FORmlFYnNxY3dVQXJZVHVUbXpZT3o3V0ZTdWM4ZnFENWNCRlZsb29lQVBVcm1vMWVGcTY4Q0pLYWV1UUNVODFVcFR2V1M1cVRyRVh2Uw?oc=5",
-        "fecha": "2026-10-28T09:58:31-05:00"
-      },
-      {
         "categoria": "Planes en Caracas",
         "titulo": "Crisis eléctrica: Delcy Rodríguez promete \"alivio\" mientras protestan en Caracas por apagones de hasta 12 horas",
         "fuente": "El Pitazo",
         "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbGd6aWFfWUdTVkNmLXlkRjk5Rm1sSENBMno4cFdBeVNXNWZuVXZZbHpVT0VxNjhvVFRzTlVrU2FGVlc0bjFtbXBHRjk2a2dtekZsRzl4M2dTLWEzTGY3VE1IYTE1cTBrMFlVSWRrVFhqYWZDcDN6LXZYS0ZlQ3YyR3ZnUU5oU3ViN056MWViajdNVklYRmp2cGVaQTFkcVhtbnBLZFA2andweDJlSHp3dTFkQ0ZqUDVFaHU3ZU1BZ3Y3YmhEMHRxaVl1TFEyLTA4Mm83R0wwcUVuUGNKTnQzNzZiQzUxbTg?oc=5",
         "fecha": "2026-10-28T11:09:00-05:00"
+      },
+      {
+        "categoria": "Planes en Caracas",
+        "titulo": "María Corina, la constancia hecha poder",
+        "fuente": "EL UNIVERSAL",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUTJRRmxGdHpjMjdlY0c1UEstZnVic3VUYzJ5VlNHTWxRNUlCQmFVdG1jQkNQV2NXMjNMMGROUnVYME9QSVZ4Z3E2UFZKM19WR2t5OEhpcU5fZWpERUV6U3NISk85TGhabzFacmFiVXlsSVd4UEdGVGJpX2JfcC01WUtwTTVtMFBNQkNXUktn?oc=5",
+        "fecha": "2026-10-28T08:52:30-05:00"
       },
       {
         "categoria": "Planes en Caracas",
@@ -794,31 +801,28 @@
         "fuente": "El Nacional",
         "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOLWhMbnhXVmI5OHlRcnRPT1hlS2lDQXNpaVN1OW9vaV90SUVLX1NkSUl0eC1jVWx6NlpzM2FqNEt6ZUJKQVRkWENac29FYmhvRWdNel9FOElpdmdTZzVyV0V4eXd4R2llR1BOLXctdV9WR0JEQXBMVWZKaUNHVGJ1ZW9DeGY?oc=5",
         "fecha": "2026-10-28T00:05:20-05:00"
-      },
-      {
-        "categoria": "Planes en Caracas",
-        "titulo": "Portugal | El ministro de Economía y Cohesión Territorial y el viceministro de las Comunidades Portuguesas visitarán Caracas en noviembre",
-        "fuente": "EL UNIVERSAL",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPZmhSSVJ1T2xGMkZ2YnBZTFBMQjQ1TjJ2dHRoM1VFa0dQSmNjaVplUlJzSk1FeXJKNkhCTnBOZHI5TzVmUk9SeFdvbjFiai1BdWhDZG12THhpQk5aYjNqRzQ5dkhBbFpLMWxpNVhHTzZyZVlMNjRhQUM2Yjl1RnR1LVFYLUxzZTZiMVZGc0FPeGN6S2VQazhrVzNZZk13eWJUYWNpalBtNEQxMGdUemZnTF85aURFdHN1YVo4VGo5a2VjMk1oeS1NN1B5ZzU5VHZZRnc?oc=5",
-        "fecha": "2026-10-27T20:17:25-05:00"
       }
     ]
   },
   "resumen": {
     "co": {
-      "titulo": "Euro sube: Europa se queda en 'algún día'",
-      "resumen": "El euro repunta en Colombia y ya se acerca a los $3.500. Traducción: el viaje a Europa cuesta más, y ese plan de 'algún día' se vuelve más lejano. Tu cuenta de ahorros lo siente, aunque el tinto siga costando lo mismo.",
-      "comentario": "Ahorrar para Europa ya no es un plan, es un deporte extremo con marcador en contra.",
-      "imagen": null
+      "titulo": "Euro arriba, quincena abajo",
+      "resumen": "El euro repuntó en Colombia y ya se acerca a los $3.500. Traducción: si sueñas con un viaje a Europa o con algo importado de allá, tu presupuesto va a tener que cuidar cada peso como si fuera el último tinto del mes.",
+      "comentario": "Ahorrar para ir a Europa ya se parece a ahorrar para comprarte un carro: se alarga cada semana.",
+      "imagen": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Euro_coins_line.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+        "pagina": "https://es.wikipedia.org/wiki/Euro",
+        "titulo": "Euro"
+      }
     },
     "ve": {
-      "titulo": "Pasaje a 70 centavos: el bus pide su aumento",
-      "resumen": "Los transportistas proponen subir el pasaje urbano a 70 centavos de dólar y eliminar el subsidio a la gasolina. Traducción: el bus también quiere su aumento, y tu quincena sigue esperando el suyo. Si te moviliza en Metro, en carro por puesto o a pie, la cuenta del mes empieza a sonar como cuenta regresiva.",
-      "comentario": "Lo único que sube más rápido que el pasaje es la cara de angustia al pagarlo.",
+      "titulo": "Pasaje a 70 centavos: ¿y el vuelto?",
+      "resumen": "Transportistas proponen subir el pasaje urbano a 70 centavos de dólar y eliminar el subsidio a la gasolina. Traducción: el bus podría ponerse más caro justo cuando la quincena ya viene flaca. Pásate la cola con cuidado y revisa bien la cartera antes de salir.",
+      "comentario": "Al paso que va, el único vuelto que te darán en el bus será la paciencia.",
       "imagen": {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/TransMio_de_Villa_Nueva_GT.jpg/960px-TransMio_de_Villa_Nueva_GT.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-        "pagina": "https://es.wikipedia.org/wiki/Autob%C3%BAs",
-        "titulo": "Autobús"
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/COP8MOP3_2006_Curitiba_bus_2.jpg/960px-COP8MOP3_2006_Curitiba_bus_2.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+        "pagina": "https://es.wikipedia.org/wiki/Transporte_p%C3%BAblico",
+        "titulo": "Transporte público"
       }
     }
   }
