@@ -52,9 +52,10 @@ PAISES = {
 }
 
 # Si el titular nombra otro país y no el propio, se descarta (evita noticias de Chile, Perú, etc.)
-OTROS_PAISES = ["Chile", "Perú", "Peru", "Brasil", "Argentina", "México", "Mexico", "Ecuador", "Bolivia", "Paraguay",
-                "Uruguay", "Panamá", "Costa Rica", "Guatemala", "Honduras", "El Salvador", "España", "Nicaragua",
-                "República Dominicana", "Cuba", "Brazil"]
+OTROS_PAISES = ["Chile", "chilen", "Perú", "Peru", "peruan", "Brasil", "brasileñ", "Brazil", "Argentin", "México", "Mexico",
+                "mexican", "Ecuador", "ecuatorian", "Bolivia", "bolivian", "Paraguay", "Uruguay", "Panamá", "Costa Rica",
+                "Guatemala", "Honduras", "El Salvador", "España", "español", "Nicaragua", "República Dominicana", "Cuba",
+                "Ucrania", "Rusia", "Noruega", "China", "Japón", "Europa", "HSBC", "Scaloni"]
 NOMBRES_PROPIOS = {"CO": ["Colombia", "colombian", "Bogotá", "Medellín", "Cali", "Barranquilla"],
                    "VE": ["Venezuela", "venezolan", "Caracas", "Maracaibo", "Valencia"]}
 
@@ -63,10 +64,11 @@ def es_de_otro_pais(titulo, gl):
     t = titulo.lower()
     if any(p.lower() in t for p in NOMBRES_PROPIOS[gl]):
         return False
-    return any(re.search(r"\b" + re.escape(p.lower()) + r"\b", t) for p in OTROS_PAISES)
+    return any(re.search(r"\b" + re.escape(p.lower()), t) for p in OTROS_PAISES)
 
 
-POR_CATEGORIA = 6
+POR_CATEGORIA = 6      # noticias finales por categoría
+CANDIDATOS = 10        # se traen más para que la IA pueda descartar
 COL = timezone(timedelta(hours=-5))
 
 
@@ -114,7 +116,7 @@ def noticias_de(pais):
             vistos.add(clave)
             noticias.append({"categoria": cat, **it})
             n += 1
-            if n >= POR_CATEGORIA:
+            if n >= (CANDIDATOS if ANTHROPIC_KEY else POR_CATEGORIA):
                 break
         print(f"[{pais['gl']} · {cat}] {n} noticias")
     return noticias
@@ -215,6 +217,64 @@ def buscar_imagen(termino):
     return None
 
 
+DEFINICIONES = {
+    "Economía": "economía del país: dólar, inflación, tasas, PIB, empleo, impuestos, presupuesto",
+    "Empresas": "empresas del país: resultados, ventas, inversiones, compras, fusiones, cierres, nuevos negocios",
+    "Petróleo y energía": "petróleo, gas, minería, electricidad y energía del país",
+    "Sector financiero": "bancos, bolsa, créditos, ahorro, CDT, seguros, fintech financieras del país",
+    "Tecnología": "tecnología, apps, inteligencia artificial, telecomunicaciones, transformación digital en el país",
+    "Emprendimiento": "startups, emprendedores, pymes, rondas de inversión en el país",
+    "Nuevos CEO": "SOLO nombramientos o salidas de presidentes, CEOs o directivos de EMPRESAS (no de gobierno ni sindicatos)",
+    "Consultoría": "firmas de consultoría y auditoría (McKinsey, Deloitte, EY, PwC, KPMG, etc.) y su actividad en el país",
+    "Deportes": "SOLO deportes: equipos, deportistas, ligas o selecciones del país, o deportistas del país en el exterior",
+    "Planes en Bogotá": "conciertos, festivales, ferias, restaurantes, eventos culturales en Bogotá",
+    "Planes en Caracas": "conciertos, festivales, ferias, restaurantes, eventos culturales en Caracas",
+}
+
+
+def clasificar(pais, codigo, noticias):
+    """La IA revisa cada titular: confirma la categoría, la cambia o lo descarta."""
+    if not noticias:
+        return noticias
+    cats = list(PAISES[codigo]["categorias"].keys())
+    defs = "\n".join(f"- {c}: {DEFINICIONES.get(c, c)}" for c in cats)
+    lista = "\n".join(f"{i}. [{n['categoria']}] {n['titulo']}" for i, n in enumerate(noticias))
+    instruccion = (
+        f"Eres editor de un medio de noticias de negocios de {NOMBRE_PAIS[pais]}. Revisa estos titulares y su categoría.\n\n"
+        f"Categorías válidas:\n{defs}\n\nTitulares:\n{lista}\n\n"
+        "Para cada titular decide UNA de dos cosas:\n"
+        "1. La categoría correcta (de la lista de arriba, escrita exactamente igual).\n"
+        '2. "descartar" si: no es sobre ' + NOMBRE_PAIS[pais] + " ni la afecta directamente; o es de otro país; "
+        "o es política, judicial o de gobierno sin relación con economía o negocios; o no encaja en ninguna categoría.\n"
+        "Sé estricto: ante la duda, descarta.\n"
+        'Responde SOLO con JSON con esta forma: {"0": "Economía", "1": "descartar", ...} incluyendo todos los números.'
+    )
+    respuesta = pedir_ia(instruccion, max_tokens=4000)
+    inicio, fin = respuesta.find("{"), respuesta.rfind("}")
+    decisiones = json.loads(respuesta[inicio: fin + 1])
+    salida, cuenta, descartadas = [], {}, 0
+    for i, n in enumerate(noticias):
+        cat = str(decisiones.get(str(i), n["categoria"])).strip()
+        if cat not in cats:
+            descartadas += 1
+            continue
+        if cuenta.get(cat, 0) >= POR_CATEGORIA:
+            continue
+        cuenta[cat] = cuenta.get(cat, 0) + 1
+        salida.append({**n, "categoria": cat})
+    print(f"[{codigo}] revisión IA: {len(salida)} noticias quedan, {descartadas} descartadas")
+    return salida
+
+
+def recortar(noticias):
+    cuenta, salida = {}, []
+    for n in noticias:
+        if cuenta.get(n["categoria"], 0) < POR_CATEGORIA:
+            cuenta[n["categoria"]] = cuenta.get(n["categoria"], 0) + 1
+            salida.append(n)
+    return salida
+
+
 def resumen_de(paises):
     if not ANTHROPIC_KEY:
         print("Sin resumen: falta el secreto ANTHROPIC_API_KEY")
@@ -233,6 +293,14 @@ def resumen_de(paises):
 
 def main():
     paises = {codigo: noticias_de(pais) for codigo, pais in PAISES.items()}
+    for codigo in paises:
+        if ANTHROPIC_KEY:
+            try:
+                paises[codigo] = clasificar(codigo, codigo, paises[codigo])
+                continue
+            except Exception as e:
+                print(f"[{codigo}] revisión IA con error, se usan las noticias sin revisar: {e}")
+        paises[codigo] = recortar(paises[codigo])
     salida = {"actualizado": datetime.now(COL).isoformat(), "paises": paises, "resumen": resumen_de(paises)}
     with open("news.json", "w", encoding="utf-8") as f:
         json.dump(salida, f, ensure_ascii=False, indent=2)
