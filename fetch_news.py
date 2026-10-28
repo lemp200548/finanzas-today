@@ -243,10 +243,25 @@ def clasificar(pais, codigo, noticias):
         f"Eres editor de un medio de noticias de negocios de {NOMBRE_PAIS[pais]}. Revisa estos titulares y su categoría.\n\n"
         f"Categorías válidas:\n{defs}\n\nTitulares:\n{lista}\n\n"
         "Para cada titular decide UNA de dos cosas:\n"
-        "1. La categoría correcta (de la lista de arriba, escrita exactamente igual).\n"
-        '2. "descartar" si: no es sobre ' + NOMBRE_PAIS[pais] + " ni la afecta directamente; o es de otro país; "
-        "o es política, judicial o de gobierno sin relación con economía o negocios; o no encaja en ninguna categoría.\n"
-        "Sé estricto: ante la duda, descarta.\n"
+        "1. La categoría correcta (de la lista de arriba, escrita exactamente igual). Si está mal clasificado, cámbialo.\n"
+        '2. "descartar".\n\n'
+        "REGLA PRINCIPAL: el titular tiene que tratar EXPLÍCITAMENTE sobre " + NOMBRE_PAIS[pais] + ": mencionar el país, "
+        "una ciudad, región, empresa, institución, equipo o persona de " + NOMBRE_PAIS[pais] + ". "
+        "Si no lo menciona, DESCARTA, aunque sea un tema que 'podría afectar' al país.\n"
+        "Descarta SIEMPRE: noticias de mercados globales (Wall Street, la Fed, Microsoft, Alphabet, bolsas de otros países), "
+        "precios internacionales del petróleo que no mencionen al país, noticias de otros países o ciudades extranjeras, "
+        "y política, judicial o diplomacia sin relación directa con economía o negocios.\n\n"
+        "EJEMPLOS:\n"
+        '- "Petróleo de Texas subió 1,90% tras ataque a refinería saudita" -> descartar (no menciona el país)\n'
+        '- "Wall Street cierra en verde por compra masiva en el sector de la IA" -> descartar\n'
+        '- "Reunión de la Fed y resultados de Microsoft y Alphabet" -> descartar\n'
+        '- "Madrid, Centro Empresarial de Iberoamérica" -> descartar (otra ciudad)\n'
+        '- "Asesor de Marco Rubio deja el Departamento de Estado" -> descartar (política de otro país)\n'
+        '- "Navegantes del Magallanes va de mal en peor" -> Deportes (es béisbol, no economía)\n'
+        '- "Playas de La Guaira reanudarán sus actividades" -> Planes (si existe esa categoría) o descartar\n'
+        '- "Sindicatos petroleros piden mejores salarios en Venezuela" -> Petróleo y energía (no es Nuevos CEO)\n'
+        '- "Inversores privados presentan plan para rescatar plantas de PDVSA" -> Petróleo y energía\n\n'
+        "Ante la duda, descarta. Es mejor mostrar menos noticias que noticias que no son del país.\n"
         'Responde SOLO con JSON con esta forma: {"0": "Economía", "1": "descartar", ...} incluyendo todos los números.'
     )
     respuesta = pedir_ia(instruccion, max_tokens=4000)
