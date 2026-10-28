@@ -62,8 +62,8 @@
 
   .top { display: grid; grid-template-columns: 1.25fr 1fr; gap: 48px; padding: 40px 0 48px; }
   .destacada { border: 1px solid var(--ink); text-decoration: none; display: flex; flex-direction: column; align-self: start; }
-  .destacada .arte { aspect-ratio: 16 / 9; background: var(--orange); position: relative; overflow: hidden; display: flex; align-items: flex-end; padding: 22px; }
-  .destacada .arte::before { content: attr(data-letra); position: absolute; right: -2%; top: -18%; font-weight: 900; font-size: 22rem; line-height: 1; color: var(--sun); letter-spacing: -0.06em; }
+  .destacada .arte { aspect-ratio: 16 / 9; background: var(--fondo, var(--orange)); transition: background .3s ease; position: relative; overflow: hidden; display: flex; align-items: flex-end; padding: 22px; }
+  .destacada .arte::before { content: attr(data-letra); position: absolute; right: -2%; top: -18%; font-weight: 900; font-size: 22rem; line-height: 1; color: var(--letra, var(--sun)); letter-spacing: -0.06em; }
   .destacada .arte .mono { position: relative; background: var(--ink); color: #fff; padding: 6px 10px; font-size: 0.75rem; }
   .destacada .cuerpo { padding: 26px 28px 30px; background: var(--cream); }
   .pill { display: inline-block; border: 1.5px solid var(--blue); color: var(--blue); border-radius: 999px; padding: 4px 12px; font-size: 0.72rem; font-weight: 600; margin-bottom: 14px; }
@@ -201,6 +201,21 @@
       '<div class="meta mono">' + esc(n.fuente) + ' | ' + esc(hace(n.fecha)) + '</div></a>';
   }
 
+  // Color de la noticia destacada según la categoría: [fondo, letra]
+  var COLORES = {
+    'Economía': ['#1F5BD8', '#8DB6FF'],
+    'Empresas': ['#1E8E5A', '#9BE3BD'],
+    'Petróleo y energía': ['#1C1C1C', '#F4BE6A'],
+    'Sector financiero': ['#5B3FD1', '#C2B3FF'],
+    'Tecnología': ['#0E8A9A', '#93E6F0'],
+    'Emprendimiento': ['#EE7350', '#F4BE6A'],
+    'Nuevos CEO': ['#C8323C', '#FFA3A8'],
+    'Consultoría': ['#14315E', '#7FB0FF'],
+    'Deportes': ['#2E7D32', '#B4E8B6'],
+    'Planes en Bogotá': ['#D6457A', '#FFC0D6'],
+    'Planes en Caracas': ['#D6457A', '#FFC0D6']
+  };
+
   function pintar() {
     document.querySelectorAll('.pais').forEach(function (b) { b.classList.toggle('on', b.dataset.pais === pais); });
     var lista = ((datos.paises && datos.paises[pais]) || []).slice();
@@ -217,7 +232,11 @@
 
     var d = recientes.find(function (n) { return !/Planes|Deportes/.test(n.categoria); }) || recientes[0];
     $('destacada').href = d.link;
-    $('destacada').querySelector('.arte').dataset.letra = (d.categoria || 'F').charAt(0);
+    var arte = $('destacada').querySelector('.arte');
+    var col = COLORES[d.categoria] || ['#EE7350', '#F4BE6A'];
+    arte.dataset.letra = (d.categoria || 'F').charAt(0);
+    arte.style.setProperty('--fondo', col[0]);
+    arte.style.setProperty('--letra', col[1]);
     $('d-cat').textContent = d.categoria;
     $('d-titulo').textContent = d.titulo;
     $('d-meta').textContent = d.fuente + ' | ' + hace(d.fecha);
