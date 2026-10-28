@@ -101,6 +101,15 @@
     .hero .wrap, .top { grid-template-columns: 1fr; gap: 32px; }
     .destacada .arte::before { font-size: 14rem; }
   }
+
+  /* Lo último: lista numerada (estilo propio) */
+  .lt { display: grid; grid-template-columns: 48px 1fr; gap: 14px; text-decoration: none; padding: 18px 0; border-bottom: 1px solid var(--line); }
+  .lt-n { font-weight: 800; font-size: 1.9rem; line-height: 1; color: #C9D3E6; letter-spacing: -0.03em; padding-top: 2px; }
+  .lt:hover .lt-n { color: var(--blue); }
+  .lt-cat { color: var(--blue); font-weight: 700; font-size: 0.85rem; }
+  .lt h3 { font-weight: 700; font-size: 1.2rem; line-height: 1.28; letter-spacing: -0.01em; margin: 4px 0 6px; }
+  .lt:hover h3 { text-decoration: underline; }
+  .lt-meta { font-size: 0.85rem; color: var(--muted); }
 </style>
 </head>
 <body>
@@ -194,6 +203,27 @@
     return new Date(iso).toLocaleDateString('es-CO', { day: 'numeric', month: 'short', timeZone: 'America/Bogota' });
   }
 
+  var FUENTES = {
+    'larepublica.co': 'La República', 'portafolio.co': 'Portafolio', 'bloomberglinea.com': 'Bloomberg Línea',
+    'valoraanalitik.com': 'Valora Analitik', 'eltiempo.com': 'El Tiempo', 'semana.com': 'Semana',
+    'elcolombiano.com': 'El Colombiano', 'forbes.co': 'Forbes Colombia', 'impactotic.co': 'Impacto TIC',
+    'enter.co': 'Enter.co', 'infobae.com': 'Infobae', 'elespectador.com': 'El Espectador', 'futbolred.com': 'Futbolred',
+    'bogota.gov.co': 'Bogotá.gov.co', 'civico.com': 'Cívico', 'timeout.com': 'Time Out',
+    'bancaynegocios.com': 'Banca y Negocios', 'finanzasdigital.com': 'Finanzas Digital', 'descifrado.com': 'Descifrado',
+    'eluniversal.com': 'El Universal', 'elestimulo.com': 'El Estímulo', 'talcualdigital.com': 'TalCual',
+    'efectococuyo.com': 'Efecto Cocuyo', 'elnacional.com': 'El Nacional', 'elpitazo.net': 'El Pitazo',
+    'meridiano.net': 'Meridiano', 'liderendeportes.com': 'Líder en Deportes'
+  };
+  function fuente(f) { var k = (f || '').toLowerCase().replace(/^www\./, ''); return FUENTES[k] || f || ''; }
+
+  function itemLatest(n, i) {
+    return '<a class="lt" href="' + esc(n.link) + '" target="_blank" rel="noopener">' +
+      '<div class="lt-n">' + (i < 9 ? '0' : '') + (i + 1) + '</div>' +
+      '<div><div class="lt-cat">' + esc(n.categoria) + '</div>' +
+      '<h3>' + esc(n.titulo) + '</h3>' +
+      '<div class="lt-meta">' + esc(fuente(n.fuente)) + ' · ' + esc(hace(n.fecha)) + '</div></div></a>';
+  }
+
   function item(n) {
     return '<a class="item" data-cat="' + esc(n.categoria) + '" href="' + esc(n.link) + '" target="_blank" rel="noopener">' +
       '<div class="cat">' + esc(n.categoria) + '</div>' +
@@ -202,18 +232,19 @@
   }
 
   // Color de la noticia destacada según la categoría: [fondo, letra]
+  // [fondo, color del símbolo, símbolo]
   var COLORES = {
-    'Economía': ['#1F5BD8', '#8DB6FF'],
-    'Empresas': ['#1E8E5A', '#9BE3BD'],
-    'Petróleo y energía': ['#1C1C1C', '#F4BE6A'],
-    'Sector financiero': ['#5B3FD1', '#C2B3FF'],
-    'Tecnología': ['#0E8A9A', '#93E6F0'],
-    'Emprendimiento': ['#EE7350', '#F4BE6A'],
-    'Nuevos CEO': ['#C8323C', '#FFA3A8'],
-    'Consultoría': ['#14315E', '#7FB0FF'],
-    'Deportes': ['#2E7D32', '#B4E8B6'],
-    'Planes en Bogotá': ['#D6457A', '#FFC0D6'],
-    'Planes en Caracas': ['#D6457A', '#FFC0D6']
+    'Economía': ['#1F5BD8', '#8DB6FF', '$'],
+    'Empresas': ['#1E8E5A', '#9BE3BD', '&'],
+    'Petróleo y energía': ['#1C1C1C', '#F4BE6A', 'P'],
+    'Sector financiero': ['#5B3FD1', '#C2B3FF', '%'],
+    'Tecnología': ['#0E8A9A', '#93E6F0', '@'],
+    'Emprendimiento': ['#EE7350', '#F4BE6A', '↗'],
+    'Nuevos CEO': ['#C8323C', '#FFA3A8', 'C'],
+    'Consultoría': ['#14315E', '#7FB0FF', '?'],
+    'Deportes': ['#2E7D32', '#B4E8B6', '#'],
+    'Planes en Bogotá': ['#D6457A', '#FFC0D6', '!'],
+    'Planes en Caracas': ['#D6457A', '#FFC0D6', '!']
   };
 
   function pintar() {
@@ -233,15 +264,15 @@
     var d = recientes.find(function (n) { return !/Planes|Deportes/.test(n.categoria); }) || recientes[0];
     $('destacada').href = d.link;
     var arte = $('destacada').querySelector('.arte');
-    var col = COLORES[d.categoria] || ['#EE7350', '#F4BE6A'];
-    arte.dataset.letra = (d.categoria || 'F').charAt(0);
+    var col = COLORES[d.categoria] || ['#EE7350', '#F4BE6A', (d.categoria || 'F').charAt(0)];
+    arte.dataset.letra = col[2];
     arte.style.setProperty('--fondo', col[0]);
     arte.style.setProperty('--letra', col[1]);
     $('d-cat').textContent = d.categoria;
     $('d-titulo').textContent = d.titulo;
-    $('d-meta').textContent = d.fuente + ' | ' + hace(d.fecha);
+    $('d-meta').textContent = fuente(d.fuente) + ' | ' + hace(d.fecha);
 
-    $('latest').innerHTML = recientes.filter(function (n) { return n !== d; }).slice(0, 5).map(item).join('');
+    $('latest').innerHTML = recientes.filter(function (n) { return n !== d; }).slice(0, 5).map(itemLatest).join('');
 
     var cats = ['Todas'];
     lista.forEach(function (n) { if (cats.indexOf(n.categoria) < 0) cats.push(n.categoria); });
