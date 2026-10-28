@@ -8,7 +8,7 @@ SUPABASE_URL = os.environ.get("SUPABASE_URL", "").rstrip("/")
 SERVICE_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
 BREVO_KEY = os.environ.get("BREVO_API_KEY", "")
 SENDER_EMAIL = os.environ.get("SENDER_EMAIL", "")
-SENDER_NAME = os.environ.get("SENDER_NAME", "Finanzas Today")
+SENDER_NAME = os.environ.get("SENDER_NAME", "Finanzas Express")
 SITE = os.environ.get("SITE_URL", "https://lemp200548.github.io/finanzas-today/")
 POR_CATEGORIA = 2
 COL = timezone(timedelta(hours=-5))
@@ -35,33 +35,47 @@ def usuarios():
         pagina += 1
 
 
-def correo_html(noticias, pais):
-    hoy = datetime.now(COL)
-    fecha = f"{hoy.day} de {MESES[hoy.month - 1]} de {hoy.year}"
-    nombre_pais = "Venezuela" if pais == "ve" else "Colombia"
+def bloque_pais(noticias, analisis, pais, con_titulo):
     por_cat = {}
     for n in noticias:
         por_cat.setdefault(n["categoria"], [])
         if len(por_cat[n["categoria"]]) < POR_CATEGORIA:
             por_cat[n["categoria"]].append(n)
     bloques = ""
+    if con_titulo:
+        bandera = "🇻🇪 Venezuela" if pais == "ve" else "🇨🇴 Colombia"
+        bloques += f'''<tr><td style="padding:26px 0 4px"><div style="font-size:22px;font-weight:900;letter-spacing:-0.5px">{bandera}</div></td></tr>'''
     for cat, items in por_cat.items():
+        texto = (analisis or {}).get(cat)
+        caja = (f'''<div style="background:#F8F7F3;border-left:3px solid #1F5BD8;padding:10px 14px;margin:2px 0 14px;font-size:15px;line-height:1.5;color:#222">{html.escape(texto)}</div>'''
+                if texto else "")
         filas = "".join(
             f'''<tr><td style="padding:0 0 16px">
               <a href="{html.escape(n['link'])}" style="color:#111;text-decoration:none;font-size:18px;font-weight:800;line-height:1.3">{html.escape(n['titulo'])}</a>
-              <div style="font-family:Menlo,monospace;font-size:11px;color:#5E6470;letter-spacing:1px;text-transform:uppercase;margin-top:4px">{html.escape(n['fuente'])}</div>
+              <div style="font-size:13px;color:#5E6470;margin-top:4px">{html.escape(n['fuente'])}</div>
             </td></tr>''' for n in items)
         bloques += f'''
-          <tr><td style="padding:22px 0 10px;border-top:1px solid #E4E6EB">
+          <tr><td style="padding:22px 0 8px;border-top:1px solid #E4E6EB">
             <div style="color:#1F5BD8;font-weight:800;font-size:13px;letter-spacing:1px;text-transform:uppercase">{html.escape(cat)}</div>
+            {caja}
           </td></tr>{filas}'''
+    return bloques
+
+
+def correo_html(secciones):
+    """secciones: lista de (pais, noticias, analisis)."""
+    hoy = datetime.now(COL)
+    fecha = f"{hoy.day} de {MESES[hoy.month - 1]} de {hoy.year}"
+    varios = len(secciones) > 1
+    etiqueta = "Colombia y Venezuela" if varios else ("Venezuela" if secciones[0][0] == "ve" else "Colombia")
+    bloques = "".join(bloque_pais(n, a, p, varios) for p, n, a in secciones)
     return f'''<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"></head><body style="margin:0;background:#F8F7F3;font-family:Helvetica,Arial,sans-serif;color:#111">
 <table width="100%" cellpadding="0" cellspacing="0" style="background:#F8F7F3"><tr><td align="center">
 <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#fff;border:1px solid #111">
   <tr><td style="height:8px;background:#1F5BD8"></td></tr>
   <tr><td style="padding:28px 28px 8px">
-    <div style="font-size:26px;font-weight:900;letter-spacing:-1px">Finanzas<span style="color:#1F5BD8">Today</span></div>
-    <div style="font-family:Menlo,monospace;font-size:11px;color:#5E6470;letter-spacing:1px;text-transform:uppercase;margin-top:6px">{fecha} · {nombre_pais}</div>
+    <div style="font-size:26px;font-weight:900;letter-spacing:-1px">Finanzas<span style="color:#1F5BD8">Express</span></div>
+    <div style="font-family:Menlo,monospace;font-size:11px;color:#5E6470;letter-spacing:1px;text-transform:uppercase;margin-top:6px">{fecha} · {etiqueta}</div>
     <div style="font-size:22px;font-weight:800;margin-top:18px;line-height:1.2">Vuélvete más informado en 3 minutos ☕</div>
     <div style="color:#5E6470;font-size:15px;margin-top:6px">Esto es lo que tienes que saber hoy.</div>
   </td></tr>
@@ -70,7 +84,7 @@ def correo_html(noticias, pais):
     <a href="{SITE}" style="display:inline-block;background:#1F5BD8;color:#fff;text-decoration:none;font-weight:800;padding:14px 26px;border-radius:8px">Ver todas las noticias →</a>
   </td></tr>
   <tr><td style="padding:18px 28px;border-top:1px solid #E4E6EB;font-size:12px;color:#5E6470" align="center">
-    Recibes este correo porque te suscribiste a Finanzas Today.<br>
+    Recibes este correo porque te suscribiste a Finanzas Express.<br>
     <a href="{SITE}baja.html" style="color:#5E6470">Dejar de recibir correos o cambiar de país</a>
   </td></tr>
 </table></td></tr></table></body></html>'''
@@ -86,14 +100,22 @@ def main():
     with open("news.json", encoding="utf-8") as f:
         datos = json.load(f)
     paises = datos.get("paises", {})
-    html_por_pais, asunto_por_pais = {}, {}
-    for p, lista in paises.items():
-        if not lista:
-            continue
+    analisis = datos.get("analisis", {})
+
+    def asunto(lista):
         recientes = sorted(lista, key=lambda n: n.get("fecha") or "", reverse=True)
         principal = next((n for n in recientes if "Planes" not in n["categoria"] and "Deportes" not in n["categoria"]), recientes[0])
-        html_por_pais[p] = correo_html(lista, p)
-        asunto_por_pais[p] = "☕ " + principal["titulo"][:90]
+        return "☕ " + principal["titulo"][:90]
+
+    html_por_pais, asunto_por_pais = {}, {}
+    for p, lista in paises.items():
+        if lista:
+            html_por_pais[p] = correo_html([(p, lista, analisis.get(p))])
+            asunto_por_pais[p] = asunto(lista)
+    ambos = [(p, paises[p], analisis.get(p)) for p in ("co", "ve") if paises.get(p)]
+    if ambos:
+        html_por_pais["ambos"] = correo_html(ambos)
+        asunto_por_pais["ambos"] = asunto(ambos[0][1])
 
     enviados = saltados = errores = 0
     for u in usuarios():

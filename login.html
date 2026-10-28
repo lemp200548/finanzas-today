@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Finanzas Today · Tu cuenta</title>
+<title>Finanzas Express · Tu cuenta</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
 </head>
 <body>
 <div class="topbar"></div>
-<header><div class="in"><a class="logo" href="index.html">Finanzas<span>Today</span></a></div></header>
+<header><div class="in"><a class="logo" href="index.html">Finanzas<span>Express</span></a></div></header>
 
 <div class="box">
   <div class="card">
@@ -59,6 +59,7 @@
         <select id="pais">
           <option value="co">🇨🇴 Colombia</option>
           <option value="ve">🇻🇪 Venezuela</option>
+          <option value="ambos">🇨🇴🇻🇪 Ambos</option>
         </select>
       </div>
       <label for="correo">Correo</label>
@@ -114,7 +115,7 @@
           options: { data: { username: $('usuario').value.trim(), pais: $('pais').value, newsletter: true }, emailRedirectTo: inicio }
         });
         if (r.error) throw r.error;
-        try { localStorage.setItem('pais', $('pais').value); } catch (e) {}
+        try { if ($('pais').value !== 'ambos') localStorage.setItem('pais', $('pais').value); } catch (e) {}
         if (r.data.session) { location.href = inicio; return; }
         mostrar('¡Listo! Te mandamos un correo para confirmar tu cuenta. Ábrelo y haz clic en el link.', 'ok');
       } else {

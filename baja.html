@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Finanzas Today · Tus correos</title>
+<title>Finanzas Express · Tus correos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
 </head>
 <body>
 <div class="topbar"></div>
-<header><div class="in"><a class="logo" href="index.html">Finanzas<span>Today</span></a></div></header>
+<header><div class="in"><a class="logo" href="index.html">Finanzas<span>Express</span></a></div></header>
 <div class="box">
   <div class="card">
     <h1>Tus correos</h1>
@@ -47,7 +47,7 @@
     <div id="panel" class="hidden">
       <div class="fila"><span><b>Recibir las noticias cada mañana</b></span><input type="checkbox" id="news"></div>
       <label for="pais">País de las noticias</label>
-      <select id="pais"><option value="co">🇨🇴 Colombia</option><option value="ve">🇻🇪 Venezuela</option></select>
+      <select id="pais"><option value="co">🇨🇴 Colombia</option><option value="ve">🇻🇪 Venezuela</option><option value="ambos">🇨🇴🇻🇪 Ambos</option></select>
       <button class="btn" id="guardar">Guardar</button>
     </div>
     <div class="msg" id="msg"></div>
@@ -68,7 +68,7 @@
     var m = user.user_metadata || {};
     $('sub').textContent = 'Cuenta: ' + user.email;
     $('news').checked = m.newsletter !== false;
-    $('pais').value = m.pais === 've' ? 've' : 'co';
+    $('pais').value = (m.pais === 've' || m.pais === 'ambos') ? m.pais : 'co';
     $('panel').classList.remove('hidden');
     $('guardar').onclick = async function () {
       var u = await sb.auth.updateUser({ data: { newsletter: $('news').checked, pais: $('pais').value } });

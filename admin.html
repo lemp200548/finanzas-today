@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
-<title>Finanzas Today · Panel</title>
+<title>Finanzas Express · Panel</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -64,7 +64,7 @@
 </head>
 <body>
 <div class="topbar"></div>
-<header><div class="in"><a class="logo" href="index.html">Finanzas<span>Today</span></a><button class="salir hidden" id="salir">Cerrar sesión</button></div></header>
+<header><div class="in"><a class="logo" href="index.html">Finanzas<span>Express</span></a><button class="salir hidden" id="salir">Cerrar sesión</button></div></header>
 <div class="main">
   <div id="estado" class="aviso">Cargando…</div>
   <div id="panel" class="hidden">
@@ -136,7 +136,7 @@
     $('dias').innerHTML = dias.map(function (x) { return '<span>' + x.dia.slice(8) + '/' + x.dia.slice(5, 7) + '</span>'; }).join('');
 
     $('usuarios').innerHTML = (d.ultimos_usuarios || []).map(function (u) {
-      return '<tr><td><b>@' + esc(u.usuario || '—') + '</b></td><td>' + esc(u.email) + '</td><td>' + (u.pais === 've' ? '🇻🇪' : '🇨🇴') + '</td><td>' +
+      return '<tr><td><b>@' + esc(u.usuario || '—') + '</b></td><td>' + esc(u.email) + '</td><td>' + (u.pais === 've' ? '🇻🇪' : u.pais === 'ambos' ? '🇨🇴🇻🇪' : '🇨🇴') + '</td><td>' +
         esc(new Date(u.creado).toLocaleString('es-CO', { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' })) + '</td></tr>';
     }).join('') || '<tr><td colspan="4">Todavía no hay usuarios.</td></tr>';
   })();
