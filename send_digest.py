@@ -39,7 +39,7 @@ def bloque_pais(noticias, resumen, pais, con_titulo):
     """Si hay resumen del día, el correo lleva SOLO el resumen. Si no, lleva los titulares (respaldo)."""
     bloques = ""
     if con_titulo:
-        bandera = "🇻🇪 Venezuela" if pais == "ve" else "🇨🇴 Colombia"
+        bandera = {"ve": "Venezuela", "cl": "Chile"}.get(pais, "Colombia")
         bloques += f'''<tr><td style="padding:22px 0 6px"><div style="font-size:20px;font-weight:900;letter-spacing:-0.5px">{bandera}</div></td></tr>'''
     if resumen and resumen.get("resumen"):
         ironia = (f'''<div style="margin-top:14px;padding-top:14px;border-top:1px solid #E4E6EB;font-style:italic;color:#8A5A00;font-size:16px;line-height:1.5">{html.escape(resumen.get("comentario", ""))}</div>'''
@@ -82,7 +82,9 @@ def correo_html(secciones):
     hoy = datetime.now(COL)
     fecha = f"{hoy.day} de {MESES[hoy.month - 1]} de {hoy.year}"
     varios = len(secciones) > 1
-    etiqueta = "Colombia y Venezuela" if varios else ("Venezuela" if secciones[0][0] == "ve" else "Colombia")
+    nombres = {"co": "Colombia", "ve": "Venezuela", "cl": "Chile"}
+    lista_nombres = [nombres.get(p, p) for p, _, _ in secciones]
+    etiqueta = (", ".join(lista_nombres[:-1]) + " y " + lista_nombres[-1]) if varios else lista_nombres[0]
     bloques = "".join(bloque_pais(n, a, p, varios) for p, n, a in secciones)
     return f'''<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"></head><body style="margin:0;background:#F8F7F3;font-family:Helvetica,Arial,sans-serif;color:#111">
 <table width="100%" cellpadding="0" cellspacing="0" style="background:#F8F7F3"><tr><td align="center">
@@ -129,7 +131,7 @@ def main():
         if lista:
             html_por_pais[p] = correo_html([(p, lista, resumenes.get(p))])
             asunto_por_pais[p] = asunto(lista, resumenes.get(p))
-    ambos = [(p, paises[p], resumenes.get(p)) for p in ("co", "ve") if paises.get(p)]
+    ambos = [(p, paises[p], resumenes.get(p)) for p in ("co", "ve", "cl") if paises.get(p)]
     if ambos:
         html_por_pais["ambos"] = correo_html(ambos)
         asunto_por_pais["ambos"] = asunto(ambos[0][1], ambos[0][2])

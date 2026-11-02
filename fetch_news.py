@@ -15,6 +15,12 @@ VE_NEGOCIOS = ["bancaynegocios.com", "finanzasdigital.com", "descifrado.com", "b
                "eluniversal.com", "elestimulo.com", "talcualdigital.com", "efectococuyo.com", "elnacional.com"]
 CO_TRENDING = ["eltiempo.com", "semana.com", "infobae.com", "elespectador.com", "pulzo.com", "elcolombiano.com"]
 VE_TRENDING = ["eluniversal.com", "elnacional.com", "elestimulo.com", "efectococuyo.com", "elpitazo.net"]
+CL_NEGOCIOS = ["df.cl", "emol.com", "latercera.com", "biobiochile.cl", "elmostrador.cl", "cooperativa.cl",
+               "ex-ante.cl", "pauta.cl", "bloomberglinea.com", "elmercurio.com"]
+CL_TECNOLOGIA = CL_NEGOCIOS + ["fayerwayer.com", "chocale.cl"]
+CL_DEPORTES = ["latercera.com", "emol.com", "biobiochile.cl", "redgol.cl", "alairelibre.cl", "cooperativa.cl"]
+CL_PLANES = ["latercera.com", "emol.com", "biobiochile.cl", "timeout.com", "elmostrador.cl", "cooperativa.cl"]
+CL_TRENDING = ["latercera.com", "emol.com", "biobiochile.cl", "cooperativa.cl", "elmostrador.cl"]
 CO_DEPORTES = ["eltiempo.com", "semana.com", "elcolombiano.com", "futbolred.com", "infobae.com", "elespectador.com"]
 VE_DEPORTES = ["meridiano.net", "liderendeportes.com", "eluniversal.com", "elnacional.com", "elestimulo.com"]
 VE_PLANES = ["eluniversal.com", "elestimulo.com", "efectococuyo.com", "elnacional.com", "elpitazo.net"]
@@ -53,15 +59,32 @@ PAISES = {
             "Planes en Caracas": ("planes OR concierto OR festival OR feria OR evento OR restaurante", "Caracas", VE_PLANES, 3),
         },
     },
+    "cl": {
+        "gl": "CL",
+        "categorias": {
+            "Economía": ('dólar OR inflación OR "Banco Central" OR IPC OR economía OR PIB OR "tasa de interés"', "Chile", CL_NEGOCIOS, 1),
+            "Empresas": ("empresa OR compañía OR ventas OR utilidades OR adquisición OR fusión OR retail", "Chile", CL_NEGOCIOS, 1),
+            "Minería y energía": ("cobre OR litio OR Codelco OR SQM OR minería OR energía OR ENAP", "Chile", CL_NEGOCIOS, 1),
+            "Sector financiero": ('bancos OR AFP OR "Bolsa de Santiago" OR CMF OR crédito OR fondos', "Chile", CL_NEGOCIOS, 1),
+            "Tecnología": ('tecnología OR "inteligencia artificial" OR fintech OR digital OR app OR startup', "Chile", CL_TECNOLOGIA, 1),
+            "Emprendimiento": ('startup OR emprendimiento OR emprendedores OR "ronda de inversión" OR pymes', "Chile", CL_TECNOLOGIA, 3),
+            "Nuevos CEO": ('"nuevo gerente general" OR "nuevo CEO" OR nombramiento OR "asume como" OR "nuevo presidente"', "Chile", CL_NEGOCIOS, 2),
+            "Consultoría": ("consultoría OR consultora OR McKinsey OR Deloitte OR EY OR PwC OR KPMG", "Chile", CL_NEGOCIOS, 3),
+            "Deportes": ('fútbol OR "La Roja" OR "Colo-Colo" OR "Universidad de Chile" OR tenis OR deportes', "Chile", CL_DEPORTES, 1),
+            "Trending": ('viral OR tendencia OR "redes sociales" OR famosos OR farándula OR TikTok OR influencer', "Chile", CL_TRENDING, 1),
+            "Planes en Santiago": ('panoramas OR concierto OR festival OR feria OR evento OR restaurante', "Santiago", CL_PLANES, 3),
+        },
+    },
 }
 
 # Si el titular nombra otro país y no el propio, se descarta (evita noticias de Chile, Perú, etc.)
-OTROS_PAISES = ["Chile", "chilen", "Perú", "Peru", "peruan", "Brasil", "brasileñ", "Brazil", "Argentin", "México", "Mexico",
+OTROS_PAISES = ["Chile", "chilen", "Colombia", "colombian", "Venezuela", "venezolan", "Perú", "Peru", "peruan", "Brasil", "brasileñ", "Brazil", "Argentin", "México", "Mexico",
                 "mexican", "Ecuador", "ecuatorian", "Bolivia", "bolivian", "Paraguay", "Uruguay", "Panamá", "Costa Rica",
                 "Guatemala", "Honduras", "El Salvador", "España", "español", "Nicaragua", "República Dominicana", "Cuba",
                 "Ucrania", "Rusia", "Noruega", "China", "Japón", "Europa", "HSBC", "Scaloni"]
 NOMBRES_PROPIOS = {"CO": ["Colombia", "colombian", "Bogotá", "Medellín", "Cali", "Barranquilla"],
-                   "VE": ["Venezuela", "venezolan", "Caracas", "Maracaibo", "Valencia"]}
+                   "VE": ["Venezuela", "venezolan", "Caracas", "Maracaibo", "Valencia"],
+                   "CL": ["Chile", "chilen", "Santiago", "Valparaíso", "Concepción", "Antofagasta", "Viña del Mar"]}
 
 
 def es_de_otro_pais(titulo, gl):
@@ -139,7 +162,7 @@ def noticias_de(pais):
 
 ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 MODELO = os.environ.get("MODELO_IA", "claude-haiku-5-5")
-NOMBRE_PAIS = {"co": "Colombia", "ve": "Venezuela"}
+NOMBRE_PAIS = {"co": "Colombia", "ve": "Venezuela", "cl": "Chile"}
 
 
 def pedir_ia(instruccion, max_tokens=4000):
@@ -175,6 +198,7 @@ def pedir_ia(instruccion, max_tokens=4000):
 REFERENCIAS = {
     "co": "TransMilenio, el tinto, la quincena, el trancón, la arepa, la Selección, Shakira, el reggaetón, el pico y placa",
     "ve": "la arepa, el Metro de Caracas, la cola, el dólar paralelo, la Vinotinto, el béisbol, las hallacas, el pabellón",
+    "cl": "el Metro de Santiago, la once, el completo, el carrete, la Roja, la micro, el pisco, las AFP, la cordillera",
 }
 
 
@@ -225,7 +249,7 @@ def resumir(pais, noticias):
     datos = json.loads(respuesta[inicio: fin + 1])
     resumen = {k: str(datos.get(k, "")).strip() for k in ("titulo", "resumen", "comentario")}
     tema = str(datos.get("imagen", "")).strip()
-    gl = "CO" if pais == "co" else "VE"
+    gl = pais.upper()
     foto = buscar_foto_noticia(f"{tema} {NOMBRE_PAIS[pais]}", gl) or buscar_foto_noticia(resumen["titulo"], gl)
     resumen["imagen"] = ({"url": foto["url"], "pagina": foto["link"], "titulo": tema, "fuente": foto["fuente"] or "medios"}
                          if foto else buscar_imagen(tema))
@@ -238,7 +262,7 @@ def buscar_foto_noticia(texto, gl="CO"):
         return None
     q = " ".join(texto.split()[:14])
     url = "https://www.bing.com/news/search?" + urllib.parse.urlencode(
-        {"q": q, "format": "rss", "mkt": "es-CO" if gl == "CO" else "es-VE"})
+        {"q": q, "format": "rss", "mkt": f"es-{gl}"})
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=20) as r:
@@ -278,7 +302,7 @@ def palabras_clave(titulo, n=5):
 def fotos_de_tema(consulta, gl, cuantas=10):
     """Varias fotos distintas para un tema (se usan en noticias que no consiguieron foto propia)."""
     url = "https://www.bing.com/news/search?" + urllib.parse.urlencode(
-        {"q": consulta, "format": "rss", "mkt": "es-CO" if gl == "CO" else "es-VE"})
+        {"q": consulta, "format": "rss", "mkt": f"es-{gl}"})
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=20) as r:
@@ -305,7 +329,7 @@ def arreglar_foto(url):
 
 def poner_fotos(noticias, gl):
     """Le busca foto a cada noticia: 1) titular, 2) palabras clave, 3) fotos del tema."""
-    pais = "Colombia" if gl == "CO" else "Venezuela"
+    pais = NOMBRE_PAIS[gl.lower()]
     con_foto = 0
     for n in noticias:
         res = buscar_foto_noticia(n["titulo"], gl) or buscar_foto_noticia(f"{palabras_clave(n['titulo'])} {pais}", gl)
@@ -327,6 +351,22 @@ def poner_fotos(noticias, gl):
             usadas.add(foto)
             con_foto += 1
         time.sleep(0.3)
+    # 4) Wikipedia con las palabras clave del titular
+    for n in noticias:
+        if not n.get("imagen"):
+            w = buscar_imagen(palabras_clave(n["titulo"], 3))
+            if w:
+                n["imagen"] = w["url"]
+                con_foto += 1
+    # 5) Último recurso: repetir una foto de la misma categoría (o de cualquier noticia del país)
+    for n in noticias:
+        if not n.get("imagen"):
+            misma = [x["imagen"] for x in noticias if x.get("imagen") and x["categoria"] == n["categoria"]]
+            cualquiera = [x["imagen"] for x in noticias if x.get("imagen")]
+            opciones = misma or cualquiera
+            if opciones:
+                n["imagen"] = opciones[hash(n["titulo"]) % len(opciones)]
+                con_foto += 1
     print(f"[{gl}] fotos: {con_foto} de {len(noticias)} noticias")
 
 
@@ -361,6 +401,8 @@ DEFINICIONES = {
     "Consultoría": "firmas de consultoría y auditoría (McKinsey, Deloitte, EY, PwC, KPMG, etc.) y su actividad en el país",
     "Deportes": "SOLO deportes: equipos, deportistas, ligas o selecciones del país, o deportistas del país en el exterior",
     "Trending": "temas virales, tendencias en redes sociales, famosos, farándula, cultura pop y entretenimiento del país (no tragedias ni crímenes)",
+    "Minería y energía": "cobre, litio, minería, petróleo, gas y energía del país",
+    "Planes en Santiago": "panoramas, conciertos, festivales, ferias, restaurantes y eventos en Santiago",
     "Planes en Bogotá": "conciertos, festivales, ferias, restaurantes, eventos culturales en Bogotá",
     "Planes en Caracas": "conciertos, festivales, ferias, restaurantes, eventos culturales en Caracas",
 }
@@ -459,7 +501,7 @@ def main():
                 print(f"[{codigo}] revisión IA con error, se usan las noticias sin revisar: {e}")
         paises[codigo] = recortar(paises[codigo])
     for codigo in paises:
-        poner_fotos(paises[codigo], "CO" if codigo == "co" else "VE")
+        poner_fotos(paises[codigo], codigo.upper())
     salida = {"actualizado": datetime.now(COL).isoformat(), "paises": paises, "resumen": resumen_de(paises)}
     with open("news.json", "w", encoding="utf-8") as f:
         json.dump(salida, f, ensure_ascii=False, indent=2)

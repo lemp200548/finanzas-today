@@ -60,9 +60,10 @@
         <input id="usuario" autocomplete="username" maxlength="20" placeholder="ej. camila_23">
         <label for="pais">¿De qué país quieres las noticias en tu correo?</label>
         <select id="pais">
-          <option value="co">🇨🇴 Colombia</option>
-          <option value="ve">🇻🇪 Venezuela</option>
-          <option value="ambos">🇨🇴🇻🇪 Ambos</option>
+          <option value="co">Colombia</option>
+          <option value="ve">Venezuela</option>
+          <option value="cl">Chile</option>
+          <option value="ambos">Todos los países</option>
         </select>
       </div>
       <label for="correo">Correo</label>
@@ -83,7 +84,7 @@
   var $ = function (id) { return document.getElementById(id); };
   function mostrar(texto, tipo) { var m = $('msg'); m.textContent = texto; m.className = 'msg ' + tipo; }
 
-  try { if (localStorage.getItem('pais') === 've') $('pais').value = 've'; } catch (e) {}
+  try { var g = localStorage.getItem('pais'); if (g === 've' || g === 'cl') $('pais').value = g; } catch (e) {}
 
   function poner(m) {
     modo = m;

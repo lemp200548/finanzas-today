@@ -123,6 +123,7 @@
 <script>
   var $ = function (id) { return document.getElementById(id); };
   function esc(t) { var d = document.createElement('div'); d.textContent = t == null ? '' : String(t); return d.innerHTML; }
+  var NOMBRE_PAIS = { co: 'Colombia', ve: 'Venezuela', cl: 'Chile', ambos: 'Todos' };
   function num(n) { return Number(n || 0).toLocaleString('es-CO'); }
 
   (async function () {
@@ -166,9 +167,9 @@
     var NOMBRE_ORIGEN = { whatsapp: 'WhatsApp', instagram: 'Instagram', google: 'Google', correo: 'Correo diario', facebook: 'Facebook', x: 'X (Twitter)', linkedin: 'LinkedIn', tiktok: 'TikTok', Directo: 'Directo / sin dato' };
     barras('cats', d.top_categorias, function (x) { return x.categoria; }, 'clics');
     barras('origenes', d.origenes, function (x) { return NOMBRE_ORIGEN[x.origen] || x.origen; }, 'visitas');
-    barras('paises', d.paises_vistos, function (x) { return x.pais === 've' ? '🇻🇪 Venezuela' : '🇨🇴 Colombia'; }, 'visitas');
+    barras('paises', d.paises_vistos, function (x) { return NOMBRE_PAIS[x.pais] || x.pais; }, 'visitas');
     $('top').innerHTML = (d.top_noticias || []).map(function (n) {
-      return '<tr><td>' + esc(n.titulo) + '</td><td>' + esc(n.categoria) + '</td><td>' + (n.pais === 've' ? '🇻🇪' : '🇨🇴') + '</td><td><b>' + num(n.clics) + '</b></td></tr>';
+      return '<tr><td>' + esc(n.titulo) + '</td><td>' + esc(n.categoria) + '</td><td>' + (NOMBRE_PAIS[n.pais] || '') + '</td><td><b>' + num(n.clics) + '</b></td></tr>';
     }).join('') || '<tr><td colspan="4" class="vacio">Todavía no hay clics registrados.</td></tr>';
 
     var dias = d.por_dia || [];
@@ -181,7 +182,7 @@
     $('dias').innerHTML = dias.map(function (x) { return '<span>' + x.dia.slice(8) + '/' + x.dia.slice(5, 7) + '</span>'; }).join('');
 
     $('usuarios').innerHTML = (d.ultimos_usuarios || []).map(function (u) {
-      return '<tr><td><b>@' + esc(u.usuario || '—') + '</b></td><td>' + esc(u.email) + '</td><td>' + (u.pais === 've' ? '🇻🇪' : u.pais === 'ambos' ? '🇨🇴🇻🇪' : '🇨🇴') + '</td><td>' +
+      return '<tr><td><b>@' + esc(u.usuario || '—') + '</b></td><td>' + esc(u.email) + '</td><td>' + (NOMBRE_PAIS[u.pais] || 'Colombia') + '</td><td>' +
         esc(new Date(u.creado).toLocaleString('es-CO', { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' })) + '</td></tr>';
     }).join('') || '<tr><td colspan="4">Todavía no hay usuarios.</td></tr>';
   })();
