@@ -41,7 +41,7 @@
   .cuenta button.salir { font: inherit; font-size: 0.85rem; color: var(--muted); background: none; border: 0; cursor: pointer; text-decoration: underline; }
 
   .hero { background: var(--cream); border-bottom: 1px solid var(--line); }
-  .hero .wrap { padding-top: 56px; padding-bottom: 56px; display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center; }
+  .hero .wrap { padding-top: 56px; padding-bottom: 56px; display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; }
   .hero h1 { font-weight: 900; font-size: clamp(2.4rem, 6vw, 4.4rem); line-height: 1; letter-spacing: -0.045em; }
   .hero h1 em { font-style: normal; color: var(--blue); }
   .hero p { font-size: 1.15rem; color: var(--muted); margin: 18px 0 26px; max-width: 46ch; }
@@ -75,6 +75,19 @@
   .latest-head h2 { font-weight: 800; font-size: 2.1rem; letter-spacing: -0.035em; }
   .latest-head a { font-size: 0.8rem; text-decoration: none; font-weight: 600; }
   .item { display: block; text-decoration: none; padding: 20px 0; border-bottom: 1px solid var(--line); }
+  .portada { display: block; position: relative; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; margin-bottom: 12px; background: var(--fondo, #1F5BD8); }
+  .portada img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .3s ease; }
+  .item:hover .portada img, .lt:hover .lt-foto img { transform: scale(1.04); }
+  .portada .sim { position: absolute; right: 6%; top: 50%; transform: translateY(-50%); font-weight: 900; font-size: 6rem; line-height: 1; color: var(--letra, #8DB6FF); }
+  .lt-foto { position: relative; width: 112px; aspect-ratio: 4 / 3; border-radius: 8px; overflow: hidden; background: var(--fondo, #1F5BD8); align-self: start; }
+  .lt-foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .3s ease; }
+  .lt-foto .sim { position: absolute; inset: 0; display: grid; place-items: center; font-weight: 900; font-size: 2.4rem; color: var(--letra, #8DB6FF); }
+  .portada img + .sim, .lt-foto img + .sim { display: none; }
+  .destacada .arte.con-foto::before { display: none; }
+  .destacada .arte .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .destacada .arte.con-foto::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.45), transparent 45%); }
+  .destacada .arte .mono { z-index: 1; }
+  @media (max-width: 600px) { .lt-foto { width: 84px; } .lt { grid-template-columns: 30px 1fr auto; gap: 10px; } }
   .item .cat { color: var(--blue); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
   .item h3 { font-weight: 800; font-size: 1.28rem; line-height: 1.22; letter-spacing: -0.02em; margin: 6px 0 8px; }
   .item:hover h3 { text-decoration: underline; }
@@ -88,9 +101,9 @@
   .chip.on { background: var(--blue); color: #fff; border-color: var(--blue); }
   .hidden { display: none; }
   .resumen-dia { padding-top: 32px; }
-  .resumen-dia .caja { background: var(--ink); color: #fff; border-radius: 14px; padding: 26px 30px; display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: start; }
+  .resumen-dia .caja { background: var(--ink); color: #fff; border-radius: 14px; padding: 26px 30px; display: grid; grid-template-columns: 1fr; gap: 22px; align-items: start; }
   .resumen-dia .icono { font-size: 2.2rem; line-height: 1; }
-  .resumen-dia .caja.con-foto { grid-template-columns: auto 1fr 300px; }
+  .resumen-dia .caja.con-foto { grid-template-columns: 1fr 320px; }
   .resumen-dia .foto { display: block; position: relative; align-self: stretch; min-height: 200px; border-radius: 10px; overflow: hidden; background: #222; text-decoration: none; }
   .resumen-dia .foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
   .resumen-dia .foto span { position: absolute; left: 8px; bottom: 8px; font-size: 0.68rem; color: #fff; background: rgba(0,0,0,.55); padding: 2px 7px; border-radius: 4px; }
@@ -99,7 +112,7 @@
   .resumen-dia p { color: #D9DEE8; font-size: 1.05rem; line-height: 1.55; max-width: 72ch; }
   .resumen-dia .ironia { margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.15); color: #F4BE6A; font-style: italic; }
   .resumen-dia .nota { font-size: 0.72rem; color: #8A93A6; margin-top: 10px; }
-  @media (max-width: 860px) { .resumen-dia .caja.con-foto { grid-template-columns: auto 1fr; } .resumen-dia .foto { grid-column: 1 / -1; min-height: 220px; } }
+  @media (max-width: 860px) { .resumen-dia .caja.con-foto { grid-template-columns: 1fr; } .resumen-dia .foto { min-height: 220px; } }
   @media (max-width: 600px) { .resumen-dia .caja, .resumen-dia .caja.con-foto { grid-template-columns: 1fr; gap: 10px; padding: 22px; } }
   .hidden { display: none !important; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 0 32px; }
@@ -119,7 +132,7 @@
   }
 
   /* Lo último: lista numerada (estilo propio) */
-  .lt { display: grid; grid-template-columns: 48px 1fr; gap: 14px; text-decoration: none; padding: 18px 0; border-bottom: 1px solid var(--line); }
+  .lt { display: grid; grid-template-columns: 40px 1fr auto; gap: 14px; text-decoration: none; padding: 18px 0; border-bottom: 1px solid var(--line); }
   .lt-n { font-weight: 800; font-size: 1.9rem; line-height: 1; color: #C9D3E6; letter-spacing: -0.03em; padding-top: 2px; }
   .lt:hover .lt-n { color: var(--blue); }
   .lt-cat { color: var(--blue); font-weight: 700; font-size: 0.85rem; }
@@ -148,11 +161,6 @@
       <a class="btn btn-blue" href="login.html" data-cta>Suscríbete gratis →</a>
       <div class="note">Te llegan al correo cada mañana. Te sales cuando quieras.</div>
     </div>
-    <div class="pasos">
-      <div class="paso"><b class="n">1</b><div><strong>Las noticias del día</strong><span>Economía, empresas, energía, banca, tecnología, startups, deportes y planes.</span></div></div>
-      <div class="paso"><b class="n">2</b><div><strong>Contado fácil</strong><span>Sin palabras raras, como te lo contaría un amigo que sabe del tema.</span></div></div>
-      <div class="paso"><b class="n">3</b><div><strong>Directo a tu correo</strong><span>Cada mañana, lo más importante de tu país en 3 minutos.</span></div></div>
-    </div>
   </div>
 </section>
 
@@ -162,13 +170,12 @@
       <button class="pais on" data-pais="co">🇨🇴 Colombia</button>
       <button class="pais" data-pais="ve">🇻🇪 Venezuela</button>
     </div>
-    <div class="actualizado mono" id="actualizado">Cargando noticias…</div>
+    <div class="actualizado mono hidden" id="actualizado"></div>
   </div>
 </div>
 
 <div class="wrap resumen-dia hidden" id="resumen">
   <div class="caja">
-    <div class="icono">☕</div>
     <div>
       <div class="t">El resumen del día</div>
       <h2 id="r-titulo"></h2>
@@ -214,7 +221,6 @@
   <a class="btn" href="login.html" data-cta>Quiero recibirlo →</a>
 </section>
 
-<footer class="mono">Finanzas Express · Hecho por Lorenzo Molina · <a href="baja.html">Dejar de recibir correos</a></footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
 <script src="config.js"></script>
@@ -254,11 +260,23 @@
       '<div class="lt-n">' + (i < 9 ? '0' : '') + (i + 1) + '</div>' +
       '<div><div class="lt-cat">' + esc(n.categoria) + '</div>' +
       '<h3>' + esc(n.titulo) + '</h3>' +
-      '<div class="lt-meta">' + esc(fuente(n.fuente)) + ' · ' + esc(hace(n.fecha)) + '</div></div></a>';
+      '<div class="lt-meta">' + esc(fuente(n.fuente)) + ' · ' + esc(hace(n.fecha)) + '</div></div>' +
+      foto(n, 'lt-foto') + '</a>';
+  }
+
+  // Foto de la noticia; si no hay, un bloque con el color y el símbolo de la categoría
+  function foto(n, clase) {
+    var col = (typeof COLORES !== 'undefined' && COLORES[n.categoria]) || ['#1F5BD8', '#8DB6FF', '•'];
+    var estilo = ' style="--fondo:' + col[0] + ';--letra:' + col[1] + '"';
+    var dentro = n.imagen
+      ? '<img src="' + esc(n.imagen) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"><span class="sim">' + esc(col[2]) + '</span>'
+      : '<span class="sim">' + esc(col[2]) + '</span>';
+    return '<span class="' + clase + '"' + estilo + '>' + dentro + '</span>';
   }
 
   function item(n) {
     return '<a class="item" data-cat="' + esc(n.categoria) + '" href="' + esc(n.link) + '" target="_blank" rel="noopener">' +
+      foto(n, 'portada') +
       '<div class="cat">' + esc(n.categoria) + '</div>' +
       '<h3>' + esc(n.titulo) + '</h3>' +
       '<div class="meta mono">' + esc(fuente(n.fuente)) + ' | ' + esc(hace(n.fecha)) + '</div></a>';
@@ -294,7 +312,7 @@
       $('r-img').src = r.imagen.url;
       $('r-img').alt = r.imagen.titulo || '';
       $('r-foto').href = r.imagen.pagina || '#';
-      $('r-credito').textContent = 'Foto: Wikipedia · ' + (r.imagen.titulo || '');
+      $('r-credito').textContent = 'Foto: ' + (r.imagen.fuente || 'Wikipedia');
     }
     $('resumen').classList.remove('hidden');
   }
@@ -308,19 +326,27 @@
       $('grid').innerHTML = ''; $('chips').innerHTML = '';
       return;
     }
-    if (datos.actualizado) {
-      $('actualizado').textContent = 'Actualizado ' + new Date(datos.actualizado).toLocaleString('es-CO', { weekday: 'long', day: 'numeric', month: 'long', hour: 'numeric', minute: '2-digit', timeZone: 'America/Bogota' });
+    if (false) {
     }
 
     var recientes = lista.slice().sort(function (a, b) { return (b.fecha || '').localeCompare(a.fecha || ''); });
 
-    var d = recientes.find(function (n) { return !/Planes|Deportes/.test(n.categoria); }) || recientes[0];
+    var d = recientes.find(function (n) { return n.imagen && !/Planes|Deportes/.test(n.categoria); }) ||
+            recientes.find(function (n) { return !/Planes|Deportes/.test(n.categoria); }) || recientes[0];
     $('destacada').href = d.link;
     var arte = $('destacada').querySelector('.arte');
     var col = COLORES[d.categoria] || ['#EE7350', '#F4BE6A', (d.categoria || 'F').charAt(0)];
     arte.dataset.letra = col[2];
     arte.style.setProperty('--fondo', col[0]);
     arte.style.setProperty('--letra', col[1]);
+    var vieja = arte.querySelector('img.bg'); if (vieja) vieja.remove();
+    arte.classList.toggle('con-foto', !!d.imagen);
+    if (d.imagen) {
+      var im = document.createElement('img');
+      im.className = 'bg'; im.src = d.imagen; im.alt = ''; im.referrerPolicy = 'no-referrer';
+      im.onerror = function () { im.remove(); arte.classList.remove('con-foto'); };
+      arte.insertBefore(im, arte.firstChild);
+    }
     $('d-cat').textContent = d.categoria;
     $('d-titulo').textContent = d.titulo;
     $('d-meta').textContent = fuente(d.fuente) + ' | ' + hace(d.fecha);
@@ -359,7 +385,29 @@
       if (!d.paises && d.noticias) d.paises = { co: d.noticias, ve: [] };
       datos = d; pintar();
     })
-    .catch(function () { $('actualizado').textContent = 'No se pudieron cargar las noticias'; });
+    .catch(function () { $('actualizado').textContent = 'No se pudieron cargar las noticias'; $('actualizado').classList.remove('hidden'); });
+
+  // ---- De dónde llegó la persona ----
+  // Para saber si viene de WhatsApp o Instagram, comparte el link así:
+  //   https://lemp200548.github.io/finanzas-today/?utm_source=whatsapp
+  //   https://lemp200548.github.io/finanzas-today/?utm_source=instagram
+  function origen() {
+    var p = new URLSearchParams(location.search).get('utm_source');
+    if (p) return p.toLowerCase().slice(0, 40);
+    var r = document.referrer || '';
+    if (!r || r.indexOf(location.host) >= 0) return 'Directo';
+    var h = '';
+    try { h = new URL(r).hostname; } catch (e) { return 'Otro'; }
+    if (/google\./.test(h)) return 'google';
+    if (/instagram/.test(h)) return 'instagram';
+    if (/facebook|fb\./.test(h)) return 'facebook';
+    if (/whatsapp|wa\.me/.test(h)) return 'whatsapp';
+    if (/t\.co$|twitter|x\.com/.test(h)) return 'x';
+    if (/linkedin|lnkd/.test(h)) return 'linkedin';
+    if (/tiktok/.test(h)) return 'tiktok';
+    if (/mail|brevo|sendibt/.test(h)) return 'correo';
+    return h.replace(/^www\./, '').slice(0, 40);
+  }
 
   // ---- Cuenta y conteo de visitas ----
   (async function () {
@@ -369,7 +417,18 @@
       vid = localStorage.getItem('vid');
       if (!vid) { vid = Math.random().toString(36).slice(2) + Date.now().toString(36); localStorage.setItem('vid', vid); }
     } catch (e) {}
-    sb.from('visitas').insert({ visitante: vid, pagina: 'inicio', pais: pais }).then(function () {});
+    sb.from('visitas').insert({ visitante: vid, pagina: 'inicio', pais: pais, origen: origen() }).then(function () {});
+
+    // Registrar en qué noticias le dan clic (anónimo)
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a.item, a.lt, a.destacada');
+      if (!a) return;
+      var zona = a.classList.contains('destacada') ? 'destacada' : a.classList.contains('lt') ? 'lo_ultimo' : 'por_tema';
+      var titulo = (a.querySelector('h2, h3') || {}).textContent || '';
+      var cat = a.dataset.cat || ((a.querySelector('.lt-cat, .cat, #d-cat') || {}).textContent || '');
+      var fuenteTxt = ((a.querySelector('.meta, .lt-meta, #d-meta') || {}).textContent || '').split(/[|·]/)[0].trim();
+      sb.from('clics').insert({ visitante: vid, pais: pais, categoria: cat.trim(), titulo: titulo.trim().slice(0, 300), fuente: fuenteTxt, zona: zona }).then(function () {});
+    });
 
     var r = await sb.auth.getSession();
     var user = r.data.session && r.data.session.user;

@@ -51,7 +51,7 @@ def bloque_pais(noticias, resumen, pais, con_titulo):
           <tr><td style="padding:10px 0 18px">
             <div style="background:#F8F7F3;border-left:4px solid #1F5BD8;border-radius:0 10px 10px 0;padding:20px 22px">
               {foto}
-              <div style="color:#1F5BD8;font-weight:800;font-size:12px;letter-spacing:1px;text-transform:uppercase">☕ El resumen del día</div>
+              <div style="color:#1F5BD8;font-weight:800;font-size:12px;letter-spacing:1px;text-transform:uppercase">El resumen del día</div>
               <div style="font-size:22px;font-weight:900;line-height:1.2;margin:8px 0 10px;letter-spacing:-0.5px">{html.escape(resumen.get("titulo", ""))}</div>
               <div style="font-size:16px;line-height:1.6;color:#222">{html.escape(resumen["resumen"])}</div>
               {ironia}
@@ -96,11 +96,11 @@ def correo_html(secciones):
   </td></tr>
   <tr><td style="padding:8px 28px 8px"><table width="100%" cellpadding="0" cellspacing="0">{bloques}</table></td></tr>
   <tr><td style="padding:8px 28px 28px" align="center">
-    <a href="{SITE}" style="display:inline-block;background:#1F5BD8;color:#fff;text-decoration:none;font-weight:800;padding:14px 26px;border-radius:8px">Ver las noticias completas →</a>
+    <a href="{SITE}?utm_source=correo" style="display:inline-block;background:#1F5BD8;color:#fff;text-decoration:none;font-weight:800;padding:14px 26px;border-radius:8px">Ver las noticias completas →</a>
   </td></tr>
   <tr><td style="padding:18px 28px;border-top:1px solid #E4E6EB;font-size:12px;color:#5E6470" align="center">
     Recibes este correo porque te suscribiste a Finanzas Express.<br>
-    <a href="{SITE}baja.html" style="color:#5E6470">Dejar de recibir correos o cambiar de país</a>
+    <a href="{SITE}baja.html" style="color:#5E6470">Dejar de recibir correos o cambiar de país</a> · <a href="{SITE}privacidad.html" style="color:#5E6470">Privacidad</a>
   </td></tr>
 </table></td></tr></table></body></html>'''
 

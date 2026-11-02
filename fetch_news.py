@@ -1,6 +1,6 @@
 """Busca las noticias del día y las guarda en news.json.
 Lo corre GitHub Actions todos los días (ver .github/workflows/news.yml)."""
-import json, os, re, urllib.request, urllib.error, urllib.parse, xml.etree.ElementTree as ET
+import json, os, re, time, urllib.request, urllib.error, urllib.parse, xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 
@@ -177,6 +177,9 @@ def resumir(pais, noticias):
         f"   Referencias locales que puedes usar: {REFERENCIAS[pais]}.\n"
         "3. Comparaciones exageradas pero claras ('subió más rápido que...', 'más perdido que...').\n"
         "4. Remates secos tipo 'la noticia que sorprendió exactamente a nadie' o 'plot twist:'.\n\n"
+        "PROHIBIDO usar frases rebuscadas o clichés como: 'paseo mental', 'montaña rusa', 'tormenta perfecta', "
+        "'en el ojo del huracán', 'luz al final del túnel', 'agárrate', 'abróchate el cinturón', 'no es para menos', "
+        "'ni corto ni perezoso', 'el elefante en la habitación'. Escribe como habla un joven normal, directo.\n"
         "REGLA DE ORO: cada chiste se tiene que entender en 3 segundos por un joven de 20 años. "
         "Nada de metáforas raras o abstractas. Si el chiste necesita explicación, cámbialo por uno más simple.\n\n"
         "EJEMPLOS DEL TONO (inventados; NO los copies, solo imita el estilo):\n"
@@ -206,8 +209,56 @@ def resumir(pais, noticias):
         raise RuntimeError(f"la IA no devolvió JSON. Respondió: {respuesta[:300]!r}")
     datos = json.loads(respuesta[inicio: fin + 1])
     resumen = {k: str(datos.get(k, "")).strip() for k in ("titulo", "resumen", "comentario")}
-    resumen["imagen"] = buscar_imagen(str(datos.get("imagen", "")).strip())
+    tema = str(datos.get("imagen", "")).strip()
+    gl = "CO" if pais == "co" else "VE"
+    foto = buscar_foto_noticia(f"{tema} {NOMBRE_PAIS[pais]}", gl) or buscar_foto_noticia(resumen["titulo"], gl)
+    resumen["imagen"] = ({"url": foto["url"], "pagina": foto["link"], "titulo": tema, "fuente": foto["fuente"] or "medios"}
+                         if foto else buscar_imagen(tema))
     return resumen
+
+
+def buscar_foto_noticia(texto, gl="CO"):
+    """Busca en Bing Noticias una foto para un titular o tema. Devuelve {url, fuente, link} o None."""
+    if not texto:
+        return None
+    q = " ".join(texto.split()[:14])
+    url = "https://www.bing.com/news/search?" + urllib.parse.urlencode(
+        {"q": q, "format": "rss", "mkt": "es-CO" if gl == "CO" else "es-VE"})
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            raiz = ET.fromstring(r.read())
+    except Exception:
+        return None
+    for item in raiz.iter("item"):
+        foto, fuente = None, ""
+        for hijo in item:
+            nombre = hijo.tag.split("}")[-1].lower()
+            if nombre == "image" and (hijo.text or "").startswith("http"):
+                foto = hijo.text.strip()
+            elif nombre in ("thumbnail", "content") and hijo.get("url"):
+                foto = foto or hijo.get("url")
+            elif nombre == "enclosure" and "image" in (hijo.get("type") or "") and hijo.get("url"):
+                foto = foto or hijo.get("url")
+            elif nombre == "source":
+                fuente = (hijo.text or "").strip()
+        if foto:
+            if "bing.com/th" in foto and "&w=" not in foto:
+                foto += "&w=800&h=450&c=7"
+            return {"url": foto.replace("http://", "https://"), "fuente": fuente, "link": (item.findtext("link") or "").strip()}
+    return None
+
+
+def poner_fotos(noticias, gl):
+    """Le busca foto a cada noticia (la usa la página como portada)."""
+    con_foto = 0
+    for n in noticias:
+        res = buscar_foto_noticia(n["titulo"], gl)
+        if res:
+            n["imagen"] = res["url"]
+            con_foto += 1
+        time.sleep(0.3)
+    print(f"[{gl}] fotos: {con_foto} de {len(noticias)} noticias")
 
 
 def buscar_imagen(termino):
@@ -224,7 +275,7 @@ def buscar_imagen(termino):
         for pag in paginas.values():
             foto = (pag.get("thumbnail") or {}).get("source")
             if foto:
-                return {"url": foto, "pagina": pag.get("fullurl", ""), "titulo": pag.get("title", termino)}
+                return {"url": foto, "pagina": pag.get("fullurl", ""), "titulo": pag.get("title", termino), "fuente": "Wikipedia"}
     except Exception as e:
         print(f"Sin foto para '{termino}': {e}")
     return None
@@ -329,6 +380,8 @@ def main():
             except Exception as e:
                 print(f"[{codigo}] revisión IA con error, se usan las noticias sin revisar: {e}")
         paises[codigo] = recortar(paises[codigo])
+    for codigo in paises:
+        poner_fotos(paises[codigo], "CO" if codigo == "co" else "VE")
     salida = {"actualizado": datetime.now(COL).isoformat(), "paises": paises, "resumen": resumen_de(paises)}
     with open("news.json", "w", encoding="utf-8") as f:
         json.dump(salida, f, ensure_ascii=False, indent=2)

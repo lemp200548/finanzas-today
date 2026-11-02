@@ -44,6 +44,14 @@
   .kpi.main-kpi .l { color: rgba(255,255,255,.8); }
   .panel { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 20px; margin-bottom: 18px; }
   .panel h2 { font-size: 1.15rem; font-weight: 800; margin-bottom: 4px; }
+  .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .dos .panel { margin-bottom: 18px; }
+  @media (max-width: 760px) { .dos { grid-template-columns: 1fr; } }
+  .barra { display: grid; grid-template-columns: 140px 1fr 44px; gap: 10px; align-items: center; margin: 8px 0; font-size: 0.9rem; }
+  .barra .n { text-align: right; font-weight: 700; }
+  .barra .fondo { background: #EEF1F6; border-radius: 4px; height: 12px; overflow: hidden; }
+  .barra .fondo i { display: block; height: 100%; background: var(--blue); border-radius: 4px; }
+  .vacio { color: var(--muted); font-size: 0.9rem; padding: 8px 0; }
   .leyenda { font-size: 0.8rem; color: var(--muted); margin-bottom: 16px; display: flex; gap: 16px; }
   .leyenda i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
   .chart { display: grid; grid-template-columns: repeat(14, 1fr); gap: 6px; align-items: end; height: 180px; }
@@ -77,12 +85,32 @@
       <div class="kpi"><div class="l mono">Personas hoy</div><div class="v" id="k-phoy">–</div></div>
       <div class="kpi"><div class="l mono">Personas · 7 días</div><div class="v" id="k-p7">–</div></div>
       <div class="kpi"><div class="l mono">Visitas totales</div><div class="v" id="k-vtot">–</div></div>
+      <div class="kpi"><div class="l mono">Clics en noticias · 7 días</div><div class="v" id="k-clics">–</div></div>
     </div>
     <div class="panel">
       <h2>Últimos 14 días</h2>
       <div class="leyenda"><span><i style="background:var(--blue)"></i>Visitas</span><span><i style="background:#F4A340"></i>Registros</span></div>
       <div class="chart" id="chart"></div>
       <div class="dias" id="dias"></div>
+    </div>
+    <div class="dos">
+      <div class="panel">
+        <h2>Lo que más leen</h2>
+        <div class="leyenda">Clics por categoría · últimos 7 días</div>
+        <div id="cats"></div>
+      </div>
+      <div class="panel">
+        <h2>De dónde llegan</h2>
+        <div class="leyenda">Visitas por origen · últimos 7 días</div>
+        <div id="origenes"></div>
+        <h2 style="margin-top:22px">País que más ven</h2>
+        <div id="paises"></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>Noticias más clicadas</h2>
+      <div class="leyenda">Últimos 7 días</div>
+      <div class="wrap-table"><table><thead><tr><th class="mono">Noticia</th><th class="mono">Categoría</th><th class="mono">País</th><th class="mono">Clics</th></tr></thead><tbody id="top"></tbody></table></div>
     </div>
     <div class="panel">
       <h2>Últimos usuarios</h2>
@@ -125,6 +153,23 @@
     $('k-phoy').textContent = num(d.visitantes_hoy);
     $('k-p7').textContent = num(d.visitantes_7d);
     $('k-vtot').textContent = num(d.visitas_total);
+    $('k-clics').textContent = num(d.clics_7d);
+
+    function barras(id, lista, etiqueta, valor) {
+      lista = lista || [];
+      if (!lista.length) { $(id).innerHTML = '<div class="vacio">Todavía no hay datos.</div>'; return; }
+      var mx = Math.max.apply(null, lista.map(function (x) { return x[valor]; })) || 1;
+      $(id).innerHTML = lista.map(function (x) {
+        return '<div class="barra"><span>' + esc(etiqueta(x)) + '</span><div class="fondo"><i style="width:' + (x[valor] / mx * 100) + '%"></i></div><span class="n">' + num(x[valor]) + '</span></div>';
+      }).join('');
+    }
+    var NOMBRE_ORIGEN = { whatsapp: 'WhatsApp', instagram: 'Instagram', google: 'Google', correo: 'Correo diario', facebook: 'Facebook', x: 'X (Twitter)', linkedin: 'LinkedIn', tiktok: 'TikTok', Directo: 'Directo / sin dato' };
+    barras('cats', d.top_categorias, function (x) { return x.categoria; }, 'clics');
+    barras('origenes', d.origenes, function (x) { return NOMBRE_ORIGEN[x.origen] || x.origen; }, 'visitas');
+    barras('paises', d.paises_vistos, function (x) { return x.pais === 've' ? '🇻🇪 Venezuela' : '🇨🇴 Colombia'; }, 'visitas');
+    $('top').innerHTML = (d.top_noticias || []).map(function (n) {
+      return '<tr><td>' + esc(n.titulo) + '</td><td>' + esc(n.categoria) + '</td><td>' + (n.pais === 've' ? '🇻🇪' : '🇨🇴') + '</td><td><b>' + num(n.clics) + '</b></td></tr>';
+    }).join('') || '<tr><td colspan="4" class="vacio">Todavía no hay clics registrados.</td></tr>';
 
     var dias = d.por_dia || [];
     var max = Math.max(1, ...dias.map(function (x) { return Math.max(x.visitas, x.registros); }));

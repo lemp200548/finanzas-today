@@ -8,6 +8,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
+  .acepto { display: flex; gap: 10px; align-items: flex-start; font-weight: 500; font-size: 0.85rem; color: var(--muted); margin-top: 16px; line-height: 1.4; }
+  .acepto input { width: 18px; height: 18px; flex: none; margin-top: 2px; accent-color: var(--blue); }
+  .acepto a { color: var(--blue); font-weight: 700; }
   :root { --blue:#1F5BD8; --blue-dark:#1747AD; --ink:#111; --muted:#5E6470; --line:#E4E6EB; --paper:#fff; --cream:#F8F7F3; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Inter Tight', system-ui, sans-serif; background: var(--cream); color: var(--ink); line-height: 1.5; min-height: 100vh; }
@@ -54,7 +57,7 @@
     <form id="form">
       <div id="campos-registro">
         <label for="usuario">Nombre de usuario</label>
-        <input id="usuario" autocomplete="username" maxlength="20" placeholder="ej. lorenzo">
+        <input id="usuario" autocomplete="username" maxlength="20" placeholder="ej. camila_23">
         <label for="pais">¿De qué país quieres las noticias en tu correo?</label>
         <select id="pais">
           <option value="co">🇨🇴 Colombia</option>
@@ -66,6 +69,7 @@
       <input id="correo" type="email" autocomplete="email" required placeholder="tucorreo@gmail.com">
       <label for="clave">Contraseña</label>
       <input id="clave" type="password" autocomplete="new-password" required minlength="6" placeholder="Mínimo 6 caracteres">
+      <label class="acepto" id="campo-acepto"><input type="checkbox" id="acepto"> Acepto la <a href="privacidad.html" target="_blank">política de privacidad</a> y el uso de mis datos para enviarme las noticias y mejorar la página.</label>
       <button class="btn" id="enviar" type="submit">Suscribirme gratis</button>
     </form>
     <div class="msg" id="msg"></div>
@@ -87,6 +91,7 @@
     $('tab-registro').classList.toggle('on', reg);
     $('tab-login').classList.toggle('on', !reg);
     $('campos-registro').classList.toggle('hidden', !reg);
+    $('campo-acepto').classList.toggle('hidden', !reg);
     $('usuario').required = reg;
     $('clave').autocomplete = reg ? 'new-password' : 'current-password';
     $('titulo').textContent = reg ? 'Vuélvete más informado en 3 minutos' : 'Bienvenido de nuevo';
@@ -110,9 +115,10 @@
     $('enviar').disabled = true;
     try {
       if (modo === 'registro') {
+        if (!$('acepto').checked) { mostrar('Para suscribirte, acepta la política de privacidad.', 'err'); return; }
         var r = await sb.auth.signUp({
           email: correo, password: clave,
-          options: { data: { username: $('usuario').value.trim(), pais: $('pais').value, newsletter: true }, emailRedirectTo: inicio }
+          options: { data: { username: $('usuario').value.trim(), pais: $('pais').value, newsletter: true, acepto_privacidad: new Date().toISOString() }, emailRedirectTo: inicio }
         });
         if (r.error) throw r.error;
         try { if ($('pais').value !== 'ambos') localStorage.setItem('pais', $('pais').value); } catch (e) {}
