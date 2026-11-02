@@ -245,9 +245,9 @@
       <h2 id="r-titulo"></h2>
       <p id="r-texto"></p>
       <div class="res-cols">
-        <div class="res-col g"><h3>📈 Lo que está creciendo</h3><ul id="r-crec"></ul></div>
-        <div class="res-col b"><h3>🎯 Lo que puede crecer</h3><ul id="r-puede"></ul></div>
-        <div class="res-col r"><h3>⚠️ Riesgos y lo que baja</h3><ul id="r-riesgo"></ul></div>
+        <div class="res-col g"><h3>Lo que está creciendo</h3><ul id="r-crec"></ul></div>
+        <div class="res-col b"><h3>Lo que puede crecer</h3><ul id="r-puede"></ul></div>
+        <div class="res-col r"><h3>Riesgos y lo que baja</h3><ul id="r-riesgo"></ul></div>
       </div>
       <div class="latam hidden" id="r-latam"></div>
       <div class="nota" id="r-nota"></div>
@@ -514,7 +514,7 @@
     $('r-texto').textContent = r.resumen || '';
     function lista(id, xs) { $(id).innerHTML = (xs || []).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join(''); }
     lista('r-crec', r.creciendo); lista('r-puede', r.puede_crecer); lista('r-riesgo', r.riesgos);
-    if (r.latam) { $('r-latam').textContent = '🌎 ' + r.latam; $('r-latam').classList.remove('hidden'); }
+    if (r.latam) { $('r-latam').textContent = r.latam; $('r-latam').classList.remove('hidden'); }
     $('r-nota').textContent = r.fuente === 'ia' ? 'Resumen escrito por IA a partir de los datos y titulares de hoy. No es asesoría financiera.' : 'Resumen automático a partir de los datos de hoy. No es asesoría financiera.';
     $('sec-resumen').classList.remove('hidden');
   }

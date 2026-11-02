@@ -137,19 +137,19 @@ CLAVE_CORR = ["^GSPC", "^IXIC", "VGK", "^N225", "FXI", "EWZ", "GXG", "ECH", "GC=
 
 # GRÁFICAS DE VELAS POR PAÍS: clave -> (nombre en la pestaña, activos que se grafican, en orden)
 PAISES_GRAFICAS = [
-    ("co", "🇨🇴 Colombia", ["GXG", "USDCOP=X", "EC", "CIB", "KC=F", "CL=F"]),
-    ("cl", "🇨🇱 Chile", ["ECH", "USDCLP=X", "SQM", "HG=F", "LIT"]),
-    ("us", "🇺🇸 EE. UU.", ["^GSPC", "^IXIC", "^DJI", "NVDA", "XLK", "TLT"]),
-    ("br", "🇧🇷 Brasil", ["^BVSP", "EWZ", "USDBRL=X", "PBR", "NU", "MELI"]),
-    ("mx", "🇲🇽 México", ["^MXX", "EWW", "USDMXN=X"]),
-    ("ar", "🇦🇷 Argentina", ["ARGT", "MELI"]),
-    ("eu", "🇪🇺 Europa", ["^STOXX50E", "^GDAXI", "^FTSE", "VGK", "EURUSD=X"]),
-    ("cn", "🇨🇳 China", ["000001.SS", "^HSI", "FXI", "HG=F"]),
-    ("jp", "🇯🇵 Japón", ["^N225", "EWJ", "USDJPY=X"]),
-    ("in", "🇮🇳 India", ["^BSESN", "INDA"]),
-    ("as", "🇰🇷 Corea y Taiwán", ["EWY", "TSM"]),
-    ("cr", "₿ Cripto", ["BTC-USD", "ETH-USD", "SOL-USD"]),
-    ("mp", "🛢️ Materias primas", ["GC=F", "CL=F", "HG=F", "KC=F", "SI=F", "NG=F"]),
+    ("co", "Colombia", ["GXG", "USDCOP=X", "EC", "CIB", "KC=F", "CL=F"]),
+    ("cl", "Chile", ["ECH", "USDCLP=X", "SQM", "HG=F", "LIT"]),
+    ("us", "EE. UU.", ["^GSPC", "^IXIC", "^DJI", "NVDA", "XLK", "TLT"]),
+    ("br", "Brasil", ["^BVSP", "EWZ", "USDBRL=X", "PBR", "NU", "MELI"]),
+    ("mx", "México", ["^MXX", "EWW", "USDMXN=X"]),
+    ("ar", "Argentina", ["ARGT", "MELI"]),
+    ("eu", "Europa", ["^STOXX50E", "^GDAXI", "^FTSE", "VGK", "EURUSD=X"]),
+    ("cn", "China", ["000001.SS", "^HSI", "FXI", "HG=F"]),
+    ("jp", "Japón", ["^N225", "EWJ", "USDJPY=X"]),
+    ("in", "India", ["^BSESN", "INDA"]),
+    ("as", "Corea y Taiwán", ["EWY", "TSM"]),
+    ("cr", "Cripto", ["BTC-USD", "ETH-USD", "SOL-USD"]),
+    ("mp", "Materias primas", ["GC=F", "CL=F", "HG=F", "KC=F", "SI=F", "NG=F"]),
 ]
 
 # ----------------------------------------------------------------------------------------------
@@ -495,6 +495,16 @@ def sentimiento_ia(noticias):
     print("[IA] sentimiento de titulares listo")
 
 
+EMOJIS = re.compile("[\U0001F000-\U0001FAFF\u2600-\u27BF\uFE0F\u200D\u20BF]")
+
+
+def sin_emojis(x):
+    """Quita emojis de un texto o de una lista de textos."""
+    if isinstance(x, list):
+        return [sin_emojis(i) for i in x]
+    return re.sub(r"\s{2,}", " ", EMOJIS.sub("", x)).strip() if isinstance(x, str) else x
+
+
 def resumen_ia(salida):
     activos = {a["sym"]: a for a in salida["activos"]}
     def linea(a):
@@ -521,12 +531,12 @@ def resumen_ia(salida):
         '- "riesgos": lista de 2-3 frases: qué puede salir mal o qué está bajando.\n'
         '- "latam": 1-2 frases sobre qué significa para Colombia/Chile/Latinoamérica (dólar, petróleo, cobre, café).\n'
         "REGLAS: usa SOLO los datos y titulares dados, no inventes cifras. Usa las probabilidades tal cual vienen. "
-        "Nunca prometas ganancias ni digas 'compra'/'vende' como orden; habla de probabilidades. "
+        "No uses emojis. Nunca prometas ganancias ni digas 'compra'/'vende' como orden; habla de probabilidades. "
         "Responde SOLO con el JSON."
     )
     try:
         r = pedir_ia(instruccion, 3000)
-        out = {k: r.get(k) for k in ("titulo", "resumen", "creciendo", "puede_crecer", "riesgos", "latam")}
+        out = {k: sin_emojis(r.get(k)) for k in ("titulo", "resumen", "creciendo", "puede_crecer", "riesgos", "latam")}
         out["fuente"] = "ia"
         return out
     except Exception as e:
