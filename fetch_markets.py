@@ -130,6 +130,23 @@ NO_INVERTIBLES = {"Divisas", "^TNX"}
 CLAVE_CORR = ["^GSPC", "^IXIC", "VGK", "^N225", "FXI", "EWZ", "GXG", "ECH", "GC=F", "CL=F", "HG=F", "KC=F",
               "BTC-USD", "DX-Y.NYB", "USDCOP=X", "TLT"]
 
+# GRÁFICAS DE VELAS POR PAÍS: clave -> (nombre en la pestaña, activos que se grafican, en orden)
+PAISES_GRAFICAS = [
+    ("co", "🇨🇴 Colombia", ["GXG", "USDCOP=X", "EC", "CIB", "KC=F", "CL=F"]),
+    ("cl", "🇨🇱 Chile", ["ECH", "USDCLP=X", "SQM", "HG=F", "LIT"]),
+    ("us", "🇺🇸 EE. UU.", ["^GSPC", "^IXIC", "^DJI", "NVDA", "XLK", "TLT"]),
+    ("br", "🇧🇷 Brasil", ["^BVSP", "EWZ", "USDBRL=X", "PBR", "NU", "MELI"]),
+    ("mx", "🇲🇽 México", ["^MXX", "EWW", "USDMXN=X"]),
+    ("ar", "🇦🇷 Argentina", ["ARGT", "MELI"]),
+    ("eu", "🇪🇺 Europa", ["^STOXX50E", "^GDAXI", "^FTSE", "VGK", "EURUSD=X"]),
+    ("cn", "🇨🇳 China", ["000001.SS", "^HSI", "FXI", "HG=F"]),
+    ("jp", "🇯🇵 Japón", ["^N225", "EWJ", "USDJPY=X"]),
+    ("in", "🇮🇳 India", ["^BSESN", "INDA"]),
+    ("as", "🇰🇷 Corea y Taiwán", ["EWY", "TSM"]),
+    ("cr", "₿ Cripto", ["BTC-USD", "ETH-USD", "SOL-USD"]),
+    ("mp", "🛢️ Materias primas", ["GC=F", "CL=F", "HG=F", "KC=F", "SI=F", "NG=F"]),
+]
+
 # ----------------------------------------------------------------------------------------------
 # TEMAS DE NOTICIAS: clave -> (nombre, búsqueda en inglés, búsqueda en español)
 # ----------------------------------------------------------------------------------------------
@@ -207,60 +224,90 @@ def http(url, timeout=30, intentos=3):
     raise ultimo
 
 
+YAHOO_FALLOS = [0]  # si Yahoo falla muchas veces seguidas, se deja de intentar y se usa Stooq directo
+
+
 def precios_yahoo(sym):
-    """Devuelve lista [(fecha 'YYYY-MM-DD', cierre)] de los últimos 5 años, y la moneda."""
+    """Devuelve (serie [(fecha, cierre)], velas [[fecha, apertura, máximo, mínimo, cierre]], moneda)."""
+    if YAHOO_FALLOS[0] >= 6:
+        return None, None, ""
     for host in ("query1", "query2"):
         url = f"https://{host}.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(sym)}?range=5y&interval=1d&includePrePost=false"
         try:
-            d = json.loads(http(url, intentos=2))
+            d = json.loads(http(url, timeout=15, intentos=2))
             res = d["chart"]["result"][0]
             ts = res.get("timestamp") or []
-            cierres = res["indicators"]["quote"][0].get("close") or []
-            serie, vistos = [], set()
-            for t, c in zip(ts, cierres):
+            q = res["indicators"]["quote"][0]
+            cierres = q.get("close") or []
+            n = len(cierres)
+            aperturas = q.get("open") or [None] * n
+            maximos = q.get("high") or [None] * n
+            minimos = q.get("low") or [None] * n
+            serie, velas, vistos = [], [], set()
+            for t, o, h, l, c in zip(ts, aperturas, maximos, minimos, cierres):
                 if c is None or c <= 0:
                     continue
                 f = datetime.fromtimestamp(t, timezone.utc).strftime("%Y-%m-%d")
+                o = o if o and o > 0 else c
+                h = max(h if h and h > 0 else c, o, c)
+                l = min(l if l and l > 0 else c, o, c)
                 if f in vistos:
-                    serie[-1] = (f, c)
+                    serie[-1] = (f, float(c))
+                    velas[-1] = [f, velas[-1][1], max(velas[-1][2], h), min(velas[-1][3], l), float(c)]
                     continue
                 vistos.add(f)
                 serie.append((f, float(c)))
+                velas.append([f, float(o), float(h), float(l), float(c)])
             if len(serie) > 60:
-                return serie, res.get("meta", {}).get("currency", "")
+                YAHOO_FALLOS[0] = 0
+                return serie, velas, res.get("meta", {}).get("currency", "")
         except Exception as e:
             print(f"  yahoo {host} {sym}: {e}")
-    return None, ""
+    YAHOO_FALLOS[0] += 1
+    return None, None, ""
+
+
+STOOQ_FALLOS = [0]
 
 
 def precios_stooq(sym):
+    if STOOQ_FALLOS[0] >= 6:
+        return None, None
     url = f"https://stooq.com/q/d/l/?s={urllib.parse.quote(sym)}&i=d"
     try:
-        texto = http(url, intentos=2).decode()
+        texto = http(url, timeout=20, intentos=2).decode()
     except Exception as e:
         print(f"  stooq {sym}: {e}")
-        return None
+        STOOQ_FALLOS[0] += 1
+        return None, None
     filas = texto.strip().splitlines()[1:]
     desde = (datetime.now() - timedelta(days=5 * 366)).strftime("%Y-%m-%d")
-    serie = []
+    serie, velas = [], []
     for fila in filas:
         partes = fila.split(",")
         if len(partes) >= 5 and partes[0] >= desde:
             try:
-                serie.append((partes[0], float(partes[4])))
+                o, h, l, c = (float(x) for x in partes[1:5])
+                serie.append((partes[0], c))
+                velas.append([partes[0], o, max(h, o, c), min(l, o, c), c])
             except ValueError:
                 pass
-    return serie if len(serie) > 60 else None
+    if len(serie) > 60:
+        STOOQ_FALLOS[0] = 0
+        return serie, velas
+    STOOQ_FALLOS[0] += 1
+    return None, None
 
 
 def descargar_precios():
     datos = {}
     for sym, nombre, tipo, region, temas, stooq in ACTIVOS:
-        serie, moneda = precios_yahoo(sym)
+        serie, velas, moneda = precios_yahoo(sym)
         if not serie and stooq:
-            serie, moneda = precios_stooq(stooq), ""
+            serie, velas = precios_stooq(stooq)
+            moneda = ""
         if serie:
-            datos[sym] = {"serie": serie, "moneda": moneda}
+            datos[sym] = {"serie": serie, "velas": velas, "moneda": moneda}
             print(f"[precios] {nombre}: {len(serie)} días")
         else:
             print(f"[precios] {nombre}: SIN DATOS")
@@ -625,6 +672,13 @@ def aciertos_en_vivo(hist, precios_hoy):
 # ----------------------------------------------------------------------------------------------
 # PRINCIPAL
 # ----------------------------------------------------------------------------------------------
+def sig(x, cifras=5):
+    """Redondea a 5 cifras significativas (para que markets.json no pese tanto)."""
+    if not x:
+        return x
+    return round(x, max(0, cifras - 1 - int(math.floor(math.log10(abs(x))))))
+
+
 def r(x, n=2):
     return None if x is None else round(x, n)
 
@@ -710,6 +764,7 @@ def armar_salida(precios, noticias, hist):
             "puntaje": r(puntaje, 3), "p_hist": r(p_hist, 3), "noticias": r(sn, 3), "peso_noticias": r(peso_noticias, 3),
             "p": r(p, 3), "senal": senal, "rango": rango, "razones": razones,
             "spark": [r(x, 4) for x in c[-126::3]],
+            "velas": [[v[0]] + [sig(x) for x in v[1:]] for v in (d.get("velas") or [])[-130:]],
         })
 
     # Qué se mueve con qué (correlación de 6 meses de retornos diarios)
@@ -774,6 +829,8 @@ def armar_salida(precios, noticias, hist):
         "sectores": sectores,
         "regiones": regiones,
         "temas": temas_out,
+        "paises": [{"key": k, "nombre": n, "activos": [x for x in syms if x in nombres]}
+                   for k, n, syms in PAISES_GRAFICAS if any(x in nombres for x in syms)],
         "correlaciones": {"simbolos": claves, "nombres": [nombres[s] for s in claves], "matriz": matriz},
         "resumen": None,
         "ia": bool(ANTHROPIC_KEY),

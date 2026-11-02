@@ -62,6 +62,24 @@
   .resumen .latam { margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.15); color: var(--sun); }
   .resumen .nota { font-size: 0.72rem; color: #8A93A6; margin-top: 12px; }
 
+  /* Gráficas de velas por país */
+  .paises-tabs { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; scrollbar-width: none; margin-bottom: 14px; }
+  .paises-tabs::-webkit-scrollbar { display: none; }
+  .paises-tabs .tab { flex: none; }
+  .graf-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 14px; }
+  .graf { border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px 10px; background: var(--paper); position: relative; }
+  .graf .hd { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; cursor: pointer; }
+  .graf .hd b { font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; display: block; line-height: 1.2; }
+  .graf .hd small { font-size: 0.72rem; color: var(--muted); }
+  .graf .pr { text-align: right; white-space: nowrap; }
+  .graf .pr b { font-size: 1.15rem; }
+  .graf .pr span { font-weight: 800; font-size: 0.85rem; }
+  .graf svg { width: 100%; height: auto; display: block; margin-top: 8px; touch-action: pan-y; }
+  .graf .pie { display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--muted); margin-top: 2px; gap: 8px; }
+  .graf .tip { position: absolute; pointer-events: none; background: var(--ink); color: #fff; font-size: 0.72rem; padding: 6px 8px; border-radius: 6px; white-space: nowrap; z-index: 2; line-height: 1.45; }
+  .graf.es-unico { grid-column: 1 / -1; }
+  @media (max-width: 520px) { .graf-grid { grid-template-columns: 1fr; } }
+
   /* Tarjetas de probabilidad */
   .picks { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
   .pick { border: 1.5px solid var(--line); border-radius: 14px; padding: 16px 18px; background: var(--paper); cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; text-align: left; font: inherit; color: inherit; }
@@ -153,7 +171,6 @@
   .cal div span { position: absolute; top: -18px; left: 0; right: 0; text-align: center; font-size: 0.66rem; color: var(--muted); }
   .cal-x { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--muted); margin-top: 4px; }
 
-  .aviso { margin: 44px 0 0; background: #FFF7E8; border: 1px solid #F4D9A6; border-radius: 12px; padding: 16px 18px; font-size: 0.88rem; color: #6B4E16; }
   footer { padding: 26px 20px 40px; font-size: 0.72rem; color: var(--muted); text-align: center; }
   .vacio { color: var(--muted); padding: 40px 0; text-align: center; }
 
@@ -235,6 +252,20 @@
       <div class="latam hidden" id="r-latam"></div>
       <div class="nota" id="r-nota"></div>
     </div>
+  </section>
+
+  <section class="blk hidden" id="sec-graf">
+    <div class="blk-head">
+      <h2>Gráficas por país</h2>
+      <div class="tabs" id="tabs-rango">
+        <button class="tab" data-r="22">1 mes</button>
+        <button class="tab on" data-r="66">3 meses</button>
+        <button class="tab" data-r="130">6 meses</button>
+      </div>
+    </div>
+    <div class="paises-tabs" id="tabs-pais"></div>
+    <div class="graf-grid" id="graficas"></div>
+    <div class="leyenda" style="margin-top:12px"><span style="display:inline-block;width:10px;height:14px;background:var(--up);border-radius:2px"></span> Día que cerró arriba de donde abrió <span style="display:inline-block;width:10px;height:14px;background:var(--down);border-radius:2px;margin-left:10px"></span> Día que cerró abajo</div>
   </section>
 
   <section class="blk hidden" id="sec-picks">
@@ -349,16 +380,16 @@
     </div>
   </section>
 
-  <div class="aviso"><b>Ojo:</b> esto es información educativa, no una recomendación de inversión. Las probabilidades salen de datos pasados y de noticias; el mercado puede hacer cualquier cosa. Antes de invertir, infórmate, diversifica y no pongas plata que vayas a necesitar pronto.</div>
 </main>
 
-<footer>Finanzas Express · Datos: Yahoo Finance, Stooq y Google News. Se actualiza solo varias veces al día.</footer>
+<footer>Finanzas Express · Datos: Yahoo Finance, Stooq y Google News. Se actualiza solo varias veces al día. Información educativa, no asesoría de inversión.</footer>
 
 <div class="modal hidden" id="modal"><div class="box" id="modal-box"></div></div>
 
 <script>
 (function () {
   var $ = function (id) { return document.getElementById(id); };
+  var paisSel = 'co', rango = 66;
   var D = null, porSym = {}, horizonte = 'r1d', vistaSect = 'p', tipoTabla = 'Todos', orden = { k: 'p', dir: -1 };
 
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
@@ -387,6 +418,84 @@
     var col = vals[vals.length - 1] >= vals[0] ? '#0E8A5F' : '#D1343B';
     return '<svg width="' + w + '" height="' + h + '" viewBox="0 0 ' + w + ' ' + h + '"><polyline fill="none" stroke="' + col + '" stroke-width="1.6" stroke-linejoin="round" points="' + pts.join(' ') + '"/></svg>';
   }
+
+  // ---- Gráfica de velas (SVG) ----
+  function fmtN(v) { var d = v >= 1000 ? 0 : v >= 10 ? 2 : 4; return v.toLocaleString('es-CO', { minimumFractionDigits: d, maximumFractionDigits: d }); }
+  var MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+  function fmtF(f, anio) { var p = f.split('-'); return +p[2] + ' ' + MESES[+p[1] - 1] + (anio ? ' ' + p[0] : ''); }
+  function velasSVG(vs, W, H) {
+    if (!vs || vs.length < 2) return '<div class="vacio">Sin datos de velas</div>';
+    W = W || 560; H = H || 220;
+    var padR = 58, padB = 20, padT = 6, w = W - padR, h = H - padB - padT;
+    var mn = Infinity, mx = -Infinity;
+    vs.forEach(function (v) { if (v[3] < mn) mn = v[3]; if (v[2] > mx) mx = v[2]; });
+    var rg = (mx - mn) || mx * 0.01 || 1; mn -= rg * 0.04; mx += rg * 0.04; rg = mx - mn;
+    function y(v) { return padT + (mx - v) / rg * h; }
+    var paso = w / vs.length, ancho = Math.max(1, Math.min(9, paso * 0.68));
+    var g = '';
+    for (var i = 0; i <= 3; i++) {
+      var val = mn + rg * i / 3, yy = y(val).toFixed(1);
+      g += '<line x1="0" x2="' + w + '" y1="' + yy + '" y2="' + yy + '" stroke="#E4E6EB" stroke-width="1"/>' +
+        '<text x="' + (w + 6) + '" y="' + (+yy + 3.5) + '" font-size="10" fill="#5E6470">' + fmtN(val) + '</text>';
+    }
+    var cada = Math.ceil(vs.length / 5);
+    vs.forEach(function (v, i) {
+      if (i % cada === 0) g += '<text x="' + (i * paso + paso / 2).toFixed(1) + '" y="' + (H - 5) + '" font-size="10" fill="#5E6470" text-anchor="middle">' + fmtF(v[0]) + '</text>';
+    });
+    var velas = vs.map(function (v, i) {
+      var x = i * paso + paso / 2, sube = v[4] >= v[1], col = sube ? '#0E8A5F' : '#D1343B';
+      var y1 = y(Math.max(v[1], v[4])), y2 = y(Math.min(v[1], v[4]));
+      return '<line x1="' + x.toFixed(1) + '" x2="' + x.toFixed(1) + '" y1="' + y(v[2]).toFixed(1) + '" y2="' + y(v[3]).toFixed(1) + '" stroke="' + col + '" stroke-width="1"/>' +
+        '<rect x="' + (x - ancho / 2).toFixed(1) + '" y="' + y1.toFixed(1) + '" width="' + ancho.toFixed(1) + '" height="' + Math.max(1, y2 - y1).toFixed(1) + '" fill="' + col + '" rx="0.6"/>';
+    }).join('');
+    var ult = vs[vs.length - 1], yu = y(ult[4]).toFixed(1), cu = ult[4] >= vs[0][1] ? '#0E8A5F' : '#D1343B';
+    var marca = '<line x1="0" x2="' + w + '" y1="' + yu + '" y2="' + yu + '" stroke="' + cu + '" stroke-dasharray="3 3" stroke-width="1"/>' +
+      '<rect x="' + (w + 2) + '" y="' + (yu - 8) + '" width="' + (padR - 2) + '" height="16" rx="3" fill="' + cu + '"/>' +
+      '<text x="' + (w + 6) + '" y="' + (+yu + 3.5) + '" font-size="10" font-weight="700" fill="#fff">' + fmtN(ult[4]) + '</text>';
+    return '<svg viewBox="0 0 ' + W + ' ' + H + '" data-n="' + vs.length + '" data-w="' + w + '" data-ww="' + W + '">' + g + velas + marca +
+      '<line class="cursor" x1="0" x2="0" y1="' + padT + '" y2="' + (padT + h) + '" stroke="#111" stroke-width="1" opacity="0"/></svg>';
+  }
+  function tarjetaGraf(sym) {
+    var a = porSym[sym]; if (!a) return '';
+    var vs = (a.velas || []).slice(-rango);
+    var cambio = vs.length > 1 ? (vs[vs.length - 1][4] / vs[0][1] - 1) * 100 : null;
+    var nombreR = rango === 22 ? '1 mes' : rango === 66 ? '3 meses' : '6 meses';
+    var subenD = vs.filter(function (v) { return v[4] >= v[1]; }).length;
+    return '<div class="graf" data-g="' + esc(sym) + '"><div class="hd" data-sym="' + esc(sym) + '"><div><b>' + esc(a.nombre) + '</b><small>' + esc(a.tipo) + (a.moneda ? ' · ' + esc(a.moneda) : '') + '</small></div>' +
+      '<div class="pr num"><b>' + precio(a) + '</b><br><span class="' + cls(a.r1d) + '">' + pct(a.r1d) + ' hoy</span></div></div>' +
+      (window.innerWidth < 520 ? velasSVG(vs, 380, 210) : velasSVG(vs)) +
+      '<div class="pie num"><span>' + nombreR + ': <b class="' + cls(cambio) + '">' + pct(cambio) + '</b></span><span>' + subenD + ' días verdes · ' + (vs.length - subenD) + ' rojos</span>' +
+      '<span>Prob. subir <b style="color:' + colorP(a.p) + '">' + prob(a.p) + '</b></span></div></div>';
+  }
+  function pintarGraficas() {
+    var p = (D.paises || []).filter(function (x) { return x.key === paisSel; })[0] || (D.paises || [])[0];
+    if (!p) return;
+    paisSel = p.key;
+    $('tabs-pais').innerHTML = D.paises.map(function (x) { return '<button class="tab' + (x.key === paisSel ? ' on' : '') + '" data-p="' + esc(x.key) + '">' + esc(x.nombre) + '</button>'; }).join('');
+    $('graficas').innerHTML = p.activos.map(tarjetaGraf).join('');
+  }
+  // Tooltip al pasar el dedo/mouse por la gráfica
+  function moverTip(e) {
+    var svg = e.target.closest && e.target.closest('.graf svg'); 
+    document.querySelectorAll('.graf .tip').forEach(function (t) { if (!svg || t.parentNode !== svg.parentNode) t.remove(); });
+    if (!svg) return;
+    var card = svg.closest('.graf'), a = porSym[card.dataset.g]; if (!a) return;
+    var vs = (a.velas || []).slice(-rango), r = svg.getBoundingClientRect();
+    var ww = +svg.dataset.ww, w = +svg.dataset.w, px = e.touches ? e.touches[0].clientX : e.clientX;
+    var xv = (px - r.left) / r.width * ww; if (xv > w) xv = w - 1;
+    var i = Math.max(0, Math.min(vs.length - 1, Math.floor(xv / (w / vs.length)))), v = vs[i];
+    var cur = svg.querySelector('.cursor'), cx = (i + 0.5) * w / vs.length;
+    cur.setAttribute('x1', cx); cur.setAttribute('x2', cx); cur.setAttribute('opacity', '0.35');
+    var tip = card.querySelector('.tip'); if (!tip) { tip = document.createElement('div'); tip.className = 'tip num'; card.appendChild(tip); }
+    var cambio = (v[4] / v[1] - 1) * 100;
+    tip.innerHTML = '<b>' + fmtF(v[0], true) + '</b> <span style="color:' + (v[4] >= v[1] ? '#6FE0AE' : '#FF8A8F') + '">' + pct(cambio) + '</span><br>Abrió ' + fmtN(v[1]) + ' · Cerró ' + fmtN(v[4]) + '<br>Máx ' + fmtN(v[2]) + ' · Mín ' + fmtN(v[3]);
+    var cr = card.getBoundingClientRect(), left = px - cr.left + 12;
+    if (left + 190 > cr.width) left = px - cr.left - 200;
+    tip.style.left = Math.max(4, left) + 'px'; tip.style.top = (r.top - cr.top + 8) + 'px';
+  }
+  document.addEventListener('mousemove', moverTip);
+  document.addEventListener('touchmove', moverTip, { passive: true });
+  document.addEventListener('touchstart', moverTip, { passive: true });
 
   function tarjeta(a) {
     var c = colorP(a.p);
@@ -515,7 +624,7 @@
       '<div class="mono" style="font-size:.7rem;color:var(--muted)">' + esc(a.tipo) + ' · ' + esc(a.region) + ' · ' + esc(a.sym) + '</div>' +
       '<h3>' + esc(a.nombre) + '</h3>' +
       '<div style="display:flex;align-items:baseline;gap:12px;margin-top:4px"><b class="num" style="font-size:1.6rem">' + precio(a) + ' <small style="font-size:.8rem;color:var(--muted)">' + esc(a.moneda) + '</small></b><span class="num ' + cls(a.r1d) + '" style="font-weight:800">' + pct(a.r1d) + ' hoy</span><span class="tag ' + a.senal + '">' + a.senal + '</span></div>' +
-      '<div style="margin:12px 0">' + spark(a.spark, 570, 90).replace('<svg ', '<svg style="width:100%;height:auto" ') + '</div>' +
+      '<div style="margin:12px 0">' + (a.velas && a.velas.length ? velasSVG(a.velas.slice(-66), 570, 230) : spark(a.spark, 570, 90).replace('<svg ', '<svg style="width:100%;height:auto" ')) + '</div>' +
       '<div class="grid4 num">' +
       '<div><small>Prob. subir 1 mes</small><b style="color:' + colorP(a.p) + '">' + prob(a.p) + '</b></div>' +
       '<div><small>Rango típico 1 mes</small><b>' + (a.rango ? pct(a.rango[0], 0) + ' / ' + pct(a.rango[2], 0) : '–') + '</b></div>' +
@@ -549,8 +658,8 @@
     $('regiones').innerHTML = celdas(D.regiones, 'p');
     var tipos = ['Todos'].concat(D.activos.map(function (a) { return a.tipo; }).filter(function (x, i, arr) { return arr.indexOf(x) === i; }));
     $('tabs-t').innerHTML = tipos.map(function (x) { return '<button class="tab' + (x === tipoTabla ? ' on' : '') + '" data-t="' + esc(x) + '">' + esc(x) + '</button>'; }).join('');
-    pintarTabla(); pintarTemas(); pintarCorr(); pintarModelo();
-    ['sec-picks', 'sec-evitar', 'sec-movers', 'sec-sect', 'sec-reg', 'sec-tabla', 'sec-noticias', 'sec-corr', 'sec-modelo'].forEach(function (id) { $(id).classList.remove('hidden'); });
+    pintarTabla(); pintarTemas(); pintarCorr(); pintarModelo(); pintarGraficas();
+    ['sec-graf', 'sec-picks', 'sec-evitar', 'sec-movers', 'sec-sect', 'sec-reg', 'sec-tabla', 'sec-noticias', 'sec-corr', 'sec-modelo'].forEach(function (id) { $(id).classList.remove('hidden'); });
   }
 
   // ---- Eventos ----
@@ -561,6 +670,8 @@
       fn(b.dataset[attr]);
     });
   }
+  tabs('tabs-pais', 'p', function (v) { paisSel = v; pintarGraficas(); });
+  tabs('tabs-rango', 'r', function (v) { rango = +v; pintarGraficas(); });
   tabs('tabs-h', 'h', function (v) { horizonte = v; pintarMovers(); });
   tabs('tabs-s', 'v', function (v) { vistaSect = v; pintarSectores(); });
   tabs('tabs-t', 't', function (v) { tipoTabla = v; pintarTabla(); });
