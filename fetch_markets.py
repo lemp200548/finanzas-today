@@ -355,9 +355,21 @@ def precios_yfinance(simbolos):
     return salida
 
 
+# Si un símbolo deja de existir en Yahoo, se prueban estos nombres alternativos (en orden)
+ALTERNATIVOS = {"GXG": ["COLO", "ICOLCAP.CL", "GXG.L"]}
+
+
 def descargar_precios():
     datos = {}
     bloque = precios_yfinance([a[0] for a in ACTIVOS])
+    for sym, alternos in ALTERNATIVOS.items():
+        if sym not in bloque:
+            for alt in alternos:
+                r = precios_yfinance([alt])
+                if alt in r:
+                    print(f"[precios] {sym} se tomó de {alt}")
+                    bloque[sym] = r[alt]
+                    break
     for sym, nombre, tipo, region, temas, stooq in ACTIVOS:
         if sym in bloque:
             serie, velas = bloque[sym]
