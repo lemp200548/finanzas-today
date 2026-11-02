@@ -1,6 +1,6 @@
 """Busca las noticias del día y las guarda en news.json.
 Lo corre GitHub Actions todos los días (ver .github/workflows/news.yml)."""
-import json, os, re, time, urllib.request, urllib.error, urllib.parse, xml.etree.ElementTree as ET
+import json, os, re, sys, time, urllib.request, urllib.error, urllib.parse, xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 
@@ -77,9 +77,20 @@ def buscar(consulta, fuentes, dias, gl):
     q = f"{consulta} ({sitios}) when:{dias}d"
     url = "https://news.google.com/rss/search?" + urllib.parse.urlencode(
         {"q": q, "hl": "es-419", "gl": gl, "ceid": f"{gl}:es-419"})
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return r.read()
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+        "Accept-Language": "es-CO,es;q=0.9"})
+    ultimo_error = None
+    for intento in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                datos = r.read()
+            time.sleep(1)  # pausa entre búsquedas para que Google no nos bloquee
+            return datos
+        except Exception as e:
+            ultimo_error = e
+            time.sleep(5 * (intento + 1))
+    raise ultimo_error
 
 
 def leer(xml_bytes):
@@ -372,11 +383,19 @@ def resumen_de(paises):
 
 def main():
     paises = {codigo: noticias_de(pais) for codigo, pais in PAISES.items()}
+    total = sum(len(v) for v in paises.values())
+    if total < 15:
+        print(f"ERROR: solo se encontraron {total} noticias (Google Noticias no respondió bien). "
+              "Se deja la versión anterior de la página y no se mandan correos hoy.")
+        sys.exit(1)
     for codigo in paises:
         if ANTHROPIC_KEY:
             try:
-                paises[codigo] = clasificar(codigo, codigo, paises[codigo])
-                continue
+                revisadas = clasificar(codigo, codigo, paises[codigo])
+                if len(revisadas) >= max(10, len(paises[codigo]) * 0.25):
+                    paises[codigo] = revisadas
+                    continue
+                print(f"[{codigo}] la IA descartó demasiadas ({len(revisadas)} de {len(paises[codigo])}); se usan sin revisar")
             except Exception as e:
                 print(f"[{codigo}] revisión IA con error, se usan las noticias sin revisar: {e}")
         paises[codigo] = recortar(paises[codigo])
