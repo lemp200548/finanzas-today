@@ -13,6 +13,8 @@ CO_PLANES = ["eltiempo.com", "semana.com", "bogota.gov.co", "infobae.com", "civi
 # ---------------- VENEZUELA ----------------
 VE_NEGOCIOS = ["bancaynegocios.com", "finanzasdigital.com", "descifrado.com", "bloomberglinea.com",
                "eluniversal.com", "elestimulo.com", "talcualdigital.com", "efectococuyo.com", "elnacional.com"]
+CO_TRENDING = ["eltiempo.com", "semana.com", "infobae.com", "elespectador.com", "pulzo.com", "elcolombiano.com"]
+VE_TRENDING = ["eluniversal.com", "elnacional.com", "elestimulo.com", "efectococuyo.com", "elpitazo.net"]
 CO_DEPORTES = ["eltiempo.com", "semana.com", "elcolombiano.com", "futbolred.com", "infobae.com", "elespectador.com"]
 VE_DEPORTES = ["meridiano.net", "liderendeportes.com", "eluniversal.com", "elnacional.com", "elestimulo.com"]
 VE_PLANES = ["eluniversal.com", "elestimulo.com", "efectococuyo.com", "elnacional.com", "elpitazo.net"]
@@ -32,6 +34,7 @@ PAISES = {
             "Nuevos CEO": ('"nuevo presidente" OR "nuevo CEO" OR nombramiento OR "asume la presidencia" OR "nueva presidenta"', "Colombia", CO_NEGOCIOS, 2),
             "Consultoría": ("consultoría OR consultora OR McKinsey OR Deloitte OR EY OR PwC OR KPMG", "Colombia", CO_NEGOCIOS, 3),
             "Deportes": ('fútbol OR "Selección Colombia" OR "Liga BetPlay" OR ciclismo OR tenis OR deportes', "Colombia", CO_DEPORTES, 1),
+            "Trending": ('viral OR tendencia OR "redes sociales" OR famosos OR farándula OR TikTok OR influencer OR Netflix', "Colombia", CO_TRENDING, 1),
             "Planes en Bogotá": ('planes OR concierto OR festival OR feria OR evento OR "fin de semana" OR restaurante', "Bogotá", CO_PLANES, 3),
         },
     },
@@ -46,6 +49,7 @@ PAISES = {
             "Emprendimiento": ("emprendimiento OR emprendedores OR startup OR pymes OR emprendedor", "Venezuela", VE_NEGOCIOS, 3),
             "Nuevos CEO": ('"nuevo presidente" OR "nuevo CEO" OR nombramiento OR designado OR "nueva presidenta"', "Venezuela", VE_NEGOCIOS, 3),
             "Deportes": ("fútbol OR Vinotinto OR béisbol OR LVBP OR baloncesto OR deportes OR beisbol", "Venezuela", VE_DEPORTES, 1),
+            "Trending": ('viral OR tendencia OR "redes sociales" OR famosos OR farándula OR TikTok OR influencer', "Venezuela", VE_TRENDING, 2),
             "Planes en Caracas": ("planes OR concierto OR festival OR feria OR evento OR restaurante", "Caracas", VE_PLANES, 3),
         },
     },
@@ -254,19 +258,73 @@ def buscar_foto_noticia(texto, gl="CO"):
             elif nombre == "source":
                 fuente = (hijo.text or "").strip()
         if foto:
-            if "bing.com/th" in foto and "&w=" not in foto:
-                foto += "&w=800&h=450&c=7"
-            return {"url": foto.replace("http://", "https://"), "fuente": fuente, "link": (item.findtext("link") or "").strip()}
+            return {"url": arreglar_foto(foto), "fuente": fuente, "link": (item.findtext("link") or "").strip()}
     return None
 
 
+VACIAS = set("""el la los las un una unos unas de del al a en y o u que se su sus por para con sin sobre tras ante
+entre hasta desde como más mas menos muy ya no si es son fue será ser este esta estos estas ese esa eso lo le les
+hay tiene tienen nuevo nueva nuevos nuevas cómo qué cuál cuando donde dónde hace hoy""".split())
+
+
+def palabras_clave(titulo, n=5):
+    palabras = re.findall(r"[\wáéíóúñÁÉÍÓÚÑ$%]+", titulo)
+    utiles = [p for p in palabras if p.lower() not in VACIAS and len(p) > 2]
+    nombres = [p for p in utiles if p[0].isupper()]
+    elegidas = (nombres + [p for p in utiles if p not in nombres])[:n]
+    return " ".join(elegidas)
+
+
+def fotos_de_tema(consulta, gl, cuantas=10):
+    """Varias fotos distintas para un tema (se usan en noticias que no consiguieron foto propia)."""
+    url = "https://www.bing.com/news/search?" + urllib.parse.urlencode(
+        {"q": consulta, "format": "rss", "mkt": "es-CO" if gl == "CO" else "es-VE"})
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            raiz = ET.fromstring(r.read())
+    except Exception:
+        return []
+    fotos = []
+    for item in raiz.iter("item"):
+        for hijo in item:
+            if hijo.tag.split("}")[-1].lower() == "image" and (hijo.text or "").startswith("http"):
+                fotos.append(arreglar_foto(hijo.text.strip()))
+                break
+        if len(fotos) >= cuantas:
+            break
+    return fotos
+
+
+def arreglar_foto(url):
+    url = url.replace("http://", "https://")
+    if "bing.com/th" in url:
+        url = re.sub(r"&(w|h|c|rs|p|pid)=[^&]*", "", url) + "&pid=News&w=800&h=450&c=7&rs=1&p=0"
+    return url
+
+
 def poner_fotos(noticias, gl):
-    """Le busca foto a cada noticia (la usa la página como portada)."""
+    """Le busca foto a cada noticia: 1) titular, 2) palabras clave, 3) fotos del tema."""
+    pais = "Colombia" if gl == "CO" else "Venezuela"
     con_foto = 0
     for n in noticias:
-        res = buscar_foto_noticia(n["titulo"], gl)
+        res = buscar_foto_noticia(n["titulo"], gl) or buscar_foto_noticia(f"{palabras_clave(n['titulo'])} {pais}", gl)
         if res:
-            n["imagen"] = res["url"]
+            n["imagen"] = arreglar_foto(res["url"])
+            con_foto += 1
+        time.sleep(0.3)
+    # Las que siguen sin foto: fotos del tema de su categoría (sin repetir)
+    usadas = {n.get("imagen") for n in noticias if n.get("imagen")}
+    por_cat = {}
+    for n in noticias:
+        if not n.get("imagen"):
+            por_cat.setdefault(n["categoria"], []).append(n)
+    for cat, faltan in por_cat.items():
+        tema = cat.replace("Planes en ", "planes ") + " " + pais
+        disponibles = [f for f in fotos_de_tema(tema, gl, 15) if f not in usadas]
+        for n, foto in zip(faltan, disponibles):
+            n["imagen"] = foto
+            usadas.add(foto)
             con_foto += 1
         time.sleep(0.3)
     print(f"[{gl}] fotos: {con_foto} de {len(noticias)} noticias")
@@ -302,6 +360,7 @@ DEFINICIONES = {
     "Nuevos CEO": "SOLO nombramientos o salidas de presidentes, CEOs o directivos de EMPRESAS (no de gobierno ni sindicatos)",
     "Consultoría": "firmas de consultoría y auditoría (McKinsey, Deloitte, EY, PwC, KPMG, etc.) y su actividad en el país",
     "Deportes": "SOLO deportes: equipos, deportistas, ligas o selecciones del país, o deportistas del país en el exterior",
+    "Trending": "temas virales, tendencias en redes sociales, famosos, farándula, cultura pop y entretenimiento del país (no tragedias ni crímenes)",
     "Planes en Bogotá": "conciertos, festivales, ferias, restaurantes, eventos culturales en Bogotá",
     "Planes en Caracas": "conciertos, festivales, ferias, restaurantes, eventos culturales en Caracas",
 }

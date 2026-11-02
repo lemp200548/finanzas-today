@@ -95,7 +95,25 @@
 
   .temas-sec { border-top: 1px solid var(--line); padding: 44px 0 64px; }
   .temas-sec h2 { font-weight: 800; font-size: 2.1rem; letter-spacing: -0.035em; margin-bottom: 18px; }
+  .grupos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 18px; }
+  .grupo { font: inherit; text-align: left; cursor: pointer; border: 1.5px solid var(--line); background: var(--paper); border-radius: 14px; padding: 16px 18px; display: flex; align-items: center; gap: 14px; transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease; }
+  .grupo:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.06); }
+  .grupo .ico { flex: none; width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; font-weight: 900; font-size: 1.5rem; background: var(--g-fondo); color: var(--g-letra); }
+  .grupo b { display: block; font-size: 1.05rem; }
+  .grupo small { color: var(--muted); font-size: 0.82rem; }
+  .grupo.on { border-color: var(--ink); background: var(--ink); color: #fff; }
+  .grupo.on small { color: #B9C0CC; }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 26px; }
+  .chip .c { opacity: .6; font-weight: 500; margin-left: 4px; }
+  @media (max-width: 700px) {
+    .grupos { grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+    .grupo { flex-direction: column; align-items: flex-start; gap: 8px; padding: 12px; }
+    .grupo .ico { width: 38px; height: 38px; font-size: 1.2rem; }
+    .grupo b { font-size: 0.9rem; }
+    .chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; scrollbar-width: none; }
+    .chips::-webkit-scrollbar { display: none; }
+    .chip { flex: none; }
+  }
   .chip { font: inherit; font-size: 0.9rem; font-weight: 600; border: 1.5px solid var(--line); background: var(--paper); color: var(--ink); padding: 7px 14px; border-radius: 999px; cursor: pointer; }
   .chip:hover { border-color: var(--ink); }
   .chip.on { background: var(--blue); color: #fff; border-color: var(--blue); }
@@ -210,6 +228,7 @@
 <section class="temas-sec" id="temas">
   <div class="wrap">
     <h2>Por tema</h2>
+    <div class="grupos" id="grupos"></div>
     <div class="chips" id="chips"></div>
     <div class="grid" id="grid"></div>
   </div>
@@ -295,7 +314,8 @@
     'Consultoría': ['#14315E', '#7FB0FF', '?'],
     'Deportes': ['#2E7D32', '#B4E8B6', '#'],
     'Planes en Bogotá': ['#D6457A', '#FFC0D6', '!'],
-    'Planes en Caracas': ['#D6457A', '#FFC0D6', '!']
+    'Planes en Caracas': ['#D6457A', '#FFC0D6', '!'],
+    'Trending': ['#E4405F', '#FFC2CF', '★']
   };
 
   function mostrarResumen() {
@@ -323,7 +343,7 @@
     var lista = ((datos.paises && datos.paises[pais]) || []).slice();
     if (!lista.length) {
       $('latest').innerHTML = '<p class="vacio">Todavía no hay noticias hoy. Vuelve más tarde.</p>';
-      $('grid').innerHTML = ''; $('chips').innerHTML = '';
+      $('grid').innerHTML = ''; $('chips').innerHTML = ''; $('grupos').innerHTML = '';
       return;
     }
     if (false) {
@@ -353,20 +373,46 @@
 
     $('latest').innerHTML = recientes.filter(function (n) { return n !== d; }).slice(0, 5).map(itemLatest).join('');
 
-    var cats = ['Todas'];
-    lista.forEach(function (n) { if (cats.indexOf(n.categoria) < 0) cats.push(n.categoria); });
-    $('chips').innerHTML = cats.map(function (c, i) {
-      return '<button class="chip' + (i === 0 ? ' on' : '') + '" data-cat="' + esc(c) + '">' + esc(c) + '</button>';
+    temasActual = lista;
+    pintarGrupos();
+  }
+
+  // ---- Por tema: grupos (Economía / Negocios / Entretenimiento) y subcategorías ----
+  var GRUPOS = [
+    { nombre: 'Economía', sim: '$', fondo: '#1F5BD8', letra: '#DCE7FF', cats: ['Economía', 'Sector financiero', 'Petróleo y energía', 'Consultoría'] },
+    { nombre: 'Negocios', sim: '&', fondo: '#1E8E5A', letra: '#D7F5E5', cats: ['Empresas', 'Emprendimiento', 'Nuevos CEO', 'Tecnología'] },
+    { nombre: 'Entretenimiento', sim: '★', fondo: '#E4405F', letra: '#FFE1E7', cats: ['Deportes', 'Trending', 'Planes en Bogotá', 'Planes en Caracas'] }
+  ];
+  var temasActual = [], grupoActual = 0, catActual = 'Todo';
+  try { grupoActual = Math.min(2, Math.max(0, +(localStorage.getItem('grupo') || 0))); } catch (e) {}
+
+  function pintarGrupos() {
+    var lista = temasActual;
+    $('grupos').innerHTML = GRUPOS.map(function (g, i) {
+      var n = lista.filter(function (x) { return g.cats.indexOf(x.categoria) >= 0; }).length;
+      return '<button class="grupo' + (i === grupoActual ? ' on' : '') + '" data-i="' + i + '" style="--g-fondo:' + g.fondo + ';--g-letra:' + g.letra + '">' +
+        '<span class="ico">' + g.sim + '</span><span><b>' + g.nombre + '</b><small>' + n + ' noticias</small></span></button>';
     }).join('');
-    $('grid').innerHTML = lista.map(item).join('');
-    $('chips').querySelectorAll('.chip').forEach(function (b) {
+    $('grupos').querySelectorAll('.grupo').forEach(function (b) {
       b.onclick = function () {
-        $('chips').querySelectorAll('.chip').forEach(function (x) { x.classList.remove('on'); });
-        b.classList.add('on');
-        $('grid').querySelectorAll('.item').forEach(function (n) {
-          n.classList.toggle('hide', b.dataset.cat !== 'Todas' && n.dataset.cat !== b.dataset.cat);
-        });
+        grupoActual = +b.dataset.i; catActual = 'Todo';
+        try { localStorage.setItem('grupo', grupoActual); } catch (e) {}
+        pintarGrupos();
       };
+    });
+    var g = GRUPOS[grupoActual];
+    var delGrupo = lista.filter(function (x) { return g.cats.indexOf(x.categoria) >= 0; });
+    var cats = g.cats.filter(function (c) { return delGrupo.some(function (x) { return x.categoria === c; }); });
+    $('chips').innerHTML = ['Todo'].concat(cats).map(function (c) {
+      var n = c === 'Todo' ? delGrupo.length : delGrupo.filter(function (x) { return x.categoria === c; }).length;
+      return '<button class="chip' + (c === catActual ? ' on' : '') + '" data-cat="' + esc(c) + '">' + esc(c) + '<span class="c">' + n + '</span></button>';
+    }).join('');
+    // ordenar: primero las que tienen foto, para que se vea más visual
+    var mostrar = delGrupo.filter(function (x) { return catActual === 'Todo' || x.categoria === catActual; })
+      .sort(function (a, b) { return (b.imagen ? 1 : 0) - (a.imagen ? 1 : 0); });
+    $('grid').innerHTML = mostrar.length ? mostrar.map(item).join('') : '<p class="vacio">Todavía no hay noticias en este grupo hoy.</p>';
+    $('chips').querySelectorAll('.chip').forEach(function (b) {
+      b.onclick = function () { catActual = b.dataset.cat; pintarGrupos(); };
     });
   }
 
