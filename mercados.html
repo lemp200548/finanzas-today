@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mercados · Finanzas Express</title>
+<meta name="description" content="Qué sube y qué baja en los mercados del mundo, por sectores y regiones, con probabilidades calculadas con 5 años de historia y el sentimiento de las noticias.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #1F5BD8; --blue-dark: #1747AD; --ink: #111111; --muted: #5E6470; --line: #E4E6EB;
+    --paper: #FFFFFF; --cream: #F8F7F3; --orange: #EE7350; --sun: #F4BE6A;
+    --up: #0E8A5F; --up-bg: #E3F5EC; --down: #D1343B; --down-bg: #FCE7E8; --flat: #8A93A6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter Tight', system-ui, sans-serif; background: var(--paper); color: var(--ink); line-height: 1.5; }
+  a { color: inherit; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; }
+  .num { font-variant-numeric: tabular-nums; }
+  .hidden { display: none !important; }
+
+  .topbar { height: 8px; background: var(--blue); }
+  header { border-bottom: 1px solid var(--line); background: var(--paper); position: sticky; top: 0; z-index: 10; }
+  .bar { display: flex; justify-content: space-between; align-items: center; height: 68px; gap: 12px; }
+  .logo { font-weight: 900; font-size: 1.5rem; letter-spacing: -0.04em; text-decoration: none; }
+  .logo span { color: var(--blue); }
+  .nav { display: flex; gap: 6px; }
+  .nav a { text-decoration: none; font-weight: 700; font-size: 0.95rem; padding: 8px 14px; border-radius: 999px; border: 1.5px solid var(--line); }
+  .nav a.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+  .hero { background: var(--cream); border-bottom: 1px solid var(--line); }
+  .hero .wrap { padding-top: 40px; padding-bottom: 40px; display: grid; grid-template-columns: 1fr 340px; gap: 40px; align-items: center; }
+  .hero h1 { font-weight: 900; font-size: clamp(2.2rem, 5.5vw, 3.8rem); line-height: 1; letter-spacing: -0.045em; }
+  .hero h1 em { font-style: normal; color: var(--blue); }
+  .hero p { font-size: 1.1rem; color: var(--muted); margin: 14px 0 0; max-width: 52ch; }
+  .actualizado { font-size: 0.72rem; color: var(--muted); margin-top: 14px; }
+  .termo { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 20px; text-align: center; }
+  .termo .t { font-size: 0.72rem; color: var(--muted); }
+  .termo svg { width: 100%; max-width: 260px; display: block; margin: 6px auto 0; }
+  .termo .val { font-weight: 900; font-size: 2.2rem; letter-spacing: -0.03em; margin-top: 2px; line-height: 1.1; }
+  .termo .lab { font-weight: 700; }
+  .termo .sub { font-size: 0.85rem; color: var(--muted); margin-top: 6px; }
+
+  section.blk { padding: 44px 0 8px; }
+  .blk-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+  .blk-head h2 { font-weight: 800; font-size: clamp(1.6rem, 3.4vw, 2.1rem); letter-spacing: -0.035em; }
+  .blk-head p { color: var(--muted); font-size: 0.95rem; max-width: 60ch; }
+
+  /* Resumen IA */
+  .resumen { background: var(--ink); color: #fff; border-radius: 16px; padding: 28px 30px; }
+  .resumen .t { font-size: 0.75rem; color: #9FB8F0; }
+  .resumen h2 { font-weight: 900; font-size: clamp(1.4rem, 3vw, 2rem); letter-spacing: -0.03em; line-height: 1.15; margin: 8px 0 10px; }
+  .resumen > p { color: #D9DEE8; font-size: 1.05rem; max-width: 80ch; }
+  .res-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 22px; }
+  .res-col { background: rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 18px; }
+  .res-col h3 { font-size: 0.95rem; font-weight: 800; margin-bottom: 8px; }
+  .res-col.g h3 { color: #6FE0AE; } .res-col.b h3 { color: #F4BE6A; } .res-col.r h3 { color: #FF8A8F; }
+  .res-col li { color: #D9DEE8; font-size: 0.93rem; margin: 0 0 8px 18px; }
+  .resumen .latam { margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.15); color: var(--sun); }
+  .resumen .nota { font-size: 0.72rem; color: #8A93A6; margin-top: 12px; }
+
+  /* Tarjetas de probabilidad */
+  .picks { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+  .pick { border: 1.5px solid var(--line); border-radius: 14px; padding: 16px 18px; background: var(--paper); cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; text-align: left; font: inherit; color: inherit; }
+  .pick:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.06); }
+  .pick .top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  .pick .tipo { font-size: 0.68rem; color: var(--muted); }
+  .pick h3 { font-size: 1.12rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; }
+  .pick .prob { font-weight: 900; font-size: 1.7rem; letter-spacing: -0.03em; line-height: 1; }
+  .pick .prob small { display: block; font-size: 0.66rem; font-weight: 600; color: var(--muted); letter-spacing: 0; text-align: right; }
+  .pbar { height: 8px; background: var(--line); border-radius: 99px; margin: 12px 0 10px; position: relative; overflow: hidden; }
+  .pbar i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 99px; }
+  .pbar::after { content: ''; position: absolute; left: 50%; top: -2px; bottom: -2px; width: 2px; background: var(--paper); }
+  .pick .meta { display: flex; justify-content: space-between; font-size: 0.82rem; color: var(--muted); gap: 8px; }
+  .pick ul { margin-top: 10px; font-size: 0.84rem; color: var(--muted); }
+  .pick li { margin: 0 0 4px 16px; }
+  .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--flat); }
+  .tag { display: inline-block; font-size: 0.72rem; font-weight: 700; border-radius: 999px; padding: 2px 9px; white-space: nowrap; }
+  .tag.Sube { background: var(--up-bg); color: var(--up); } .tag.Baja { background: var(--down-bg); color: var(--down); } .tag.Neutral { background: #EEF0F3; color: var(--muted); }
+
+  /* Movers */
+  .tabs { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+  .tab { font: inherit; font-weight: 700; font-size: 0.88rem; border: 1.5px solid var(--line); background: var(--paper); color: var(--ink); padding: 6px 13px; border-radius: 999px; cursor: pointer; }
+  .tab.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .movers { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .movers h3 { font-size: 1rem; font-weight: 800; margin-bottom: 6px; }
+  .mv { display: grid; grid-template-columns: 1fr 90px 76px; gap: 10px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--line); cursor: pointer; }
+  .mv:hover b { text-decoration: underline; }
+  .mv b { font-weight: 700; display: block; line-height: 1.2; }
+  .mv small { color: var(--muted); font-size: 0.75rem; }
+  .mv .v { text-align: right; font-weight: 800; }
+  .barra { height: 10px; position: relative; }
+  .barra i { position: absolute; top: 0; bottom: 0; border-radius: 3px; }
+
+  /* Heatmaps sectores/regiones */
+  .heat { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 8px; }
+  .cell { border-radius: 12px; padding: 14px; min-height: 104px; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; border: 0; font: inherit; text-align: left; transition: transform .15s ease; }
+  .cell:hover { transform: scale(1.02); }
+  .cell b { font-size: 0.98rem; line-height: 1.2; }
+  .cell .big { font-weight: 900; font-size: 1.5rem; letter-spacing: -0.03em; }
+  .cell small { font-size: 0.75rem; opacity: .85; }
+  .leyenda { display: flex; align-items: center; gap: 8px; font-size: 0.75rem; color: var(--muted); margin-top: 10px; }
+  .leyenda .grad { width: 160px; height: 8px; border-radius: 99px; background: linear-gradient(90deg, #B4232A, #F2B8BB, #EEF0F3, #9FDCC0, #0B7350); }
+
+  /* Tabla */
+  .filtros { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+  .filtros input { font: inherit; border: 1.5px solid var(--line); border-radius: 999px; padding: 6px 14px; min-width: 180px; }
+  .tabla-wrap { overflow: auto; max-height: 640px; border: 1px solid var(--line); border-radius: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 860px; }
+  th { text-align: right; font-size: 0.7rem; color: var(--muted); font-weight: 600; padding: 10px 10px; border-bottom: 1px solid var(--line); cursor: pointer; white-space: nowrap; background: var(--cream); position: sticky; top: 0; }
+  th:first-child, td:first-child { text-align: left; }
+  th.ord { color: var(--ink); }
+  td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  tbody tr { cursor: pointer; } tbody tr:hover { background: #FAFBFC; }
+  td .n { font-weight: 700; } td .s { display: block; font-size: 0.72rem; color: var(--muted); }
+  td svg { display: block; margin-left: auto; }
+
+  /* Noticias */
+  .temas { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; }
+  .tema { border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+  .tema .hd { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .tema h3 { font-size: 1.05rem; font-weight: 800; }
+  .tema .act { font-size: 0.75rem; color: var(--muted); margin: 2px 0 8px; }
+  .tema a { display: grid; grid-template-columns: 10px 1fr; gap: 8px; text-decoration: none; font-size: 0.88rem; line-height: 1.35; padding: 6px 0; border-top: 1px solid var(--line); }
+  .tema a:hover span { text-decoration: underline; }
+  .tema a i { width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; }
+  .tema a em { font-style: normal; color: var(--muted); font-size: 0.75rem; }
+  .tema .apr { font-size: 0.72rem; color: var(--muted); margin-top: 8px; }
+
+  /* Correlaciones */
+  .corr-wrap { overflow-x: auto; }
+  .corr { display: grid; gap: 2px; font-size: 0.7rem; min-width: 760px; }
+  .corr div { aspect-ratio: 1; display: grid; place-items: center; border-radius: 3px; font-variant-numeric: tabular-nums; }
+  .corr .lb { aspect-ratio: auto; justify-content: end; padding-right: 6px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .corr .lt { aspect-ratio: auto; writing-mode: vertical-rl; transform: rotate(180deg); justify-content: start; align-items: center; padding: 4px 0; font-weight: 600; height: 110px; }
+
+  /* Modelo */
+  .modelo { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .card { border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; background: var(--cream); }
+  .card h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 8px; }
+  .card p, .card li { color: #33373F; font-size: 0.93rem; }
+  .card li { margin: 0 0 6px 18px; }
+  .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 12px 0; }
+  .kpi { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
+  .kpi b { display: block; font-size: 1.5rem; font-weight: 900; letter-spacing: -0.03em; }
+  .kpi small { color: var(--muted); font-size: 0.75rem; }
+  .cal { display: flex; align-items: flex-end; gap: 4px; height: 120px; margin-top: 10px; border-bottom: 1px solid var(--line); }
+  .cal div { flex: 1; border-radius: 4px 4px 0 0; position: relative; }
+  .cal div span { position: absolute; top: -18px; left: 0; right: 0; text-align: center; font-size: 0.66rem; color: var(--muted); }
+  .cal-x { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--muted); margin-top: 4px; }
+
+  .aviso { margin: 44px 0 0; background: #FFF7E8; border: 1px solid #F4D9A6; border-radius: 12px; padding: 16px 18px; font-size: 0.88rem; color: #6B4E16; }
+  footer { padding: 26px 20px 40px; font-size: 0.72rem; color: var(--muted); text-align: center; }
+  .vacio { color: var(--muted); padding: 40px 0; text-align: center; }
+
+  /* Detalle (modal) */
+  .modal { position: fixed; inset: 0; background: rgba(17,17,17,.55); display: grid; place-items: center; z-index: 50; padding: 16px; }
+  .modal .box { background: var(--paper); border-radius: 16px; max-width: 620px; width: 100%; max-height: 92vh; overflow: auto; padding: 24px; position: relative; }
+  .modal .x { position: absolute; right: 14px; top: 12px; border: 0; background: none; font-size: 1.6rem; cursor: pointer; color: var(--muted); }
+  .modal h3 { font-size: 1.5rem; font-weight: 900; letter-spacing: -0.03em; padding-right: 30px; }
+  .modal .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 14px 0; }
+  .modal .grid4 div { background: var(--cream); border-radius: 10px; padding: 10px; }
+  .modal .grid4 small { display: block; font-size: 0.68rem; color: var(--muted); }
+  .modal .grid4 b { font-size: 1.05rem; }
+  .modal h4 { font-size: 0.9rem; margin: 14px 0 6px; }
+  .modal li { font-size: 0.9rem; margin: 0 0 5px 18px; color: #33373F; }
+
+  @media (max-width: 860px) {
+    .hero .wrap { grid-template-columns: 1fr; gap: 24px; }
+    .res-cols, .movers, .modelo { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 520px) {
+    .nav a { padding: 6px 10px; font-size: 0.85rem; }
+    .logo { font-size: 1.25rem; }
+    .resumen { padding: 22px 18px; }
+    .mv { grid-template-columns: 1fr 60px 66px; }
+    .modal .grid4 { grid-template-columns: 1fr 1fr; }
+    .kpis { grid-template-columns: 1fr; }
+    .temas { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar"></div>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="index.html">Finanzas<span>Express</span></a>
+    <nav class="nav">
+      <a href="index.html">Noticias</a>
+      <a class="on" href="mercados.html">Mercados</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Qué sube y qué baja <em>en el mundo.</em></h1>
+      <p>Índices, sectores, acciones, materias primas, divisas y cripto. Te decimos qué está creciendo y qué tiene más probabilidad de crecer, según 5 años de historia y las noticias de hoy.</p>
+      <div class="actualizado mono" id="actualizado">Cargando datos…</div>
+    </div>
+    <div class="termo" id="termo">
+      <div class="t mono">Termómetro del mercado</div>
+      <svg viewBox="0 0 200 110" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#D1343B"/><stop offset=".5" stop-color="#C9CED6"/><stop offset="1" stop-color="#0E8A5F"/></linearGradient></defs>
+        <path d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke="url(#g)" stroke-width="16" stroke-linecap="round"/>
+        <line id="aguja" x1="100" y1="100" x2="100" y2="34" stroke="#111" stroke-width="4" stroke-linecap="round" style="transform-origin:100px 100px;transition:transform .8s ease"/>
+        <circle cx="100" cy="100" r="7" fill="#111"/>
+      </svg>
+      <div class="val num" id="t-val">–</div>
+      <div class="lab" id="t-lab">&nbsp;</div>
+      <div class="sub" id="t-sub">&nbsp;</div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap" id="app">
+  <div class="vacio" id="cargando">Cargando los mercados…</div>
+
+  <section class="blk hidden" id="sec-resumen">
+    <div class="resumen">
+      <div class="t mono">El resumen de los mercados</div>
+      <h2 id="r-titulo"></h2>
+      <p id="r-texto"></p>
+      <div class="res-cols">
+        <div class="res-col g"><h3>📈 Lo que está creciendo</h3><ul id="r-crec"></ul></div>
+        <div class="res-col b"><h3>🎯 Lo que puede crecer</h3><ul id="r-puede"></ul></div>
+        <div class="res-col r"><h3>⚠️ Riesgos y lo que baja</h3><ul id="r-riesgo"></ul></div>
+      </div>
+      <div class="latam hidden" id="r-latam"></div>
+      <div class="nota" id="r-nota"></div>
+    </div>
+  </section>
+
+  <section class="blk hidden" id="sec-picks">
+    <div class="blk-head">
+      <h2>¿En qué invertir? Más probabilidad de subir</h2>
+      <p>Probabilidad de que suba en el próximo mes (~21 días hábiles). Toca una tarjeta para ver el detalle.</p>
+    </div>
+    <div class="picks" id="picks"></div>
+  </section>
+
+  <section class="blk hidden" id="sec-evitar">
+    <div class="blk-head">
+      <h2>Con más probabilidad de bajar</h2>
+      <p>Donde el modelo ve más riesgo de caída en el próximo mes.</p>
+    </div>
+    <div class="picks" id="evitar"></div>
+  </section>
+
+  <section class="blk hidden" id="sec-movers">
+    <div class="blk-head">
+      <h2>Lo que más sube y más baja</h2>
+      <div class="tabs" id="tabs-h">
+        <button class="tab on" data-h="r1d">Hoy</button>
+        <button class="tab" data-h="r5d">1 semana</button>
+        <button class="tab" data-h="r21d">1 mes</button>
+        <button class="tab" data-h="r63d">3 meses</button>
+        <button class="tab" data-h="ytd">En el año</button>
+      </div>
+    </div>
+    <div class="movers">
+      <div><h3 class="up">▲ Suben</h3><div id="m-up"></div></div>
+      <div><h3 class="down">▼ Bajan</h3><div id="m-down"></div></div>
+    </div>
+  </section>
+
+  <section class="blk hidden" id="sec-sect">
+    <div class="blk-head">
+      <h2>Sectores</h2>
+      <div class="tabs" id="tabs-s">
+        <button class="tab on" data-v="p">Probabilidad</button>
+        <button class="tab" data-v="r1d">Hoy</button>
+        <button class="tab" data-v="r21d">1 mes</button>
+        <button class="tab" data-v="ytd">En el año</button>
+      </div>
+    </div>
+    <div class="heat" id="sectores"></div>
+    <div class="leyenda"><span>Baja</span><span class="grad"></span><span>Sube</span></div>
+  </section>
+
+  <section class="blk hidden" id="sec-reg">
+    <div class="blk-head">
+      <h2>Regiones del mundo</h2>
+      <p>ETF de cada país en dólares. Ordenado por probabilidad de subir.</p>
+    </div>
+    <div class="heat" id="regiones"></div>
+  </section>
+
+  <section class="blk hidden" id="sec-tabla">
+    <div class="blk-head">
+      <h2>Todos los activos</h2>
+      <p>Toca un encabezado para ordenar. Toca una fila para ver el detalle.</p>
+    </div>
+    <div class="filtros">
+      <div class="tabs" id="tabs-t"></div>
+      <input id="buscar" type="search" placeholder="Buscar (ej. oro, Nvidia, Colombia)">
+    </div>
+    <div class="tabla-wrap"><table>
+      <thead><tr>
+        <th data-k="nombre">Activo</th><th data-k="precio">Precio</th><th data-k="r1d">Hoy</th><th data-k="r5d">1S</th>
+        <th data-k="r21d">1M</th><th data-k="ytd">Año</th><th data-k="r252d">1A</th><th data-k="rsi">RSI</th>
+        <th data-k="p">Prob. subir</th><th data-k="senal">Señal</th><th>6 meses</th>
+      </tr></thead>
+      <tbody id="tbody"></tbody>
+    </table></div>
+  </section>
+
+  <section class="blk hidden" id="sec-noticias">
+    <div class="blk-head">
+      <h2>Noticias que mueven el mercado</h2>
+      <p>Cada titular tiene una nota de sentimiento (verde positivo, rojo negativo). El promedio por tema mueve la probabilidad de sus activos.</p>
+    </div>
+    <div class="temas" id="temas"></div>
+  </section>
+
+  <section class="blk hidden" id="sec-corr">
+    <div class="blk-head">
+      <h2>¿Qué se mueve con qué?</h2>
+      <p>Correlación de los retornos diarios de los últimos 6 meses. 1 = se mueven igual, −1 = se mueven al revés, 0 = no tienen relación.</p>
+    </div>
+    <div class="corr-wrap"><div class="corr" id="corr"></div></div>
+  </section>
+
+  <section class="blk hidden" id="sec-modelo">
+    <div class="blk-head"><h2>Cómo funciona (y qué tan bien)</h2></div>
+    <div class="modelo">
+      <div class="card">
+        <h3>El modelo</h3>
+        <ul>
+          <li><b>Técnico:</b> mezcla momentum de 3 y 12 meses ajustado por riesgo, la tendencia (medias de 50 y 200 días) y el RSI (sobrecompra/sobreventa).</li>
+          <li><b>Calibrado con historia:</b> busca en 5 años de datos de todos los activos cuántas veces una puntuación parecida terminó subiendo al mes siguiente. Eso es la probabilidad.</li>
+          <li><b>Noticias:</b> lee titulares de Google News por tema, les pone nota de sentimiento y ajusta la probabilidad de los activos de ese tema.</li>
+          <li><b>Aprende solo:</b> guarda el sentimiento de cada día y lo compara con lo que hicieron los precios después. Si un tema sí anticipa al mercado, sus noticias pesan más.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Qué tan bien le ha ido</h3>
+        <div class="kpis" id="kpis"></div>
+        <p style="font-size:.8rem;color:var(--muted)">Probabilidad real de subir según la puntuación del modelo (de la más bajista a la más alcista):</p>
+        <div class="cal" id="cal"></div>
+        <div class="cal-x"><span>Más bajista</span><span>Más alcista</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="aviso"><b>Ojo:</b> esto es información educativa, no una recomendación de inversión. Las probabilidades salen de datos pasados y de noticias; el mercado puede hacer cualquier cosa. Antes de invertir, infórmate, diversifica y no pongas plata que vayas a necesitar pronto.</div>
+</main>
+
+<footer>Finanzas Express · Datos: Yahoo Finance, Stooq y Google News. Se actualiza solo varias veces al día.</footer>
+
+<div class="modal hidden" id="modal"><div class="box" id="modal-box"></div></div>
+
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var D = null, porSym = {}, horizonte = 'r1d', vistaSect = 'p', tipoTabla = 'Todos', orden = { k: 'p', dir: -1 };
+
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function pct(x, d) { if (x == null) return '–'; return (x > 0 ? '+' : x < 0 ? '−' : '') + Math.abs(x).toFixed(d == null ? 1 : d) + '%'; }
+  function cls(x) { return x == null || Math.abs(x) < 0.005 ? 'flat' : x > 0 ? 'up' : 'down'; }
+  function prob(p) { return Math.round(p * 100) + '%'; }
+  function colorP(p) { return p >= 0.6 ? 'var(--up)' : p <= 0.4 ? 'var(--down)' : 'var(--flat)'; }
+  function precio(a) {
+    var v = a.precio; if (v == null) return '–';
+    var d = v >= 1000 ? 0 : v >= 10 ? 2 : 4;
+    return v.toLocaleString('es-CO', { minimumFractionDigits: d, maximumFractionDigits: d });
+  }
+  // Color de celda: escala divergente rojo-gris-verde, t de -1 a 1
+  function calor(t) {
+    t = Math.max(-1, Math.min(1, t));
+    var neg = [180, 35, 42], mid = [238, 240, 243], pos = [11, 115, 80];
+    var a = t < 0 ? neg : pos, k = Math.abs(t);
+    var c = mid.map(function (m, i) { return Math.round(m + (a[i] - m) * k); });
+    return { bg: 'rgb(' + c.join(',') + ')', fg: k > 0.55 ? '#fff' : '#111' };
+  }
+  function spark(vals, w, h) {
+    if (!vals || vals.length < 2) return '';
+    w = w || 110; h = h || 30;
+    var mn = Math.min.apply(null, vals), mx = Math.max.apply(null, vals), rg = mx - mn || 1;
+    var pts = vals.map(function (v, i) { return (i * (w - 2) / (vals.length - 1) + 1).toFixed(1) + ',' + (h - 2 - (v - mn) / rg * (h - 4)).toFixed(1); });
+    var col = vals[vals.length - 1] >= vals[0] ? '#0E8A5F' : '#D1343B';
+    return '<svg width="' + w + '" height="' + h + '" viewBox="0 0 ' + w + ' ' + h + '"><polyline fill="none" stroke="' + col + '" stroke-width="1.6" stroke-linejoin="round" points="' + pts.join(' ') + '"/></svg>';
+  }
+
+  function tarjeta(a) {
+    var c = colorP(a.p);
+    return '<button class="pick" data-sym="' + esc(a.sym) + '">' +
+      '<div class="top"><div><div class="tipo mono">' + esc(a.tipo) + ' · ' + esc(a.region) + '</div><h3>' + esc(a.nombre) + '</h3></div>' +
+      '<div class="prob num" style="color:' + c + '">' + prob(a.p) + '<small>prob. subir</small></div></div>' +
+      '<div class="pbar"><i style="width:' + (a.p * 100) + '%;background:' + c + '"></i></div>' +
+      '<div class="meta num"><span>1M <b class="' + cls(a.r21d) + '">' + pct(a.r21d) + '</b></span><span>3M <b class="' + cls(a.r63d) + '">' + pct(a.r63d) + '</b></span>' +
+      (a.rango ? '<span>Rango típico ' + pct(a.rango[0], 0) + ' a ' + pct(a.rango[2], 0) + '</span>' : '') + '</div>' +
+      '<ul>' + a.razones.slice(0, 3).map(function (r) { return '<li>' + esc(r) + '</li>'; }).join('') + '</ul></button>';
+  }
+
+  function pintarResumen() {
+    var r = D.resumen; if (!r) return;
+    $('r-titulo').textContent = r.titulo || '';
+    $('r-texto').textContent = r.resumen || '';
+    function lista(id, xs) { $(id).innerHTML = (xs || []).map(function (x) { return '<li>' + esc(x) + '</li>'; }).join(''); }
+    lista('r-crec', r.creciendo); lista('r-puede', r.puede_crecer); lista('r-riesgo', r.riesgos);
+    if (r.latam) { $('r-latam').textContent = '🌎 ' + r.latam; $('r-latam').classList.remove('hidden'); }
+    $('r-nota').textContent = r.fuente === 'ia' ? 'Resumen escrito por IA a partir de los datos y titulares de hoy. No es asesoría financiera.' : 'Resumen automático a partir de los datos de hoy. No es asesoría financiera.';
+    $('sec-resumen').classList.remove('hidden');
+  }
+
+  function pintarMovers() {
+    var xs = D.activos.filter(function (a) { return a.invertible && a[horizonte] != null; });
+    xs.sort(function (a, b) { return b[horizonte] - a[horizonte]; });
+    var max = Math.max.apply(null, xs.map(function (a) { return Math.abs(a[horizonte]); })) || 1;
+    function fila(a) {
+      var v = a[horizonte], w = Math.abs(v) / max * 100, col = v >= 0 ? 'var(--up)' : 'var(--down)';
+      return '<div class="mv" data-sym="' + esc(a.sym) + '"><div><b>' + esc(a.nombre) + '</b><small>' + esc(a.tipo) + '</small></div>' +
+        '<div class="barra"><i style="' + (v >= 0 ? 'left:0' : 'right:0') + ';width:' + w + '%;background:' + col + '"></i></div>' +
+        '<div class="v num ' + cls(v) + '">' + pct(v) + '</div></div>';
+    }
+    $('m-up').innerHTML = xs.filter(function (a) { return a[horizonte] > 0; }).slice(0, 8).map(fila).join('') || '<p class="vacio">Nada sube en este periodo.</p>';
+    $('m-down').innerHTML = xs.filter(function (a) { return a[horizonte] < 0; }).reverse().slice(0, 8).map(fila).join('') || '<p class="vacio">Nada baja en este periodo.</p>';
+  }
+
+  function celdas(lista, vista) {
+    return lista.map(function (s) {
+      var v = s[vista], t, big;
+      if (vista === 'p') { t = (v - 0.5) / 0.25; big = prob(v); }
+      else { var esc_ = vista === 'r1d' ? 2.5 : vista === 'r21d' ? 8 : 25; t = (v || 0) / esc_; big = pct(v); }
+      var c = calor(t);
+      return '<button class="cell" data-sym="' + esc(s.sym) + '" style="background:' + c.bg + ';color:' + c.fg + '">' +
+        '<b>' + esc(s.nombre) + '</b><span class="big num">' + big + '</span>' +
+        '<small class="num">' + (vista === 'p' ? 'Hoy ' + pct(s.r1d) + ' · 1M ' + pct(s.r21d) : 'Prob. subir ' + prob(s.p)) + '</small></button>';
+    }).join('');
+  }
+  function pintarSectores() {
+    var l = D.sectores.slice();
+    if (vistaSect !== 'p') l.sort(function (a, b) { return (b[vistaSect] || 0) - (a[vistaSect] || 0); });
+    $('sectores').innerHTML = celdas(l, vistaSect);
+  }
+
+  function pintarTabla() {
+    var q = $('buscar').value.trim().toLowerCase();
+    var xs = D.activos.filter(function (a) {
+      return (tipoTabla === 'Todos' || a.tipo === tipoTabla) &&
+        (!q || (a.nombre + ' ' + a.sym + ' ' + a.region + ' ' + a.tipo).toLowerCase().indexOf(q) >= 0);
+    });
+    xs.sort(function (a, b) {
+      var x = a[orden.k], y = b[orden.k];
+      if (typeof x === 'string') return x.localeCompare(y) * orden.dir;
+      return ((x == null ? -1e9 : x) - (y == null ? -1e9 : y)) * orden.dir;
+    });
+    document.querySelectorAll('th').forEach(function (th) { th.classList.toggle('ord', th.dataset.k === orden.k); });
+    $('tbody').innerHTML = xs.map(function (a) {
+      return '<tr data-sym="' + esc(a.sym) + '"><td><span class="n">' + esc(a.nombre) + '</span><span class="s">' + esc(a.tipo) + ' · ' + esc(a.region) + '</span></td>' +
+        '<td class="num">' + precio(a) + '</td>' +
+        ['r1d', 'r5d', 'r21d', 'ytd', 'r252d'].map(function (k) { return '<td class="num ' + cls(a[k]) + '">' + pct(a[k]) + '</td>'; }).join('') +
+        '<td class="num">' + (a.rsi == null ? '–' : a.rsi) + '</td>' +
+        '<td class="num" style="font-weight:800;color:' + colorP(a.p) + '">' + (a.invertible ? prob(a.p) : prob(a.p) + '*') + '</td>' +
+        '<td><span class="tag ' + a.senal + '">' + a.senal + '</span></td><td>' + spark(a.spark) + '</td></tr>';
+    }).join('') || '<tr><td colspan="11" class="vacio">Sin resultados</td></tr>';
+  }
+
+  function pintarTemas() {
+    $('temas').innerHTML = D.temas.filter(function (t) { return t.n > 0; }).map(function (t) {
+      var tg = t.sent > 0.05 ? 'Sube' : t.sent < -0.05 ? 'Baja' : 'Neutral';
+      var txt = t.sent > 0.05 ? 'Positivo' : t.sent < -0.05 ? 'Negativo' : 'Neutral';
+      var ap = t.aprendido || {};
+      var apTxt = ap.corr == null ? 'Aprendiendo la relación noticias→precio (' + (ap.n || 0) + '/10 días)'
+        : 'Relación noticias→precio (5 días después): ' + (ap.corr > 0 ? '+' : '') + ap.corr.toFixed(2) + ' con ' + ap.n + ' días de datos';
+      return '<div class="tema"><div class="hd"><h3>' + esc(t.nombre) + '</h3><span class="tag ' + tg + '">' + txt + ' ' + (t.sent > 0 ? '+' : '') + t.sent.toFixed(2) + '</span></div>' +
+        '<div class="act">Afecta: ' + esc(t.activos.join(', ')) + '</div>' +
+        t.titulares.slice(0, 5).map(function (n) {
+          var col = n.s > 0.15 ? 'var(--up)' : n.s < -0.15 ? 'var(--down)' : '#C9CED6';
+          return '<a href="' + esc(n.link) + '" target="_blank" rel="noopener"><i style="background:' + col + '"></i><span>' + esc(n.titulo) + ' <em>· ' + esc(n.fuente) + '</em></span></a>';
+        }).join('') + '<div class="apr">' + esc(apTxt) + '</div></div>';
+    }).join('');
+  }
+
+  function pintarCorr() {
+    var c = D.correlaciones, n = c.simbolos.length; if (!n) return;
+    var g = $('corr');
+    g.style.gridTemplateColumns = '130px repeat(' + n + ', 1fr)';
+    var h = '<div></div>' + c.nombres.map(function (x) { return '<div class="lt" title="' + esc(x) + '">' + esc(x) + '</div>'; }).join('');
+    c.matriz.forEach(function (fila, i) {
+      h += '<div class="lb" title="' + esc(c.nombres[i]) + '">' + esc(c.nombres[i]) + '</div>';
+      fila.forEach(function (v, j) {
+        var col = calor(v);
+        if (v >= 0) { var k = Math.min(1, v), b = [238, 240, 243].map(function (m, q) { return Math.round(m + ([31, 91, 216][q] - m) * k); }); col = { bg: 'rgb(' + b + ')', fg: k > .55 ? '#fff' : '#111' }; }
+        else { var k2 = Math.min(1, -v), b2 = [238, 240, 243].map(function (m, q) { return Math.round(m + ([238, 115, 80][q] - m) * k2); }); col = { bg: 'rgb(' + b2 + ')', fg: k2 > .6 ? '#fff' : '#111' }; }
+        h += '<div title="' + esc(c.nombres[i] + ' vs ' + c.nombres[j] + ': ' + v) + '" style="background:' + col.bg + ';color:' + col.fg + '">' + (i === j ? '' : v.toFixed(1)) + '</div>';
+      });
+    });
+    g.innerHTML = h;
+  }
+
+  function pintarModelo() {
+    var m = D.modelo; if (!m) return;
+    var k = '<div class="kpi"><b class="num">' + (m.precision != null ? prob(m.precision) : '–') + '</b><small>Aciertos fuera de muestra cuando dice ≥60% o ≤40% (' + m.senales_prueba.toLocaleString('es-CO') + ' señales)</small></div>' +
+      '<div class="kpi"><b class="num">' + prob(m.base_prueba) + '</b><small>Veces que el mercado subió en ese mismo periodo (referencia)</small></div>';
+    if (D.en_vivo && D.en_vivo.tasa != null) k += '<div class="kpi"><b class="num">' + prob(D.en_vivo.tasa) + '</b><small>Aciertos en vivo desde el ' + esc(D.en_vivo.desde) + ' (' + D.en_vivo.aciertos + '/' + D.en_vivo.total + ')</small></div>';
+    else k += '<div class="kpi"><b class="num">' + (D.dias_historial || 0) + '</b><small>Días guardados. En ~1 mes se ven los aciertos en vivo.</small></div>';
+    $('kpis').innerHTML = k;
+    $('cal').innerHTML = m.tabla.map(function (b) {
+      return '<div style="height:' + Math.max(4, (b.p - 0.3) / 0.45 * 100) + '%;background:' + colorP(b.p) + '" title="' + prob(b.p) + ' subió · mediana ' + pct(b.p50) + ' · ' + b.n + ' casos"><span>' + prob(b.p) + '</span></div>';
+    }).join('');
+  }
+
+  function detalle(sym) {
+    var a = porSym[sym]; if (!a) return;
+    var aviso = !a.invertible ? '<p style="font-size:.82rem;color:var(--muted);margin-top:8px">* Aquí "subir" significa que sube este precio/tasa (por ejemplo, que el dólar se encarece), no una inversión directa.</p>' : '';
+    $('modal-box').innerHTML = '<button class="x" aria-label="Cerrar">×</button>' +
+      '<div class="mono" style="font-size:.7rem;color:var(--muted)">' + esc(a.tipo) + ' · ' + esc(a.region) + ' · ' + esc(a.sym) + '</div>' +
+      '<h3>' + esc(a.nombre) + '</h3>' +
+      '<div style="display:flex;align-items:baseline;gap:12px;margin-top:4px"><b class="num" style="font-size:1.6rem">' + precio(a) + ' <small style="font-size:.8rem;color:var(--muted)">' + esc(a.moneda) + '</small></b><span class="num ' + cls(a.r1d) + '" style="font-weight:800">' + pct(a.r1d) + ' hoy</span><span class="tag ' + a.senal + '">' + a.senal + '</span></div>' +
+      '<div style="margin:12px 0">' + spark(a.spark, 570, 90).replace('<svg ', '<svg style="width:100%;height:auto" ') + '</div>' +
+      '<div class="grid4 num">' +
+      '<div><small>Prob. subir 1 mes</small><b style="color:' + colorP(a.p) + '">' + prob(a.p) + '</b></div>' +
+      '<div><small>Rango típico 1 mes</small><b>' + (a.rango ? pct(a.rango[0], 0) + ' / ' + pct(a.rango[2], 0) : '–') + '</b></div>' +
+      '<div><small>Solo historia</small><b>' + (a.p_hist != null ? prob(a.p_hist) : '–') + '</b></div>' +
+      '<div><small>Noticias</small><b class="' + cls(a.noticias) + '">' + (a.noticias > 0 ? '+' : '') + (a.noticias || 0).toFixed(2) + '</b></div>' +
+      '<div><small>1 mes</small><b class="' + cls(a.r21d) + '">' + pct(a.r21d) + '</b></div>' +
+      '<div><small>En el año</small><b class="' + cls(a.ytd) + '">' + pct(a.ytd) + '</b></div>' +
+      '<div><small>Volatilidad anual</small><b>' + (a.vol != null ? a.vol + '%' : '–') + '</b></div>' +
+      '<div><small>Desde máx. 52 sem.</small><b class="' + cls(a.desde_max52) + '">' + pct(a.desde_max52) + '</b></div></div>' +
+      '<h4>Por qué</h4><ul>' + a.razones.map(function (r) { return '<li>' + esc(r) + '</li>'; }).join('') + '</ul>' +
+      (a.se_mueve_con.length ? '<h4>Se mueve con</h4><ul>' + a.se_mueve_con.map(function (x) { return '<li>' + esc(x.nombre) + ' (correlación ' + x.corr.toFixed(2) + ')</li>'; }).join('') +
+        a.opuesto_a.map(function (x) { return '<li>Al revés que ' + esc(x.nombre) + ' (' + x.corr.toFixed(2) + ')</li>'; }).join('') + '</ul>' : '') +
+      aviso;
+    $('modal').classList.remove('hidden');
+  }
+
+  function pintar() {
+    D.activos.forEach(function (a) { porSym[a.sym] = a; });
+    var f = new Date(D.actualizado);
+    $('actualizado').textContent = 'Actualizado ' + f.toLocaleString('es-CO', { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' }) + ' · ' + D.activos.length + ' activos';
+    var t = D.termometro;
+    $('aguja').style.transform = 'rotate(' + ((t.valor - 50) * 1.8) + 'deg)';
+    $('t-val').textContent = t.valor; $('t-lab').textContent = t.etiqueta;
+    $('t-sub').textContent = t.suben_hoy + ' de ' + t.total + ' activos suben hoy';
+    $('cargando').classList.add('hidden');
+
+    pintarResumen();
+    $('picks').innerHTML = D.top_subir.map(function (s) { return porSym[s]; }).filter(Boolean).map(tarjeta).join('');
+    $('evitar').innerHTML = D.top_bajar.map(function (s) { return porSym[s]; }).filter(Boolean).map(tarjeta).join('');
+    pintarMovers(); pintarSectores();
+    $('regiones').innerHTML = celdas(D.regiones, 'p');
+    var tipos = ['Todos'].concat(D.activos.map(function (a) { return a.tipo; }).filter(function (x, i, arr) { return arr.indexOf(x) === i; }));
+    $('tabs-t').innerHTML = tipos.map(function (x) { return '<button class="tab' + (x === tipoTabla ? ' on' : '') + '" data-t="' + esc(x) + '">' + esc(x) + '</button>'; }).join('');
+    pintarTabla(); pintarTemas(); pintarCorr(); pintarModelo();
+    ['sec-picks', 'sec-evitar', 'sec-movers', 'sec-sect', 'sec-reg', 'sec-tabla', 'sec-noticias', 'sec-corr', 'sec-modelo'].forEach(function (id) { $(id).classList.remove('hidden'); });
+  }
+
+  // ---- Eventos ----
+  function tabs(id, attr, fn) {
+    $(id).addEventListener('click', function (e) {
+      var b = e.target.closest('.tab'); if (!b) return;
+      $(id).querySelectorAll('.tab').forEach(function (x) { x.classList.toggle('on', x === b); });
+      fn(b.dataset[attr]);
+    });
+  }
+  tabs('tabs-h', 'h', function (v) { horizonte = v; pintarMovers(); });
+  tabs('tabs-s', 'v', function (v) { vistaSect = v; pintarSectores(); });
+  tabs('tabs-t', 't', function (v) { tipoTabla = v; pintarTabla(); });
+  $('buscar').addEventListener('input', pintarTabla);
+  document.querySelector('thead').addEventListener('click', function (e) {
+    var th = e.target.closest('th'); if (!th || !th.dataset.k) return;
+    if (orden.k === th.dataset.k) orden.dir *= -1; else { orden.k = th.dataset.k; orden.dir = th.dataset.k === 'nombre' ? 1 : -1; }
+    pintarTabla();
+  });
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest('[data-sym]');
+    if (el && !e.target.closest('#modal')) { detalle(el.dataset.sym); return; }
+    if (e.target.id === 'modal' || e.target.closest('.x')) $('modal').classList.add('hidden');
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') $('modal').classList.add('hidden'); });
+
+  fetch('markets.json?v=' + Date.now())
+    .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+    .then(function (d) { D = d; pintar(); })
+    .catch(function () {
+      $('cargando').innerHTML = 'Los datos de mercados todavía no están listos.<br>Se generan solos en unos minutos con GitHub Actions; vuelve a refrescar la página.';
+      $('actualizado').textContent = 'Esperando la primera actualización';
+    });
+})();
+</script>
+</body>
+</html>

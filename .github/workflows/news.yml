@@ -13,6 +13,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: commits-del-bot
+  cancel-in-progress: false
+
 jobs:
   noticias:
     runs-on: ubuntu-latest
@@ -29,6 +33,7 @@ jobs:
           git config user.email "actions@github.com"
           git add news.json
           git diff --staged --quiet || git commit -m "Noticias del día"
+          git pull --rebase origin ${{ github.ref_name }}
           git push
       - name: Mandar correos
         if: ${{ github.event_name == 'schedule' || inputs.enviar_correos }}

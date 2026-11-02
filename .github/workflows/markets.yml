@@ -1,0 +1,44 @@
+name: Actualizar mercados
+
+on:
+  schedule:
+    - cron: "20 13-21/2 * * 1-5"   # lunes a viernes cada 2 horas mientras abren las bolsas (8:20 a. m. a 4:20 p. m. Colombia)
+    - cron: "40 23 * * 1-5"        # cierre del día
+    - cron: "40 15 * * 0,6"        # sábado y domingo (cripto no para)
+  push:
+    branches: [main]
+    paths:
+      - fetch_markets.py
+      - .github/workflows/markets.yml
+  workflow_dispatch:                # botón para correrlo a mano
+
+permissions:
+  contents: write
+
+concurrency:
+  group: commits-del-bot
+  cancel-in-progress: false
+
+jobs:
+  mercados:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python fetch_markets.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - run: |
+          git config user.name "finanzas-today-bot"
+          git config user.email "actions@github.com"
+          git add markets.json markets_history.json
+          git diff --staged --quiet && exit 0
+          git commit -m "Mercados actualizados"
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin ${{ github.ref_name }} && git push && exit 0
+            sleep 5
+          done
+          exit 1
