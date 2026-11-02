@@ -126,6 +126,11 @@ ACTIVOS = [
 # En estos "subir" no significa ganar plata invirtiendo en ellos (son precios de divisas o tasas)
 NO_INVERTIBLES = {"Divisas", "^TNX"}
 
+# Moneda de cada precio (lo que no aparece está en dólares)
+MONEDAS = {"^STOXX50E": "EUR", "^GDAXI": "EUR", "^FTSE": "GBP", "^N225": "JPY", "^HSI": "HKD", "000001.SS": "CNY",
+           "^BSESN": "INR", "^BVSP": "BRL", "^MXX": "MXN", "USDCOP=X": "COP", "USDCLP=X": "CLP", "USDMXN=X": "MXN",
+           "USDBRL=X": "BRL", "USDJPY=X": "JPY", "^TNX": "%", "DX-Y.NYB": "", "EURUSD=X": "USD"}
+
 # Activos que se muestran en la matriz de correlaciones
 CLAVE_CORR = ["^GSPC", "^IXIC", "VGK", "^N225", "FXI", "EWZ", "GXG", "ECH", "GC=F", "CL=F", "HG=F", "KC=F",
               "BTC-USD", "DX-Y.NYB", "USDCOP=X", "TLT"]
@@ -299,15 +304,72 @@ def precios_stooq(sym):
     return None, None
 
 
+def precios_yfinance(simbolos):
+    """Descarga en bloque con la librería yfinance (se hace pasar por un navegador, así Yahoo no la bloquea).
+    Devuelve {sym: (serie, velas)}."""
+    try:
+        import yfinance as yf
+    except ImportError:
+        print("  yfinance no está instalado; se usa la descarga directa")
+        return {}
+    salida = {}
+    for i in range(0, len(simbolos), 20):
+        grupo = simbolos[i:i + 20]
+        for intento in range(3):
+            try:
+                df = yf.download(grupo, period="5y", interval="1d", group_by="ticker", auto_adjust=False,
+                                 threads=True, progress=False)
+                break
+            except Exception as e:
+                print(f"  yfinance intento {intento + 1}: {e}")
+                df = None
+                time.sleep(10 * (intento + 1))
+        if df is None or df.empty:
+            continue
+        for sym in grupo:
+            try:
+                sub = df[sym] if sym in df.columns.get_level_values(0) else None
+                if sub is None:
+                    continue
+                sub = sub.dropna(subset=["Close"])
+                serie, velas, vistos = [], [], set()
+                for fecha, fila in sub.iterrows():
+                    c = float(fila["Close"])
+                    if not c > 0:
+                        continue
+                    f = fecha.strftime("%Y-%m-%d")
+                    o = float(fila["Open"]) if fila["Open"] == fila["Open"] and fila["Open"] > 0 else c
+                    h = float(fila["High"]) if fila["High"] == fila["High"] and fila["High"] > 0 else c
+                    l = float(fila["Low"]) if fila["Low"] == fila["Low"] and fila["Low"] > 0 else c
+                    if f in vistos:
+                        continue
+                    vistos.add(f)
+                    serie.append((f, c))
+                    velas.append([f, o, max(h, o, c), min(l, o, c), c])
+                if len(serie) > 60:
+                    salida[sym] = (serie, velas)
+            except Exception as e:
+                print(f"  yfinance {sym}: {e}")
+        time.sleep(2)
+    print(f"[precios] yfinance trajo {len(salida)} de {len(simbolos)} activos")
+    return salida
+
+
 def descargar_precios():
     datos = {}
+    bloque = precios_yfinance([a[0] for a in ACTIVOS])
     for sym, nombre, tipo, region, temas, stooq in ACTIVOS:
+        if sym in bloque:
+            serie, velas = bloque[sym]
+            datos[sym] = {"serie": serie, "velas": velas, "moneda": MONEDAS.get(sym, "USD")}
+            print(f"[precios] {nombre}: {len(serie)} días")
+            continue
         serie, velas, moneda = precios_yahoo(sym)
         if not serie and stooq:
             serie, velas = precios_stooq(stooq)
             moneda = ""
         if serie:
-            datos[sym] = {"serie": serie, "velas": velas, "moneda": moneda}
+            datos[sym] = {"serie": serie, "velas": velas, "moneda": moneda or MONEDAS.get(sym, "USD")}
             print(f"[precios] {nombre}: {len(serie)} días")
         else:
             print(f"[precios] {nombre}: SIN DATOS")
