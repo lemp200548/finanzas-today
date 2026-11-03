@@ -1,329 +1,473 @@
 {
-  "actualizado": "2026-11-02T06:46:47.107339-05:00",
+  "actualizado": "2026-11-03T06:45:10.363919-05:00",
   "paises": {
     "co": [
       {
-        "categoria": "Nuevos CEO",
-        "titulo": "Entrevista con María del Mar Vélez, CEO y fundadora de Crack the Code",
+        "categoria": "Economía",
+        "titulo": "Chaparral ha registrado más de 1.100 sismos de más de 2,0 grados en el último mes",
         "fuente": "LaRepublica.co",
-        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOR09UY0ltczZhVGNBR0FLUDEzTkxHV184SkJUaUZLWDVDZjF1Y2ZlVnRFdmFMSjhFUXN0UnNVclI5eTMxWjdkcTRzUWtsZHNjcFBGSmdVMTFUSDlabHlfWnpVQXoyRTdfc2dJaVVxOWs3U1dmbG5QZnItQ0hxTFFxUVhnZjkzeUxzRkZ1ZmlBYW5ueWRocTJYamRFbm5pcW0zNUVMck1TdjZWaFJVaVE5Zi1fX0ZGSkIzSWJrY3ZtTTVhLVVxdHo4QklZSklRWkYwaWFaVWgwZUZKekpMRU8yTGtzVUpuZw?oc=5",
-        "fecha": "2026-11-02T06:02:37-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Jornadas_WMES2022_10.jpg/960px-Jornadas_WMES2022_10.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQeTd0RjZuZjY3ekRuX0JyZzNTRVB1ZUFqbkRDRzM4d3dLeUlRRlZTaWcxQTFEMUJjdmxrUUpCTDRCWndELUJNZy1NNFBqSjc3X0ppWTdTdWxfNTVBV0Q4V2x3dGhob3ZOVjVqWGpJOW8tRjg5OWpmY2VMRUN1Z1hXMG9YSnFKQkpSS1FSY2drSmR2WjU1YkhqWUtXb1VVVC1UVjBSU0N0ZUZfMm5qZ2Q3akdXOTNGUm83NTBydDVBbDZIQ2vSAcMBQVVfeXFMUE5jM1BPM2c1UFlhakg4RURQcXFuamg5UEtvZ0F4b2l3d2hlRTQ2TEttN0RnVnZWLTdjc1R6ZDdnSTVhdUVnWDJTdnYwVGhkMVNzN0F6TVpuQmk4ckhLYjRrOU5TWThtVGtMbzdKVWRjY2YwVHFldHdzemFpaVZkSHZyVnpVMVRxTmJNaDMyUGVSSFowV0RUZjlJS2FHUC1XSGFEd3ZVX3Jod3ZIODVuWXJHOG1Fc2RncDNmWHRXb1ZvRHg4?oc=5",
+        "fecha": "2026-11-03T06:20:12-05:00",
+        "imagen": "https://www.bing.com/th?id=ORMS.c34f9410ca169730423ed4ee0c27d21b&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Trending",
-        "titulo": "Atención | Falleció el exsenador Antonio Navarro Wolff, confirmó su familia",
-        "fuente": "Valora Analitik",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdEpvSFdxV3JidXYxNkRVanJtWGJoWlMzeFZCNGlua25sX0FucFUtT25wZHZuaGdmUVVfNzYybjhsOEJsS2c3dnZWdEplb2pBRGhTSE83SDJfbGlIcE4tbFBvWUNCUEhZOGJabThzZDNyVk5pNExfemp3Yl9uQTV0SDVOY2s4MThNSEFPWmd1Zmcyb19MQmhMbkc3RdIBoAFBVV95cUxNRTlCRzdZUG0tUDlQc21NeHEteDRDT3o1T19ER1RDb1pKTnc5N0UxYU1fSURMVG5WVEp3VUFRaUNKTm9PaGE3dmMwSFZnZ0l2Z3RGT2duZjVkbk9IdUUxZG8wc0dZUU5WdWVzaWZUQ3A2Z3VQYWxBbWJkLWVvcENjZEt2anN0cVVob3BGN3d6Szh5bl9adlF4WnVYVHVVTFdB?oc=5",
-        "fecha": "2026-11-01T17:43:15-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.4G40Q-WqTlpMvtPayVQIaA&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "categoria": "Petróleo y energía",
+        "titulo": "TotalEnergies anuncia alianzas con empresas del sector transportador para fortalecer su presencia en Colombia",
+        "fuente": "LaRepublica.co",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdHRSbktINTFnSVJBUXFub2NqRVdSVHdpaVUxOE4tcFBmSGZWRDlKbmltMFFJWXVrVWxhU09Wc1Z1RWdLZ2lKZGZyT21DcVdPWlBRNzhidnFsT293YUZCcE9HNG1WUWpkRHZlLXl2cTMzQlpyUl9MeXR2ZmZBeGNFbVFqQjAzMEpvN3FLYW52clloaVZvcnkySzNwN1JjUnpFdElmQ1phNVVMbGo40gGsAUFVX3lxTE80SXFET2FlTVBNbWFvd2RBcVkzLTFNQTBCZmZ6ekxjWXRFVzE5b1FscGFzRmFVNzdfdDlQYmk4VWt2OEFHSFNrWld2bGpJMUhHQVVzRkg2Wjg0dHJvYUtqMlJGSVZhejNjcUU1ckU0TFBkNUF3cEZyLXh1RlRHNHlDdXAwUk1SN0lybzdTY1ZvOVpSTHJPNHI4Mm1wZS1rZG5TaXhLaGNnR21udVE?oc=5",
+        "fecha": "2026-11-03T00:01:50-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.rIDDzVv4K8vlrjMJqYWu2w&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Sector financiero",
+        "titulo": "En 2025, alrededor de 480.000 personas quedaron excluidas del sistema de crédito formal",
+        "fuente": "LaRepublica.co",
+        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNRndKQVhzSDFPbW02aC0wbTdWMm9BUEVnbTZOeUlZdzd2emNteU95SzRBc3pLTXA2MHZ1NzkyTTZocXdZSUhWMzdVU2RBb2oyVDZWQldkWHRTOTNkUi1WZ19rNmkzQlJqS2JwREctNjg1ajhJNnQzeTYzWFFhOHdTQlRVQldEazNPVU5FVGpIRVpzN0NUZHpWaGJkUUFsTklyYUwxcTRLMXFIVFMwS2tlUWI3RHBfdWJnN2FsN19OSnM0SmJ5LXhVTk1R0gHKAUFVX3lxTE82ekJXTDJBX0dtVWRrblZGN2RUUTZuQ3lJdk95NzVBR2RMTE9BNFE5TDRRQkhvRFVfQ056YnRHNy1sUks2NU5UQ1RTTjlVWW9EcC16Mi1kWlFDMlR0T3lpcUhxRWdTd3l2LURRSWpSOWhZX0VRZnRyaklkcTJQTWpnamUtYllEaHJyNlJiRDRURXhUaUVuVzcxNHZZalhqSkFXek1KZ1NlRERMdU80N3E2TThzZjFUaEZRRFoySEdfOGRQelZvX1FQbnc?oc=5",
+        "fecha": "2026-11-03T00:01:46-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.JdBGcPCVmh4A85tIaNshxA&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Economía",
-        "titulo": "Salario mínimo de 2027 ya genera debate: esto es lo que se sabe hasta ahora y los montos que están sobre la mesa",
-        "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQMkZ5RHhZVVU3YWRRaE1ndFlGSjBDNURlV1h3RnNaeE5mTFVqSVljRVpBbUVMeTdQQUg2a3prRm9ValRueDZudzA1TDBSb3R0QmxDeDlVVTZtUTViZlVXLU40TURHbmEzUldIOHdRVlN6MGdHalpfUGF1NDZFZy1sRm1uSmI0cC1seW5yUURSMi1oUnhLaG9SVVMxU0lLU2g0aHVUeU1FdUVIV0NudmprSU82X213VHRBZzRsWFhaNG9tNlI1Ym1LTk5jQXR1UzNPWGxFRVJfbDJvRGFoTUZ3dTZxZHM4aVFBZ2FXc3ZubHhmSncw0gH6AUFVX3lxTE5GdEgxeEpFVHFWMERCdDRaVVdEd2Y3ckNiZ1dXUkpoeTVtbnQwTHVFY1JkRUVkM3FjN2FvSUxRZlhseTFCTVZKczRsVUItdEtXeFU1M2FSQ2NiMzN4WGJma051SlZwZWdhMVpBTjdXZ3lJZ3JGN0Y0Q3FoYW15UzRzNHBxeEVxLUFpbHl1WmRCUEFNbHFoYzgxcEFONXpjWVN2SnFCbkZ4ek9GMUllVW1qZW1PckFiV3NBTEVMTURLRHR5ZmtRSjBzaXBYM0NOa2dTdmJaREl1WEg5UlhoTkU0VEcxQXZ6WlA3RGpfbW9CcjFJV3Z6MEZwLXc?oc=5",
-        "fecha": "2026-11-01T16:02:10-05:00",
+        "titulo": "Qbano y Subway lideran un mercado que consume 25 millones de sánduches",
+        "fuente": "LaRepublica.co",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY05POW4wZjVKTVJtWWtSalo4Qk45MDk2clVmbTRWdWtaWGkzUzZvQ2NubFJEZm96RExsSDJZblcyUmRJeXRUREdncEJfRHJ4bG1Gd2diS2oxWDdjQmhOdGVLZDZQV0xzb1lfLXVUT184MW9YWVVVSjV3Z2VsWHFTNTE0dGZJUjBTb3dJblVnaDQ0d0ppeW9aRmhFQzZzZVVMUFd3dGJRN2xkWmdWV3FoQVhxUUjSAbQBQVVfeXFMTXBmZG1Cck1RRVI0clNhT3FSZ1hWSjJqZ1I1eTliVWgzWGREcmR2Q0Ria015QUJTSnE3X015bTR3bWtnZG00Y20ybThGQUFtaHBpS1FoejVjV3U5NXlkZGFMblpzYmgzMlA5aWZZSGR6MlVBUlhqejRxNzJ6TlNRb00tLTQ5QXg0ZmE3OTVuX3RJME8zM1M0YTd3dXB1eDFHdUNKRHk4eWtIVG04YTNrd3ZhMEJ6?oc=5",
+        "fecha": "2026-11-03T00:01:43-05:00",
         "imagen": "https://www.bing.com/th?id=ONUT.JTiyUHqPQsuAL7oashZhAA&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Economía",
-        "titulo": "Dólar en Colombia seguiría subiendo: este es el precio que podría alcanzar la divisa durante los próximos días",
-        "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOdHJPSDBYZlJTVExBa05OVnMxU3FOQk43QjEtSWxYSWJTbTF1OUM0Q0NqcHZVNWpTbnc5MzdHSmlKQ0p2YV9hNnFiUnJub2lNaXh5dG9PbGVDNUxuQkFmVlItM2NFb2VVWGZOMTdwT0tWT3c0RDdUcWpxWTNlVFpBcDNzOHhxM2M2LXIwMGctZXB5YS1MX2c4ME5YTkVHZ1IxM041Z1cxRFk5cFRCZzJTMnJRZXkzTjBMYmRSOWNENjVyUElwekx5WHAzM1ZVaHktY0wxSVZrYmNlSnIwME9yR2I3a253R0dDMWJOSURpdk5fUdIB9wFBVV95cUxQYnl0Qm00QnBibThnaEx6czBVSDNSUjRVQmVnQTlzbU5VVldXaXNDbENqcVVrYzNzVEc1UGV0Tl9PamVYcm91d2FEUTJGQlR5cDZvcEs0Qk54NjUtZTVvb0h6N0Y3VXFJdzlaQTZaNDNua0Nhc3l4NXAwazFvSWtMZE9Rb3MyQmluaFNCZ0dTRWZucEQ2QVZBU0RNQlNieVlKaUZwSzZyMVB2ZDZTQkhob2ZsaWNzbWJ3NGlsU2VwV25nUlpYX1BnS1I2MHlGYTVFazVXQTJEOVd1Tk5TLUZJajdOOXJGTGNmbjhvOThyQk5wY0M1VnZF?oc=5",
-        "fecha": "2026-11-01T15:09:05-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.Vfax_nVBbY1lhdS29BwaSg&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Economía",
-        "titulo": "El mecanismo EfectIVA de la Ley de Rescate beneficiaría a 30% de la población más pobre",
-        "fuente": "LaRepublica.co",
-        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWFRzREtVS1AtanBnaEhWWnJkdlhWc1FPWlVaZmFmMGl6dnZvZW0xRWFLOG5CNDF1ZGNGbGhyeDBQckNONWtQVWtmZWlBb2tvdzZMUG1kbTV6NmNnZDNCUTJaVkJfNHNzaDBNU3BseF9qRUtsTk5YUHYzazR5Q29YX1g3YVJqeFM0eV8xYWJQRTBKRmh0eV9obEJCM1lsV1RFakxtRTFrZ1lncFJFNGxhTTkwR1ZNYUJHRWREd1d6Nk5NeFQ1ZGFybkZ30gHKAUFVX3lxTE9uWGZSU3BBMzB2bkNPQ09zRC1EMS1KTmIyLUZJaFY3Mzlyak5KYWRSZUw2MlBZZEZBaHNONDZUcEMxRVVxLXdIMDFmamMzblY2NkVZZHRhN1pmVjNibW1ETHlmS1lNLTcwNndlSFd1UU02OGZuZ3QyM25xZnpVcFQ1NmpjUGV3ZTk1c05jQWdqT3E1OG1FelE0ek9HelJfeWR6YUdBenNxSVZLY3Q5enVwR0lkdXg4NUlma1BMQTFfSTNJakJFRXNqNXc?oc=5",
-        "fecha": "2026-11-01T11:49:50-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.fHKOS7iZ5Q6bqZT7_EXFMA&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Economía",
-        "titulo": "El mercado automotor repite la hazaña de septiembre: vendió más de 32.000 carros en el mejor octubre desde 2014",
-        "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPSTlydVZvWE1kR21tSXNQc21xU1RRV3dUZ25FVFo5b19pbkNQc00yZnRhMTBlTjRYZThMRXNjRVNlYzV0bkpacmRuZXdkSnI3VUJrSEMxanU4VE5nWVcycTlOSVNELUVldHQyaTBEa29weHc1a1F4eVlGSDJ4QnBQTlAyeVBWRk1pVEdPMGEwendNZ2JMN0FEN2FXNkdJQTZDTFJHNzdjZDUtR21tRXZna1I0Q3BSRGY0UERNM0FzYTYtd1NJVnNGYUVPX0kxV1NjaC04eDI5SDRGM20yODVFTnVLTHhqNy0tUUg4N9IB8gFBVV95cUxNalVKU3h5U2VJbGFxbmJCbzdQUkJqYzNodEUzQWZIdnZsSHZwdjZrTm1USFJYM3VFOU9EWjc4SnRBNDBZX1FKZER3UVVSbnRVNUxlc2VvVHo0cFZsRWZKQUtGRlJRUmVRdm9JbVV1OXpSY0ZCZUFBeGhYZkRtT3RiWVotLWVTRFN1QVpoVjRrOUJaVHI1dklZdlZxOE03WDk5LUtmeDk2ZEpVOHF0M1d0a2tYazhYdHJZX3ZuUmRZN1loSFZ6eENBZXdhU1I1akpNSW4zRzAwU2lVOXdYRkhMOEZvTFRzQk5RSDJJSmZfX3laQQ?oc=5",
-        "fecha": "2026-11-01T08:53:21-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.7NEEQYyeOfUG8N-VgUm_PQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
         "categoria": "Sector financiero",
-        "titulo": "Ya se integraron los activos de Davivienda y Davibank, ¿qué implica para los clientes?",
+        "titulo": "“BMI Seguros Colombia abrirá nuevas oficinas en Barranquilla y Cali el próximo año”",
         "fuente": "LaRepublica.co",
-        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPaEdxZ3dtS2VYSkJBNl9Wa2tvdXpTOFlsQ1lNcDJ3blZWOFluNkY4YnZBOXRnNU9nVTB5R1ItZ3kwUzVOSTdfMC03dU5mdkRycldGWkphR201dFVuVVdVZVJMZHdXQWpZQWJ3T09yLWlZdmg2X3g2RXRsOUx3UDN3VlRTcWtoemctd3Ziemk4eXA1cFNIUzRSVDlXTEluLVUxSnZCUzZxSF9kVmlKTVI5eGpVVEU3a1g0ZF85VXJyUnVMWFdLOUZGRHVHVzFQWk1R0gHQAUFVX3lxTFBMcGlQeGllaEI1YWFsWTFyaDNHR1JodXZCMmp3VU5lTll5Y3lVNnppdmh4TDkwdGswX1JiQWxjTkY3MHA2UEF4WVdwNFgzcERKWjZkYWxfcW9RbHAxdXZKdWZJRjVOb3B3STY5VTZJSVVnMmR4V1FVdDhBcmF6Z2lES3Rta1lXZE50WkdGRWJyWEdEamx3MFA2dFJzN0pmYzdYQ3MwdEdiS1JILVR6aU9Rbm5sQllnX1pRWWdRUXJFVlVtenk2QXI1Y3BvV0JvTm0?oc=5",
-        "fecha": "2026-11-01T08:50:35-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.AlyDke_d95v3Vx53maeQEw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUHYtUU1qSUhfYllQMngtSXNlOGlIUEpqbEYtLU1aQnhUdUcxUXdEanFMOUlWX211ZFhuQUJrMHQxMXoyUmZid2NfbjJIVVlmWlRDUEx4Yy12LVZfYS02SFBtQ0Q5SV8xRkNCUm03SURWUDNkT3gyaG9icW1CU1duY1dYRjBEbVNhVjE5ODhGblYxV1dSc0cyZnlOWk9QaXZKWGI4LVh4ZEtRX3F1YURfQWRNc29vV05meHpIT25ZRWFZc2PSAcMBQVVfeXFMUFdhMk5STFMyYm01Y3FPcjFQMmhiV1RYU3BjYkEtcEREeVBuZEF2YUFiQjJtNTlqZjQ4RGhna2xvb203c0RsVmxTTGxzZ0NoV2p5dkZWVDFWSEFtTXN3SndIS2R5LVJnX2VrREJNeE5KcWJHWjRXaUNuaS1HR19iNHpmaENNcVZPTVBhNnVnN0RMM3ljSzQ4eHlPVkJtMy1HYU1kUGNWU3hNa241N2F5ZnVMVTZpRHhUMUZjemVXdjkyZ0kw?oc=5",
+        "fecha": "2026-11-03T00:01:28-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.nsPchs0oCHmHK8Qix_2qAQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Emprendimiento",
+        "titulo": "Mural consiguió US$15 millones en inversión durante jornada liderada por Tether",
+        "fuente": "LaRepublica.co",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZmM0ak14VG5zdUNacGJwcFpsUzFaSmpzRVlOMkQ3UktIYmV5d3VVNHZQN3BHd3BRMTVEREx6UDdzR0tNRk56eHdhbDBTbmF0a2VwNlF4WE1lZmpNWmdsSXVZSXRGQmZOU2ZfYVd3c2NVX01VVjFFRWRUZVlEdFBOOTJZeGd0Vm1WS3lld2pCM0dZZVdCdmJiY2hjWTRtV0JBanhVRHZtRlVVeXZ4VFB1QUx1c1ZxWWZkM2ltem1MX07SAcABQVVfeXFMT0ZtTXMyemZ5QzJZOE1mQVFSZk9qM3F5QldYdjJNbDljanYxRkNUNkxUUkVGWHFSS1diaGgxUzZoUXFkRVB4aE9ocjJXRldoTERZYWhDMjJoOFh4SHBCRW83Y0lfOUY4NmRzc2t1XzhtcFdvY0szNjY3WFo3dWRIeUp6SEJabUlLX2ozd3dDajNac0p6eENKRE44dElTUnRJTHRXZjZMblI4YW56WDRLdVBVLThpc2dQWDdqZUFicG1F?oc=5",
+        "fecha": "2026-11-03T00:01:17-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.cHlF2O7bdCm0Eqnbt3A8uA&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Empresas",
-        "titulo": "'El sector salud en Colombia necesita más que recursos': Auna",
+        "titulo": "'Somos el mayor comprador de carros en el país': entrevista con el gerente general de Renting Colombia, Mauricio Serna",
         "fuente": "El Tiempo",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNT2c4OW9uTDY4alRmZjU5RlE5dDI4Rzc1X0o1UE5lVXphaGhEX013UUxRWXpUOEp0Q2N5azlkM3hDSUlVeDZERktQR1ZnV2xoSTJFQzkzeUN5MFNCb3NPYWJiZTBmMnVYNlk4Z0phbVQ3NnBmWnNiOTg1aWZaUk9NUU5UWEVXNlBESFRWVXlJNW5VZ2JrVVpTOGZSR1dLLUlOMFd3V2dVU0pXb3lDdHfSAbMBQVVfeXFMTnhkVXYwVWZZSDJ0LXJZMUdhR05TeEJidUhyWFRGT2treGw5c1hJWTVuX2djZWFicDFMclFBNldiRkdaSms0Q254bG5aa2tGNmRFWFJOdGpIWWw3YjByUUc3eU5VeHFsc2pZVldzaF9IalZCUGZwa0NsZjlwLXhQNGZDRkROUVBxNnhlRzlrZV9oZ3YtNHJCcTRjSUVFNlFIemlqZXFsVElHVW5TWHZleDY1Smc?oc=5",
-        "fecha": "2026-11-01T19:41:07-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.tjJzGKk4h4-fdjxSs1b6vA&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Sector financiero",
-        "titulo": "Clientes Davibank ahora serán Davivienda: comenzará cambio progresivo de los avisos",
-        "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQZ0wxcEltUHFJN3VQOUJNUjNhZGZpQlEteWNTSjhiWmstdE9JT0ZYdGpXd1RRdm42Z3RJTlU1UXZpX0RjdWpJeHNfSE1UckRZbGtxWURmaWNRTkg5UmFkQk8wUmRUejdjVkxwby16akZkVElaMFhvZ1ZYOEpWbXlHRG52RGc0aUhST0w5R01VT2h0eUlHX0hSVzktZHhIeG45QWNPdDROQkZVaFJBTWwtRmJYVVNOTE9TLXpxMlFnRzB2VVloa0t3SGVBRmV4aHFpSTJZN09HVVZKSzVzWldPVFUzN1ZqbWUt0gHuAUFVX3lxTE1yNFY0R01Uc205OHBzZ0NCeXo4NEg2ZnRjSzlOSERyeFk2cWF6WFhJYUxZeHlLNksxZHhVY2lfLWpHb0piWmt4MGU5NXRDMkhYajBfcUlsZnRYT29Cc0JwTlJXMi1OdzdLOEFrQndEdkM0TWN5MmY4T3BfV3laRWhBRDJmQWt6Sm5PbWF4bkxaQm1ITzMzWU9wcGxkX0VRRUEyYjdEY3hUeW1uSmtHa2NTN29ZaXpvLXpHNllRcWJDTGlkRWpneWlfeUFhWEpUbnBzYzNPeTNsa0tCS3czMHVJckxjZE5QamY3NUVXVGc?oc=5",
-        "fecha": "2026-11-01T15:54:58-05:00",
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/73/DaviBank_Logo_PNG.png?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-      },
-      {
-        "categoria": "Empresas",
-        "titulo": "Bajaj destronó a Suzuki en ventas de motos: así quedó el ranking de las marcas más vendidas en octubre",
-        "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbE5JVjNBMXlxM24ycnNQMnF1U044eUFFNlVmR3NPMEd1S01UZzg0dTF5QXlab3RtTWFKSExnSUZFVHdUXy1kRVF0NGtNbkFCVkdCODJsSl9sQnJpekZnZjhlMHloREY1ZDlvcDFaaVVIQkU3UGtzbS1RMEtnem1XTXpudkFYTUtWbEF2TGxQMGZ0VWY4ZU00LTVWc2Z5N0NXbFRtellubkt2eFhKYTFDcjB3VzVjV0lQSzRBRENKcWdWR185b3FQM2Q4Rk1FMnI0M0xUa0dVUWVIb0xWS0s5YV9sYVZfa1nSAewBQVVfeXFMTThPbUhRRER2czVpYTZvTDRET0JrTXNxSU0zN2xsYko4RElYQ2VQUTRVekNKYm9ma3E1d1ZTOGliRC1ia3l4dm44ZkpTQ2dVRDB6OGtVbV9QbmFSQ3JGWDVCb09kME9BMHpwZWxIV25ZWWdwMkhtZEl0YldWR2NnX0M2RVVDTEcydGswZk9XNFRRdU9CM1FKRDVZendhcGEtMnpyQVpDMkZ3QmZjQkVhX3NjZTJJaVNKRHNmNUE5OTItWjE4VHhGNE83UDZrZGVXeklTM1pxWGhCRmY1X3hpRDg0YlNfV1JRWlFqRWI?oc=5",
-        "fecha": "2026-11-01T15:21:52-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.DEJD4Lk7kS1AAYqUjuVy6Q&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Empresas",
-        "titulo": "En octubre se registraron 123.214 motocicletas nuevas, 24,72% más que hace un año",
-        "fuente": "LaRepublica.co",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWTB0YWxraC1sM2dhRUlmWEN0ZW05RTRGYWhuTlJlQURuNDRZd2QzTk1kcW1UZEgzMWNDemV1LURKbTR2ZUZpcmVueVhQZTAyVVFDS1U3RDkwc0F3YTdNVTJFTHFFQ2pKWGNtbWFleUdnVnR4c3M2dmtjSkhsNWxkYXJ2NldYWVcwLW96cHpGRll3eFQtMkt0QkU2MjJoMVZVWm81UlMzbmdHbjlVNjI4eEZMUGVtekdyV2pIbEdSdGfSAcABQVVfeXFMUDNKeUR6U2FrUHRJUDQzT19SOERnMmQ4OE1yTXhDanpPcEU3NWdrZXd6TEZmU1M4cDQ4c3lBNWZKYWFYTXNBN1drWktxeXRkWl9EUjBid2hKdElCeWtJRUpkUkZSVFVFVlhiejFaVVdMejdPRmhxcXRrcVcycDVrQTNBMEVUaVl0NHdDZmp4VEZwTnNMVTNmYjFjR0hZa0F3TmdxQ3dmNmhxM1F6SGZwZjJPWkt1d0MxRFQ1MVlmeDdI?oc=5",
-        "fecha": "2026-11-01T15:07:34-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.R3csX7XNHTVBQvmHbxz9hA&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Empresas",
-        "titulo": "Esta es la empresa colombiana que estuvo detrás de la tecnología del Macondo Park de Shakira en Madrid",
-        "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOb18zd29vRGl3ZjhGSHR5dlVpdEpjdERmRDNiS2ZPREdBbkVGVzRSOERmTW1Jdnp2cWRRcHlpTFpIRHd4elREMjVXeVFiT0lRdExDMWVRTWdHNzhXeXRpNjRkZjREalh5NmVldDVac1VEMzZBSXNVVGRzQlJlcDA1VDNnMXUxTUpBQTkwa0lkeGN6MjZXZHZsUS1TWVAzSlRmZ3FzdXdsM2pJTGMyV0lkenZ6eDRWX0NIRUtXZm1Sa3FlUWl4YTcwaUFjMlk1dEZ6Tnpoejc5UWJfUdIB3wFBVV95cUxQdXRtM0xiTUJzYm85eHFjdHFEZFdMcWI5U3hIR0dkS0ZpcDMwTmNGb1R2bmItU29YczRsRWp3YnJFNEpZdjZiQVp4dmxVMk1KU0RNWWpKM0ZKNzJaN25FM2Etbi12X1FJVmZ1a3cyVVNlMW5ZSVV1Y0IzV09LSEZuN05Kd3BoWG9IVUpOMldSV2wzMWs5RG8xR0U0NGtyaFZjNkZNeTN6TV96ZXNBLTB0cXNtZTdpZmJ0MXNyREVRMGp0RUd0U05BODN4TXp1T0h0QXVDTUhyZEpVMVBGVEZN?oc=5",
-        "fecha": "2026-11-01T14:35:37-05:00",
+        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOWUV2VWh5UGVYZ1RqdlphZmJiWGl3NThoOGxodnp4bU56amtEMEhMR0NKYlJLSkxRQk5Dczliek1jOU5oWGd6dmZ6Rzh3d1VKV1Q5cEpHM0cxd2JreGRSWWJPZTBOUGUwSWh4dWhHaU1IVEVINExWbDRqa05Gdkc1R1hFRlA4VEo2NWVWU2QyUFFkLTUzeU9TcVQ2UnF5anZVNFk0VkpqblhJXzFsYlcwSFBhU0Y0eGw5U0ExMlNtZC00SnZFQVRfNl9EUjhueFpXdDhCdDJ3Vlg4S2EteTJuOXB1RGExb2Jaa0tmM9IB8gFBVV95cUxOdzg1WjRrbU55Q1JWYl9lR3U3VGttbHhHWl95dDJjOW9abXdEN0JjWTgyQkx4N2hINXVHVEpFdGdfYy1TOWotZmZob05kZUVXcUE5V0FDWFdELWVYZ2lEUWNZekk0ckFWZEJ0RlJrTUJNcTNtZEttU1ZwTUV3MTNYaVBrRWYzTzBzYkdWN19zZWMxMWNJc29FZHZzdzNlU0ZXa21VTi1mUmZjcDZlR3dYQm9qU3hfaExqMk1DNlNEdjhGd2I1eUdTZHp6ZTVEbXlDYWdGOUVramF3Vy02TXpNSWJKSDlvb1hEVl9MZWlVMjNodw?oc=5",
+        "fecha": "2026-11-02T21:55:34-05:00",
         "imagen": "https://www.bing.com/th?id=ONUT.nQ2SiPJLizN2F68gA6peCA&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Economía",
-        "titulo": "Escándalo por contratación de $125.000 millones en Fontur en días previos a la Ley de Garantías",
-        "fuente": "Revista Semana",
-        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQNXV5UDg0SmtBSlF3UzBrSlRVRVVLVVpPYnAyWklyUVliZWVVMVg1azFHbUFqNnZoVU5QbHhZRHVDTVBJTEY5bkpnVklmWmFXeTByRWVFQjMtczdMUThKaDFSQ2dBVkt2TmQ1S2o1NGpMR0c0ZUhFaXVVSElDdTNkeTNIMl9JbGdGY051azR6WTVNUmFZWGUwT2tlX3FZOV9jc0VCdVJiNkxwMkw4bURzSEJOSUxDUks4VHhiNTNONWQ5eEdaaWJGTVlnUFE5MVdYWnRfa2F2b0VkY1NHU1Z4WWJJc1QyTGdCN2hRQ9IB8gFBVV95cUxNcjFyQ2VIcGhvcFpTZE13bXZhdWVZY0tvQ293OTBNSEJHcldVYTVRUkdnWEV2OHBCRGhBRUc2c1FfMEp4b0lPU3hHTDBNdExsYXJLVVJPMjBCZmY2RTlXeklfNEN5RnFacFl1b0s3d3VYMGZkdFc0aGpycGlzd2JKcnZ6Z3gzNThQa1JDUi1lUHFsbjBmYXNXN2hmeV9WcFhldTZDR3lUOFhJNFh3ZVJwZ0EzUFA3Q0NkVjlIMmtna0FDM0xycXluamdJRUctNS0tb0NjVnNMQklvMjhUUGtRMkIxN2FtM0M2Y2tudVNMaUtJUQ?oc=5",
-        "fecha": "2026-11-01T21:03:43-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.RmTxDI2UKgtRZEtXkZ8U-w&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "categoria": "Nuevos CEO",
+        "titulo": "Alejandra Zapata anuncia su salida de la presidencia de Coninsa tras casi cuatro años",
+        "fuente": "Valora Analitik",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOOTRrQnFsM3NfMy11UUkxUng4U2g5ZTlTTXlOWjVObWU2TnRGSHNnNFdLbWlWcWZQMDBkTlJybDBlZEhWc2tHeUNMRTNfWWxiN1hyVTdISl9wMmhMV2tqbXJybVFoUXNBUGgxQ2x4eUt3YXZBSEZ1OUxyNVB2V1o1YVRoSmU5ZGttWnVqTmhwVExFaDlEZ3gwRk5mVzBUX3d2S0s3dmlkQjdqV3R3RUxQMjBsM296NlQ40gG-AUFVX3lxTE9xT2NQbG15eXBSdlFmYTZ1emp5Q1VJdDJIcEcta01qOU84RHhBVVZnQzhpTXI4c1pncVRUR1JuZWRRZUxfV1B5TlRpOUNmZ1VqaUFkcjBEblZMY2lvZUhiQnZPUEx4bzJCYVJvOEhDdnN0Ri1Td2lNZnhwSWRQbUhKcWdTRHEtcUpGODRFbjMwSDhQeDgyVDBxV1Biamg3ZE4yT0c2WVp6dFRDekVGdXU4S2NBWEpxeUJoak41Q3c?oc=5",
+        "fecha": "2026-11-02T16:00:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.yBgGPcs1939ydGdy7jD-wQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Petróleo y energía",
-        "titulo": "Termina otro racionamiento de gas en Colombia, pero el país sigue dependiendo de una sola regasificadora",
-        "fuente": "Revista Semana",
-        "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNOE5zZ3FJUmVXMkVSNXE3cFlQUXZuRDhRM1JpblNqOVNzazMtWWZUbEVzYTM2ejZqaW9uVDMxNEhOdjBlUmVGWWYyLWJkdWh6elJMRDJJVlE4ckVsMVRoRjdLOFQyV3ZIamVHb2RoUHdPRnJadjJpNnFLekhEVlByOF9hQmRCaURqdTFuQXRVT2kwOGY2aTFtWEl4RDFuM2xQMC1oQzdYMVA3V2gwVm5PelJETzJrVVo4RlNwTW5ycXpwSGEtQzZUVWdRMmE1SVNLaW5TM3hBSy10OXQtcWQycG9HNkNEdklucE5vcTVza0pyOERsTHR3Snp30gH_AUFVX3lxTE5VTndTNXc1dDVUUnJ3ZHYzdkRrMVJyUHRGWlB5bWVtZ0F1NzlVV2RScEw0LUZJY3UyNGhNVlc2RzE2MWU0dWZkRENYTWkya2hsSC1KUlF6blhEY3J1QURLdkxuTXZZbHVZc2tVb21KWUx5RjlmWU5JZnoyanI5NGpvYWVKVkJVcmtLYjFFLXRLbkdYOGNpb1NiaVNiaVdqS1BnLXJqLURzWlQxYjBxdHhzSTNLa3VkTFpNMEVVamR1Zy1WRWpjYWt0c1VqTkZTblNvZGNSNndxOS1rNkxkZjR0LWZManNjenhRV2pKTXpvYVZ2TmhRSUxpVGk2S1M1cw?oc=5",
-        "fecha": "2026-11-01T20:12:45-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/BRT%2C_santiago_de_Cali_station.jpg/960px-BRT%2C_santiago_de_Cali_station.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        "titulo": "Texaco pasará de 560 a 760 estaciones de servicio con inversión de US$100 millones",
+        "fuente": "LaRepublica.co",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQVJhWk1ZRDlleEZ2M3JIek56QkZxZ0Z3Ulo1REFsakUyZHF0NVdOZnUza2loeTkzYm5QV0tjZTdtTms5aFZvMXJnc056WHdILS0yRzQyTEtGT0lzSVNjNElLelpGYWRlTHctY0JxWTBIRE82ZXZYd3VlY0w1eHk5WWtROXFjTF9zeklsMHVKSmdiMnZfN1F3Q1pzUFhDV3fSAZ8BQVVfeXFMTXhEUTRoOExmWFJzdzBsbGZmU2U4RHFhUDUzOFB2aTE1SU4tVk5STUczUG1iNk10bkM0b3BIS0xDeVIybVRMREtJaWhYRFllQ0NCMlVSNWRiYVI5aVMxVFczMTVta003eWpaNHYxLXVaNFM2eDlYTkNuOWpYZHl0SF9haEhwZVBJR2tGVFBrWmUxRG9tUHJndXkzVEFpWVpv?oc=5",
+        "fecha": "2026-11-03T00:01:33-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.Txz9SCvB_TxZKvrEEz3X0g&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Petróleo y energía",
-        "titulo": "Gobierno levanta restricción al suministro de gas natural tras recuperar capacidad de regasificación de Spec",
+        "titulo": "Asesinan a trabajador del sector petrolero frente a sus compañeros en Barrancabermeja, Santander: esto se sabe del crimen",
         "fuente": "El Tiempo",
-        "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPN3FfeXlBR19LMFFoeVVneFdaSE5mZi1mV19ULW00TkxNTXU1dzh5bEE5MXE2WVlhS05ERVpYemQzUTI5aTZOMUR0ZUtTeEk4ZVl5RE0tMW9ka1loU2RxTlFoQTRvejlia3ByREZBTnFJY0pSc3lPQkVqM3U5NDRMbDBXVjVPUGdLdXlHOFZlTjhBQUZuWWlwVW5LMmxucjdEaWFwa2J2ci1SbmE0OXFzcVNsMDJfX3ltWXVIVjEwUkZ4R0szbTBvWFRQeS10ajdxMnpsUGJmeUdvNmZaUWpDWlNidklNU0k4U2pWYThyV0fSAfYBQVVfeXFMT1Q3cVF5dTZwam5Ta2Z5b1d0RGp5R09uU0ZMVjJuWkdiX3lwOUduUjQ0RHNFZUJYWnR5VUVmQ3FUa25PTHhhZjNJdzBPLXNSQjdhTEhTcGtTY0dQcXl5VDRjVFZHZnA2MnVNank3SmNZX040cDl6MDI1VWs0Yk1HajVWV2cxOUVCT3lLdUNHdXBsWUowNHhuUXc3X096NGVRYzVZMGZNOW9Mc09USHRpU0Q5N2NIb3dDTlBlSjhOV0ZmN21NVkViT2Z4UWx5c3ZyckxYR1gtNXlLcjlLRTc5UG5kVlROVE5QZUhHMUlWRkNSUXY2NFJR?oc=5",
-        "fecha": "2026-11-01T18:17:57-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.wHvg8Sf7l8iQ78xsvC_tvQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQRUtLemFkYUZrR0h0UzJFRWowZE1hVGpBT0lKY3cxeWNPdmhsRm96eGZuSXdIWWk4bk92cW52QmozRlZBOHdQeS0xVmx6VGhVWHZPdWg4d2l0MEcxNHJmLV9WOTFVdWk4SUl3OXhxTTJOOWZaTnExTGtJekl3ZGZRTGZIWUZNd2d1VzdOVnJEZmlIUXp0UGxHcGdoTjlmUVItZlNSbzJfNUJCaG5iNmx5RjFDMDFIeGlUT2N5R3NjLVQwQi1nNF8wWTQzcDEyamJJc3NwMk15cHpPWmdWQWdhdHU3TmdKR3BvVnpYenNwTk9OVHF6THRUNENWcTJHLUdK0gGGAkFVX3lxTFA5bjN0ZXl2elllX2lsWDlXSVVZYkZkYS1zdmtKbTg5ZTdMMDI0MVlMVDk5cE9YUmZYRDcwejBQMmNtekIwOFh6OEFZb0QyZGdXbHJxQnhuMGVIN1dxMmdQQjluZUpzTmJnckdCRDRmc1g2NzlHeFB4QUxhQWppc3dBd0N5Y1o0TWlCTGtRdGppTkRhN1VxUHNnZ0c3NE9GcTBySXY5dmczNklWSEQ4Yzl6aXRwaW9TNW5Zb0F6NWJubWhUZWdGeFQxY1A5SWhTRm03Mnc4ZF9NVFFCeTFyU2hyRGYwdDBYOEFkQjA1UEVWQURjSHJmRlNpcmx5S1kwS09aWU9UcXc?oc=5",
+        "fecha": "2026-11-02T13:23:37-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.4S1MO5V3OKfk2PRzYITkHg&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Empresas",
-        "titulo": "Estas son las fechas del Salón del Automóvil en Corferias",
-        "fuente": "Valora Analitik",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZS02ak16bTA0dTAtcjZSZmpRUkdJQjNlWnhBc0t4bjQ2TEhCWTNxMFQ5czBpWnRxYlIyNTZkNWFaRWdiSEI4d3BpbXVHT3FsbGx1QVA3WkJtb1JlN3VQRkltRlhwaVJ0TnBaMVpLWXFRZ0F4ODR6ckZsWWhJY0ppY9IBhgFBVV95cUxNbTJpWFFZQTVKeG9MUC1uQnI1eWlCMzJMSUdjc0NoZ3ZJbWpWRy1raE1YX2xnVFlXdkFUdm9LNXYxVmF2eThVQ0tEblBvRTRkdFhvaF9GZVhzQkFqeFRGUjg4a25WeUpIQ3MtZWRXbnhkTWpIX2dwQXNkYmhXLVcxRE1BVmNfZw?oc=5",
-        "fecha": "2026-11-01T13:00:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.I1pq-SZCyeyCnMie58H_eQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "titulo": "Alicorp adquirió Rama y operará desde Cali para atender cuatro mercados de la región",
+        "fuente": "LaRepublica.co",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZkhuOWZxT29tazY2VnpyS0JQYk9IVnpkaWlza3ExeDBBdURLUy1kcVU0dHdlWl9tSk9CazBhZDdVQ3h0QjRKSkRIekYwUzNrLVNlV3hla3dBeGxja3Q1QmZodGNsS0UzQlNrbV8tUFVVMTdPODJVdldCd0N6aEwzbnZtZVdDcUtxWnRhTE1sNlVaOTVsTHI5RE1XUExuYTRsLWZMYTkzb1V0a0lJNEh5eHd3OFVDcXZfYWZsZk9zU3lpU1Bzb0Zr0gHHAUFVX3lxTFBnSnNURWZzQVhDZzVlay1xODVabTBpWmV6UUp5WENRbkZQS1FoN29NVl9vNmttSzQ1SzVVX3pFWDlibGg3aHRISFZNOUZsTlU0eFFhNE5ESTFnVW9PMzlmZVRZVmZVQ2NObTNHUkh3bWV6aU9WYkhQZ3ZsMjVKMU9CWnFIY2VIaWtzZVcyZHc4STRydjRTZnBvUFp6MjRxZjEzU2tnaGROYXRUWnNINC1Jck1Ia045MFM4VExEMU1IczIxdXhsdXM?oc=5",
+        "fecha": "2026-11-02T12:59:38-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.wz5Qt5wdSWED1pkPlohB2Q&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Economía",
+        "titulo": "Más de 6.500 restaurantes cerrarían este año en Colombia: la alerta de la asociación de gastronomía",
+        "fuente": "Revista Semana",
+        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNeE8yUWZjUzZCSDBXSmFPR1ItdXptemVhbTlZTXQwLU15Tl9USDZ2SVpKd1VSWXdOcTdxX1lFbDI0RklZblVwTUtVQ25FNXIwZzA5ZW0tdktETmhUZUJBaEdZdmllcEVzYWRiZk5tbHF6THM1RmdUUWpCRlN3ODdGNk9jOV80TDlVOUh6ejdrMWJiUndJeGNYUzUxY2FVTUNEcVJQM0ZheVZ0eF9CNzJZaDN3X2xiVUVRYXNoUUFhRnNrbjVRUmRnaUNjenFvRld3RjNVQW54aVJmQ0RYcUJn0gHkAUFVX3lxTE01SzdjcGhlZHRCUXZpa2tzVVVfSDBac3AzMjNqSmtjTEhHNzRncnJGRXlWSDZJOF9Ld3dPVnVYOHdPR0ZHWEZ2M1U1QjI5bTRyVWxrMmFMa1hjUndhREYxNkZrTi13ZllOeGF0eE13SjB2dmZtOHdRTjd6ekF0WlN6cHA4RDVfOXQ5UkxnQzBKb1lPVWRqWGswN1p2RzNsbWoyd0s5MDYzWVpWdzZrT2lRSTlsLThrZjV1cW4zdTE2X190aWJKUEFKc1lqSHYtSEcwZnVTQ3puX1h1d2Vxd2tIOXZMdQ?oc=5",
+        "fecha": "2026-11-02T12:43:17-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.GQlL84t-WnO8rucaCMgEIg&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Petróleo y energía",
-        "titulo": "El Ministerio de Minas y Energía levantó la limitación programada de gas natural",
+        "titulo": "¿De dónde saldrá el gas de Colombia? Los campos maduros pierden producción y Sirius aún espera",
+        "fuente": "Portafolio.co",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOa0JKdVpHWlp5d0p4bjVjZHNST3ItNnBDRU1ZNTV2TGJxMjMycFBrbzBxZmJRWUpNMmQtN0s2ZDRfNFFJUnhjVDdVX2pJQW8xOU84bzlDaGdVZFZlMkJZUFhsU3FDSE5sdVAtTVRsTDdUYWg3YzUzR002YlZtRWNuREI4Y3FueE1NMGl4dS1qUGdDMDVGWnJLenVXdHNvcE1uaG5MOUltenRtYkpGVTRyMWZnS2pzSlVDUExZdXdLLVRrakV6WU16NWwxRWVLUdIB0wFBVV95cUxQb0VCcUM3TGZDSFNrRlctdnJ4Q0E4SGIwMGNHTHJYblRUb0oxaHB0YkhQNEVhLWlSRF91QVByamhxTmdneWZoa19EbEtoTlZqdXBXRWo4T0I4S3RhMlhCeHY5dzdkdWZGNDNvRFZZVmlFRHBiYXBSNTNKVEpIeGVOVHBFQlFlbjI2ZUp0SzFXNWxQYXJORjFZYkNtV2lEbThPM08wU3NtYVB2VE4xMFVhZnc5R3VSR3lUOU9zc0d1YjN4WDgyVHlaZTRaSTUxY21FXzdz?oc=5",
+        "fecha": "2026-11-02T12:23:54-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.Ybc_2hytg8WpoMZ7GMWyZg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Tecnología",
+        "titulo": "GFT desarrolló una solución con IA para migrar los sistemas de Itaú Unibanco a la nube",
         "fuente": "LaRepublica.co",
-        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdmVvZDN0SkFQbTQzcVJfMHZTWmVYQ1hjOWVMRHEtN2tnRGdwUFJmblNGR1Q3elZwUktoWWlYSnlfaXI5NkRvVDBBSFhZSXZEbmZmSVZRb2twMHBMZmsydGp0MVhVbFdocWlmQk9XNER0ZEJqZ2E1LU5EYUhoeUtHNjhxci1IRHNoZnVzM251VnVPbUx0Q2hRRTgxdHNucFY4eV9COTBzWi1veDc1cGpzYmZJU084Vk1uNHhFaU8zN1A4QdIBwgFBVV95cUxQdGRTVEN1TGZodENXa3o4aXZRTjVKcWxURjg5Y2RKY0RsZ3poM2REWVNYTF9WeXhMbzVpdUxkQ0hQalA5c1dXZVJrbV9uTDhsck45Y1hGclRyeGZnVEtWMFFCaWdsM3pPaU9uU05PNm5hd1puRzJIbmtWdGV4RXI3WjczdEhNcDRWTGloQmdIaEVITlpwVWsxV0xLeVdvT2puUnNXbTN2WTVROVRiclkxZUdVdlRSNEplRlQwVzBHOEppUQ?oc=5",
-        "fecha": "2026-11-01T11:08:20-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.x-V1BDyX8MJBojj84psUFw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQU2JpTkVGSlhvVnNtU2VNeDktTTlZRVk2aFR4VHdqbkQ2T2JkTXFLRUVIU2puWFRKY0h1MHJnN2gtOHFFYnl4Ym13NnhwRy1ybDZLdWVBc21XWFlXWndJa01wRWJEdlV5QjMxalNubENZMDRLdmx5cWxxemg0RUdSV3Bud09ZV0tuSktVb05CZlJyMTVHNGJlbmdCQnVzTGhPV3BCMEcyQlM1Y3QzZ3c3MjNsNU4xUEJVQ1pmRmZIZkhQeUpUNDVBN2dB0gHKAUFVX3lxTFBrZm1IX2tuYTk4NVFIa2Y5TWluWE5qTEYxdUJUS2phS25XMWlFclhRZ05jUjV0V0NoamE5cFRJN2REbk5lX0JsY0o5cXo4LVFtanVKNE1wQnlIRXBCUG91NkVMME9YdGZpbFlINTk0aEZWa2I5V0hHV2VKWmxxUEFXWkdGdjg3TEVSZXl1eHBJZFl1dlV4N2RneWZLSklBczNZTDZOZm9GdUdEekpEdmRreVVjVVFVLV9GV0ZpTFhOaDk1bElPS1gwYnc?oc=5",
+        "fecha": "2026-11-03T00:05:46-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.8C1IXhaLszRr1txIY45Tsw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Economía",
+        "titulo": "Ajuste, tributaria y US$5.000 millones, a 4%, del Fondo Monetario Internacional",
+        "fuente": "LaRepublica.co",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVGRXMEl3T2l0dUVsWTVrWWFmcFZXcVFHWUhFZGZhY2Y1Y096Zk5PVGgzZm1KbDNsZkRYeFdIT3FPNG9fS19jOV85MUpfbFpvTE5DeDZLTDRKYV96Ym9KYldVNGNHNWk3V25wZkh0Y19VYVlybDNabnlTTWg0MUxxVW5sbHROUGpMMXFSNzBkRG5kcndiaUp5RXdPTWRhUXhpNExKVGNFWUhrX2N0c21SQzVSQldJREtoNHpJ0gG7AUFVX3lxTE5SQzQ1Q3NyUWo0cjFlQjNhNnkwZTJsVEFRN05rRDF3UFRfbGxzSVhqdEMyWEJZaDlfeHZHWFhhMXVJWFFvS3pTeHBiUzVtNHI1dzJUZGhTYkhTRl9teExHZ0VPeVh6VTNING5KbUFRT0RZRzl6eVFQNVo0UUtiRkZuY1pLNlVsUFU0MGVzUUJxVmNBYW9rTk5Jc2tNdEVLQmNPZVR2WHhHcTRWRDliREJ3UWQ2akZCTjlBVkU?oc=5",
+        "fecha": "2026-11-03T00:01:21-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.eJrbLTiE40gHLinSF2PYSw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Emprendimiento",
+        "titulo": "Entrevista con María del Mar Vélez, CEO y fundadora de Crack the Code sobre origen",
+        "fuente": "LaRepublica.co",
+        "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNWndjdDRNdUpXZEpaTnVDT2QzWW1ObUJJNG1GMjVydWNXT3VDVHduQjE5VW9mNGQ0cXZuVXZzYTJjQmtjTUdpT2JTb2pUMzZONHlodUx2alVPR3dzdTRvTVgyaUFzb3FsSFpyZlJLTl9IWS1RVGhlMkdIbm5FazhiVVpfYUNCY3NyTUhzMXZWcndtSVdockRGLUl4ZlBTVTFieFBSdVZ5akl1UHZwS3BoY1dkZXVHOVlNUTdnbHhlUkQyQXpYMFdJN1g5OEh1RUt2RDNrTFBjMVB6UGhDT0VUdWxIRWVXQnUxLWJISFYtd0dBTkN6WXZn?oc=5",
+        "fecha": "2026-11-02T21:40:53-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.RERgy-CK3vthH6Ly5tguIw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Economía",
+        "titulo": "Exministro de Hacienda de Petro pide que recorte al gasto sea mayor al presentado en la Ley de Rescate",
+        "fuente": "Portafolio.co",
+        "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOMWhTU1V3VEV2Y3poa1FaVW1NOTRqQjg0R2pmUm5fa21ZVVRPRF85YjFHd1VZT25pRnJ2MERLblhMZE43UExWN0JyaVBWRll5d0xXSXZpLVpsTGkxTTEyXzhjZVNEWl9vMy1VTnhzY2dMc1ZSUkdRMFNBeUJOc3UyQkpLQzNwM1FRcEs3Si01dU9WMWVUOUFKMXhzQ2FKbmxnZXJOSFptcDljeXl1RnN0bkEtUUVFNUdtQXBKTGNzb1VaRUhKZU1ZODNwd3R3NUVVeGlEYU1OWlg4eThnUmlXQ2ZUdU1NVWhyc1A2RUJJTjBKcFZXSWIyWtIB_gFBVV95cUxOeEh5RlBYZFd1QkpwUHJiajl5Qm5HSy1iZ3NHZ0kwX3BwMGx2MWw0dVJmM0xrSDZGU0pubndaV2tvbC1EbXNrMW1XamJYZWRpVkt0X2VxeE9KRlhvVEpqdW1qNkNDRTkwR2xCNzltbFp6dVUwV21LOTk5OVFvQzBGZ2d3ejJJYWVaX3BCdTV1RmFVb1hhZGdEWWNONFYzaVlwdWJIT1NncGxwUGxBd1NVMnFZbnlxeGRjU3VlOVk1aUU1YU12RnRnR2Q0aF9jVE1pU1QyS1VTR01mRkpJbzNfMzI2WWw3ajJxUFUxSnQzUGIxZlBuRjZuVlJuZFNYQQ?oc=5",
+        "fecha": "2026-11-02T14:25:44-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.-jAbI1s-cwoDcmzGkfB_pQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Emprendimiento",
+        "titulo": "Entrevista con María del Mar Vélez, CEO y fundadora de Crack the Code",
+        "fuente": "LaRepublica.co",
+        "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOR09UY0ltczZhVGNBR0FLUDEzTkxHV184SkJUaUZLWDVDZjF1Y2ZlVnRFdmFMSjhFUXN0UnNVclI5eTMxWjdkcTRzUWtsZHNjcFBGSmdVMTFUSDlabHlfWnpVQXoyRTdfc2dJaVVxOWs3U1dmbG5QZnItQ0hxTFFxUVhnZjkzeUxzRkZ1ZmlBYW5ueWRocTJYamRFbm5pcW0zNUVMck1TdjZWaFJVaVE5Zi1fX0ZGSkIzSWJrY3ZtTTVhLVVxdHo4QklZSklRWkYwaWFaVWgwZUZKekpMRU8yTGtzVUpuZw?oc=5",
+        "fecha": "2026-11-02T12:02:37-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.PzNKzVSXWnaARqH3qhHFyA&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Sector financiero",
-        "titulo": "DAVIbank completa su integración con Davivienda: Estos son los puntos clave del proceso",
-        "fuente": "Valora Analitik",
-        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQVU5PS1RmMk10X0RKM3VJcWMtTU5JVGVoYkdSZUhQRjdfc1JfTGpkXzRhSTBQX2RvZU94akZwX0pWZjluUmxCV0xXVHNxMllDR242eWNDamIyVm1fVXdZNGpCSUtxWVRITWpaN0R5VnVYUlYzZnZ5aFFHeUdTWmFmWXdaV3o4UdIBiwFBVV95cUxNazR6MnpRNG9ENy1kaFFCaEtnZ0NqMWRpeWhoRVk5V1JlTU43UE9tc2staDB3V1JrcGsxa19zSzZVSllyNkR0YlNKakNDRlF2NWhEVlFIX2JEcHFvVUpaU1NsREJIUFZidlRQRVlXMi1fa2JvQm9iMEF1QndVc3hsOFNBYmotanRDb1FF?oc=5",
-        "fecha": "2026-11-01T09:30:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.9GZVEotk7qZFJmQYr2RI5w&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "titulo": "Alta e inDrive buscan financiar 1.000 vehículos para conductores en Medellín con créditos por $50.000 millones",
+        "fuente": "Portafolio.co",
+        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQY3dzR0RwY1hHTnVKMEZIeXZ6LUhVRmhSU1dULVRzZjlBY0FreG8xM0hKVk9KUzhsQUtwd1dLejBzeDdRZ2VxWVViX2c5bk1TaEd1YXladFNFdG1WYlBzeXU0ZWotTXdMVWxhMVR5aUZ6VlVlZTF3SGJNRDRLVWJCT0ZQd1EyRGFXWTZ4LVB3RjVSbGltaXBaUVRFUkFCUV9RNmU3LTNKUkNSYXdkYmtaZS1FZUNNT0tJeUVJS0Q5R1pScEdZQUdPTXRqSGFHVFZDVU0yQ1FoQ3JTWmNKcDJSU3pONTZnN1NuOWhPeUhFSXROZ9IB9wFBVV95cUxObU5aN2hpUFNRZnlrREFkQlN6V2pfQnZka283SndtT0VXWFI5RmNiODhjazMtblc5X0VGQm1yRlB5dTlTRndrM1ZkZEhfOEtudlB3SlBhVEZUX29zN2h5Z2JZcVVHSUlSV2I0a0tIcy0wVU93OFVPUW9IU1ZjUFpHUGdZclRVQk91bG1ENFJZLXV5MjJaN0dVbENhT2VCUGdRWlNjbDk0WEFzWnZodTl0clpGd0xfcnJ5NU9kWXlkdVVfb1hkeFNzZ0RUMW91ZVQ0S1B5LTQ0UFp5d0drTG55RUdtSU9SZURhMThmd3dPU0FvODBQMklN?oc=5",
+        "fecha": "2026-11-02T11:54:35-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.hPEVehN1m1jTfa8KIA7HLw&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Petróleo y energía",
-        "titulo": "Embargo de la Dian por $16,4 billones dejaría a Ecopetrol con solo 23 días de caja disponible",
-        "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPOV9fNnMzc3pueEZHel9DTTNiazhObjZnaHNXVk9iZWU3WlMxUTJiczN2ZlhVTXBiZkt0ZXAzNU1EVktRQnhIbEZteUdEQ1M5MTJTVzRKY3JPN1d1TU1NemFuZVN4UVQ3VWxsekhESEE3akpGVnZpc1E3c1UxaWZnaE94R1lrQ2twTFNSZHpxbDNTR2FBd1hpU2JBZlFCdVlJX21sVWpBT2FFaW1mc1dreTRWUjhXZ2JrdnhrcFZ3czRvWFNxU1VWUnBXanpsdFRYRVpubkEwWUdhRkHSAeABQVVfeXFMTl9oWHRmLVpEcFF0alByU1hkZ24xbnZuWVJKOHdRWkMwb3lUOExpQXZMWDlEbmYwMUdVMGlVWGY2ZW1QVU1oeFhmRHl5TTdhcURIcHVhMEEteVAyR1pCeGQ5RVZRZVhxM043SmZGdGIxdGhhYTVvU0J0djhuU2s2TVF5ZkVyeFZLdkplVl9RSFYzX1BFbjJUWFdvcVlLanlhM3dRck1JcDJndDRzT3BOcENnYThoZnQzZXlMQUpiZ1BJNTZPYXJ5bEtYc1ZCdzdLMEhXQ0RaQTYxZEdEbW1neW8?oc=5",
-        "fecha": "2026-11-01T09:26:54-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/BRT%2C_santiago_de_Cali_station.jpg/960px-BRT%2C_santiago_de_Cali_station.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        "categoria": "Economía",
+        "titulo": "El comercio entre Venezuela y Colombia crece 15%, pero las exportaciones venezolanas retroceden",
+        "fuente": "Bloomberg Línea",
+        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQS0hiV2Zfc2kyM045M3lOYk56NHNoM0psMlFiaFdpdGRlTW1kWTR0UG1rbjNGalN3VzdCeDUzRHUyMFZsUWdUclViMGJwRjIya1A1X2ZPNmlZTEI0cGE0aml4OG9lRVVheDZhYUVqRHVtazA5dFNDaThyU0toWlBtX3lLTUJlRHVUTWhFQkxWZGJWcUpYaW5ySWwteGJwd2Z1TWVJMS1xSGV6SVFMclBoeGN4Tm8yOHZRMlJsSVRZZlN6OTBqR2pUbmdNVGJFaVNvTWNtNWFRUlZ0NUhIaUdmcTNDONIB9wFBVV95cUxPSWtvNHhQWjlVMmVKYVpzMlBRRjNOWnhNdVREUVpNd3RZXzNFZVYxZGpaTTAwejFrdDgzaF96b1FxbkZ2clZHUG5iam00SFpRc0VHZFFMRDhEV3pjZ2lmVklMOUtTSWg5clBvbDVGaHQyTlVEajhNbGxjcm93N1B5bEMtb2MtRTRESzgzNjFBbTVhMzgyZ1R2S3RoV0R2ZHRuUEt0VEJBN1NYMjY5WFFwMkJwOVYtOEcwR2laQzVTVGJwWEhibGk0Z1ZjRHVnRWxoZklKb1RfZHpxWTZSQlM0TVdhR3Q3NXFtYzV0UmkxUDlOU1lYTUg4?oc=5",
+        "fecha": "2026-11-02T09:26:08-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.pTtIDNpWls-H8Z32L43rDw&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Empresas",
-        "titulo": "Nutresa de Jaime Gilinski va por otra empresa: pidió permiso a la SIC para adquirir el 100% de Empicolsa",
-        "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOeU1kY1M5TXNCQWJwSUk1cjdNa090QXdHOHJEMkd6Q3pWOTBjUk84OUptMHlSbmFzb2V1VXFpb1J1ZTdibV9qdDhBLUJMRHFzUVZqS2VaSUFta1dGWC1rQmZEY0dEVlZpck42aG5ORElSOGVpUE44eG9jOURvV2lhekFzWTBCdHJQcmdlS1lJeXJ6ZWZIZXBmVFhRZlN3c0pDWWpPYXNxbUdmZFNlUHh5Tk5zak4wbE9aU3JSTGRLMHZjelRrakdPNENGZ2RIQ0JTN1V1aVQ3YlA4RUltOGJ5dEZzeU91S3lV0gHuAUFVX3lxTE1FX21jc29vRGFWZ3VfT0JGYWhSU1RaeWtyWVVuTjdDZnpoTmQ0ZllyUGxSMlFrT1ZvRWN4X1UxUEV6a1VIb2N2eFU2djNzb012ZG9CQWhwQTYta0I1N3JpQUh3WjZUQlh0ZWhMLUNWbnVTVnFmamdNMGV6NnhQd1g2N18yeTRFYlNweE1FNWFlSWRDUjg0aktqcE96RHAzck12YUgwN2NsbUNDeEloR01nclpfRE5fbmkzRkp3Rkg2Q1ZWRWZXT3FBOVMtSWtkMGhRejd2VnphRlNrN3ZVN3BuWEtGNm04dWUwR01hNVE?oc=5",
-        "fecha": "2026-11-01T08:49:29-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.JCiyUk4iVKe7CMDN9QcCig&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "categoria": "Trending",
+        "titulo": "UNGRD entrega primer balance tras el fuerte temblor de magnitud 5,6 que sacudió a Colombia este martes 3 de noviembre",
+        "fuente": "El Tiempo",
+        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQSVlzVkVVa0lVVHlidXI1MkZfbThzeVpvMzhEUENXSWI2ZHpuZXQxTE8tUXJCR3NpYTBiOU45SEdVSS0tLUo0T04zTkc4aWNHeDY1Nllqb0NnbjgtX3RNSEJWLUhPanYtRHVGRFNJRGhlbU9rUHJTbXZ0LU5rZC04Yi00Q001bndmRG9YS3l0V3k0UkMtSkZ5MUxWSm5NZjRET3I0anVZVm9vNUdoOVU5S2ptR2ZVaTdrdHg0eFlrTEZuTEY5WDRIWFlGaEdrbC1jQWplaE96OW1YNEZpYkFUWFcySkpLNjRVRDhldEZmVWRIZTNwa2ZscjUwOU55MnRMbEdYdtIBigJBVV95cUxOSEZRVnJ5cE5QTG80Um11SFlzSDIxcXVUMW9SWEJGWVRRVjI5NkFTVnpHWmRxMTdOOUNJMW14ZUU2MkQzMlZobHZPb0xkaEQ2cFFSanFvQVNjOUdFVjRxM0lQM0d0dzh1Si1Jc29yeWJMbmFPSVM1TE9OVllJWW9ydW83d2gxaVo2bGlZRkVWd2tZQlM5YVJFenRKNzAxb3U5X2c3RElyRXlTbnJaTHEwb0x1TlU2emdZMnNzc0FhMW00VzRmdzZzLU1KR0lKM3FvUVk5dGpXeXNyMHBGZVRYb3VHaUFlVDBnYjFYYUt4WmNFZ19tb05uRDU2cW1IRVItY2NZc19BcVNvZw?oc=5",
+        "fecha": "2026-11-03T06:05:35-05:00",
+        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Museo-del-Oro-Fachada_%2827842494739%29.jpg/960px-Museo-del-Oro-Fachada_%2827842494739%29.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "categoria": "Trending",
+        "titulo": "Fuerte temblor de 5,6 en Colombia que se sintió en Bogotá, Cali y más ciudades: alcalde Carlos Fernando Galán entregó el primer reporte de la capital",
+        "fuente": "El Tiempo",
+        "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPOFc4VWxiTnktbTQyYTk4a0NHd1pqUi1fcVY5YVpicFpoUnE4LUtLdlZjUFhRNUl3Y2cwbEpRNjNqNzJXNTQ0MzZlREJucWtWLThIVW5kelVjRUpVUEJhUUkyUFd4YmNZbDctckd5WDJSWHoyLUpnckY5QkEzaExycmhFLWJiQjFtUjg3OEhBZzVEZTZFc01WRkIxQlloOU9rSndRZ2c0SFRZZndudXNJd0NlcWM0TE5tdjFmdHZwRjJTemdvdm5hQVVtNkRBV0g1OEMwQTAzTUZvZ2tNTVRMNFlFUGtCSlRhZWF2dkQ5SWFqMTlmdHhzdFREZTR2dnBoZ1VDQ3dZa2RESGdrWFZwQdIBlgJBVV95cUxPTmpUNHgxclZYcVNZN3NOTUwwMGx5WkJVMjhuRVFqNk80b1EwNTFpZUU0cHZWR1Z3NGRHTjU1bTRCUnh1S1o5anJ2VlhXN2lUX0pjSGQ1bE1mWjBEc2J6bTVVY013SVhTZU4wR25qYXZLXzQzZGpOMFRIajBCUE5zRG15a0pXYVpiM0pSYkROem10SEQxVG80SFlvN3VsN3dOd1NDTXNxTHhNOEdfampVSXBoUEthdG02NXhyN1AxMElEU21jTmRpM19jV21xVjlIVTVtUmswdWNudUFMbjdDdXVtQnktbnh0dUU1dWMxcU1DUzZvY3QtSmU2X2YxSVFqSm5Lcnl2ckRDMmF4U21sMFRKZ1NqZw?oc=5",
+        "fecha": "2026-11-03T05:13:35-05:00",
+        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Museo-del-Oro-Fachada_%2827842494739%29.jpg/960px-Museo-del-Oro-Fachada_%2827842494739%29.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "categoria": "Trending",
+        "titulo": "Videos del temblor hoy martes 3 de noviembre en Colombia: así fue la evacuación en Bogotá, Pereira y Chaparral (Tolima)",
+        "fuente": "El Tiempo",
+        "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOOUZ5R1FzSlNPZzkyZkNja3o3MnRiN1FvdEk4dk92WFI3NzBQdEs3SkJIdXJKNTBGY0dPX0lhcXBMNUdJNEwzMWdrTzBRUTU4X3pzZGllNzNQcEt2WWFHaWxJU1hUbVg2WnduV0ZlbEl4ZXdndFk0XzdOYzU5Z25ablV4aDhzcWMtNDBBZDdZbEZZcF9XNEhkT280WDVvTGlkYmJvNi03RC1VNXh1bGVxQ3ZTYVlibERxcFZkaC1hbXZrdVViSzVGT1JsNHFNYmVpUWlQajJmbFVSbDd4MHl2R1BsNUNrMnVWWDdMZXNhSEJHM3NvV3htTUlUbDMwalM4Y3fSAYcCQVVfeXFMUFhPdnMzcVRVX0V5Vmh4Ymp6bFdVbm5hbERQNkQ1NHdtak0wOHBSWTdRY2dyNU96ZmJBTnZKcVhCN2pVbXFUS1NOTV9ZVWdqRTQ0akNzcUtZTjVzZkVhOHdndEc3TzQwcnBZVTNrVDRWd2pmdzVVNURVUXpJUmFqd3hBWC0wVlkxcF95aDFsVGlFRDZRUm9fLTBWQ093aGVlZUpqWlI1WHhVTFVsel9fVkM4LWZhN1I5WWxiVkE0TjBQRGhFWWEtM2lpRk1hZGk3dnJnVFRuY1VjdjFwc0daUjlYZEdMbHZ3bm9aWUJPTGk2SzFKRjdqQXcxQV9yRjhWT3B5bWgtLUk?oc=5",
+        "fecha": "2026-11-03T04:57:28-05:00",
+        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Museo-del-Oro-Fachada_%2827842494739%29.jpg/960px-Museo-del-Oro-Fachada_%2827842494739%29.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "categoria": "Trending",
+        "titulo": "Temblor de 5,6 sacude a Colombia en la madrugada del martes 3 de noviembre: conozca los detalles",
+        "fuente": "El Tiempo",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQUk1zWUVhZmJVTm1LbzR4Ym92RFhRUGNvTEQ5LXNaYTJBVWFTalN5eExJTWNHWWJqeFBkMjdUeTJ4YzludUhjNl9IV0NnbUo4WVl5ZnRIeEFfQjRvdkdXdFY3RjhKc2VaNko4YTVTNS1Sb2FSbGVhS3BUdXZERmNVcjFRdFhrTmozSHZFNzVyNTFETV85NmZ4OG9BZTg4RkFTaFhmSDZteUc5M2RLenJTQ3NfRHN5MkprV2d3VUhTenZsOXhJbGpGZ2MzRGtqSUs3WWk1U1NzRVNnTjFnYzdUZNIB5gFBVV95cUxOMHVleTB3ME9uVlphRG8zUklUOG9MUnVHd0M0eVo0d0R2ejNOUThEUS1vZ1Zyc0NPTHk2a1paZnN6YUZWaTNVdlAwd1lVWkRtdU13QlZjdjVPNHpucjRPRXlQM3F0ZXVSMThEZENPbHFiOE9ORVFxV193eHZKeXNXNWY1Q3g3UHp2eUdLZHBUOVVqQUVXeVdaM1R5ZnhneTJxMWNFQXg4VFFOWDlpWnFGYmtpcFNoSXRqTmdyWmNIOGs3RDFYS2Z0RHZsZFdJZ3dqTUJ0OFRvT2U5V1pyRHFuMl82ck90QQ?oc=5",
+        "fecha": "2026-11-03T04:21:19-05:00",
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/73/2025-09-25_Mene_Grande%2C_Venezuela_M6.3_earthquake_shakemap_%28USGS%29.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+      },
+      {
+        "categoria": "Emprendimiento",
+        "titulo": "La EdTech Crack the Code espera llegar a más de 45.000 estudiantes en 2027",
+        "fuente": "LaRepublica.co",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVDhEb0g4UkxfdDJsbWxzTjVCZUd0WFdvTzUzRjZNaEVkSjkyYVNYYl9VTndjOXV5ZVh2a1M4YnlUNHd2ZEtRaE5FNU5XSVl2TmlUa2ZoWFRoNk1DNkdPdUctbm55ekJaeVdlcDhsR1ZnS2tZRmZUb19fekczYVgzSFJFV0dRQ2hUZGJ6cnZVZnNfUTN3c09vZVk5X1BOZ0xkTjR3OEU0TUpPd0tv0gGsAUFVX3lxTE1BV2lUSURJd1d0c25EN1drQjhzRUFPRTc3R2ZTamxFQ3Rlc1c3WmJOazJ3S19MNWtBSGk1VFJHbTQwbjZ3eGRwS0FkN2pLcW5vQ3lUX3g5WXNyMkhGandJaVVibndncHVHYXJuZ0hJeUgwdTFrLUJickNHVnVVVnBwb0VOZjRfU3dFTXlORmRSdTlZMThFa3ZuOVBhOEx3ZUJvc05aSjNPUzl4Zl8?oc=5",
+        "fecha": "2026-11-03T00:01:43-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.3gXB1fxJH03PRowltNdGzg&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Deportes",
-        "titulo": "El piloto colombiano David Alonso ganó el Gran Premio de Malasia de Moto2 en Sepang",
-        "fuente": "LaRepublica.co",
-        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPeWhWVGVaT0NRVXNJOGdER2dMY2Jqbmx3S1ZDbzF0STFnOV94QVJxVURDcFRvaE05dVdqdlBBYzFaMG5GREhIVTJwT3lNSC1MVUVHZFd1RDVtOTBlYkV1Y2c2a1BENkN5anl1VWFGaUhKY1hvMEFfYlVaM2RTeXVUWEU4NnYwRGVBb0RfT3ZkTC1uMkFHd3F5dk1vWTZmQkJYcUFGd25Nd0FYTXVBRENxWWU1TXFia2h5UHNSY3pDRmzSAcABQVVfeXFMT2R2OEQyU01EXzIwN1lHNU5jX0pHa2pDZndpUHJKU0owZGl3SlM5LTRqNWNGbm83b1lRQkl6VlF5Q3ZQbnMydnB4RkRFV0J3alMyX05Pd2Rud1pkR3Z5UEFtaWFrQzNOTmhpanVKazM3NUFPNmZvNUp2OUV5R1NXSEZjaXB1MTRETndNSVRsaEVWN0RvX3JjU3dnay1ySGY5OXFDV3laeDZzQ3h4cFNZWEw4aVFXVHNsMU1EQ3B1MmEw?oc=5",
-        "fecha": "2026-11-01T11:39:41-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.iJEXxXjOE_qlXVpJXwDKdA&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "titulo": "Colombia será sede del Sudamericano Sub-20 2027: Conmebol hizo el anuncio oficial",
+        "fuente": "El Tiempo",
+        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOYWQ0clJlU2phZ2dDZ0ZwMDN4czNsbldFQ1dwSkozNHh3aG1zdElMV0NKa3JXYVc1VWhsMmg4cFR3SXFyZXBUOFJYSzJPUHJKRUFRelZDMDdWNkh5WHJrVGlUa1loejZlNm4waERUbVNOWG5BTVZWUThhV1JrWHZKRE0wbmo2UUZCYW10alVDRmFpTVNkbUdXdzFzMkhSMkh0QURBVGFVOHhSc0oycDRjd1lmc2FHRHZMNERCVFdiUWZrRldTbjU3alF5ckNNbXA2SFdnbjcyWVBydG_SAeABQVVfeXFMTzBLS2x2cWZfby1pU3RLQlJyczNzSFNobHNxYzQ0TVRTV3dTYmZQeXRmMHExLUcyT3VzcTFna3lGMExJSzgtQTRHT21VbTVudk5nZXltbGhKMjdpSHRWaDFFV29kV0pLU28tVk00THRuZXhvRmlTZWk2WTNLdnJ1VlMtc0ZVVHp1NlJ0UXZIVTBzV2htb3d1MERsZlhPU1N6VjZxbjFSNUE0clNoNVk2UHVpNmNkOVBYbnhkSTE5X2QwY0xSTUhkWTM5WU12Wm5IZ2ZzQXRlR0Rielhna2UzMk8?oc=5",
+        "fecha": "2026-11-02T20:44:37-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.VjBEktgpZqE6wENQ4Ud0gA&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Sector financiero",
-        "titulo": "Davibank cambió su razón social a Lambda Bank previo a integración con Davivienda",
-        "fuente": "LaRepublica.co",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbG8wYnVaa1Z3MGw3R2xqNURMVzVvYUFnSkRkejUydmYzdmY3Y1ZwZmNqRU9ONXppaEJYX3RNTXJlalVJZk80VkIxZkRabUVfTEkzVy10d01fWGdZdzhyNlByQ05vYk5NclpSRzc5Ymxrc2syMzhiVmdGaURxX05VMzF2NFl1djNPUnR4ZDlPaDlNb19oNlFvMUV5VVhBbkliZXNzUkVIdjFpclRUeC1QWnZZOTJkVDZwek5peFZvQUk2dUXSAcMBQVVfeXFMT0FxckoyaU1qZGVRM3EwMGp5Q3ZhRFVCdnNmU21FZEIzR29kamJ0emlSaHFvT3pnMThsUUZNekVQTXFSWDNZN3o1blB3UkxGNm52NEpDY2NnbXFoMGFzSnFrSGdXVHJkeV9EeC1wTkxmSUN6enpzM1VEM0JLbEsybmZvbHZ5Nk9pWFpfeEVLeDRETU9xU0FodXpjMmo1d2lPQmItOE5nbG9NMmcxbnBmU0dxZ3hlRG41eTFLbThEY0ljblFz?oc=5",
-        "fecha": "2026-10-31T23:34:23-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.AlyDke_d95v3Vx53maeQEw&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Economía",
-        "titulo": "Banco de la República prevé que la inflación llegue a la meta del 3 % apenas a mediados de 2028",
+        "categoria": "Empresas",
+        "titulo": "AVATR 07 y 11 llegan a Colombia: las camionetas chinas de hasta 570 caballos de potencia, una de ellas sin espejos",
         "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUWtVcUl6WmY5cy1td1NMcGFKRmpDdXRWckxJV3JVX2RIbnBqVDFaUnh1X1U3ekFEOUZsaHBLblc5VzFzT0loalJjVHc3QWtzNVVVTDBpUEpCRkk5Q1FxUHlXbjhiR3FiVnVJVzJGQnZDQmJpbE9IcWVOazJOUklDR1JJLWxHZHZaYVN6M3ZMcDJVaU1xakkyZ0ZXQlpmVzdvb1BRSnJjclRCMVgtR05Ra1ZfeUVUMXpBNW9HU1FjdGNRSl9KcnQ1VzVvVEZLRVlFSnZzSV930gHbAUFVX3lxTE44TExSNkd1ZFJyWHdlVVpxTlZ3b25IQm1xNG53c3FkbF9QMWdnMGdEMU81X0NMakZPWXJTZERWbmVxbERVUk5NcS1xVlR6cGtDOXc1X0cwdmtYWVJMNlB6WDZ0X3FwZDU3OTNkN3IwUlZVM2ZwdHpFT0JtTjZ0ZWVPRi1kdmJrV3NVdTIySmNNZ1ZhaFFycl8xdlk1SXFFblZMSG5iYjJ4TnVnWTQtaEVERjJzeVpOTi1mZWs4NW9WZUl1Vnoxb2FWbnFjRWt4LTJuUlFTYjljSll4NA?oc=5",
-        "fecha": "2026-10-31T12:02:25-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.CdqXIrQ6RAcULFCdkJ40qQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNR1QzT3lTODVwTXBNdUVxb0hOUnlJT29CRjRXdWxTYTJRc1U0cGhwS1RfVVRXMllFQmh2ckx3bllHNUxuSnJ5UFoxRktEck1hTVdvcS13aE12ZFBaUnFqcDgxbm9DaFRQUFhfWjIzSkt0OTB5TWVzbE9EaUZrVWJmS2lJeFhRNTBCNURvRWVTUm53R2lrVm5WWW5BVG95NUtyZ1F6RktoTDZnbnIxZmtsU0lJSmhMTW94Ulc5WlRJbmJlcWUzZVRMV1I0Y0pYVjJfdXJMUzFYNnZjcF9QVjZlc0k0VVdvQjRUVDVZZ0hJRExaLWtJZ1HSAfsBQVVfeXFMUDIzRERhZ1cyVVpHaS1GcFJGdS1HWkx0UW9JVjMybTdDMXFNU2ctT3lkM2R0cWNBNlhUZi00WHN2cktoN1BfMDV2S24zTm9FaTRfVGxBcWNFMU1JRmplc2xoZmdjYndTZU5zS1I2NVNFaXBfWUIzYkVCcVlNVmdVcEVPbVpMeEZlakRNdnBJVUxjVU56blFEdkswdzNZa1FXeXA1OTZDUXAwS0hSeUlvNmFvTVJnSE5IeVFtbU1xWlN6SEo0ZkFhUF9KVTRuYjJEeHc3U0xsRXlCREFYZEV6aU9LUWVKRDlIdmEyNk9DMHI3NXJ1c29EYXRkbGc?oc=5",
+        "fecha": "2026-11-02T14:58:44-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.LEhOQJYe3jPA26ti2HafNg&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Sector financiero",
+        "categoria": "Planes en Bogotá",
+        "titulo": "Una familia de 4 pagará $312.000 por una noche en el Tren de la Navidad: los menores de 3 años viajan gratis",
+        "fuente": "Portafolio.co",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOQ3RCQlo4bERERW1IdU1OR2JxaGhsMkN5anVKN0NTalZJS19peTd5aDVlRmxTN0NRS2ljOERVSkk0Wi1oOHZvdnpuTGJNbTRfRUJvdVFtRHNOenBvbUVkR1hOZlQ2WVg0NWdUQ01OcDZSZkhudUpuRHlFX1pIa0hsbzVTSXdzeUpSc1lKOGl2RXkzTW8tdVlWdGliOFpsWmZ6UkVWNVhRWHhwUFhEdk96UzlsblU0VnF6SDVGeXlWMVdsNjdtTVZVYi1CUzZ0ZW9LeEVMcE9RbjdtcGNIMFY4cVR30gHnAUFVX3lxTE9IUzhTNm5yYUhWNTQ0OXg0WFFvc2xlc2R6ZGZpNVN5cmI1U0xNWVFfN3lBVHhRSWxzSWpOa2dEY1pGdWg1eXdZb1NCa3B1bUhydS1NTjVGUTR6ekVJcXNuMWJaVnJtNTlWelNWYkVpaWo3ZWZtZ2RKeW9JNWtDcVBPUHhJcmZkTlVLd1RfV2dCRHVXMERuS3p2YzliekNRTjVJMTJKYVVZWDJmeW9pb1ZWcEplYlBzbURLVTJIQl9NVmlXSjNWZE1rd25CQzZWNzRUZHJIeHlhRFRjbEM0MVJLSGFYNTdydw?oc=5",
+        "fecha": "2026-11-02T13:45:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.mq0-8pdK40U8ELCqaDpmLg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Empresas",
+        "titulo": "Tajamar Occidental suma $100.000 millones del Gobierno a una obra de cerca de $380.000 millones en Barranquilla",
+        "fuente": "Portafolio.co",
+        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQWEVlNUdTampnbmhBbm9KYl95aHdsVWVrWlZpOXlhM3Y2WEVqN05RcUtzd2dSdHRjYkVTb3ZNelFyQWRON05rY2IwSzZlMDk1aGkwNmloaml5UGhvZXUwQk42eXY2blBiOUlEbGpVYzQySW5WLWR2d2Z5eDNXMGpLbTRqWG9VTTRvd1BVUDRROVMwZHlFU0kyaER4TzNMQWVzM0pjdHMtQ29PeW5kYTFCd2RDUjF0X3hEVzVpU1BMRmQ3d1NhMjhHeEFsTTg4UnVDX05SUkVyRGhZR3FHc01LaVViZzlYRkMyNEYwUG9id29lYUY1R0V6YlNzRdIBgAJBVV95cUxPQXU3ZVB6ckhaYklQQVhuYjhFcDQ0S1V6ak5ta09KWWFDY1d5ZC14MlFKQU9xNG1US1I1ZWpuOXAwUTBvMzdqQjAxTlhRcF9SeTY4NVd4bVNKdEg5cktKal84QTFIY0JwdDNhS1Y2RGVlLXdXZTZjSzEyeU1NbUxyZnFKZkhZaGg5bXdyOTVFOENrTlhrZlZyeDU5TTZyblpiVjFyR2NrZGh1RC1NeTFWd3J2bUJfU3NFM3dGWHpyV2NLMjAySDBBa1U0TDRCalQtaEN3Z0hCUzF4ellycDQ2SmNLTmNfR196dURKRFRtWlhVaUl5OFF3cDlhU1dQd1g4?oc=5",
+        "fecha": "2026-11-02T13:05:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.90S2XOA_iz3bmcQ0zQxtAw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Empresas",
+        "titulo": "Grupo Vardí trae a Colombia a AVATR, la marca de carros chinos de hiperlujo que busca competir con sus precios",
+        "fuente": "Portafolio.co",
+        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORkJDUS1vcFU5OUxHaEswSXRkR0lNUkh3cVJsaTNzMXhobXo1VEp0WXRmb1dfYXhvM2ZwVmtabllTOGRuYnRyd3ZpWmd1cXBxTHRNdGM5a2tmXzZSSTVfTmM2UGxHOVlwdU5JLWpxbTVOWnRLNGMteGluQkw0LTR4dnVKWHdhQ3RXYVRoOXk2UnJ0N0R2NkZpNGQ5SV9ZZk8zWmV4aGJta0JsQlFPS0l6VERfYk85bjVVOW9GUjVZOHI3WDhIcVdIeWFyNTJ0M0ppOTNtMkFWWXhSb040VFdPTXVValJGbjVlenIwNmliaVFVUdIB9wFBVV95cUxQYmJkWkVsLS0yVWF2SFVZQ1hRblFvR3RQZlZKcmhvaVhhbFgybUlvbzg3akhWcmN4ZjRkdzRNaTAxSWdqbHhXekJEUk1NQ2wzcE1uTVRGdzRERFBvU0Z0d0V1ek5RcUE3R2MxUHZxU00zcG9QNkxaWUZaVFliY0xEUUFwend0TVJRcXhqTTlsSVZ0dVhrbGRkaG5KTm5Ea2lGQzM1cGlMWlNLRzdOVmtaek1DVy1ySUlOV0syNFJrbFlQVllDS0VVZ0xpOTBxcFYtSlBBbUtqbWxsU3NQNnNqcUJZX0pVdmlHd0U2NHdlT1ZQQ1lCSVBF?oc=5",
+        "fecha": "2026-11-02T12:38:51-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.LEhOQJYe3jPA26ti2HafNg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Empresas",
+        "titulo": "¡Ya es mayor de edad! La cervecera 3 Cordilleras cumple 18 años con el 48% de cuota del mercado artesanal",
+        "fuente": "Portafolio.co",
+        "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOWG9QbjhRZGhPdUpHMk1IN3d0TU1KZnBIY1RnUmd0cUN3dEh5dGYwVDBFLUJrRHM4VXltVG1iZFNQRWQ5Q2kxeVREVDJBLTg2Um1oNHp2UjR0amwxZFJ2S0s5c1MwdERRb04zcmc4ZHJJZHFtWXFPQjhIbnN6RUpSQ0VKMFZPNUtfeGFoVnBYMUdScTM4dUtuRHh4aVVrczNxQmNHeGxpUWxsaGU2TEJJSjJyV0s3T0cwa05ZNkhpRC03c1NBM1ZKaFJ1VHltWGNNUGhjVHJtNXJEUWZHdHNjYmY5LUUxZC120gHuAUFVX3lxTFBTc2RIUEc0RjJ1RWx4RjEtOUpLYWNfbGRyQUxBVng1cTFrT1ZSY2tobkNlTzMtb2ZHZmxaNG1RX01jSkFkT056cXhnOTg0MGZudlc5NTVVZG12S0stUXJ1XzliNVE5UzE4NEFmdFRKbjhhbkprc2Z3Z0tKMHhpZ3hzbHNMdGdsQUl6TzM2UzFqT3hGT0lrS1VQQUdJeG9rdHhaZndSeldIb053WktBWkFsMXJKTVFsYzkwT2pIU09Td1B1d1ZrNUlILU9PdDdfbVdiblNqcmJPSzNwMGN1aGNHeUhQMXh3LUEtQW81THc?oc=5",
+        "fecha": "2026-11-02T12:26:10-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.mKTGwFKN5jSvqwf0qGPLTQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Nuevos CEO",
         "titulo": "Luis Fernando Gómez será el nuevo presidente encargado del Banco Popular",
         "fuente": "LaRepublica.co",
         "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUTJBejc2bHRLcmJZSGFwY1pudzQxcGdpeGVIOE53ZXVOOEV5UlVWSXI3a1QzTGJlbkNDaHJYd1Y3cU1GUUVGWUhROERsY3g4ekhrMkpjVU9sZ2Y5bFF6MUJndVRjMU5jWEtSVXhhN1Z6UDRaUTVmVmF4NldZcnF6dFdRNWRCcHlLMnhheW54aUpTeFpGdGFkVnFaeUtuODdwMV9ocDVEQjc2cWFnc0l1R3N1N2FhbVHSAbcBQVVfeXFMUC15WW12YUtQWV9fVE42U3NGQzVoWVhIOXlheExlempIeGloUzVmN1dUcVU0eHZxTUpkY2lNUHRoQ3hBQ0RCdHdRUjR4SmFDdDREY3Q4YTMtZURFQ2I1UlB5aHZqbF9CeE96Z2gwMHNXVHd6UEhLaGJ4MFhpY2FDYlBFWVVpMFlINnRyQWNGMERLSndHWFg2cXhzSG9iS0wxOThfRWF1NlU5MkJMSVkwN3hvRlpvcHdv?oc=5",
         "fecha": "2026-10-31T10:52:13-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.AlyDke_d95v3Vx53maeQEw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "imagen": "https://www.bing.com/th?id=ONUT.zjnU7noXvOVTGwYcDqIADQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Sector financiero",
-        "titulo": "Icetex proyecta entregar 25.000 créditos educativos en 2027 y abrirá convocatoria desde el 3 de noviembre",
+        "categoria": "Nuevos CEO",
+        "titulo": "María Fernanda Suárez se convierte en la primera presidenta de Banco de Bogotá en 156 años de historia",
         "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNYjlWaWlGcmdjUThjeXNsb1VqWVZHdU9PeHE4TS1NYk9rSGJIYnlBNTh6ZUxwOUMyT3VMMWFrb0tEQTFscWJaQ0dWVlFVMWhlSXRxWXNSMDdCcGw5cmJLbktwUWhuUEtWdnQwU3NuTmhtbksyc1VHbGROUHlHQ1daMk1HZkNZQVVBUzNHQVVGRm9JOG1PS3ZGR2dDcF9CdzlyeTBMYS1TUnp2cGpmUG0yTkl3TE11X1FCWEZNeGxCaHR2UXhxN0pHbUc4NXBMRnZHazJ1N0d2UE9lVmlaZWExUHFxWXltdWx0RThpV9IB8gFBVV95cUxOYmRVaEc0eGZXOHl1QXZJelBfdWhHRHJXeEsyTnZLN3FDZ1VXdzI1R2Uwc2R0bWpSdzlyVFQyMFN6QWU1b0pCdlZHZ3lXR0VlMld5RjQzVmFFTnpMUzh0bmZmR0R4Tk9GZE5uVjZlSlA1VzV4RGtIN04wdkFBOGhfX0NBRnNmYTBhbk42VTVKbEprOXZDUDVMX0FGUTdfZjl0UGpXdU9tTTdkQXpNT0d4U3hhckI4Sk84bmdveERJZW5iRW9WWG9tbTUzRUctMXUzZWd2UHBYZ0JvY1Qxc0JDMVAxZHB2MUd6TWg5cWl6bGlLZw?oc=5",
-        "fecha": "2026-10-31T10:36:37-05:00",
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/65/Mariano_Ospina_P%C3%A9rez.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+        "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQaE9VcUViM2VCajZabUlFRkM4OXNwaURmcTJxd1FnTnNxNFoxWFFrSWd5cXZkazVBQ090VEhmR2pZekhMY0RiMl9HYmNrVzBxV3JEMjFzWU1sek9pLVlQVXl3cFllckNqTmViOE1iNlM0RFMwa09HODBQbGxqZlQ0SG5sTlZlSzJDVW1BMUVMaDhfSGp1aDZTT3ZwczdiQjV5TEdXdFY2ZFpjTHVQTnAybzVkV1FqbHN1YVg1bnlIZENuYmxfMkk0Rm9fLVNjSkpleVNqTnpuZUZrTWhIN1dqaDItRG51cmVt0gHuAUFVX3lxTE8tZG5ZNHBRZUhXaHpuSGRwTklfaU82blJfeXpMSzAtYjAydUljTS0zWTVUUnRjbFpZTUVSRk5QLU5Hc0w3QThya0hUV3JwblNQeFBFd1V2U2NlbjlRNl9zUk40a2NFVllNYko3Sk5TSmdWZ3JDc2pNTjljQmdNX1FzZFZkeENITHFoTkI2WGw3M3p2N3E3OU5ySlF0S2JEanBkVHpnd3BhSHNXeVBLeTJiSS13d25fZldDRjNvcjJNRzB5YnBxNWlFVFJyZHh2amFXR19LRzZic1JtLXU5YU93UHVZM1o2aEZGbl92NkE?oc=5",
+        "fecha": "2026-10-31T09:20:45-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.QUBJNr1rbSEFGjeWtwmApg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Nuevos CEO",
+        "titulo": "María Fernanda Suárez asume como presidente de Banco de Bogotá tras renuncia de Echeverry",
+        "fuente": "Bloomberg Línea",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNUFSVG1VbzBBYUJ3Y2hzTDQtTlB3WjZiR0pSMEtadDM1emt1dW5zVk1qbUVVZ2NScjhIZ2ZHcTVZTGMzN01jRnFtemRTTVF3UHQxcjV4OTFydk1NdzA1ckNZWGJraktQdkpKd1BYUG9ZVHhWaF85SnQyZUpmMG5tTWk4R0RNbDd3amtnbkZhc3NUcGJQaDZJOG83VmFrZXNXR1NNcG92YTB3UXNNZHF0TUQ2NXdpSHIyTWpRSGtPTlFnclI3X2RoR0k0NjktWFdCSm9WVzloU1BUek9p0gHwAUFVX3lxTE9fQmZ5QXpXaTRpQXFnS1kyZVJhZm83NkNsSVJuM1Q2SnBQYzZrRGEwVlJ2aWkxQlA1bDNUOWpxV1o5em13azczMHppZ00xN1R1X1NobHlKZEc4MjdFZDAxYzBKUnNUQWtMUXhNODNtQlB2Qi1LTzREV0EyNklFUlduX2p5VzRQR2Z6NGV4MGpnODVUS3Ftem1PT3NaemFCQUlRMk1PZzFDNDNFNGN5YVA0R2FyQ2dwYnlZSDJnVEVFczI3SElLaFFtakQwNWxBMEZhS0h0ZmE3dHo0ZDNZOTJOVmY4aktxOEdDcllhS3Vzcg?oc=5",
+        "fecha": "2026-10-30T19:09:17-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.9dM5YeBk9-AsWOdpc30zgg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Trending",
+        "titulo": "Netflix llevará a la pantalla la novela 'En diciembre llegaban las brisas' de Marvel Moreno",
+        "fuente": "LaRepublica.co",
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWkd0UUJvMEVxVEF6U3hTUkpEeTRFdkdyVktIRzBROHNwMUZ6OXEzLU52ZkMyLUFMUWJlMVAtd1NfUHZvWTctMXQzUnVzaFRxSXBLb0tpTnV5VS1wNGFKcmlUVDU2MFlPX3F4NElhcGlNVkNYZVQ1R1UzT0tlYVpaTE11eTRyNm0xSEJiVUN5aHVoUW9LN0NtZnhVckk1Ni1RTkwwaWRUZEdOdVNuMmhvMHZGQWRNZUc5N0d2RUMxa3NpRE5naTdIbdIByAFBVV95cUxPVTRsN1VVODBOSTV0UjdxLUowaW1NRnRhYXhHZS1BaFZNd3pIMTBPWVUyQ1dxTVFmNTlLc2dqYTgwamdKM0tDSURyOFh6NmxwVHpYVENhMDByV0JNSkdxd2dQX3pqYUdwR01EU3UyQnhsandOY0tCS3h1Q0dYaExVbjVwc2VQRzR3cm0wUjl0ajFHR3RieUd3anVwekpaNFhwLW1odmc5Wk1GcjRaR1B2eV83THRhTkNhcmJRakRXMGtuMkY2bDdiTA?oc=5",
+        "fecha": "2026-10-30T11:28:09-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.xE1SPsrcjmCiFPiZbRWOxA&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Deportes",
-        "titulo": "Ausencias y dudas clave en Selección Colombia para la fecha Fifa",
+        "titulo": "Hugo Rodallega asume la responsabilidad tras la eliminación de Santa Fe en la Copa BetPlay: 'Es una vergüenza'",
         "fuente": "El Tiempo",
-        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOXNZT0RqZDE5R193QTdjQU5WT2J5dkdTZWJadUxjY3ZBTGpJSkZpWnFaQU5hdU5KU2N2bmtxa041Q19WdTVqR3BJOWNVdWJ5M3kyRTBLQlJDWHNKMm9sSm5jY1ZJaEMyYTh4SzJuTTl1Z3c2bEEzSHY0X01qbmU4Mm1NUWNvblRuWE00TlBzdTQ1Um8xLWlna1FvNk5YWGhoWURwaDR3VHV2dTFCNjllZndDVy1DWFd4U2x1dzFlWUpfNG5WbVHSAcsBQVVfeXFMT05tdExjVFJBeHROcnR5a1lmaGdiZGlNbGQ0cXN6UElvU3lSWUdBYU9kRWlyS1QyZHcyalVwMHloVlZhRDBaNjk2dEtSSmhLRFMyQy11X19uWEI2bTlvWHRZZDZhOE5tSHdPRnBlQzl5NEFWMS1PZk84c250NGRtMEpPTERKMjFxT1FWSnFWSmJERnlNOFBYVElMWEVadHFsZEZXWGdVVDRBbG9tZFF3OUtoTXJPRGtUTVJMLV95cExQMjNFMlE3aWJSanc?oc=5",
-        "fecha": "2026-11-01T20:56:59-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.aldSXrTV5MsfIuzll3CBIg&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Emprendimiento",
-        "titulo": "EL TIEMPO y Portafolio dicen presente en +CTG, el encuentro de la economía creativa",
-        "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOWFlYNFBZaHZhaEZmY29MOWRCUzV0alFjR0Y4cWZYVjVVLW1GZFNFeUxNWTRHdXhBcm5NdnljYzlJRkY0Sm9zRkpPX0ZOX29DWkR4X0U0NVRuUHA3Nms5Z3VxLUtWcnpfVG1LMDV6TERRQXRwQ0NjZVNyMmh1ZlBzakdFa3BGLVVTdzFocXBudjhKQ0p0SHB2WG4tYjFKRUxQVnlGb3ZoMUQ4UllJRF9LelNvb0RYWFV4bjctSXI1a2pLZFXSAcgBQVVfeXFMTkR6VjJUWUtua1J0SHo5UmNfdWYzbkVUbm5UY21JUDJYVG0tdVRyenlvelp3N2tFVXdpZ0E0SmtqTDV1N2kxMDZfeUhqajRaV1VjbHd3MzhuV3dmWUhNbzJnLXV5SWFzSEMzRDdYTGhkcVZZR2IzWElJX0ZuWEJEUl9UQTVIZ1c0ZmRUMlF2aklobGl2Z0U0RHpPbkE5ZmJBaVRCUk5nb1RWdkZWNHVxN2hSTC1oM1RaYjRaV1ZDMnVkTFJmdmFpVmw?oc=5",
-        "fecha": "2026-11-01T18:10:35-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.MsT_DtTMhNAo8sIv4tR1NA&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Emprendimiento",
-        "titulo": "Silicon Valley abre oportunidades por US$34,5 millones para startups colombianas que buscan crecer en EE.UU.",
-        "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNm56SThaRVJoLWpjYTIyYUljTWgyT00zaXk1bVV0dWJGYlFxOHBOOGtEQU8zQ0dGZUtYbHlXZEh2dlFNRFFac0tJdS1pUTE4NlJEMklHd3JLbWJvdTBlM1hpRUQxMFp4Um4tcmJmYjFVYmYzQzNTYVZZa0VDbkNlY2huNGxLd3B4UnRCYmZySkhxV2ZaeEZPVWR3M3dCem1XU21pdEFnUGR1SFdhVlZOQmlKVzNmZ25Udnd6eVZlX0NaZ3lzYnhnZ2JPUDJaUF9RbTdmRTRKTU54QVBnTktSZTBMajRwR005cW90YUxwWdIB9AFBVV95cUxNYUhpcjNTcEoyR204NTNReC1WU19xQWM3U0ZEMDZJVS1BRWxPTFBhMlp2ZkJBN01DUDhxS2c4Wng0LWZpRGFaVC15TWdVMTJoQ0dhVDNFa25FTS1GMEh3OEV2N19fUWV1TTBycmx1MnVJWjFoLW55bmFHdVdkaVh2dXZQQ1JBa3J5eWttbzFHZER2Z3d6c2VHM25ocE1vYzUtWUgxeFJuWmVXS0tVdFozQXM3ZWp6em80S045WEFqb1lRUVdpamJ6RTFLeU5yZXBXbVRsNGhYelJBRTJGX2hPYk5ZZXEwY3ZJUmdLaW5rN1ZYWF90?oc=5",
-        "fecha": "2026-11-01T14:00:01-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.9x5lOSdmrHJWpaxmgJjeTw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNNnhvSEZkZ09Ra3NNMGRTYWRQanFEdDh3VDl4bW5RUGVOS3F0cVFLZHhneHlkanJoZ1RTa1JibHU0ZDFYVlJkc2FtTnliQ1luWGhxZmFtRkp6SDBaTVhSdTlfQmhxOWRoOU95VTJoN3I3WmlrRGFPMU9mNDc3Yy1LdFAtaXdwQTBZOGV4ZHpZUmRySVd0NXpuVm5sUlZucFdHVHR6NjBVNEZYV2N6VTg2U0hqb1BycGpHRlY1N2R6N3dPQ2UybXRlcndpVC1laUFRb04xd2h4Q05BYVBFaHpfRy1iMmxLaEhxeG95bWFhcVZxNWtMWmJqdmpfNzHSAYICQVVfeXFMTm9CS3JWZkplRzgzWklNX01ndUdvSGphQ3d2T2lJdDV3RUhUaWhvTnF3UE1YWWZsRU9wX2FVcnd3VkgxZWRDWWo4NVRDWDNfUmNjR2hDVXlkUW1ock9FR3ZIWXVBZTNRZW1ycjRrTmFmaGt3M1Uxb2ZhWVFuenVFZnN0SHVJSjlDdDF2ZWVtWFR3NldDTkVrQmtJcUdQRVRJdjRRNWFDa2U0enY3aVJuWnhHcHdrWEVvd0lmOHRXaWRPX3Qyb3YxbXBXQkkxTzBsdUdVOXZCQlE5MHI3bzh5RzVHak00cTJBY0k1d1BLSE4zRmNrR3ROSFcya0k3MUNDUzd3?oc=5",
+        "fecha": "2026-11-02T22:37:37-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.JqrlR5DIQWbRQo-Gd6UOAA&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Deportes",
-        "titulo": "Conmebol confirmó la hora de la final de la Copa Sudamericana entre Atlético Mineiro y Boca Juniors en Barranquilla",
-        "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPOEpZaldRY2VTQkJXd2dvWldhOGtoLUs1aEZfQ1lBajBnVjcyVFRNcGU3ckRqdmRvSWE0cjdWR0VUWmpLWjk3bHVhUllwU1gzWDlKVXVEcDFPWk5ibnVsc3BrVlFLMVQzdkkxYm9mQlR0eVBtQVZjMFdpZEcySWt2M29LMWNrNm0tNkQ1dGpFRENTN3c0WXF3TER3bTh1T0phUmlhbmdOZ1VqZ2d1TFAyMWJwckdORDFhekxIX2d2M3dmQXV0Mjg3NjVDdGYxRDVHRU01Y0x4NTBQNDgtejZLU05MV3NqNFRHZWw2NlphU2tCTUpGby1BQXRUeVDSAYICQVVfeXFMTU5PUThJLUdwdDBTY0JIV19OWjYxa0xYZkc0bHRIQ1R3Tl9MTF8yWi1zSFdqaUJsdF84dkktd1lHZy1ITkxqV2tyYXhSaWhaQXV6ZHRHVkpDOUljVXdzMktTdk1TbTFJSmVkUlY3NC10b1lLcjRlazJUN3lzTWtncDU5VndENjdpRUhJYklYSGc0aFlHdTR5dXFGVElCNFJCTnVaSzNnd0UtcUpHUTZDSlJ1a3dMNWRyZU1vV3dIR1p0OGlnVTRIci1XRFZQSFItOTNOVktxNHAzcFJLSldBemM0YVU4TFJZdUNrM3RrWWJlb2Q2N1JRT3EyM0ZUdUNON3hR?oc=5",
-        "fecha": "2026-11-01T12:21:49-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.3F3npwmqAStVW-2eS1jN7A&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Emprendimiento",
-        "titulo": "Comercio se alista para su época más importante del año: Black Friday, Cyber Monday, madrugones, trasnochones y más",
-        "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQd21lVlVYbUxidVpTd3RFTU9GR0NSbFVacHprdzdCZzFaOEJDWDZLVnZtenpDVi1UX05VUk1zbXJDUk9uSWFacG9EY05IcjAtdEI3dnAxNmRXY1J2SEVROUVXN0E1VDZlT0sxS3pmZmNJR1B0dE9YbEl6SWczUkhIekgtVUhMUmwtRHE2bUdacDRGMlhwc19nZXJlZ1g2NmwwQVlzUmVxT3FkSFpLQ0l1WXlITWw0LVR1ck1ocl8yeVVwWDBCYkFUZTRadm1lb1dvc0xJczQ2cFZyUkJNZFFjWllmTVloQnk2ZEdZTXpwUjljUE560gH6AUFVX3lxTE93TWZyLUc0NTVQZ0dxSkhVR2trSl9MOFdTQzVSVXd3Z0Jab3FlTDlLSUtOUnBwU2c2cVIxM2lMenJIZnh1NXAzUG13aHoyQzR0VDZnWlVZQ3VrdXh1SUhXQkFscGVZeUdwejdIeERhOFZfaUFJS3ZqaXpPcm9fcHBoek9SRXNvMUZhZDBRLXRSS0hZRk9kQUlkU28wTzB5ZkZON3RRV1J6TTdwRG82dk53Nk5ZSXZmQUpzcGpfTnFYTHVmWjVDVTJkeUJsS3NjYTZOQ2FnSkdvd0ZiaXZHcndmZkZRanBtQlNNcTk5ZERwalBPRkNyeGo1SFE?oc=5",
-        "fecha": "2026-11-01T11:55:07-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.MsT_DtTMhNAo8sIv4tR1NA&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Tecnología",
-        "titulo": "Colombia acelera la compra de carros eléctricos: Tesla lidera un mercado que ya supera las 44.000 unidades",
-        "fuente": "Portafolio.co",
-        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPam45REtSZUJsTll5VmpZVnJmekU3eWxJY3RJM2VVa0g0TzRQMW1ycTJlSDZ0ZEJkRDFLMDhDN3RhS1REaGd4a1BpM0ZYdFFUNzNwWjhTUTJSemhDOTJ1VUJFMk9wQW5RblNIMDJIOXRLWmt3dmU3QlBLVkoyX0dZNmJqZF9yWEh1ZVNNdXNYZF9abWpoMnpjOUFDcFVqMElkM2JtMzZuVllBTUJROG1rZFJmU0NhQ25mYVpZeTVlX1V0aWt1SVcyVWpXV0RMOE1qWU1tOVpJNWMwbmgtclo3QVZLUTNyUGlwem1INdIB8gFBVV95cUxPNXdzYnVEaTd5UDdQeFpuOTRRX1dxVzBPYzJrbW1wQTdXS25qWkhWRGlPWF93VG1JRjNPQUk5TnNJazJHdktLOTdqNUYtQWwxNXR1TG5FTW40bjhwbUNkMjZrSTRJTFBSLTNfYUdncmNua2Q3MnprSFdKQ040cFZnazcwUHdGVTRwRm9MTS1YWTYzZ3p5aTZBSC1TSktkV0hydnhMVldtd1lfX1NVQzVOc2o1Ym1JWk1kV2E4dDhreHU4aEJpM3FPNXlwcWNmbjVaS2RsNmRMODU2M3JvbDBOQzNkSXJnOHlxaVVpcjhhVGN5QQ?oc=5",
-        "fecha": "2026-11-01T09:50:17-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.C794Q5teZdDv3IAFge5uhQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Deportes",
-        "titulo": "Colombia brilló en la Copa Mundo de bicicrós en Sarasota: tres podios en élite | El Colombiano",
-        "fuente": "El Colombiano",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWVlUS3BXa0FOSzcwNWMwS2tNWFE0OWxyTEYtOFlsNDVxbHRrZzhSWUpiTkZHcTBKWnljUERHZFcyN3ZKUTZhTDc4Q2pqcnJuU0xXVmo5Z0pya216aW1YRmpTMFRNZDFzdGhvTFFrOW1GWDFKY3JMRlJsSm5vRXhHSG9tenVBRkt0OVMwMmVHTzFMSU0yMVFJa1FZOUN4cFpYb3hiUlNXZURXdXRJNkw5NFJwQkZCMWdSbktsSU5PclV2eVVYTVBjNXFuc0p3QWd4VHBB0gHYAUFVX3lxTE1Ya0RHZy01bHMxQmJpd0FSSll2NzdvRmxtRXpoQkJGcnBvMTlJd2hkTTNUNFA5czZ6aFVFX1BRSXZfNzRxYkszYUNxMWYtWGpmZ3NuYVBaOEpCOHRkMXFhVHhGMDZNSnZXeG9UNklMYlJVcW1qcmVmWS1jQjdXVUtOaUxjNkNmU1N5YnJLV0dJZi1JN1dCMkdfRWRqVl9mNzM0TGp4TE1Ba1JQU1U1eXAtQUlLNG51LXhaOEF5SnFJeEE5ZFhQT0tCRjcxUGUzRl92c3NNN2ZqWg?oc=5",
-        "fecha": "2026-11-02T05:22:36-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.Ez5Ok_8Cp8ED1g3Do4OEfQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Deportes",
-        "titulo": "Buenos cruces: así quedaron las semifinales de la Copa BetPlay 2026",
+        "titulo": "Bucaramanga y Nacional empatan 1-1 en un partido vibrante con doble penal",
         "fuente": "Futbolred",
-        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNc0tOdUUtZmJYSzJaQnViMXNkWVBGYm8yTlBURXRlWU1KeE5kamtOZVluOURtMmdzbnNSVXBTbEx1ZDQ0VWZkbTVJeFo3MDAyZjh2NTRhM2xRV2JBNmVjbDhSNDg4aG5GbHR6ZjZWVkk1Vl9abG90d2Q2ODUtczlKSDc5MV9LWVNPZlF4RnExZFFBSzNJLVpzLXRUb3U0aVVOelN4TW5vZWpkUmZYenFJOTJPYnE5NVU4VU1FQVZMZVlFOHRLSFlEV0FYUG15Yy11cHBIekt1Y1NfWG16RVVradIB5gFBVV95cUxOMU5ad2hlZklzSmcyNXc5SkRncVdvZHZJRTVIUmpqaElMVWFHMzA5MlBfMWNGQWlBYXlLZEl4NUZnMWExbkFBNFRQT1hmQ0ZmM1FBSE1oaHlKdkFxaXV5dmJSaDZ3dmZ2aVVTaFoyR3lmc3JDMEhkWW9tUWFsbzM2Z29GR2syazJJMmFRcTV3Mk9ITlBsc3R1ZlViMURnZU1vSUQxUHhKUmxxUnVHcl9aWG04UjBlMWZTemN5Ny1nQk5zcTMwaDN1U19oaE9RenhJQlpTZEF1anNJYXFrTExMczE3ajhzUQ?oc=5",
-        "fecha": "2026-11-01T22:59:21-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.u-QSaMBkt5R41i0-jEtNog&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOb1YtMWFVd0hhc0V1b1VhRGVtVEpTUWpNVjNjRFFUY0ctbmh2ektJd3FVbERrTldmdnpqZnlJa2dtYm40dE1KWHRQYktyYWZTWlU1bWY2enRLUWcwbFA1SFFtbTFrZU5xdElEeTU1c0V3X0lXN05QSHBJdWJZM1VMWUp4LXhzeHY1clJmZHBtem1ka0I5QUxxNTAzMXVSMmNpdDl2WjJqdjQtb2g0Ylg3MzQwa3JaMEtuUlpWTGFtWnIwWl9ZLUhxMnpkZ0lJQThYTDVB0gHYAUFVX3lxTE95bE1LaGxKN1JCdzBPdXB5a0VyejdUR0ZFdW54c2E3QVRkOWtsQ2dhb3d6aFF4OGdPSWpkV1Y3ZkdUdkt4RWxibnphMnY0NlNHdENTc3Jwb3dMN1lHYXI1MUREeVM3N1F1WXZ1eXBjMmF5am1DZU5rbmUwWTlEdVFlcWVrU1dMZ3c1cWNPQ19DbVQ3YWxyX2trX0pNWEhScXJyS1UwN1pOd3k1Q2FWREVMMmxRYU9LeTd0aVBXR3JSZkg4QkNUUktKcHg1WHhKaUZUUXE4U3BKSw?oc=5",
+        "fecha": "2026-11-02T22:35:02-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.64NDfX2Rb8e5rQ1nidhaQw&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Deportes",
-        "titulo": "Once Caldas superó a Santa Fe 2-0 en Bogotá por la Copa Colombia con goles de Quiñones y Gómez",
+        "titulo": "Bucaramanga rescata un empate contra Atlético Nacional y es virtual clasificado a cuadrangulares; el verde sigue líder",
+        "fuente": "El Tiempo",
+        "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNLTdIRU9LcC1wdjIzWnEyTGl1WnN5M1ZObnl3M2xUd2ZuRVQ1eklqaDFqSFJrYmJGN3NZdXNCaTMwZ0ZQVXp0OHBrT3RVc1UzS1A1d1k0N0cwV0hoVWF0RFNuRkN0aEFyR3J2NzZSYjhxbVZOYnBCTGJlR1cyQV9Pb0VkUTZEQm5mM2NOaVVtTFFtSkUxeFlLM09jQ0MwUTVMQlJvRVJLNjdzdmk2WkRFSHJpNGMwRm1hR1Z4TmpVTlJEaS1tbEFwVWlsR0F2dEFXdDFxbTAxc3BFaUtFeVpaeHRFWVdBc3JlZWQteGIzVWRyZ1Zhb2tfeTJkLVdEazZocXlSWHRhU23SAY4CQVVfeXFMTTR3TVVWNXk0Y0hYei1SZ1hZTEZUUkFJS2FxajVrWWllWmpuVEd5TC1NOUpkdHo3R3hFZUd6RmxBaHZKYjNQTnpPREw4M2huQndWcWdibGFNNVdxa1B3ODljVElWR0pra2t4Tjl3Zy12OFJQTk9KdU5yVThxdS1zSExTSFlhOHJQcDVlRzhhcmRyTWtHQmlTbW5KR0tUWVkxVUtHOFZXTzNlbE9Pc1FiOW8tRG5HMXZoanNueEZuOFBud2tCSXFrZEhWMlF4RmFPVE45WENzbkdoS0JwRlYxMHJXVVFxbWs1aFJteEhuNW1WRzB0dXdLTWhoNG1FRGNVekVDbXNjMk5qT2dOdThn?oc=5",
+        "fecha": "2026-11-02T22:30:51-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.64NDfX2Rb8e5rQ1nidhaQw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Deportes",
+        "titulo": "Bucaramanga no se rindió: rescató empate contra Atlético Nacional",
         "fuente": "Futbolred",
-        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNaW9tLVdmQ0ozdjEyZTlWeTFpNjF1QU9sSWlWR0tIeE45dzNudVc0ZGFhM0ZoNVBMTEd1THN3bUV2Z3RlTFJzSTdqN2R3eXhWQ3JaN3NLM2VFMGNrZWhLYU96Y29kU3dNYm5xcG5JbjZqSDZUM1FuQkdnUWtPRnRfSzVaNERDVmtVZFVqVURkODc1Uk1KZ0pUM1JQVzFWRzl4NUk1MExRakJ4QloteDU4cHhBM0tVb1ZtNXpfSzVOOGs1eVpTUENXNmVlLXZiQnNEYm9FOTlCN25mSmwzMVJkakVYdVpsd05pQjYxcXdxNNIB9AFBVV95cUxQOXhUOGJiVXhuMmJjWlExbTJlbGNxRUZNWGRQbFowNVBOWTZ0WWJKNXlXZzNaWWN1bExoM3dfY3hiVjhlQnVOVjVqUFN3eHU1U0NwUGsyUDc3LV9jbDVIWElWSHNUQk9YbkRudUlvcUxBUi1qaGk1Y0dGdTg3clBEOWZwYnZicVhYdzB4NDdfaE5hbGZKQ3lrZnRoOWJGcWF2RjJxaEpLMlBJZjkycUtfSVN2X0RQSkJmMFJkWmo0bGhzN2hhc05YYmZzdWxpU2FiWHVLVlZUUmFGVzg2aE1sUkpkZDQwQlRlLU8tT3d5UGZXbzFD?oc=5",
-        "fecha": "2026-11-01T22:35:02-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.Q5gTc53Glr57qDixc4-CMg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPekRvYkdkMUFGMWNmbEhvRW9UUjZWVHg4YXFHMmg2MTdPaGZnWldNeDVRS2dTOUY5ME1vOEFJdGdDWU9CN1Zfb0VOa2xubE5jS0ZSMXNRSy1pdE1iazg2OVYxakkwODJiZ0xtTzk4bFVBOWQ1QVI0cVBKMzFEVEZqNXh3TDc1VVNhbGRVMzFTc190ck95MnJBbjlaOFpQWGhoSjJPRU9LcHBXclNFZ1hhYVUxeGVuSmZiYmczTWtpczZfekJXVG5GZVZPLUszQkg3UWZsQU9NWjhxLXo5SW9GREFsTTZJUUVwTm1QVldCY9IB9AFBVV95cUxNemlHcXlsUWtfOXE1UVUxYkJxd2ZyQkpjUUZOa3JUSXRldWJTVFhwLVJTNU44d0o0bHZmZTA0V0NXUC1CNTdxckJVZmxLdTJwSWxJWVdfc2kwRWRDalpUQ1FGaHBET1hZOHBiM3lJa3NYaHRYY2VXbDc2M09LTk9RRGllUmVCM2hsZmhMX0VpeVNqNHZyTURNLXhRanVWTVJ0NnhrSWJYalFPaUxIX24xVmxsZDNFU0JrRTBWLU9LMVVteVZUQUw0aG10dDhXREZVeDZsTVR4OVlFUVIwZXpicVQ5REYySll4UTRKa0dFMXNpX3Vl?oc=5",
+        "fecha": "2026-11-02T22:19:40-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.SVR0lvfR8Ud33UXhED4Vlw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Deportes",
+        "titulo": "Colombia fue elegida por la Conmebol como sede del Sudamericano Sub-20 2027",
+        "fuente": "Futbolred",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQX2ZuQzlOd1VFVFd5SkU0aHZKTmkyV3E2eHNwdjY0dk5sNXNIbF96cFhxNXlhdy1EN2FvVXMtSWZuTi1PRjMwclpWSXY0LVc3VFFXRHhmTTZjVE5yZHp1S3JDOGRkN3lLMFVUVnZ5RnZkRWZIcV9aeVZGR3dZWXN5V0l6T2VhSi1uR2lZV3lhOGlaNUsyck51Mm9mYzBIdjRIbEVxbjMzUjl5RTduUWtzZlM4WjVxYzFaSGfSAb8BQVVfeXFMUHFLRk91MHp3YjIzdjUzUHEwcGpWdEZmNzE5YTZITHpYOEFxXzYyX0EyeXBPOGdBOUF4NHBpejg4ZHBxMW4wQlRBd3ZzQVFKWk94NTBMOEdTNVpwMkF1a2I3TkN1c1NXRFp0a0JPcnlOLS1aRnZhcUZFZXFXdG9NcmxsUkxhZEN3XzRtcTVHZzBaTnlpNzJFejMxRTNzTEpGRWpRU05QbTdFS0NnNXluQlVRRFM2c0xaZDcwZDVxOGs?oc=5",
+        "fecha": "2026-11-02T22:00:29-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.40CaHxD-nAHwmbTMuA5Zmg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Trending",
+        "titulo": "Sismo en Colombia deja un herido en Chaparral, Tolima, tras caída de un muro",
+        "fuente": "Revista Semana",
+        "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUS1WV3lBaWNDSlpLcHFEQkVtSHI4eVJDaF91amhqdUhWb2ZybXBDR2dkOWFHaUNNUDNGQkdQVHg2WUpMZzVHT3Q4X2NhT3NIRVRVNS1aanNzd181RnlzeFNaYjdhT011YUZnVUROSUk4UW5kWUlxbjdtS2Z1bWdRVENzYTBueGctRjFVZDEyc1FUeGthelNwamYxblBRYzBycnpSSmdYaktEN2w5eDVwcUZGS1Fxcm9TTWVjQmhKSEFGanZE?oc=5",
+        "fecha": "2026-11-03T06:27:23-05:00",
+        "imagen": "https://www.bing.com/th?id=ORMS.c34f9410ca169730423ed4ee0c27d21b&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Planes en Bogotá",
-        "titulo": "Monserrate te espera este puente festivo: sube por el sendero este domingo 1 y lunes 2 de noviembre de 2026",
+        "titulo": "¿Buscas trabajo en Bogotá? Asiste a esta feria de empleo y vincúlate a la obra Metro de Bogotá",
         "fuente": "Bogota.gov.co",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcW5KZVFMY2Q4OGlvRGgxRFRrNVhxNHZYckJHREhBVWc5Q2stNjhfVXJiclY5a19MbGxuclR2NExTSkNrcTF4YlN0SkZCaXdUa3FhUmNnSWNpMU5GTnVuaU9lNkt3bm9zMmVaU2t2OHhyS0kxU0pieWdaWi1wazhTT1BNQkFweWNDaEc0bmJkVEVPM3NMUW1aZ2Izd1FTZjV1TlhFbnd1bVNNcmVmQW80LTJRbmRZZzFiSENFcVBzOHJhT3JwcUh0bHUyNjJnbFZWRnc?oc=5",
-        "fecha": "2026-11-02T01:26:39-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Colombia_location_map.svg/960px-Colombia_location_map.svg.png?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOYzJJXzlBSGh1M0U2aTdPSXJUZlpoWXpfbHl0WGVtdUlqck9kY2F0WUFXbGo0Y0JJOWtlV0dMNFBVTVFIdlpnMTljVDVjNm5FbWdkZjd4Z2xlTGl4a3NtcnBhVjNiR1hFcU5qVmhWRHowb1BPX043d3RKMGl0RHBnM0gzc1FCclBDSGdIalhLdkFLZkFxc0xFZmNHTlVUdTN2Z0htQ2txM2NDZlBHNkRhemNLUThLMU1nZ3RLd1N4QVUxS2IyLTF3?oc=5",
+        "fecha": "2026-11-02T22:00:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.r3A7WAUoFIcEwx8jf4PjMw&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Planes en Bogotá",
-        "titulo": "Sencia entregó reporte sobre el estado de la grama en El Campín tras el concierto de Ryan Castro y a pocos días del partido Millonarios vs. América",
-        "fuente": "Infobae",
-        "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPa3ZwU0V2QVpMUGdOX1Bqdy1JOTA5T1Myd3d4VUtjX19INnVnUXZ1TjMtWWlDMlBLUEJpdHZCX241dmR0YWlreTU5SmdwcWNOanM5LWdRY0Nyc1Z3bWFseTZpRDBxdC13TTF0Z2tiTng5SE96SUwtZURhcnlHTlZ6TEV5OFI2WUNteUxOVHJHdU5oUkNBU3FEcUNjLXlaTmFDekR5VldWWjVWVktfOWYyYXYzMkxXMTh0c2llRktqbk9Mck1FbmZNYVR5VjY5clJQaW5HZ0J2ZVBJaWM0dG9iemtpZHFrdUdBd1ZuRlN3alF3Ri13NVhUS25DNE1qVFcxUjZrc2t3ZEJESF9CS1BQWDlZRDQ1YTFlekVZ0gG2AkFVX3lxTE45cy1meDVSWTJFWHhNSkhIY0lKdlozaE85X09zQkRkQUZKZkFrVUpKdld3WGRkV1BVR2pPdVVqcjBJZ1hkRkNmaUJOWnZwUlBid0hrU1pnU0pkZTRJVDFLVHFmcXlBNC1RTnRaZlNzVTdIQWppRHJPaUo0NmhfaEtOT2swQmxXWFROVkVPOVByb1ZaTzluZktmNkt0ZFdvX3Jjdmg5TmNHX3JRSHZwbkdnZXBhTmFWWThfa0xaTFo3bmt0WnZiemFVODc0aDFha0VmTTNvaFI4UUNBTUZDaVdRRERBOG9pdjRVbGNWUjh4VTFENDNqazIwZUlocDE5bDctTHgxQ3NaWEluM0c3VTVuNlQ5N1V5RzZmdU9xU0MyYmNXUGdVU3BFa2U4ZUdwd0Z0djJNb1E?oc=5",
-        "fecha": "2026-11-01T19:59:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.RCUuYmdw0nDxHU9JkB_whg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "titulo": "Así quedó la grama de El Campín luego del concierto de Ryan Castro, según Sencia",
+        "fuente": "Revista Semana",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOUWdQckhYUEJmVTl6RjR2U0JyUnBldEdidEQ3QzFTZzJCcXFWN3ZxWEtNbklLMEdJTkxWNXVQVXNXRUxJTUpubXdmc2VrQUY0ZlhyYVh0M2xtdHVILXQ5VDBwRXZxNlVuMFhOWGFoR3lQYzhjdDExMnAtSjBEQmJYMEVyaHpDTkE3WFA4TDhmamQzUFZNUlQzcDRXYmxhRW5naTVYOVJBY1FscFlud1ltZEs4Q0k2b0hOQ2dtSEtWNWQ0UU1rQ0tsY29icGJ1dw?oc=5",
+        "fecha": "2026-11-02T21:10:36-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.8wt_yQxR8EeSs6O38T8AHg&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Planes en Bogotá",
-        "titulo": "Conoce los puntos de vacunación en Bogotá para el lunes festivo 2 de noviembre del 2026",
+        "titulo": "Se amplia plazo para los cursos gratis de 'Experta' y de inglés de 'Yes, Bogotá': hasta el 16 de noviembre",
         "fuente": "Bogota.gov.co",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQUpMRHBDdkQ1cm5aWGF0X3IxeFk4RTlFZ1RFSkt3emV5NTdoa0MxdEp0b1lkX3YzUEVUR3hYZXAwTkZxeEJQdGs0akxFWVFDZFpIUms3QkhkREJuYkRKbWNqdmwwVjBpT0U4V2pGdmMzVjJ2WDNRTkxYblVMVFlXY1dhaWdJX0Z1SWJYejdpbGp6eEotelJtSnNTYUhvXzRuXzlwTzJqWW9MRk1Hc2t6cG5xOXI?oc=5",
-        "fecha": "2026-11-01T16:15:00-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Bogot%C3%A1_F%C3%BAtbol_Club.png/960px-Bogot%C3%A1_F%C3%BAtbol_Club.png?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-      },
-      {
-        "categoria": "Planes en Bogotá",
-        "titulo": "¿Lluvia o sol? Revisa el pronóstico del tiempo en Bogotá para este lunes 2 de noviembre de 2026",
-        "fuente": "Bogota.gov.co",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVWlrdlRhcXNycm5fV25EeVhBdjY3VHd0X29uVXQwZDA0bFQ5dDd2Nm5wbVM5ZnkyOU9zM3dtYlBmdjlNYVgybE1ISzk2cTZhclVCZC1BQ2tpQ2NSVXNSLWx5dDd4ZzVGV0JGdnkzdmZ0OV9kZ0xWeDJZV3kySU9RNlVJWkpyaGFiNGZVMmw1ZmlIbWFyTDU2dElPdHhaMTFFUTRTaXhWOVpCc3VGVEozUUhBYlJEampKNUE?oc=5",
-        "fecha": "2026-11-01T16:00:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.1s3jwMGRhIe4s2vAnZBw0Q&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Planes en Bogotá",
-        "titulo": "Ryan Castro puso a “perrear” a Bogotá en Halloween y le dio la bienvenida a la temporada decembrina: más de 40.000 personas colmaron el estadio El Campín",
-        "fuente": "Infobae",
-        "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxNU2lTM0MxTEU2MkZHVTJ5SVgxdTkyWnU0Smx6VkkzTUI4TUY1RW5GdzcwYkRXMk1oSFBSVEtSVmpJaTNUc0ctQnBKbFJBWEZpd0pXSHlmdXY0S3Axbks1SHZtX1BWZEVEc2Q1YTk0OWp2SDIzc1FrNTFoTW00cW81RV90NVpJTDd5VnNZWWpIWFZZbm8ta1h1WnJYeHcxRS1RNlBqWTNZbmdCUVpLVGpmRjN3MjhOaWVsb3ZDU2FiN1NXc1czWHRkX1hscVp5WWFkNmw0UnVlZXAxMTNjUGIxMS1BczNNSjVmT3g1MjM0clh4TzlyMGt0YWxiTHprYjE4YnNGWFNhWkY1bk1LY2lteF82Vzk1Um1BYi1yRlcxd9IBugJBVV95cUxNWjlaQXI4YWFfWEtnNDI3dWg0N05GYUYtZ29fSDVlb2ZNWkQ4MW80ZUJMdU1tRExFbC1UeTlwQUxVdENteUtHU3dsR18tQ0VVMmp3UHZHb0NUcjI0eEN1OUw0VXFCVzVOWm96UXNZai1tLVNxTUlERWJhYlJ3NXNzVmp5cnlaUmkyZmtfbHROZlFxbHJ6ZElndFlmMzc2ZUVfenMyRERzaXlzdzYtMHVPbHljLWxORHZ2aUtqMFVENW5UYVpwXy1odm8wLXpaVURyS29xN0l0ZTFJWTQ1SnBBSGVQUmRYYUlBeEhnRVp5NmxLal9iclc3OThlNDNvM3hiRk9yRGVWckhxaW9QdWVKQmFVYkpncFRjdDFMbFNWdzBmaEF1bS1DZTRQRWp2Ymd5RzQwakhXSWJUQQ?oc=5",
-        "fecha": "2026-11-01T13:52:25-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.Aw0gQEgKN_OaXTCtVGTjYQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Planes en Bogotá",
-        "titulo": "Orquesta Sinfónica de Tunjuelito representó a su localidad en una gala musical de la Filarmónica de Bogotá",
-        "fuente": "Bogota.gov.co",
-        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNOU5PZVQyV3M0c2xYMkIyNW5helVxWWtGSnl5V2ItWW5XMnZnRmJkc3BZcTZJOEU2SkV0NHlKelBqSlgwdWNqVFhrVnE1YndqdG10MDFDcWFFN0JOWEhzdThhdmFyMnFpZWVublVPNmVERDViUjRRek9peFhUMlFhcW5RSDBuQ19DSXlvOW1HalM3b0w3UDJvaEc0LUVqYXVRb1kwWnUybFVXLVVXLVZvNkVwSlNjeDdxRlpuaVgzeGR1NzZaSVV1c1R6R1N5aGNi?oc=5",
-        "fecha": "2026-11-01T11:41:59-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.V6pqEZDIWePL1uwsuw2IfA&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcHdmbWV6YVVHTjJ1YnM3a2tBMUZJLTAyU1liT1RXVzlwQlJNVkNIeW9wUUd5UmMwN2xiRGNhQWpKOVEtN3czOVhLek80N0lQNG1HSXhpVEVndVdHZ3BfRVB6dUJITU5ONFNqd0tzOThKOVpHSnI0ZC1oRURaMWFhMnNXNUNLRnFHRXFKSlFmZDFKNzdsSzVpNHBKVHExVzBRY3VBY0xZWlNtakp2aTZzd0dwbl9rVWo4SEJnY3NPZUJCc2JZalE?oc=5",
+        "fecha": "2026-11-02T21:00:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.mmtrwhNb5kmDDXG1CHnf1A&pid=News&w=800&h=450&c=7&rs=1&p=0"
       }
     ],
     "ve": [
+      {
+        "categoria": "Economía",
+        "titulo": "CVG realiza evaluaciones médicas a jubilados y pensionados de cara a los Juegos Deportivos Interempresas de Guayana 2026",
+        "fuente": "EL UNIVERSAL",
+        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPTXVHcTFwMUY5S0w3bTB1OENEUXMwcXk5UUpTQTV0Uk0tbGF4Y3RndXBUVkZJdGIyOVNWcV9Xc1VlVFZzVm4xMzNsVVcwaFNBOFNENkViT3VxRlVfSXBkR3pxQTlybEs1U0E2WFJiQ0QwdkRJVmlWRG9neW84RU1DcWZqTWxuaENCM2JrbjhRMEZocHBFdTV2cThwekprY0NWcFZvYU83TVMxcHdsWW9nd0RzWkxrTzBGUDVtcHFjYUVRUU9DSXJCUnllMVloamd6YUpBR1RDb0c?oc=5",
+        "fecha": "2026-11-03T05:10:37-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.mHvQqt59QYcOPJyFnp6Q-w&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Economía",
+        "titulo": "EEUU apoyará la reconexión financiera y las inversiones en Venezuela tras reunión entre Bessent y Blanco",
+        "fuente": "EL UNIVERSAL",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNcDNhdlhBTEdKaDFOb3VjVXY0cW9pLS1KWVlDQ1lCdGdnelBPdDh0bllRcUR6Tkd0YWV5UGowb3p5WnhDdGpJdDRDcHQtWmZPcmNPUDI4OUF0WXhoVlplZlltcXM3OUVnUDhOTmc1bUtvYXpIem04TWxrc3lZdmlZQ2VUTmNEWHpPQ01mTGp1OEJvTnF1NTNXTXROWU54VWhPVnNraUNRVHQzODdFZ3BsYjFmM1BYYl9LajBmalZZMUhwYmo1V2ZEWEI0Q3NRbXNYeFJYM1psQQ?oc=5",
+        "fecha": "2026-11-03T03:06:17-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.m3HQ5ZLOdziMRJpccUMvzw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Economía",
+        "titulo": "Bessent aborda con canciller Blanco la reincorporación de Venezuela al sistema financiero internacional",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYzdrWmI2azRtNXFUSUZjLWNlR0VaMm1CTUU0U2ttSFpiWE55NWRJT0kzanU2OFN4V0x2YTJaZWFWaHA4c1JuMy1pWldGMEliMHhPRFBXbXRCUDk2UUtqRlE1eGItY1Z6c3poQlQxdTZxdW51blg5LUZNNE03OWlzSGc0dndJZnktbFBTbG1lMEU3NTY2V29ZY1JETl92dmZYa0dvVmduZzBMdmdRTlV0Mjg4RTFMYUpwa2x0bUZZUlpSbGxNc2x3MHFlOG1QS014?oc=5",
+        "fecha": "2026-11-02T19:47:23-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.Nj3fx2ihqAwEvyhC88fCyg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Petróleo y energía",
+        "titulo": "Bloomberg: Exportaciones petroleras venezolanas caen a su nivel más bajo en 2026 por altos costos de fletes",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPc3BqNUdxU2ZKVkNoN3oxSTNMNk5fWDI0SElQLWlMOHZ2UEVXMnlGeVhDLVZCOTRZOWFYMzJyMXgwMjdMdDA4VmMxbXkyWklUMEpUT3JaUE1iSUJWbVVKS2Qwak9DbVlCRGxvQ19zaW44bFlmRUFRaU9lLUFTMTJsdFRXOWgyckhvQjRiNjlIRXg0SkNLOERmSFVjREdrS1dkV2RjQU5CLVAzZjZCTkhTbklqNEQySDQyYW5SLTJzTXBCXzhKdzBOMGFoU2lpNmJ4WmREQQ?oc=5",
+        "fecha": "2026-11-02T19:17:23-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.XrN-xeekLI2GAw2XLCF-Wg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Economía",
+        "titulo": "Alianza empresarial entre Fedecámaras y AVEX busca captar inversiones en cuatro países europeos",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOE5NRFJpQ2V4dlZzTWRZQ01mM25ueDFWQWc2SUxvTlJ2LUIyYnJpZVRjYVBaZ1RuM21tMlF0VXp4UjVoWXV5eXl0QmNLSmFvdHJFVTlOU3ZvUVJZNjVINGpfWndsOV9HTmdDZ2l2MFY3aHFjQ0NpQ29wMlFra1l6VF91SFBTYzZ2NWJKNUtlVVN0WWJyQmQxaVJuRVNIR2dJc1V3VFNHQWMyZDY5NFdBZWVuM3pRNWJNZjRJY2pZd19uS2tlcGc?oc=5",
+        "fecha": "2026-11-02T17:32:23-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.ExB71oI1jjMtO7VdPi8K_Q&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Economía",
+        "titulo": "Cavecol: Comercio entre Venezuela y Colombia ha crecido 15% entre enero y agosto de este año",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYnE4UDNmV0tWZ0xHVUpkSVIyQUJvcDVGcWtzcGwyWHFvM291Q3lMZ2VMdDl2UjJwWFhwWVQ1dzR0TGo2Zk9zYUpVMkx3MlZBeWp3MGJWbVZBS19SS2JDcnNkNzFuRGRERVI0SFZHMHkxQ0ExcHpqaGJqeHE1eFZGY29MNlktTTRoSkQwMVFFWURobVhsSFV1NG5WcUd6cnFlemJZZWlRTG5NNWhSVGt1TE9CNURiTXFSTWZvalJMbktyaHJPa1dST1V1UVA?oc=5",
+        "fecha": "2026-11-02T16:01:55-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.CfaP35FXvm3RzplPEZDKmQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Economía",
+        "titulo": "Venezuela y Portugal inician un \"nuevo ciclo de cooperación económica\"",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVXNLNVJkMmVjVzZsalZ4cTVDX3pXeTVyZlM5RkkxbmFUZDNEazVLelFSS1hBd2RCS3hpSkFrNDNwQXNmVG51NFZlNzFqaXQ0U3pZSzhEMXZnaGpVVk1NekswNGxSdWRkZ01jMTJlZ0hCMmsydzJFdkFSWTFrQzhvMHczcHBJMUZwSkVXRE5yS1JXZGRVVzZnRDZsZ244UjdydUE?oc=5",
+        "fecha": "2026-11-02T15:17:23-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.dYUHGX0Ls6QgcisVKn7UnQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Sector financiero",
+        "titulo": "Delegaciones del Bank of America y CFI del Banco Mundial prevén visitar Venezuela",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZnRFZ0pJYl8waG10azZqT1ZuWUxFdHBLekRyV2xIQUE4Z0VFNkVfcXZ4T014ZXdkTlk1REVPZXpDT3pFWHBkNWNzMU1EeVpQamtmMmR0dGlsTnlPYW01Y0tRM3ppNHNCWDFaN2hMRG5nZm5TMUdNQ1ZJbGt6S0xXSlFzbE1pdHNtZ1h1NEowakl0dlVCU1NkbkgzbVV0dUdyWUFjeFJZX21NNkMzWEJqR3hSOA?oc=5",
+        "fecha": "2026-11-02T15:17:23-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.38CquXRYXw42pMPg-LqRIQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Empresas",
+        "titulo": "Grupo Gilinski se expande en América Latina: Invierte en Venezuela, Ecuador y Argentina",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdTYyQlBpYW5mMzBsblI2M1ROWTJOZ2Y3XzlZc09mX3dBTEFwYTl1Qmg0dzVDRFVMYkNiWkJMZW9nODlDLXRhd2d5ZDdULUpRN0FfUHY2cFVOcW1RV1hhT0VtUVpVMmRpblhXWmNreFFlMnR6VmJwMzI5dHVkOVg2UEtveE9tbVZGLWdsaW1MTkxmNmdRdTFjU2RRMHlVNXVwLVR5ZkkzS2lsdVh1UHUyVFpKNEFxSVdt?oc=5",
+        "fecha": "2026-11-02T14:24:43-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.LoZPHO3aEY1WhjfJbUlbGA&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Sector financiero",
+        "titulo": "Suiche 7B lanza el primer Pago Móvil por NFC en puntos de venta",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQNkhwLThyNjhqZ2V2T2ZxNFVsUlZGZS02ci1pdi1WOGRjSVpTNEVzNC1fbXRXZlJodW0xSVNXVlNXZnB4aWdua0N0YzZWdkNiOFprTGJ5ZGtOX3Q3eS1ZaVdkSFZPTDlwVzY2UHJ0dWVwNG02QUk4ZXJnWVdaVmRzRWl3dkZwU2xDZEc2a0tWRlNZSDQ2R2FzMF8zdw?oc=5",
+        "fecha": "2026-11-02T14:02:23-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.XrN-xeekLI2GAw2XLCF-Wg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Petróleo y energía",
+        "titulo": "‎Impulso energético: Ingresos facturados de PDVSA por exportaciones alcanzan $18.700 millones entre enero y septiembre",
+        "fuente": "EL UNIVERSAL",
+        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPUFV0c1NSLXB0WUcwSWp5cUl4SWVVU3RQbVlLaFZnMGxKSTFpVkE3ZTBhWnJTck1OZjBaT3RCb2E1T1U5UkRjb3EtdE5GRVRpSEQ0ajN1Ym1ZQWtWVVdFZnY3MERZdFhjZHJjWEVXUGMzUzU5OGxTUG15UHlvd20tWm1oUTRpVThlS3hxSDlHT0lYMm1UeDhKcmY4YjlNaTlUS18zY19IdlpoMGFZdnJfYkpIdzd5T2dDRXdRUld5dGVQVURCN1VkQk1FV0xoeVBJdmdnVEZjRQ?oc=5",
+        "fecha": "2026-11-03T03:06:17-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.VvH8N-nb2-KwgSEMFku8Vw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Petróleo y energía",
+        "titulo": "GeoPark desembarca oficialmente en Venezuela tras asumir la operación del bloque Bare e impulsar su redepósito productivo",
+        "fuente": "EL UNIVERSAL",
+        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMFZNS3JRZlVCbmpTWjJLbkVXbkxaME1UdjlTcWd5MTh3YWJuWDdMcGNaQ3ZSX00tRVhBTjZwSjZSYVhyZ0VCZ2M4VXJyT1B3TzN1M18xcW1DWmYtZmxUREVJdjg4VWszWjluaUVyM0ZBSkNjdHdrZ2NLNHhId2U0d2hzVnVJcl8zaWd4TVI4VnpVR2R4bVJ2UXFMQ2pveUpYdDYtUmRJYWVYemgyUmNXOHVYZGlhd0hGWFZpM0VZNzJZSC1rbng4RXFzdW14Z0NlelFZc1NzelhjUQ?oc=5",
+        "fecha": "2026-11-02T18:32:47-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.ejHvBudor8x6lTL1yFHK6g&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Tecnología",
+        "titulo": "Estas son las tarifas de los planes de datos y llamadas de Digitel de noviembre de 2026",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNaUcxQm8ydGgyVFp2QU1qQXJ2anJ0aUJucU03aE44WGo3eFBCNnBIZnJ2bV9WMDlvanNRd2ZpMkRady00QW8xOTMwU20ybkxEbk82bVZDRU5NaFZSOWN0X2dVNkFkbmVhS1BpV3hkNnlydGhvNi1YR21waGkta2pqc2FXTjNqRm03MFlGd3pnc1E3WEdNUlUtNl85NHFHNFpWMXFrc0lwS0JmMy1GNjdkQ0J2Sk5Ba0lIUGJJ?oc=5",
+        "fecha": "2026-11-02T13:17:23-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.z2FD496dazMjaI0y72mr9Q&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Petróleo y energía",
+        "titulo": "GeoPark cierra su ingreso a Venezuela y Gilinski pasa a controlar 56% de la petrolera",
+        "fuente": "Bloomberg Línea",
+        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxObnkwbkx6LUc4YVpaMzh6bUpUenVHNDIxTU9IZGVubVZFOVpfbjRRdnU5UFA4RklUTkdVWkJmRTVXYWpUNU1XcVlSNlJjREpKREhYNjc0b3hmRGtKcEp3ZmUyT2RoaXhJRVZxVzY4ZmdxYTFENjF0WWd4TU12WkJMazVqZEFtZzMzdFFyc0tycXZQMlhHZUs4SU15SkVJcWhrWXlNaVNpdjBwTGNCZnIzRXQtRmNaT20xUGZXZnVxSlJPa0RVNThRdGRvTXZkb29zODZBWVl30gHqAUFVX3lxTE9LWjJtcXVzQnlISzlMQXpmTXU4MkhrT3VJcmNveGVZWXhIdWhDRTBjZkZkUnZHX245QzVucWJiSVczaVRwbTFjdG9PWWZkTzdaQzdac1diTzNsRWlGclFTRF8xYUlScVZSYWZxRWUzOEw4enpueTJqdzNmQjlZRWM5bjhrdV9WNk5jNXB0OEZPVkZmUEQ0Qmk5UDBtRy1ldFdLSnhJbDN0eWxac1pKbXFiak1wX3M3QVBSSFpyTFIwT1B1c3psczV0cFM3TDQ2dlNJa2MtN3M0WkhmTmdnSzRmS283MzlpMTBuZw?oc=5",
+        "fecha": "2026-11-02T10:15:40-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.F4aBGg6UWSfH20XL04TALw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
       {
         "categoria": "Petróleo y energía",
         "titulo": "Chevron acelera en Venezuela mientras ExxonMobil pide cautela",
@@ -333,28 +477,20 @@
         "imagen": "https://www.bing.com/th?id=ONUT.OfQVKAfNDQP4T147ulcFzw&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Economía",
-        "titulo": "Tasa de Cambio BCV 02 de noviembre de 2026: 889,5754 Bs/USD (+0,036%)",
-        "fuente": "Finanzas Digital",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Obk5BdG8yQ1FSMUs4UDNhb0x4eVZ6SnljR0xMZ1RXQTFtWWg3cUFQXzV4dFZWYS1zc1VNTi1HWjNlUmRnZjJLRXQ5Q0VmSlBtRWZhX3lHSkJpLWhtUWswcGFpVUdrdjNpTmJhT1hNcF9paWs?oc=5",
-        "fecha": "2026-11-02T03:51:23-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.K_OCeJhG7WOK4_oniqC2qQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "categoria": "Sector financiero",
+        "titulo": "Informe El riesgo oculto del crédito comercial y al consumo: Lo que el mercado no está viendo",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQ0gxbGdEanpUNHJKTnFVc0wxR0VvRVVncURyN2JWOW11aGVGTk9aRmNtWEJvVlo4aXIwVk5GMUdVSWU5YUlka0FwMjJyMkhLc19sYWpBc3pnQTluRHJqOWlrSWtzRk5XdlE5aHp2VC15UlY5TFM4djVsb21lNGNEMjZLVnlvbFZ6MXFsSlZIY0QwbDlLcW9uUHVZYVlMcGcxSm93VEdwN0gyVTlzNnY5OTJicFBObFNQa0kxcjRQbjBKdw?oc=5",
+        "fecha": "2026-11-02T16:01:55-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.Zsovbj-5OP1a8OrjGFh0zA&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Empresas",
-        "titulo": "UnoPago gana Banesco Innova y cierra una inversión de $500.000",
-        "fuente": "EL UNIVERSAL",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYWNkaEFROXk5M0RaRVhhWTFfOXUyemlVLWNTMFE2Y2dRSUhDVTdza3V0Z2tYc1RETkFLelhlYzRCX1RtREE3V3hxSHp6WTU4a05feFpPbWcyUTdpLWQ5b1liUjBVR0xXclhZWi1uOTV0MTMtNWpxT3BDa2JpV2FhbUxnX2lHVW1CNUNfNy1uVnNubk0za21McmZYTkp6T3FKSTIxZ3QxNzQ?oc=5",
-        "fecha": "2026-11-01T23:06:04-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.8cQT8Cjgqpjo--W0LXwozA&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Empresas",
-        "titulo": "Constru-Bolívar extiende su obra social en todo el estado",
-        "fuente": "EL UNIVERSAL",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQm01WjExTVZWeFZBaWhNLUdTZVI2X25YMFY1UHBxNXFwRVJTdlFpWTlfWVhyMTNsX1VUS3pIc3ZJWEFNZlpQVk1kVHZMVXFmT1l6UVk1NGphMi1LRHdjOHN0TGxKZ19QT2N6RW1Jc1JyaEhFRFRPcUpmMHFOdFJnTjZUb3ZhRHNXX1NYQWNRa3RyT1dTMkdSb1h0cWxrdjFrREE?oc=5",
-        "fecha": "2026-11-01T21:44:16-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Enrique_Ochoa_Antich.jpg/960px-Enrique_Ochoa_Antich.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        "categoria": "Sector financiero",
+        "titulo": "Binance registra salidas netas de 3.640 millones de dólares tras reanudar los retiros",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZ1lwSXZGWnZjTy1Yc0lzWVNzc0JrejRWWWUza3Z6UnNPa1ZMa05YWFhxWmhBWHNKSjJRdmFUWjcxSWVlSFJsUk5HWWRLelFXWkRyWmVBNDdkZ2hZM1haOE1CR2N1RzB5QTVvbmUzUHdkS3lRNFlyVF9Zb3FJbFFQX3JnMTJXZnI0SDBtTVdkTHQ5R1M1dko2WHZqQ3pWTmR3WGE3RTNTYmt6cXFDMm44V0hPcEF4LVk?oc=5",
+        "fecha": "2026-11-02T10:32:23-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.8Oe5usaK7f6voC_G6uVWhA&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Empresas",
@@ -362,15 +498,15 @@
         "fuente": "Banca y Negocios",
         "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNX3ZxYXFJV25xX3pTSDlJR25sOGtiWW9qWFFDeUpSSDY3RUVWd3B0MjdOMmQ4dUNfWU9TeElfaE9JYXhnS2w5VmluelNrNEhyLUxBNlNmTy1DaEQ5ZGJVcUd4ZnEtUDVZaHFOMVNGaGpadXp6eDVDZ3pSSTdMc0JmOGlSUXd3MHZMNXI1eWxHWXpzaWNZNW5vQ3pHdTZndU9Hcnhmb3JMS2NjREc5UWtjM3ZIZVJZRmxXWGFsc0xBV0hXZnhtZjl3c2VtTEhFRlp1Qkh2ZA?oc=5",
         "fecha": "2026-11-01T18:37:39-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/960px-Flag_of_Venezuela.svg.png?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        "imagen": "https://www.bing.com/th?id=ONUT.qNFj_7MLBiVl2x4___E0Lw&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Empresas",
-        "titulo": "Embajador Enrique Ochoa Antich promueve el café venezolano y busca atraer inversiones durante festival en Suiza",
-        "fuente": "EL UNIVERSAL",
-        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQNnkyVUN1a0lwQmVoZTVaNjVqMWNwbi1Yc0JldGhFbDhmdktYR3pabnNKYkZBTVJ2b0hDTFBCWHBmLUQzbFVta3gxWTNpZ3FTUHItYWtDdnNCVXd4MnJ1ZHREeDRMdjYwbDlWaU9xeXlFS2FaTTE0SGlFMkVDWi0yTll3Rk96MXdHRzd0NnJMWUdZT0pnVmJ1M3RQbXFqVERUTDN3ZFZrOWg4M2JSRDVUcUxIcS1vaDZsY1VzcmNNMGdEaFRtQzl3Mk9TVmtmMV9jUjliYg?oc=5",
-        "fecha": "2026-11-01T16:59:52-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Enrique_Ochoa_Antich.jpg/960px-Enrique_Ochoa_Antich.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        "categoria": "Petróleo y energía",
+        "titulo": "Empiezan a salir al mercado los 100 millones de barriles de petróleo prometidos por el G7",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWEhFUzA3eU9MWlhIbDNPZlZxN0tYV2VnMW5ieHpFQlZvQ2ZyMThSNTE4bVctM1RISFBIOXBaUTFGb1FWX0xIdUdLek1fX3BJSEl5NGNIdXVZSVBybXd4Z2FTLW8tVk82eTNhM0NkOG1rVGx2WjduU1kzNFlfMjRRbjF6djhrVEFvQjlKNnRRM1cxeldXWXJMUzZacGUyUTJtd0pkSzlxZ19uNURPVmpvcXFJOTRMazQ2TlAxZDRB?oc=5",
+        "fecha": "2026-11-01T17:04:16-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.8mNlCIHz_kJz9ealeXCjvw&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Empresas",
@@ -381,30 +517,6 @@
         "imagen": "https://www.bing.com/th?id=ONUT.cbWDFtwLJccuysMWaSDM0A&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Economía",
-        "titulo": "Román Maniglia (Seniat): \"El nuevo modelo tributario no es punitivo y va en favor del contribuyente\"",
-        "fuente": "Banca y Negocios",
-        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbzhtOWZkTlF6Q1ZuS0k4QmUtcm1vNW9MRTI2bTBaZklJRHBIaDl0YW5WcFFiMmo1MGVIcG5ORDZKZnpTdXdFYkI4ZG00Y0JnS2JzT0pXRWotN2VvOURYZElad3QxVzFhT3hGb3JUcXJuZzZCbE5MTnl4S3BaZlpUVDlDWXJDeGRiLVBBUHJXUzVOSVphdWFONG1uTFZnRGpHYk0zV0owSE9CV1FWUm9sblJYNldBREVWYjBiTmxuNmh4TlhFMlE?oc=5",
-        "fecha": "2026-11-02T06:17:44-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.afY94zzWnqDtgFkwJOchAA&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Petróleo y energía",
-        "titulo": "Venezuela es el país que más ha incrementado sus exportaciones petroleras a EE.UU. en 2026",
-        "fuente": "Banca y Negocios",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMGVJTDRZNnQ1aGNYSGFYUHJVdFdOUDFHWTZYZEJaeGpwWGFKVmllX2E3N0hvRmhEOUZRakZiaDZaM3FrZkZOQ2YzU281bHVWNExWZ19sOVBUTkNjS1E0MlA4ZDZuSHFaS21haXBXYlZTVzgtcTN6ZXllSnlBNUlDWUpzeGFUTzhFWmt2TVIzTmtKcTBDc3kwRXVDSjlyOWpQMVBFNzRSdTdBSVhEeXp1SXFnTkphdzFCenp6VUh3?oc=5",
-        "fecha": "2026-11-01T07:32:23-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.jtoQGgf1_tx1vMupO4h4Nw&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Petróleo y energía",
-        "titulo": "NABEP prevé invertir US$100.000 millones en Venezuela para incrementar capacidad de producción",
-        "fuente": "Banca y Negocios",
-        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYlFwV2dRazd0Q0lnVXI5N3h5dTMxejBIbUdxdlJxdmJ3NUFod2pCaFMzUkZ4Z081bVVmMjF0Sng1SGg3bnprdGxzTTVkZ3UwMWZWVGFKTjMwVUZiSmUtdmRxbmt2RG12TnBoQnV0cU9sMTltRFp6TVozS2tnbkYwYmtoLURGVmxhZUZ4b3Rta0RQQzh5X2duWXMtQURFYjFfWjF2NDd1M2lrcTZMbGtWaHhkQjhCckplXzBPbzJZS1BFUQ?oc=5",
-        "fecha": "2026-10-31T18:06:07-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.BnfZ342YfDZq0eYbq8Hj8Q&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
         "categoria": "Empresas",
         "titulo": "Capozzolo: Devolución de activos en manos del Estado permite avanzar en la actividad productiva nacional",
         "fuente": "Banca y Negocios",
@@ -413,68 +525,20 @@
         "imagen": "https://www.bing.com/th?id=ONUT.i7yhxNFh0I7ea0S33RSyGw&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Petróleo y energía",
-        "titulo": "Venezuela lidera aumento de exportaciones petroleras hacia Estados Unidos en 2026",
-        "fuente": "EL UNIVERSAL",
-        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNLWtJQ0dNRW1ncnl2UGdjZ0ZtbnlVbXJsa0dMOWR4MS0tR1AyS1JfX2hDU2c2dlRSZTVWSExXUDJlTFo1ZE1mLVNQU0xvZEhpOGVFREF2Z3RBTXRSVkRpWDFCYUFSS0VuNGhpUjBKeUFtdm9rZXdNQ0I3TzZWSmptQ1Fmb0VnNHo1N21WWmpCWWdyeFEyWUdOWDQxckhuQzhGeGZjQzZzaGhHamF3THFMSU5pS1VXMW1NSkxoQmZTNmJ1UQ?oc=5",
-        "fecha": "2026-11-01T15:41:40-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.AHjoxH-gVfBoUm77FuJ-dg&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Petróleo y energía",
-        "titulo": "\"El reto es convertir los recursos que la naturaleza regaló a Venezuela en riqueza en los bolsillos de la familia\"",
-        "fuente": "EL UNIVERSAL",
-        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQekwtczdvRk85enBQQW5Lem1uaFpOSWdqTWhtYXVLbnRuMGVGZEJPRVJabmpsTHZOMmRQR1hpWDRKdk83cWpidHYwQWpZbUxZZFdaRW0tZ3hrdWg4X0EySm9WbGVlYnlObmEyLVRaSHREY21wWDN6Z1g5MTdLVmtDMVZwWTBDQzVSM3dMTTQ4SHdHNW40YVJLZk40WS0tLWxjeVNUNDIxNXhENERLS0pXcGN0YThEY2pMazhRcEcxaUNYLXd2MXNYckxXVlVfSzN2OVpzTVF3TVlsUQ?oc=5",
-        "fecha": "2026-11-01T15:18:41-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.BnfZ342YfDZq0eYbq8Hj8Q&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Economía",
-        "titulo": "Experto considera que economía venezolana va a crecer entre 5% y 6%",
-        "fuente": "EL UNIVERSAL",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYTR6a3Eta2pDdDhCbXZoWXhhVE9TWmdLU2NIdXRjVG85bjBDbHhZMFkxdWtveVJEdC1TeXk2ejVOWkpLRDRpVVc4ckh3bnViWnZSV25nRVVJeXpqTGNXVVhFUnUxS2x1VHB0N0lHVE11V0lCbXgzOUtSMmtlNXRSazdYTXV0dkw1UFhEVm1MQ0tLdDAtb1Z1bFc2eGt2UkFoMkVSMnlNS3ZoZmtf?oc=5",
-        "fecha": "2026-11-01T10:20:57-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Supply-and-demand.svg/960px-Supply-and-demand.svg.png?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-      },
-      {
-        "categoria": "Petróleo y energía",
-        "titulo": "El futuro del petróleo venezolano está más cerca de los modelos de Kuwait, Emiratos y Noruega",
-        "fuente": "EL UNIVERSAL",
-        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcEU3a2hHdHRUVzRQRURZVzdqSEJVbUpYWkJiNV9ZbWN5S2xTQTRTbFhGeTZiaGU2cDI0Tnk0RnY1ZS11aUgwY2ZINVl2SHd6ZXVsTWVyMUZ0RTdsQ1pqamFkdDFITG5jUjNGazRSbDd4OFB3d0dTeTVPR0h2b1lFd3poY1hpQVhSQ09NT3BBck9JbDl4N3JMaEVOaU11YjFyVXV2UUdRU0FDUzRsS005ZWtsMVY0c0xieXB5bzN3NWJIRmRSTl9saVhrNW15SWNWZGNsUHVB?oc=5",
-        "fecha": "2026-10-31T23:40:20-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.j4Qeleh58Oz2lLLdFs0ycQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Economía",
-        "titulo": "Pagan Bono de \"Corresponsabilidad y Formación\" de octubre a trabajadores de nómina especial: Equivale a US$180",
+        "categoria": "Empresas",
+        "titulo": "Estiman incremento de 17,9% en la producción nacional de lubricantes para el cierre de 2026",
         "fuente": "Banca y Negocios",
-        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOenI0SWVFdks2bi00OEdsV000SFlydUNEYU1ZcUZwa3Z3U2pyY2ZXa282M2dkUmNXbG15YnFaUGFzYjNpNC0yWVdzcnp3dGhNQVRhOTczajVTNy1rUUxlODdmZXBidXFRQUdBazhJMHJLQnhSMGNEbHNrdjdtWUU3V01XRmdUZXlEcmhBMkUwVjBGbmdXbExGWjRVRkttUDdvQXNGZ3FpLTFhUFZwUzRnaWFUOWM2RFpzdGQ5cjltdnRLZmdNZXdMZUdyOEpSNUU0dk1NVQ?oc=5",
-        "fecha": "2026-10-31T11:02:46-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.RAf5FmGv3d-QVbIKglKEHQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Economía",
-        "titulo": "Nuevo ajuste en el precio del pasaje urbano: Bs.230 a partir de este #1Nov",
-        "fuente": "Banca y Negocios",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZjJrNTJBajBzNk10Y1lSdWcxRVZCSjV3X3FzRW45dUhfY0FEb25LMFpoWXJlTUJuX0gtUXNHZWVwTlZMcW5odjFNWG9QSXkxTjlSQ1kza1A3VDU1bW93bWRhUG80NXJYS1dwWEtUZElIY2o0SHVaQndMdl9oejMycGNiWmEyTTFtQ2Z6cnlrNFI2ejlrVFNabi1tSWtyYmp1Q1h3RUthOA?oc=5",
-        "fecha": "2026-11-01T14:53:55-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.RAf5FmGv3d-QVbIKglKEHQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVERXUmhvNEJGVnJnQUFEUDFkN005dkRMaVY4VUhDdEVkOE91bjc0ZkIzUDRBMDZ4TnVPeWIwNVV4R1NXRmliMmlXYzFJSWF6SFlhZkZ3ZDF1OHJRdXB2X3RUN2JYOGQxMjY5Mk9PS0tIX3VhMHBCNUUzVmhUSDl0QUp2dXFONzVUbi0wbW53WEM5MjZLTEhyNmY4aHc5R3BXRElpalNSYW1jUmM0UHNMVTNNUy12U1ZCaHV0VUF3bU5XdXBVbDdfSGE2T2RUZW1qbEE?oc=5",
+        "fecha": "2026-10-31T14:11:22-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.ppHcO2WC6FZCjDfqq0RZmg&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Sector financiero",
-        "titulo": "Sunaval advierte sobre fraudes electrónicos a través de redes sociales y mensajería",
+        "titulo": "Asociación Bancaria de Venezuela culmina el Mes de la Educación Financiera 2026 alcanzando a 1.500 estudiantes y profesionales",
         "fuente": "Banca y Negocios",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbVJMUk4zVVI3cS1TRWtPRUkxSFpFbVY0MXBXa0JlcDk1eW92a1ZBZ2xSNHhxeFpjelpFdkJKUG5MajAzU3FaNU9uSjZMZEFCX1ExbHQwanI5THlrUExHbHUycWRudjRGUTR2clZheWpGNU9sS0NyNU9nNURoZHhXZFU3bnBHTG40dGlCYWxUemF0UEZWaXEtVk1Ka3RqYzVJaVJEZWk5QVMwTTMtYVlrOFVUcHh1QQ?oc=5",
-        "fecha": "2026-10-30T16:01:36-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.DP4eXZ3WsB6gzX4sm1sVjg&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Economía",
-        "titulo": "Pagan Bono Cuadrantes de Paz de octubre: Aumentó 24,21% en bolívares",
-        "fuente": "Banca y Negocios",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQLUhFRUdfRi1zY0Vjd3pPcnRUNVRXSVZzS0pZaGlOY01ZYXRuN1R4M3pZWnc5MVFHU3dPR1hqZHpxaFhtU2lhUGJmM0szdEVxNk5MOW9pVFJNMTFPR2kwNXdHS3VTVWRHUVFKU3V4YlhkbVJhdks5QmVsV216OGlPeU9IZzJEd0ZrMnlYUHFtRW40eHZNRFVTWGttM2t6N05hcFZnLTJKNmhFNFFxakNCV2lB?oc=5",
-        "fecha": "2026-10-30T12:45:18-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.e8CtzCnQAJw9eaopd-q04g&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPZWpLdl9JTHdFVUFzVDRkbWdsR3ZkSl9DNVRHLTZkZjJ5cUQwLUNQZnBLUmtmeUhhcW5aSUUyNHQzZWszSmFLU3JVTGNJV0JJZUIzR3RmMGxtT0VsNkQ0bXdnSUdVRV9tU21yV0xWRWt4MWdnVmktM3RvUGpyNUNVZWxnS1JhNzdybU43V2ZQNE1zNm9nZHFVVG1Sc1hTMUZtNEp5TkRESk1KR08yLUw1bVd5cFBOcnhYWUJrdmQ2QlFlVFZZRlVnQi0tRTJXUDEwN3lTQTR1U0ZEOEhrcXU4QnViUnJJdlVNbHZua1N3?oc=5",
+        "fecha": "2026-10-31T08:17:23-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.kVsYYMZXkgKTLIfsG2lOmQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Emprendimiento",
@@ -482,7 +546,7 @@
         "fuente": "Descifrado",
         "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUFUtdFJHLU5zUEkzd2l3WXBkdkpVVUttdE5tNFhTWldLS2RGaDhWRVE3TlY4NHhvRUxtVUVBTmtVQktRMjdycjNick1NYUZkU3g5MnA5ZjN3cVVJa1d1azZnMUJkc0MzWVpNNFdOYXVEWnZpM05XWWxnYU1GYW9UdURZY0FvR3RIUTBTZGI0NDZLbFNOTjliMkg3SEVFLVVBV1JDVlVxaElNMklsR2RvaFRBRWY3RF9NTVh2MWRvY29ZVmfSAcMBQVVfeXFMTlBVLXRSRy1Oc1BJM3dpd1lwZHZKVVVLbXRObTRYU1pXS0tkRmg4VkVRN05WODR4b0VMbVVFQU5rVUJLUTI3cnIzYnJNTWFGZFN4OTJwOWYzd3FVSWtXdWs2ZzFCZHNDM1laTTRXTmF1RFp2aTNOV1lsZ2FNRmFvVHVEWWNBb0d0SFEwU2RiNDQ2S2xTTk45YjJIN0hFRS1VQVdSQ1ZVcWhJTTJJbEdkb2hUQUVmN0RfTU1YdjFkb2NvWVZn?oc=5",
         "fecha": "2026-10-29T17:18:19-05:00",
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Edificio_corp.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+        "imagen": "https://www.bing.com/th?id=ONUT.ptAHXHRgVMJrWvllCenFAQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Sector financiero",
@@ -490,15 +554,15 @@
         "fuente": "Banca y Negocios",
         "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxObmNDZkZZdUZHMnhwNkpWWXJfMzlsbFhaUWtDM2o5Y2NlUnBIcmoxdkFZc0poajdxc0lMa0ZsWThWbjlVWWM1bE16SWhORE1TRGlmYVFsdDNDQ3NtNkJvalZGcnNTSFdPOU1oY1Ewc2FPVlpZb0Q2TU5ERnNlRVdwSUNXbnZiVnhkSXQ4eXVNaDByVVpqSWc1UjVzWWxPSEtRSElzeDU0MlppNms1Zk13TGZYZ2hMSGxWZ1B2U1NqVGstd1BzeTFGNmJOa0NwalphNWRoNk1udE8?oc=5",
         "fecha": "2026-10-29T16:42:10-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.S02Xf04CXfRtjR-xZ9AoOA&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "imagen": "https://www.bing.com/th?id=ONUT.GIkjX54v7OorY_M0QR8Nug&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Emprendimiento",
-        "titulo": "Ammiel Manevich dará una conferencia en Venezuela con Somos Copiloto",
-        "fuente": "Descifrado",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUkVHM0NoTGxEb2NTZDJtVXd5WUp0U1JPaTVrU2c4amNTc3k4S2RjRl9UZUxhaVlDdDRGSDkwTDFXLTQxUFdZUVd5VVJwM1lpNmtSTUVzWm9ma0ozRVgtcHdwZVNpeXRqV1A3bkZFSy1qY0VuOG1qTHBweEdnSDl2ei0tVU41c09taWZyc2p1RURfWGhWczJ1LTloZFFKSE42bVNxNUdoOEktdFNSS2NNNjM1d9IBswFBVV95cUxQUkVHM0NoTGxEb2NTZDJtVXd5WUp0U1JPaTVrU2c4amNTc3k4S2RjRl9UZUxhaVlDdDRGSDkwTDFXLTQxUFdZUVd5VVJwM1lpNmtSTUVzWm9ma0ozRVgtcHdwZVNpeXRqV1A3bkZFSy1qY0VuOG1qTHBweEdnSDl2ei0tVU41c09taWZyc2p1RURfWGhWczJ1LTloZFFKSE42bVNxNUdoOEktdFNSS2NNNjM1dw?oc=5",
-        "fecha": "2026-10-28T14:38:52-05:00",
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Edificio_corp.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+        "categoria": "Nuevos CEO",
+        "titulo": "Delcy Rodríguez designa a Oliver Blanco como nuevo canciller de Venezuela en sustitución de Félix Plasencia",
+        "fuente": "Banca y Negocios",
+        "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYVdmdGJ6MlRucEd2OWVvYUZ4VGsyVjNaaGtOMmhJWEhEVHRnajJoUGlKeG15aER1ekRrOGRYOGltMGtuRDVUT2FZRV9oRzdrcF9TTU84ZmFJSXZVVDhncmFzRlUtTl8tSDU4TjNGZzQ4dkhOV3JuelozZUh2R1dMRTVHWjgyV3hpU0ZhNkhUWFJ3SDh3b0owRUdPVDJjcDBPNVRGYzdHMndaSy1zQTk1SllvZW9kLXNwYy1tWXBOMmhUdmpQMk5VQkk0UW55WklzUF9Eak9R?oc=5",
+        "fecha": "2026-10-29T15:32:10-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.SldCfS8gDJGoPGREcUj5Pw&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Nuevos CEO",
@@ -506,420 +570,356 @@
         "fuente": "Banca y Negocios",
         "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPeDRVZjE1b21LRlpYQjY4dGU2TWtzN0owNFAtb1Boekw0RS1vUjdkVlZ6dDRoMks2enVLQ1pCWE1GYy0zMkFFd09CMmVFMm96QTJNWjQ4MkVtZ1hUWE9WSFFZdUp4d0o3YTN6R2lYby1LOTNyVFVha21nWE00dGRpd2JzN3ZmUV94SzBydEpxTWl6cElJLXNhVkZ6MWhHN3kxVktoNGR4OUp6ZU9FZTg0QV9zeTlsMG1IVWRXNXpjbXRKcjN3dUtOUUdB?oc=5",
         "fecha": "2026-08-08T02:00:00-05:00",
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Edificio_corp.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+        "imagen": "https://www.bing.com/th?id=ONUT.fp8w7MRw4kjI3IofjN_WyQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Deportes",
-        "titulo": "Endy Chávez: el jugador que hablaba en el campo",
-        "fuente": "Líder en deportes",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbHhpRE4wOHZJU2duQ2YzUXQ0anY2QVhYM0JMWXM1ZUZvS1kwb0VMY05BLUdBbmhMak1vM2hzdGdwX1Vwd3lTY0VPQUxVM1VRMERabjNTRXpKb29kMVZoZXdfTlVWd1ZzR2pkTTBLV0xBeEM4X1gwdjJpY3I4Q0gyeGxuOGJaSWdiTGFuSGpuaFF4UWtzbW9SZA?oc=5",
-        "fecha": "2026-11-02T06:06:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.k8ER2hGRavsVicJ0ccvfNg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "titulo": "Gabriel Moreno, Wilyer Abreu y Jackson Chourio ganaron el guante de oro de la MLB",
+        "fuente": "EL UNIVERSAL",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPM3o4RGVnTERLR2NsaE84LUNqUlMwS0tieVpjQkVUSUtNZERvQUU2aW9uc1BwS3c0MUJTQUZGWWRwSmpCekhLejFWbUZoQWtmYlU2RFZqTGVwRmlvTmx5UFZRRjQzdURMcTRZN0J2SmNkM3RoVkZZMm8tMEREVW9OeW9EWU9ubWIxM0xGdXVybkFxWUxDRHh6Z2kzNlRKMEFzTzBiNlkwdDlFTVA0eG5OMHg4MjdVendNZGtvOHF0dXA?oc=5",
+        "fecha": "2026-11-02T23:14:37-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.uxwdlsIlHmdRAlmTgfDGjA&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Deportes",
-        "titulo": "¡Histórico! Premios Luis Aparicio honrará a Venezuela campeona del Clásico Mundial de Béisbol 2026",
-        "fuente": "EL UNIVERSAL",
-        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVnpVM1JyakQ2UzRwVlgzRHpNOFozdGI3WDdvYjVPQXczb0d2bU8wdE5mNUJRYktlaTBFaDY4RHhGUDF3cXZMeC1RSGVfN0JKX1A1Nlh2MFhWWEJZbDFiMVlOVm9DZGtjQ0x0MnFxU0gtQjZVS1I1TEtGWHJiT1F1ekpGNkR1RHFJR0UyMTJvWXZzY3ZGak1QWFU1dDlqVGh5bUdiZ1FJSVMxSTVlX2tKemZlNGhOWmd6QUZyV0g0bTZDa0dDMnhmdW1EZ0d4ODhLQkJkVXQ3U1ozUQ?oc=5",
-        "fecha": "2026-11-02T04:11:06-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Synagogue_of_Caracas.jpg/960px-Synagogue_of_Caracas.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-      },
-      {
-        "categoria": "Deportes",
-        "titulo": "Venezuela sigue presente en Israel",
-        "fuente": "EL UNIVERSAL",
-        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQS1TWWlISHFOcU0zeGt4czBnNnNDb0RaQnFzY1drVzZEX2RodXlpMWlhNEhLNWwyU0FiSFA2czdVUy1wOTZPUXlaSkVncTBjZUFyeHRTQTJ5dEYwc1ZoS1ZXNWoxY2xXVVZkRVNSWFdvbGZYMXFSLWF1WFF1Tnp4RFBJYmV0Uy1l?oc=5",
-        "fecha": "2026-11-01T23:07:34-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Synagogue_of_Caracas.jpg/960px-Synagogue_of_Caracas.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-      },
-      {
-        "categoria": "Trending",
-        "titulo": "La poesía de Edda Armas en un solo libro",
-        "fuente": "EL UNIVERSAL",
-        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNM1ZNUUpnTUVleE1KQXp6T3FJR1drS29vTDhEN0NHTlN1czJDSnhWMHY1aHhxOHktRWU4ci1HUERGWkVMMlNfbzU0ZGZaam1FNEJ2aF9hQWdTb1U2U2tad3JLbmhubXM3bEFvaUpreElrRzY0d2MxNS1LRnJRNm9CeU1nSzAweWlDc0pn?oc=5",
-        "fecha": "2026-11-01T21:40:56-05:00",
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/75/Edda_Armas_en_2016_%28cropped%29.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-      },
-      {
-        "categoria": "Trending",
-        "titulo": "El conmovedor gesto del CEO de Redvital Makro, Samy Hussein, ante 25.000 personas durante la 11.ª Caminata “Camino con Funcamama”",
-        "fuente": "EL UNIVERSAL",
-        "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOWDZVUzZXVVl6S2gycEY1dzZDUzZObHRod0pOWW12ZHdTeGYzVGNDc01CYWxlN2R5UFM2UFlvVWFNcTNsdU5oY3FFZVBjaWRZT09sWWZSSlZUdl8xUDZtRURMRjJ6bTZKeFBWUk50bXEzVkl4Y0oxTTZsSWUwTkdzT0xjMUV3WEd1czBNNGVVRThKcFFRbmc0SnYwdm5QVDYtektwZ19GNnJsUGRlOFR3Z3hJdncxeVI0c1Y0clhscDdqSXZLc3k3dlVoMURKR3IzazA5NUlfazlPUEdqeG9j?oc=5",
-        "fecha": "2026-11-01T18:14:18-05:00",
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/7/75/Edda_Armas_en_2016_%28cropped%29.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+        "categoria": "Planes en Caracas",
+        "titulo": "La final del Nuevas Bandas es en Bello Monte y con La Vida Bohème",
+        "fuente": "El Estímulo",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBPTS00aG5KeVVraVZHN1BOM214ZnVyZ1BRLWRYZ1d5dEVDNjBIY0ZSaEM2U0xaT2NpVGgzMDA1dVJqb0hrTnFvVjlkbFgzNE94VTZEUmVJZlhuYW00NnRxd196Y2NnUXRJZEVkMWRxVFNpa3RzVFpxelNpZnZ6RU0?oc=5",
+        "fecha": "2026-11-03T05:32:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.hP8yJTPXHpbCJOy6QvOi4Q&pid=News&w=800&h=450&c=7&rs=1&p=0"
       }
     ],
     "cl": [
       {
         "categoria": "Economía",
-        "titulo": "Bono por Formalización: cómo recibir hasta $302 mil sin postular",
+        "titulo": "Corte Suprema ordena a Walmart que indemnice a 48 trabajadores por despido injustificado",
+        "fuente": "BioBioChile",
+        "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQbzFSeHRHdWR2MDFFbVg0cVBac0FaeGFZZ21YcVZ1OTQ2ZU1OU05mQ2kxV1oxR3hWSjZkYk5oYzUycGg0d2hqbFVKLU1GaTl5dTFIV3djbW9Jazh2dzhsb2huMXFBX0t4Ni1RWE9iS0d2c1NsN2RhMmh1VnlLeVh5aVhTbmo3NmlIVkJYTnF5ZVRmcFlPWUNycnVaNXRBeVdtX2tOLUVVclZGUlVval9xeFNkNC02bEVKZUlGQVNHU2lhdjVlY0VpVlNYS1RsdVppWGlaVUZOam9NRU9CdUJPZWxNRVh5LUdKdEczOUJGRENQZ1RCUUdzU2dFbW1pcTg?oc=5",
+        "fecha": "2026-11-03T06:38:51-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.7jhdOKi6P9On5dj5DyiK0A&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Economía",
+        "titulo": "Kast llama a inversionistas españoles a apostar por Chile: “Estamos volviendo a ser ese país serio que ustedes conocieron”",
+        "fuente": "La Tercera",
+        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQV1dLZlpQWmstcWhncUVud1FHdWc5R0x2TEphQlp4U3kzVnM0MTY4ZUNjbnpFYVNJSEttUENlalMxLVNXWG1UTU5XWTFQbVRtb3dwOHp0WkhxWE9GdEFDaWNSUmYtcTdEU1VLZ2F3cVNqMVVoMjZrTXMtWGRyVEZicE02WjE0THNKdjFWbjFER1M2MHh0STdfODVNdEw5TFlrWFVweVoySHNOeGZZRGtqNS1fNGZYQTh3d2NvUlRxZmw3MXFvTjNVc25nVXhFSDJxYnBEby1RdUI0YTg1cF9VSjlYTTBHU0NVTWkwV05KemJ0d9IBkwJBVV95cUxOLXI3OHp0cXBmRmFCWEdqczN2UTN6NnRTUFZZVXhYdW5oWFR6UUxtTlMxSGtsQ2cwclp6NXQyTU54NE1LVENRMmMwS3lvSS1KbXdhcExCajRabVFLeUZSZjl6bEJqYmNnTUZmTElQdzU0UDhKREJrSUJTcWpBNDRkY3F3YVJKMVhTS3JpVkhQcUdDbkVobmhpTndOcDdnY3dZX3RYZlVzX0d4VDlGdFJXWnlndmhuZGtBcmpHbHB3OUxuVGRSZy11Y0dwRGlERHh2bFZvV1lVUWdYRHJHVlFONzh4VjdncjFWVlV2M1Qyank3azlDamRaMmNIYnNSSkR2bWlCaGFrYXB6M2Q2OGNiUjE1RQ?oc=5",
+        "fecha": "2026-11-03T05:05:15-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.R8tLGn3jeS36yZ16cq0mhQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Economía",
+        "titulo": "Bono de hasta $302 mil sin postular: revisa los requisitos para recibirlo",
         "fuente": "El Mostrador",
         "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYUU4aGFZVU5fS2dOcjRtZjl6clVJd1NwNmhQNzlyaERnZ19IeGZRdjI2aU11ZGlfTmowakVmLU54YUFqWDRTTXFBc09GaTlPRnk3VFBGbFBrOTJHdmxmajI3NktybWFQaHY4Q2Jwb3ZHOUladUN2MGZCa0VCcTRDd2Ftb2hwbWZJakl6VDNJTEpnelByQ1JuZUQ4OU1iTTcxRXFfeGp2NWtSZm5JVjB4dHlSVTM4ZGdnLW1vVDlvS1M?oc=5",
-        "fecha": "2026-11-02T06:37:32-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.laL4rILrgLEaB4uanR4UHw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "fecha": "2026-11-03T04:43:05-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.N0gaJLsOjGSulhsz_gLmKg&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Economía",
-        "titulo": "La actividad económica de septiembre creció apenas 0,2%: desplome de la minería presionó al Imacec",
-        "fuente": "BioBioChile",
-        "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNUmxMYmNSbmNmMWRWT3BBZ1ZSb1hfUlpicUgwSlFfQ0x3SElVQ0VSM3kwX3o5ZDJtVXpFYjUyQlJoSDJ4ak5TVWtRVFp3dm5nblU5MldyYzhjUE1qMHNxYU1nbHlIQnh5YjdKMWRDYmNUOGNIb0gtZm1WZzBvaXpPU0diVHNHcHZuTVlqTFZsRTZmTzlkTFdWbEJUU2h4X0g3RkxYSG5PSWk5cHRjQ2p1SmFvb3dhLU93MmFXdTBiV2NZVUFlamdmUDZHSDI2cEUyZmY2eHZkc0VLVnMwY1FwcU9pLWNEMThqSndfTGFLNHR5TjY1dzgxRlpxbk9aZ3RKa1EwX2gtaGMzdw?oc=5",
-        "fecha": "2026-11-02T06:34:07-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.Sp5aDmzovqk3xQWkCN068A&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Economía",
-        "titulo": "Imacec crece en septiembre 0,2%",
-        "fuente": "La Tercera",
-        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA5UHNzejZlY0NSOEdSWERkVmItRlV2dnJkV1h2YUZBNkpCUVctb0hJZ1NYT0V4RXZ2b0tRemRxaVBfSzNoTVVPVm5sVXp1MENZOFBOZVNKUWpaM2hGVUpHRmU0LVJsWGVUQWpXM0syOW9kT21uN2fSAZcBQVVfeXFMTkNMZUJhRTZnekFNZmJiTTJpSlNxVnJOaXZGeWxqMzVnWG81dlhEcXlyR2xfcmVzYmZqZHV1TTJFMy1MLWZvbC01SlNDSmwzWDFzb3pFcnJQSkREUmhrakd5Y0JSSmFHQ1JoaHdPVzg4elAtSlhSTjNIVkFRS01mUGMwVEFnS21ldEtwWnpRZ3BRSlFhVWNLWQ?oc=5",
-        "fecha": "2026-11-02T06:31:24-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.5Nq3Rc0HT3hyhWdqQ6CG0A&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Economía",
-        "titulo": "La actividad de septiembre crece 0,2%, pero se completan tres trimestres negativos",
+        "titulo": "Kast invita a inversionistas españoles a Chile: \"Estamos generando cada día más confianza y tenemos reglas claras\"",
         "fuente": "Diario Financiero",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMjAtWTdBTFdSZkdxRXhzT01DWEwtY3B1RVBELXIyWE1OTWFjOUhKTld6SldhNjRRYzQ0V01QZl81MEVwekpPRDIzR2hHS0hEN3EtNVhVY0plamZQY29IUkpIY1luMEdrOU1iTFVBU0picy1wSWdldE1mMzlrakVuSFlUZ0otQ0ZfLXE1WUtEcHU2cFJpcDdJbU5iV3p6QkhiNXNDUExzWGZkV3I1UVRLYmlld0E?oc=5",
-        "fecha": "2026-11-02T06:30:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.DQ6e3SWOhh6Z3XZZzcJweQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbHlYY3VCRDg0cXRWN0hmTFpDWmxSSXFQdWFyMkdPN1d0ZWc0UWVIUnZFSV9zOUg5ZUZhQlB3cG14QWtzMVY5YnkzNDZFV0VPZ3NFOEdBUGdYNVhGS0JrM1FzdUFRb1hFV2p5VzJDZDlhV3pyRU1RaXM1T3c4Qm8zYTlFRW53RDk4bDl5cjNhb3ptSmNKcWtNY094TzJodTdQdU9jaHdLc3pUSHhHcURybi1TV1pmdFNXRG5R?oc=5",
+        "fecha": "2026-11-03T04:07:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.R8tLGn3jeS36yZ16cq0mhQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Economía",
-        "titulo": "Euroamérica lanza millonario proyecto inmobiliario en La Dehesa: incluye comercio, oficinas y hasta una clínica",
+        "titulo": "Valoración del sistema de concesiones",
         "fuente": "Diario Financiero",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcnlSV0N3bDdHM2ZSRnkxS1BEandLMUZON2NlZG5uTmdfVFB3azdPMndCS3ZIOW1sLUREQlpSUGpqWFVYQUJLck9iQTA3RjBHSGlYUjhVam91VVZ3NUpweVVJVFpVVV8ydjFTUUhGWDhaWFBESXZibVZQekRHb0FBLWVKZ1NiT1pMSzN5RnQ0OXBlVHQ2TW9nc1pqWl94NVNvRHJRTno5bzlsUWhIeDhRYw?oc=5",
-        "fecha": "2026-11-02T06:00:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.rQOH9s-Q9t9odZhmrXh7UQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5zSld1eFVsdlNoY2drUjNTcEtLUW40REExVU5pVGRaQ2ZFSVFtLW1Id0NRZ2xrcHF2TEY0d2VZNHhsZUFMNmF1cHpmSFdEYmpNenU4SE40a3hFSy0wVnh5eUhQWTd2SFRQMXE3bFMxT1VDYjFIWFljSkhTM29KQQ?oc=5",
+        "fecha": "2026-11-03T02:00:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.73zkw_rVXUXcpO04PFTubQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Economía",
-        "titulo": "¿Cuánto durarán? Expertos ponen bajo la lupa los 100 mil empleos prometidos por Kast",
-        "fuente": "BioBioChile",
-        "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPSDZiaVBvMEVIaExXNVpEOFJFZV93TE9WbnMxTE9hOEl1a0xNUkRLdHZsRnFSWDV3cFdnQ04wMnVKSHVISVFRcWt0Vko2b3JsMnc4U2NSY2JrWUd0TWFhRGMtNDk1azVScUVDc09WbTFIRXJWckQ0eFdjdXd4WklRVE9nV3Y2V2JjcGs2cV9TSnhLX29veVdxcV94Wk9QVGdKeGE0QnpCQXRmdFp6Z2NvdXk5NHFIREowVFoycGhoeGE2bEl4YTZibFJHZUhCYnFWeWZzb203eGs1NjBjQmpjRnAzT1N4MDhfOElkR0JsMEthZWRXTl9DZA?oc=5",
-        "fecha": "2026-11-02T05:00:05-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.BeR3wLFda26eEcpUrVS1zA&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "titulo": "“El fracaso de las sociedades de bienestar”: el mentís de los datos",
+        "fuente": "El Mostrador",
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNN3Z2UFJwZWhWeVVQTzdNZmFuZzloN0JTMk55VXJGQlVqQVdfM2ptTFVUNzluUHdIR1U4XzVjREl0Z1VReXVwR1pOMG5pVUkwLWpoMzZwWE9rUHpLMUZabUNOY21WSndRNWx2YkVHNHFqeXdoNGxaUHBKM055Nmg5TWhmUmJHMmhBNTZVZkFGTzBVSlRDdDlsNTU3ai04NnItSG9wQzdSZndjTkJRWjcwTnZuLWRPWHRkNDNWb3NCM2ZkazVya3BTVQ?oc=5",
+        "fecha": "2026-11-02T23:06:54-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.ZnQOwdys8nvFujDbBiqSFQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Empresas",
-        "titulo": "El Mercurio Inversiones - Anthropic y la mayor apertura a bolsa de la historia",
-        "fuente": "Emol TV",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPa1U2U09XWjFWQ2pyazI0cG15LUFZWHVCWG5OSFZvTzJzQXdLWlZFeGVQRkF5YWlsRGxHUFFPWENlaVkwWjlPZTR1eUZuMDFQUklEcDZ6cER0Qm9wU29TWkxSQllyMjZUcHdUY3p2OV96aEg1Tk5mWTFfU1JQNHo4QVpOM3Q5N2tsdnpMOXFMel9XZ05vN3VIaGlDN3BiMEZBN21WYmx5elpFYTJUMzB6MHRnNGFpMXJMX0FGNnl3?oc=5",
-        "fecha": "2026-11-02T06:09:16-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Cristina_baston_Kirchner.jpg/960px-Cristina_baston_Kirchner.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-      },
-      {
-        "categoria": "Empresas",
-        "titulo": "Operadores de retail se ajustan al descuento: 70% de marcas afirman que modelo outlet \"llegó para quedarse\" en Chile",
-        "fuente": "Emol",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSWhiWjBad1lmRXBVTWRSSk5nVkd3dkxzenZsNzZfYTFzc3g0elRnNTRwYnRfTHNCNHhOU1JaemV1ZkJ4WnVUc0lPeTBfWmxWS3hDZUxFRHM3a1lhMEVlUm5ObWNlMEpZdzRXdmtFakNSSW9ITlFvTlI2XzgzSG1vbHVGQU8tV3k2ZXRyZF91R1BiMW82SmxUazRraThKUzNhY2Y4?oc=5",
-        "fecha": "2026-11-02T05:30:17-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.K4DG4CEnPvc20GCHSUo1rg&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Empresas",
-        "titulo": "De Chile a 24 países: La expansión de OOH Publicidad, el servicio de digitalizar los espacios publicitarios",
-        "fuente": "Emol",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNG4zY003V0dYMTQ0RlViWW9qNDBMQS1rc3VYcGp6UzVCeUhaVnFTS2RUSUE5di1QejlJcFVmeUwwekxhTUtHOVFOczBkTi1vMEZER1RnZnBHbFZuZXI2dncxVks0UXFSTEZ0UVpZOW91UTZsMHRpSUplMVpUc2F1blFyb0NzcGgyZVJ5Rnl2bldkM29mMi1KMGE4MmE0NHJFUE4zajFOT1ZPazJV?oc=5",
-        "fecha": "2026-11-02T05:09:14-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.vjSpIbLPnys77hpNp8TWxg&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Empresas",
-        "titulo": "“No venimos a competir con Mercado Libre”: TikTok acelera el ‘live shopping’ en Chile a la espera de TikTok Shop",
-        "fuente": "La Tercera",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNamQ2c2o4el84ZHh5OHd5ako1UXFkSV9VTkd3ZTA0ZGtXUzNZbGVmb1ZsenJXc0dRMUI1RkVEMG5IRThwQjlTMDBDQ0FaMjBxMXBCQkFTRTFMZFFMTkRyMi1ySWRNNjdLUzFSeTYyeTRLMldKVUJBd0JZUzFwOTR4VnJxS3I1RFdnbGw1ek13c1dBNWhsN3FDR1ItXzByaWJKX2RqWHZPU0RoTFZEQXhlUDRaYXJhSVh1UzVlaWROTjh6d05NN095LXdzN2ZLNWJHc0hIeFdPV0lEVzhoay1RRGNn0gGDAkFVX3lxTE4tWnQ0czQ2U0otTGFVbEhCbkh2c2FLMlJfQjhIZDI1d2dzNlIzdUIxbGUtQkNrSTB1ZjV0T1NSWFdiRG9RcFdON1NzOHBfV3RLTzFFT2kwa3JHYVpUTC1MUmg5ZFViWUJscUR4VXpFWkZGLWN0MG9nSlAwaGxyVFJZdWhmTWRXMG9aYUU5dm9lMGRlWmk3NVp0NDJ1N3ZFLUxvMUh2djIzV19tM0lOWTZCNXdFNW1jUnlfSVhleHYxSTBQUUNCY1hRcWpiY1lhMjNaODBjeHp1NnJSVVBUaXRqQlByb3UtQng3M3ZRM2QzOS1Fd2djY3ZYaVBXcEdmY29BYWM?oc=5",
-        "fecha": "2026-11-02T05:00:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.vKY8K4DH-hbsl_IunitqsQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Empresas",
-        "titulo": "Facturan miles de millones al año: el jugoso negocio de los economatos que Gendarmería tuvo que frenar",
-        "fuente": "BioBioChile",
-        "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPaTMtUHJFdkhGUWVqNWJFblc1MWh4RGZlVkVnU2s1WG5XUllXbXNDWFk5TTBHa3gtaGktZklEM1hYcURfMmcwaXZvaV9sU1JOazR2LTlUd3ZkTFFIZFdyTWRZMzBWRU5XZ3F3RzdOaTlEWnU3VUdZR3dUREFOSGNOdlJrNGFId0ROWFA5TFRvRFhlWmE4cUdrNmJnVjN5cTAzckFzODA5MGpSMjN2SHVwOE9ocWEyTEo1OFQ5T09mZHlqdnljVHdtTmtFcGhWRVhnVXowaW9oUWQxLTZpY2NRVWNjRFpBanc4VmpybzVGWEQ2V1pTdXAxaWlNdHNIV1ZwLTZKQ2JTbU8yWUZlS1kzNHdPLUR6b1k?oc=5",
-        "fecha": "2026-11-02T04:00:10-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Cristina_baston_Kirchner.jpg/960px-Cristina_baston_Kirchner.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-      },
-      {
-        "categoria": "Empresas",
-        "titulo": "Walmart Chile detecta fraude en compras por internet y frena perjuicio adicional de $ 212 millones",
-        "fuente": "Diario Financiero",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNb0FfUWIzbjZ4YjNJTEVubE1MT1FJOTJYZUNvX3VhMVZEUjQ0NmNOQnlkX1VvYmhLaGdHSk5fb3l3S0RQVVB3Yk1fYkpyUVZxZXFqd254N3dZSW1ZZ3N5Vi1LRDR3WjdSZkFzZGhMU291RFdMVFF4ZTA2ZEg0UGRqekt3R3VjY1pOMFF4OHJVcU13bUZSYV9YdzA5dFIwMmFYWUkyeFVGRkxLT2s?oc=5",
-        "fecha": "2026-11-02T02:00:00-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Countries_by_Corruption_Perceptions_Index_%282022%29.svg/960px-Countries_by_Corruption_Perceptions_Index_%282022%29.svg.png?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-      },
-      {
-        "categoria": "Trending",
-        "titulo": "Tragedia en el río Maipo: grupo familiar habría ingresado por sector no habilitado para practicar rafting",
-        "fuente": "La Tercera",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNaU5kTk5PQTNCQ05td0o4Z0I2MkJoYmxsMVZTcHZEMHZPbDR4Z1RvWUdic3M2c0h6b0pfMUxzVGxESTVWNjJwYnc3dDgtMXVQWHhoLW11WXZWd2M3YUk0cG1zQmpRbmRXUl9qdTltVTN5cE5ab1hMRVhuRmMzdVV2TTZwdGxkMG55cFRPXzdQTHU5aU9wUVdwdWtFNkg2elVyRzZEOEpWRFlVWURLQUxta1Jzc3dUS1ZhSXJMM01TX1JFWFlqWEk4aGhIN2ZQSUxBQ1VxNFJ5LWd2VlZIVHVBbkJR0gGDAkFVX3lxTFBOUUhDNzcxMWpzV2p3djdSbWg1RmZqaUwtVU1IM3NjeXZNdmlqOFlMTENuTGMzTDlmcE1ldXZrN0tVWWlaLUw0VDA2RTEwMGJPdFRlVGVXRnNCMTdvX2hqNkxqR1J3MU5PcGpKMWZwTnhEaWJEd0dqaFo2YUZiLXVObVppaHJwQVRHRVVjRDBWbUJ2VGp6TGpyQjJMRk5Udmg4UzczSTY1REhndV9PX2RzT21iMXRLQUlmSWZ5RGFpS2VsWEI3dE4xTVpHNWg0U3JaOVRhck5EMEprX01pUnRfVEZVRDZ6RjdfY3VpWjk5S2tBU1hHUEFoV3ZDc2o5MmxDVEE?oc=5",
-        "fecha": "2026-11-01T23:08:33-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.BUgCr09ClroomaLzqyVs_g&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "categoria": "Sector financiero",
+        "titulo": "Fondos generacionales en Chile: qué son, cómo funcionan y cómo aprovecharlos desde 2027",
+        "fuente": "El Mostrador",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZl96dUV6VnlIN3JwWW1aekd0YVhuMV8xQlRNeTZ3VnF0MzJlR3loQXhlMzVRUklOSGgzaHptMXhRMmFXbXdKZkhUb2JJekctM2VfdnBXc1NNSms4eS02V19YazIxWFo4X3dBeFR0TTU1REpsMGNuSkQ1ZV8yZC12UGRzVVkzTm9hWFplX3NzaUNOQkFnNVdfRGd0MmVCMHhmbDZPRWItUUlua2FoQ2JRbTZvb21aWnpZRFRtbHUxQm03M1NXb1g0Mm9Bb2tmNno2WlVr?oc=5",
+        "fecha": "2026-11-03T05:37:13-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.vTOH3jvhdZFM5NUF6eESRw&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Tecnología",
-        "titulo": "Ciberseguridad: un asunto estratégico",
+        "titulo": "Meta lee tu chat y la PDI toca tu puerta",
         "fuente": "El Mostrador",
-        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaHJXa19qUFRLMGxEbUg1eFVBa2I2ZmJESzh1ckdNRHMta3diU3B6ZGJXUkYxZHRfbjZ3eG5QcnRjRkdaWDN2MUJNNV9Yb1hla0hDYlU2NXBrVjg1dVN4REZKLVBaTnhweGFVaXI5Z0J6Vzg4VEkzbVRYc3pKLWlpY0l6TGR6dEVXb1RWcmx2LVBlMHljWFlV?oc=5",
-        "fecha": "2026-11-01T22:48:50-05:00",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTG5TaUJ5bHd2UjQzV1dDYzZEcDdTMFh2bU9wbV83ZFp1YmNSYWxVOHdHVWtna2xENDYxMUI3OWNCdjR3YnhBYTlldDFtOHRIekNxNk45UU54UjBQU0FROFM1NTFZdHFHZTc5dmVyMHpaVUc1cVBrbDNXVllDSERjQWR5aThBeHdBcFVDYXVmOEZlWTBuRXBibUFrSkhRa2xFTGgzdEcwdGE?oc=5",
+        "fecha": "2026-11-02T23:08:47-05:00",
         "imagen": "https://www.bing.com/th?id=ONUT.5XBtDau9a2jetOhV2BjJ_w&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Trending",
-        "titulo": "Accidente en río Maipo: guía sería familiar de víctimas y grupo habría entrado por zona no habilitada",
+        "categoria": "Empresas",
+        "titulo": "Corazón del Negocio | María Paz Achurra resalta la importancia del trabajo para empoderar a las mujeres",
+        "fuente": "Diario Financiero",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQamVqUkdnSWVXa2w2Q3ZGYThTeFk4Q1oyWlNhSlUzYnh4V3dZdGlIYzJJNDFxVGwtakRsYXo4RXlfaEpnV1FEOTRzbURjVUpNNnNCZnBqS0ExNEJxZHE2QnhuNFgzNzVXRHdYcmJsZk12SWpNZTJtbDM2RHFJZTkzZEVDYzBISTZsNlhNREswX0FZczU3Ti1GNEdYQTh5aGkzUktwSUR0RVVNTmtu?oc=5",
+        "fecha": "2026-11-02T22:17:44-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.8QHFnarMrKSSNo3xSef08Q&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Empresas",
+        "titulo": "Trabajador muere en accidente durante obras de futura estación de Línea 7 del Metro en Renca",
+        "fuente": "La Tercera",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORlVOTzVTeEpJMTczaWVyajgzcnRlS1FPbHdHQW9JaWJ2d1kya0htcUJaQi1ha0JBQ2YzM3lQeER1dFBIWEpybDRqX3psbFVrdThVRm5FYU5xcE1YVmdyNWJMZ0hNNDRwRGVBLTZDREtmS3d1bFAyZXdIal9wU3JONVlsMWtTcDU3SEQxcmRwemIzdWdGdWJ1ZTFjRV9rWUlGbGg4ejdGN2NWa1pBNmRxVnVLR1JHekxUQWNMMUM1SGh5d1dtVzRUam05RG5XT1B4S3fSAfMBQVVfeXFMUEFzd1RBcXcycFladThhbkotSUthMGFKMm9FSm95STZVRFhlM0NiNXRMQ0xpN2dtaXFPeFpIdDFnM0FBZU1ta1IzcjZ6U1NBd29NLU9sa19VWVgwNU5qZzUwalNWZ0s1YkJqTmlqcUJCQWlDSU45VzAxa3h6bHVVUjhzMnhMUDY5OTRBZzVteC1WWjNhZWlubGtzcl9CNWhabVJ4Y0dpY1g5NXduTGtzMmt0eUcwN2Q0YXVFRk5obTVsMmt5aDdPN1ZoVW1BMHRGdWI0aTI1bmVSOWM2UkF4SXczc20waVVpcGpHTFZRdHJad2ZV?oc=5",
+        "fecha": "2026-11-02T18:43:30-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.hmc-vscG-Cd29rLDqo0wIQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Deportes",
+        "titulo": "Colo Colo cierra el suspendido partido ante Puerto Montt y se mete en semis de la Copa Chile",
+        "fuente": "Emol",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPR05sYnc0eG5GWFRFTDcwQy00RXVQb1daX2J1R3d1T09jX1NhS0Y2N09JREV2Wk9aX0JVY19sQ1loNVBESVUyQkk3clBaTGZQVFN3MzZtcWVUSDVuUk84S1lkbTN1YnplVG9uY1pwTzBsR0hoUkphQzdiQ2pYTy1jSERvdFdPbGVmZGpR?oc=5",
+        "fecha": "2026-11-02T18:36:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.Vbct3l76oOHPxJ6VQNLIwQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Empresas",
+        "titulo": "Trabajador muere en medio de las obras de futura estación de la Línea 7 del Metro en Renca",
         "fuente": "BioBioChile",
-        "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNVXRoSFh5YnRYbWdWdGpjTWFiNVF6Y3IxVVl3VUNkd09WdEs2YTFtRnEtNF9lOW5fak9DZ2Y4X2NiYi1pVUFBNEhxb2QzNFlPMXlsbWc5QWs4d3BZbS1ueEZJc1ZMSUxfaW94Q0tldmdPVl9BY21oZ0E0bkwwWnNTLVF5YkZsMnk1NjFiMTQ2T0c1TC1HUzZTZlYtU0FMR0R6cjI5YVgyNE52d1FoMkdlb0Z0c3lpY0JHZ0RkRHRfZGxnZnhNdEZYUTlFNW1DNW5ENWptZzEwaWNhR1VqaGd0VkNPeHZfc3FQYzZrZDh4dVFhTW9nUVN1dnR3SGo1LXg0X1laWEF1SVJJV3JEV01jTQ?oc=5",
-        "fecha": "2026-11-01T22:21:57-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.zqECwqouq4Qi3tRjgkgNjQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Deportes",
-        "titulo": "Actuales campeones de Chile se adjudicaron el Zonal Centro de San Clemente",
-        "fuente": "La Tercera",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNUzRYZkkwUlpJWnktSVRRMW00eG1CYlJtMlV6bXhlNkhXMGM4aS1sZ0RsckFwRFYyTlVPZFFCNVhpVDR6aFRDNlJiNzJIazVGbnlTdUtTNFp6MzRLZkloVkw0c29VMnptOHloM1B6dFFzZmctbXJzNXk0dTZXSnhCUHM5cnB6MFpjOVVlM3VPUXV3ZFdSRy1kV3lyMnVHdWtkekJpRzVUaWNWeFJrU3hkNGFtUUx6aVBFQXIwUlBWTdIB4AFBVV95cUxQN1NOVy1IQ0s1ZXRiVGJwVEdBRWxCcWtRVHBidGtVMU9idDgwSGNqdnZ1MGtPa0tjYVJmUFVCUjVEczdjSzZSZXZ5Skc2SkotSGZFSE1FdjgyVmlfS0MwV1BYVFhJMEstQjA1YzBoLTBEblBXZW1MbE10Y3l5UXdsckxqazllaHJJRldURkxlY0taUzZsU010em9IZEVmenlqc1B6NE9yaXo4cjNtc1h2VlRyeVJTeExxbFJxSjJndG5oUnJRZHB0QXlELUkxRmtoRjJWTGl4cW4xNUw3cmdXUg?oc=5",
-        "fecha": "2026-11-01T17:16:13-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/LogoSUBPESCA.png/960px-LogoSUBPESCA.png?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-      },
-      {
-        "categoria": "Deportes",
-        "titulo": "Everton rescató un dramático empate con dos goles en los descuentos ante Cobresal",
-        "fuente": "Cooperativa",
-        "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNMTJxbnAtY0hVdzkzSG9yZVlTVUgzWk9lRFdRTkI2SWJPZTd1akl5RWRjbmU1VDBvWWdDdzFfMTlTVUpxSzlRUWZwdVNyVUx5REZiZy15NjZfWF9uUUg1Ni1JSXdnTkM5bnlxNS1lcE1rWnIyZ2pMeE94eS1LdzMxUXY0RkE5dU52OF9XTGhibThrUE5zcjdBSG9lOXdjQkY4c3VNbGEzbDVCbHRES1dOLVJ5QVp5TDZpNU5BbnVTd1lGRFVqdnJvY082enNVSnkwckk3UFZjckI1X2gtZ1pzN3NfWW1rci1HRFYwSW82aW5ZLWRVRUHSAYwBQVVfeXFMTTBpYl9JaGJFWjdqZ2tRU09mQjhpWFVhajRocTFBUG5JTjIyUTNFZWRYWWJzcnM3YnlrX2dDbDhqVXVJdnFWYXM2WFpteTVrWU5NVWR6S2NXUTluRWpNVEFuVW5OenR1ZE9xcDg3SmFlY3M0eVh6YjE4UlZ0T3JTV1lLalFhZGFQeHpqVzQ?oc=5",
-        "fecha": "2026-11-01T15:02:00-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/LogoSUBPESCA.png/960px-LogoSUBPESCA.png?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQTzJzdWFSaGNtc3BUdWpRaVltT05xQnFTTHhjNWt5YWxoc2h2d01tbjJrc0ZJZlozeWl6SHFnM2ZqUlFYQkZTOEM2MFdXWUl5bGZNOEhUQkdZNUN4bGJicFY3SnNYQVR4MGVQQ2F2cHpYVlZOeHBTLWtPZmJjazlmWjk4bVpqaDhqTHZlR0MwZ1FOWXVaMEtOYjZrTGRNbzZoYzVjUWpMQkVVS0VuSVYtdGhCQ2FnZVhxa0ZFR3FhU3BkTXNrM2dleldiX2x0bU54QmR4MFlxS29yWkdjN2w0UHRfTFN4LXZuSVc3YnJKcl9Ua2o4b0lTNWl2NjBFYVVGNWhZ?oc=5",
+        "fecha": "2026-11-02T17:38:48-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.-2huh2_8sn5lakSnapg7Wg&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Tecnología",
-        "titulo": "Filósofo francés Éric Sadin dará conferencia gratuita sobre inteligencia artificial en U. de Chile",
-        "fuente": "El Mostrador",
-        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQcERfZzIzcEhLYXhYdm9UZ3RURVRydktsU0JjaVFoR0xsbVk4eVNPalRWODBmMHh2NjNyaXlCRS1zcDRuN0xxSk4zUjVpVjkxcl9EYjZFT0QzTmJadFg5QV9ELTAyNVFBM3NKOURoN1lOVVVOVXlKQVZNV1R3bmlGamR4RUViU0RFOWRoZEs3eWFnRFNYWmhMTTl2LVZ3eVRMUmQzQnlQVUdWaFBKMV9XWGhid2ZSR1QwaFJQRnZZQjlMM3NIbG42bkxxQ1hpVzRHR3pydkZfX041cFhV?oc=5",
-        "fecha": "2026-11-02T06:30:34-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.smzkUWSMLs8VwmEQ50PTnw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "titulo": "Columna de Rodrigo Ramírez Pino : Chile y sus paradojas en la inteligencia artificial",
+        "fuente": "Opinión - Cooperativa",
+        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPR3hNMmRHTldCemlQYlVOMU9HT0RFNmdfNEVSbUhFcFlJcHlNaHRYTmszQXY5SDR1Y0Vjd3dUNE81SlZqN1VQVHUybWVCcXU1M1VhX2N1TmpxY0VleVdXb2h0aGdHQU9jb2xiVU1WMkx2Vld0anNqNlo4SEp5NVhQQmdtdVg0V1RtaDRoTXdOdGRueEhVcGtXRGhNMlRRLW9aLTJ6MHZYMzlObUtBMVhfcDFOckphekRLM0pGZUs5Q3FyQWJlRFdQSUdjQ1c1Ulk?oc=5",
+        "fecha": "2026-11-03T04:28:36-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.saCjqdfF3Q1NolE2JKbTxQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Sector financiero",
-        "titulo": "Tarjetas de prepago: informe alerta por alza de uso para transferencias entre cuentas y recomienda mejor monitoreo",
-        "fuente": "La Tercera",
-        "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPbFVZRFp0MHhCY2FWMWVDY3c2MDhpaWpvbU1Meml6NEdkUmwxWW4wQy13NHBUZXJxc3pob1F3RFNLR2pDcTljN1hEVEU2eTFIUUNoTGw4djE0RUUtc0FLaUZuUEZQZ2s5bWJqSjBZZV9hWFE1N0h4bk94U05RYmxlUDhOZGpUU19BR3g4R1AxRkZ2VU9Zd0FUR1Q0SnpmQU95WklNZ2dMTGlRbm9hU0lVejR1X3hrYmhNZkxMZzVhOGRXdmxRRk1yN0lQTi11eUMyUDRibTV3S1N0aEJVTl9HZjJyX1ljQ1I5Y2fSAYsCQVVfeXFMUDFJNTI0X1hDNURQWEt1VGlnMVZTazJRYXFNbWtNQTRQcExFbUFnWWNoR2RGRFR3V2NQd1NFUnFURGlxaWFSNmZ1SjdJYklTT1NYSnlOcURRdXROTl83aWxtRUtJREtCeEdWS2VtcVFrejJrUG5QcDhQOE1DeEdEcGZ5dWtjeU41RTEyZDFCS2tXV3NSaGYyQzcyang5T0lLcHJXeUl0OTI2T0hhQW10VXp1amtpZkpjb1RYazI0eWFlLU90elMyb0pISWFyU3I0bS1UYjVxdUo0M2FWeWx1d2E3b3FVWm5nNk80TjY4OGVOdXdLZXBSUXEyaTZObHlaendzaC1sLTAxaE00?oc=5",
-        "fecha": "2026-11-02T05:00:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.wBfxkoyA8X48iJwEJb9Fxg&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Sector financiero",
-        "titulo": "Ozempic genérico en Chile: señales de alerta que debes conocer antes de usar semaglutida",
-        "fuente": "El Mostrador",
-        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOc2NfdTRmcFZSSmdCd0phU1lDU0lIYlQ3R1RrQUJyN09wYldiNHFYb0lEdHl6SUlJbXRiZmNEdnA0WWtlTHN3WlRDeExtN05wc2czaVRrWEpJSGVTU21teVF2U3hsRm1YdXlaaWRJb1h3SUo0VkNJV1lBaURDcmJ6RUs1TmZSVFBMR0ZlSWowamhMSW5sNHI5ZVdqdGtFS1RLNlJuakp5dHU4c1VfZ2lXaUtnOUk2MWswcm9kS2lvaEpmdVdaTmtWbzc5SkdNUkVSSVJJNXNVWTBsR1NiakRUZmVnenR4Rk0?oc=5",
-        "fecha": "2026-11-02T02:32:45-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.7ie7pN8RHghhv-Fy2Ky14g&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Sector financiero",
-        "titulo": "“La paradoja del ganador”: cinco AFP perderían más ingresos al adjudicarse la licitación del stock de afiliados",
+        "categoria": "Minería y energía",
+        "titulo": "La minería del futuro se construye en regiones",
         "fuente": "Diario Financiero",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPR3NDRmlKVUdoX2ZUWHJySnpHVUFyWi15QmVDczVnaGhHMHEtUmhPV2FVdmRYOW1rMFc4dVVzX0ZfM0J0MmtlNXpuMWk5azRkOVVWb0pmM3pwaDYzVURsaEN6Z0hsaXNLY0p5LXlyM1J3elNIVFdyU0o5RDJCeVVwSlk2bFY5cUV2YnF3Vkl0NGxmWGsyVm90ZDM5ZEN6OWZUdW8tMUlTX0RrbGNj?oc=5",
-        "fecha": "2026-11-02T02:00:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.QGXX-sXgKqZ7rKvWSt8Kdw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNeUExeWVUclFKUXVDMVhHN09UM3pLVTRycTk1T0FMX0dkcTA0MnNxM1pDal9IV1pQVnBDUnhfbV96aXJ5aEg4Qkx4XzRRWlg3OWx0OGE4TlN3NUNla0ZTNGczLXNWVTAxYXZrUk9YOFRMWW03cFVwR0toYzZRRkh5U04ySVV6QQ?oc=5",
+        "fecha": "2026-11-03T02:03:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT._xdDmpjieH9lnYHh2dSGoQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
-        "categoria": "Sector financiero",
-        "titulo": "Brazo de inversión fintech de Credicorp proyecta hasta cinco nuevas operaciones en 2027",
-        "fuente": "Diario Financiero",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWHItVHdKbW9CSXcxNVZQWnpTOFBHOW9FR1o5bTZzYXJRU203cm1zc2d5a2VnYllzZ0xRMEcwdHh2bEFpeXk3eUxhMFFGOTVyUnRKb1E4UXVJRGpubjhWaHlHTXBFYnRLeFF2amRIWTZNbTlxbUJPRmtqVjZPWE1OeWlWVkw1UHRvYmtpNmdGdU8yazREbTM3clVNeXA3S1hsUWp3T2JCbkdEOEE0?oc=5",
-        "fecha": "2026-11-02T02:00:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.XSjfM-MlorvtuTe2HO9a9Q&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Sector financiero",
-        "titulo": "SII pone la lupa sobre las estructuras de trust y detecta saldos superiores a los US$ 2.500 millones",
-        "fuente": "Diario Financiero",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObUNUazBvS19VWi1TYnBSQ1lYOTdQYXdRZlhEd2d5djRsRjFlMTRpQWZkbjhrT3Q3b2ZabmJSalFGRWFvRi1kZVoxS1QtM1JQNEp0dmVtOUE3UTh1Qk5vSERHNEY2aGQ5bGlJR0lfVWMtMUpIQjJ2dnhKRzdyaDdYbjNpa0FUTDROLXM5Q2dFNlBEQnFfS2tnLUVkRC1Ea0Q2aGNKdzlDczZya3ZtSUwzZDdLQ0hBRTVtX0NBLQ?oc=5",
-        "fecha": "2026-11-02T02:00:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.WIfwhD6kbdoYA3TfnE7xvg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "categoria": "Minería y energía",
+        "titulo": "Comité de Ministros visa Puerto Exterior San Antonio y Parque Eólico Los Portones por US$4.250 mill.",
+        "fuente": "BioBioChile",
+        "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNaDhKdmlfU2t6UHBFejUwY2hoR0x4ZkhJVHNuc1FVMWJRUGhjNFVFOXJnSU9qSHFPanI1UWRYVXExVzZ4S2NQbDdPcHBlVm82NUNJVjhGZkdsLVpKc2lzSWJSeFRMTXlRQjBGNC16OFlyM0VZQ3pOSXNON2lsQXVJcWpXVHlkeEdnY25adkI2SG1FTVpnc1JDNTVDRDNXUXJpV3dTdkdkTXU5MUpGbnRVZkpaU2tRZVBJYU9OZ1Y3UGxoZUIwUm5zbl83cEcwLVZ2XzhHVndDdUg0RnZjTDB3R2stOFEzbk5ZVElnVjA5eUpmNE9sSUdPVXY1Ym9aSS1QQ3JVUDd0OFlMX2tsd193?oc=5",
+        "fecha": "2026-11-02T19:50:22-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.HTJLLUNZB1FS13mmdhsFKA&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Tecnología",
-        "titulo": "Los planes del nuevo director del Cenia: crear un venture studio para startups y ser un nodo regional de IA",
+        "titulo": "Negocio móvil en Chile y Perú impulsa ganancias de Entel y utilidades crecen 19% en lo que va del año",
         "fuente": "Diario Financiero",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNV0x0Q0ZIb3ExSThULURaUWNROFlrRmVqZ2VGblFLbTEyWEdzaWRpWWIxQnNoZXNCUS1pUW9pNVpwME9HREJMUE8wTWppUnBwQTEtcndUdTVSUmhQSjVUSEtkVVJSX1loTnR2MFVZc1A5RnZRR2MxQmc4cVhzek9TWGxhNDRXX1d1dG1vUlZoMA?oc=5",
-        "fecha": "2026-11-02T02:00:00-05:00",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWk9jZWhuZlNnM3ZTTWVnVW96bm1NU3R6ZXA5QkZmQkJydHFuVmdsUVc2cFFPN1d2MGhxRzZhUVBCX0FoTF9NNGM5QkVPU2NEVzBHTVRsNHdHdUppYVpTYW12VUQwSG1JQWVORTcyVnFFTklIVVRMZEJqVkNhZFVRRmxGNGxZZExMY0FZeEhOMGVqUUtmODFpNTRPTDA2bDY1TS1aVlN6YnRUdG1Q?oc=5",
+        "fecha": "2026-11-02T16:26:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.DfYdWFnsHuPRVI-Hx94zsA&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Sector financiero",
+        "titulo": "Fondo E repunta con alza de más de 3% en octubre, pero todavía acumula una fuerte caída durante 2026",
+        "fuente": "Diario Financiero",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONmxpSVM5M2RzeGxwOEZqOXJiOVVxWDNkdG9LNGFJRkdJZ2MzdHprM0VsNDNMQVpXV2NjdW9MSktnUWxGTk9kQXRwai04NXJsV1RSOHpGaEotZGxQZG0zRG1oZGgwMGZ6cWhTZ0dHa1VmQkhiQVBSOGFGSzZuQWFaWktFZHdDaVZIdXRaZWZ1U19OWGlidWlKWFNUY1lsVXhTLWtOamZvcll3NXJLMGc?oc=5",
+        "fecha": "2026-11-03T06:15:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.bLpqC6iBLjPWqJaqlCQOYw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Sector financiero",
+        "titulo": "¿Necesitas reparar tu casa? Revisa cómo acceder a la Tarjeta Banco de Materiales",
+        "fuente": "El Mostrador",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQmxoR042M0xzMWUwZmNqbi05MndWZGlLcUxPdkxMYUN0SV91elByMWE1cVRKdl92TDdUWTkxVDNmLUFIZHZvREMyYjlyWlUybDE3NE1WMU5DUGdsU3lzYmJKWGtTYWpEZWdrMXJ5LWVQY0dkUzM5NVBXTGNaa3I5Z3B1VDZIRFZHQ0NQbHBFNThudXBDeExBa19Qcm9zeUhfVi1YbTdveVU5aWdCREREaTN2bEV4SWdWVTdRN3QwUzUzU0RJLUQwMmlyRQ?oc=5",
+        "fecha": "2026-11-03T05:35:15-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.DRYKpq9hRXEZZYyyajPI4g&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Sector financiero",
+        "titulo": "Fondo E: cuál es la duración que alcanzó la cartera de inversión de cada una de las AFP",
+        "fuente": "La Tercera",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUUpmSDVlOFBsd0dkbHpDaHI0aU01SFZuVjRTRlR1SndMNDI1WlMxWEJyY2dJSzlDLXBFM0w2RjlTa290NWlsaklfdmk0bTVVRFg2Z0sydmNKdDNlUUFKeXJTVF9GcVVpaTlyQXVvbEpOVHVmbmMtZWczOVhfRmN1TzRwTU85b240dEdmTnRLVVdMaUlIVUdZb0tqX2JFMU5VTVFmRHpZMXNPQ0xOeWFpWXYyVndyNTJSYjhieVhDeVR5X1h3amfSAecBQVVfeXFMTWZSUDRkdThPcXJxOFhITlNRa2E4eTJpcy1rQWc3Q0xCOVRmVWNCRzBUSHhCUWdwbUMtbmY2NkV2NnR5dFFNUVBFNmhuOE5tUDFxako2WTcydTZoUFhhNjJXR1VTQWhoSG1zRUpraXBLazVTZ1ZPUUpJbUc5X05PWmtQZndkamRVRjFfUU94cTNFYWc1aUNPZ0dDOWZaNkNVVEd0TFNmUG8zcnF0YzlJdVNFMnhhQ3h6M3JnUzJzUGhnbFo1WVRJTlZvSXRTdk10WmN0ZkQ2YldJMHo0ME05SDFPTjdSUnZV?oc=5",
+        "fecha": "2026-11-02T18:26:41-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.OOd1_uTWqkiloFAyl65POw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Sector financiero",
+        "titulo": "Cámara aprueba admisibilidad de proyecto \"Devuelvan la Plata\" para que AFP restituyan pérdidas",
+        "fuente": "BioBioChile",
+        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNVjJGOWR5WlhkMXd6NnE0ZkRCQUJEZnFLZ3VPMDdyc19wc3hqSXExUWROaElOVDFsMkhWcGxZUGxyTzlSdTBldzhwREMwT1FtWHZNWmlJbllUQzRidDdmSzV3SmFsODZicVRmbE42WGozRjl0UnBmMGwwVTVmeGo0NC1GYlJuYS16RkNFT0w2R0dPZklSM2s4dWFBUE1nbXlYdndOdUlsaVY2SXk2dmUzemxSUmd0YUZWbkNxWjQ3Q1V3MDBUWmUydVRoV0VKRWctV0kxaG1hTFhKYUY4SkVBWE1DVVZpY2phWDRyVXBTY21udw?oc=5",
+        "fecha": "2026-11-02T17:40:10-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.NTKrgjydlZsql8Hbx3RqZw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Tecnología",
+        "titulo": "IA supera a los influencers para comparar, resolver dudas y revisar reseñas antes de hacer compras",
+        "fuente": "Emol",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQQ0NRd241Ykh6M3gwNjYtUmo2SGpGRG5Pa3Q0ZGFqR1p3YmdkRmZOR2ktNmQzMDNKQVJHSzBwb3RLcWFDdUlCV0FXcDZiVUJuX1ZGQmxRdEFTbGlXelRoS3k1OThaQXRld3k4N1lwazNtWEdEOUFHT3BlN1QtNTlTcUpQSnJzNWlWU0RWWUZUSFVvREFfM3VlMg?oc=5",
+        "fecha": "2026-11-03T05:34:33-05:00",
         "imagen": "https://www.bing.com/th?id=ONUT.1hTSfGRXVW3Dsl-7RMB93w&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Tecnología",
-        "titulo": "Cómo el boom de financiamiento de la IA puede impactar en la deuda de Chile",
-        "fuente": "La Tercera",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYjF5OWhiODZyZVhRajZtMXZQS19HV2ljc25aOExsTTVkNVY4RFFYX2VIZmJEZ2Z1bWdRa1g5LTZOMWtNMG1NcmNnYk5FdWp4S21MR090LWJXdUw3aVo2SFphYTlwQjdGNGV3a0lya3FvMG5kc2RTSkFzaWw0QnMwOGNnX1hlZXdxY1lBaUplYUFTLUk5bmVmZVhra1kzQU10MmdhcnpmUWpEdUhFUXVzTUhwelNTTXPSAdgBQVVfeXFMTkdVcm9PTmpUTHJ0c3BBTHY1eGtQU0l1M3F1UWhYelhaTjQ0enNjd3JwV0Q5SF9LbjczYWN5UWhkSkV6a01sYklUcWIxQ29wTGtGRmpyZVN0RUVMdm5HVF8ybEo5cWgwUl9WdTlBN1JQNUFKR29HeWlHZFdfc010eU1uYWstcUxJdFVrOUt0S1NudzgyWGJpbWRfeWJaYVRCR1JwajRKUzNSN0xhUUk3RnhXaE51S0pnbk4waTRsakVQempDTVlzSXRSLVZxbEhILXo0bGJLa3cy?oc=5",
-        "fecha": "2026-11-02T05:00:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.-9sLMzssSL3vl9yu0pLoDw&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Tecnología",
         "titulo": "Black Friday 2026 en Chile: cuándo es, cuánto dura y cómo encontrar las mejores ofertas online",
         "fuente": "El Mostrador",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWUFXUEx6QVpYTWU3MmRkRU1XOUllaVBaVGV6ZGJ2NUJUYm5Lc2VCVXYzRldJMGs0NWdTOVNQTkkwRUx6TGxsdFRoZ0t5amMzZUk1ZmJEZVJWMGNsQ1FlakdwZjlBVlpnbnFzS1UteGNmMWV6T0N4X1N5Y3FXOWU2bTFkYlFoOXYzT0g2UUxZQmpGcy1Dc0RQc1lxckZ4M0VmUjh1ZzdWVkxzYXBudHFrUkxjbm9HSUdmUk1UN21pWjBhQ1Zzb2Utc2lNU01QNjVXSmI4?oc=5",
-        "fecha": "2026-11-02T04:18:38-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.ChG0weFPmZxneE1SNBrjsA&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONDVyY3NnODFBd0pmYWFoR2VCanE3QkNWN1g1ejdOY0pDUmdkUVpZTnpNbkQ2dXlwUmpFMEJ3TTFuTkFpSEJSclhKM0ttX1NWU19MQlNmeTBQWU5ISUY3dFRMTVZhX0pMRzJHbUtHMGVURlFVUjdiTTVTZGgzMmt0OEkyaldlS09vcXlrbW1TUjNPMUVKaTBtWmFXUzlPZXY5OEp0LTB2dExkUGVLd0VKRzA5S1NieEo0d21VeTBQcThmTmEyM21odjMwd2lBa2ltWWhz?oc=5",
+        "fecha": "2026-11-03T04:27:01-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.PBcporn8aC2WipByCENf0Q&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Tecnología",
-        "titulo": "Nuestra identidad vive en internet y protegerla no puede ser un privilegio",
-        "fuente": "El Mostrador",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPWXNxRHlWeFlCZUwzSkFCMDVFS1ZNRVJXTm5QaWtZQW1CQXJsTFVqVkdaanFfZ0lUb2ktMy1Qd3kyc0ZBY0Rka2xJRmtEX24xY1J5WkZlWTkxcDVsUzlaNEZYaEhYaGxZY0cyaUZtTFFudEowVlg5X05COU1ZbTdyblhzajY5bTZZa25YZnNIbmFQaHdvdFd1bmh5WVhlU25lWWtSNF93VUxlSEFia3lWN0Rqa0U1VVpJSTRmZXBjUXNJb2pCR3JUREVNZUpTcl8yOWt3?oc=5",
-        "fecha": "2026-11-01T22:56:15-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.3EUuTyuJ_o_vjuz1YdQ0qA&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Deportes",
-        "titulo": "Titan Forest Patagonia: cicletada familiar reunió a la comunidad de Villa Cerro Castillo en antesala",
-        "fuente": "BioBioChile",
-        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQQUVtLXNvQWRiZ0RVc0ZIa2hKVTlOV1ZwNnowVjFlbHcyZF82UDJlMTNHeG1lcWg4VXNZb0FnNzNzOG5pcVoza0Y3aE1GVEp3Yk9nWGFNazI0aHFQQkhGLW50Q1FVQzRJSXppNzlXZGpxeFNpREdiQjlGRE1DcWtQdkNOR1YzbC1PS2d6ZTBpNERmV1RKTmVwVGRZUWkyNTE4NlE3U3pXMGZlLU9qenIzU0ZDajJrY0ZBaWV0MFRwX1h6QzIwaEY1VUtzbUt3RVRKbjRzNUxDVUswQTZuRVQ3clZDOFpQX1JDRGI5U3N2aXVWWjJ4TXMtVkZJMDBjZzJNYVR2TQ?oc=5",
-        "fecha": "2026-11-01T20:47:53-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.DSyGv4cqfR4lZLq6SrPb_A&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Deportes",
-        "titulo": "Valdivia se tiñó de amarillo: cerca de 2 mil ciclistas dieron vida a primera versión de L’Étape Chile",
-        "fuente": "BioBioChile",
-        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQdF9SMnBpeE10UTEzY0Q3UnQ1RmEtYzNUZ19RaFRmVmotcGV5MTB0N1VwNlVRMVpTXzltYVUwUUFHV0pkX3JqOUhoQnV5VVUwZkwwR0V6Z3lPckxoWXg0eGRTSmpVckJiRlpCZlN0WXFoZ1VBSF9aaFZncnB2Sk1XWGh0cWVPRXBUWHA1WWtIU3RyRTdYTzYyYUlYbzkwUlJZMnpEUjNjNEVpbWFBSWxBb2c1MlFLLTdzb1h2dnRpUGotTHBaRG5LeXVfd2psZG1tc0RDQUs2UTdiVk5EaXYtN2haVWI1LXJoN19hWFUzNU9BUkFSdDJmWDBXZkVzV2dKVkN4Sw?oc=5",
-        "fecha": "2026-11-01T19:38:35-05:00",
-        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Montaje_de_Valdivia.png/960px-Montaje_de_Valdivia.png?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        "titulo": "PS Plus de noviembre: Dead Island 2, Tomb Raider y Monster Train 2",
+        "fuente": "La Tercera",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOM2VReGwxNDNrVm5DUnRra3d2MVdaeU1ReEhLUGxmUXdKM0k4RGdCLXZVbWhFLW1aSk4wQVFWUDAxN0tXblJUZlNUZ1hBMWl1NG9neEhLdVVSZDFPYm54dTRfTlB3ekVFV19TbndyeHRteWdlb000blZXTHBqS2l0NUkxSXdUR2tmelZndXhBaEhlc001MkF6MFJTS0RWY3ZPNXlpdE5SS0VWWWR6UFZZ0gHQAUFVX3lxTE9IalJza1RoTXBlaDVHMnNENklSdFBTcmZFQTNHdXVVNXVMWjdjcFlBTWZ2VWZLRU0yZXhoekZNR2hvOGt6VHBlaFhneks4QmVfbUh2dWVENzFLNlJ5LXdydWY3SVVqajNWQkIxYXFtLU02U2JYVlRSRW1sXzUzRFRYbFI5N1E5cjZfS2VNZXV6SzAzZHpfSUtFU1E5dGc5cG9vbE04YnBxZ0pnYTJ1Z094MFBLZHVEa2Y0T1ZfRDVQRUZQZGplaERaUnU1ZWxsaEw?oc=5",
+        "fecha": "2026-11-03T04:04:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.sQ4cOi2RH41Y2s_ZIVcbXA&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Emprendimiento",
-        "titulo": "Abren convocatoria para startups que desarrollen proyectos en salud, biotecnología y sostenibilidad",
-        "fuente": "Emol",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdThLWjBJUUJWbzQxRFBXUEtLdlUtYkwxaXJsZzlHR0c4eVZycE5kZlZDSlhhRDdVcTQwaHhUTGgwVWpiOEx2RDFUcmtSQ01Ea3JkYWc1NVFubXVZZHM5bVRmUmxSN2VIdlcwMkVDTFdLckJMd1UySDRQaUxNQmQyYXNqTkk3VmZnREVWU0QwNW5qZkZvcDk0U2dhcWRWQQ?oc=5",
-        "fecha": "2026-11-02T06:08:23-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.AbWWx5aEZSmyFRiWcAurOQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Trending",
-        "titulo": "Volcamiento de balsa en el río Maipo deja tres mujeres fallecidas",
-        "fuente": "La Tercera",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPeXN6MF9iMlE4ZE5nTlBKNnV3MXNZdmVKemxFVVN1MnVqdjRQY2lTTjZialdtWTkxUkpRVzJHaGZOVlZvMTMwZWxSMGRwaXlTaUNoNlY0RXlLaDhpdHdpTEdaWVB6ZkR5Ym5PajZGTE5PeGhVWmdYZlZZdjN2TkpXUmlTekN0eW5TS1pkd3pubkEyX1J0WHpnOGV6S0ZYX0NVOFBoNEwxMjBzZjQzaThDbEgtQ1JoOFExOUtpY0hBeHZvTDNVODJz0gHoAUFVX3lxTE1MVzltVl96bFJiNC03MElSMldmM3J2eWhXcHk5Qnp2QS1BRERmV0xYRlFMUEZPMkpHMGp0WWpyU3dZb1FkUEZkSWZOa3JNNlV5QUlraGtYTC1hc0hoRi01S19HVlgxYUp1Q3RfSVkzSDhLQ2h4OGJCRmtUcUZxVTJvZ2NHVDB3X3lxTVBqa1pmSGNEb0dfVGszMndia0p0blpKcmdpd28tRjAtdEdQMFFScUV5dUhfNjYxb0V5RXhiYWJDWXRsT3RkMXlFWEowRHRnSF9NZ3BKOV9CZ0dRX0I1N3RHSllzaGE?oc=5",
-        "fecha": "2026-11-01T15:27:40-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.zqECwqouq4Qi3tRjgkgNjQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Deportes",
-        "titulo": "La conformidad en la U pese a caer ante la UC: “Estuvieron a la altura de lo que es un clásico; lo dejaron todo”",
-        "fuente": "La Tercera",
-        "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNb3AxcXc3TXBDbi1BaDJBV3V6UWxGMEhXZll4aWI2WkFBNkRfa21OaGRQVVpubHBZdTRFNDRDTjBNMGFDdThYV0w2X1Q4RUhsQU9mMHRzS2ZCQ1BaV3NYSXlzRlN2czlkU2tyNXRYV3YwUE1TVWlqN2xUS1dvSVFraEpTSGxla1BxdGliNEwtckNmbnJXMFBfZVk2YWtmbjd5NjlMWXNaV2ZXRG1UN0JuUm1MM2NvejhNemFRUGhKWnpJVF81UmFBa203QmZmLWxCUkpQYVFJLXdTOGVrVEYyVVNjNnVBX0ZUakdYdtIBjgJBVV95cUxOdkdTYjN5S2xvb2VxRHlEemlUaHpMdjRUWVBRRTlTYjJQRmJGcktUam5XaHRTVlFiQXp1M1FtckpybnlXRTAyZ05icVpnT21ISGRPdi1DRW1Za01YWVJMOHNQRzVBVWhfQ1dTb1p6eU1DbDhQamNzc25Oa0lSMzFSTWdiUDlBX0hmeTdoT0pDd2tHTVUxRUpxTTB2cURfbk9VNVdSMWpLZ2ZxbnFtNDl4elNNMlhBVHZiZ2YzbmVXZ3VubVN2RWZXS2Uza2lXUUpCUXhuRWI4eldka0lLcGVTZWFsU2phUnNQclUzRFplLURpWElvRGNmdXM1S01wTm9fYU9IeTZyTUhlZDd5RkE?oc=5",
-        "fecha": "2026-11-01T13:44:30-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.yuU_73wXd2TAb-UVrX6P1w&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Deportes",
-        "titulo": "A ocho segundos del bronce: Diego Moya consigue un notable top 5 en la Copa del Mundo de Triatlón de San Pedro de la Paz",
-        "fuente": "La Tercera",
-        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQZ2VwcGhSOTNUN3EyUFVoQ1N6dHFWZ3dFNkxUdEZYWXdDNzhCa095TXlURDJTRThzTjhvMVhJbm5ySk90bWFTcmVJS0ZKWWh1Y2RPVmxnVkFxeHBFMUNBNldZMF90NFJOV0xGZUQ0bHNsQjRtaElRWHQ4OWdxWHU4eHQ1TFVYREVmelQyWlhyRmVCZHJlUnV2M09ES1c0cjhmQzlZd3REOFgwVHNJUHIta09QR3Y3SV9MbUxHZWVKSFVBV29UUFd3UWt1M0ltMm04TEgxR0J1X1BScUdBblFQS0tFRzd3VC1uOG1Rak1iOUdHUXI4UXFic1BxWdIBnAJBVV95cUxOY2ZqLTh6ekoyZlJPQUIzLTdPRHpkdVV2UG1rMjltUzlrQXVOTFlJREhmaGxwSmR6MGxOaXhTbk5oNUx0Uk5ISURFWkV4SzVhSjl3TWtRRFBveHVUSHI2R0pPT0hrSUFyT1NZTnhHbk5qUlIwUGIzWWNyV3JxLTd4cmVSQUs4bHBWMWFOYWNLS19vM0Z5N0RpVEJOVzF1ZDhhS2VvZng0MC03MzY0bGdaZTczMmx1b0lZRmcwWHQ5cFlieDZwWkNPWDAxc0NXR1Y0YjdwblNtcGNhNnBxT3JieExmbHZrY19UTWZMaWowWjBtbGVleW44dUJianBfS0xxcF9ZUkV4RFVBSFVuRWd5ZmctQ1hsTWo3a0dtdw?oc=5",
-        "fecha": "2026-11-01T13:35:42-05:00",
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/3d/FC_Red_Bull_Salzburg_gegen_Atletico_Madrid_%28UEFA_Youth_League_7._M%C3%A4rz_2017%29_33_%28cropped%29.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-      },
-      {
-        "categoria": "Nuevos CEO",
-        "titulo": "La década de Eduardo Ebensperger en el Banco de Chile",
-        "fuente": "La Tercera",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZzNPcXNqZEVKTHN1VTNYcEN4NWJNUDdnTVNCMDhSN2M3LVp6d0IwLUlhaFpYSzA0X3FHdHZpMWhyMWtma0lKVkxrQ2ZJTTVaMFdIb1dqMUZoejR0dTNSdlNzd2djR3cxemp3TElmOTdodXRkR19BZGRBaWd3cUxDaXJqMHBDNVlKS3NvS3piQnUxTnBYaVpfY1JB0gG7AUFVX3lxTFB5b0E4LV82TVVRSmpOdklJRkpnNGVZb2pySHZ2emhYc0taRzc2OGprYlNLX3pBZnJXejM2ZDVTTlpOcXdJTVZ6WlU0a21iLUo0V1NMZGQtZjI2WWVxUmxRbl94QVZfMExrYVFtcThvMXNnc1pkN1hhelE3aWt5dFJ3WTVuSE9oRjg3dGhhS241Q1Q5Z294R0drbUhKcnVOUWxIQWRydGt1dzJqanpVeXFNYUFFamZ4UTJHcmc?oc=5",
-        "fecha": "2026-11-01T05:00:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.PicwL_HZzuc2nQETiDgbrQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Consultoría",
-        "titulo": "Autoridad resuelve que nuevo mall de Cencosud en Puente Alto no requiere evaluación ambiental",
+        "titulo": "AgendaPro entra al negocio fintech con créditos para PYME no bancarizadas",
         "fuente": "Diario Financiero",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPM2RZWmNzRUNTMzRCUkVOZGlpSVZJVElFcnlTdG5udFRzR1JpbnZOSTFHbzNJbmxMaTMtTVhCb3g5a05lblJCWVNURGZxTXRLWjRmc01DNW92U0NLS0R1bnNiWFBaU1JvemtBa3FYZndLS2E2TEZlWWEwdTY5dWVXRTV4Vmt5YVB2QmRwQnZKaWhUSVV1OFJXc1JQN21ZR0w3SW9hMVJ1UHZaUQ?oc=5",
-        "fecha": "2026-11-01T18:30:00-05:00",
-        "imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_Johnson_Cencosud.png?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNmhGUnhra3hrRXNIVXc0Uy1ZYWhMeEZEQUxwOURDVklwd1VONnNVc0tlaTUxRlV6ZjF1am5DalMzS3BKNUN5bFNtaHZfd3BFZUtvR3FPWngyWC1sOHBRamF4bU9RNWwwYzlOWnIyaEVBTUhSQkN4cGVCdDV6RW1BUmdHenpodFVyVTBTcW9EMjcxX2cxRS1WdGtvWlYyd0Z1cnJTb2VqQVNvWjVzRHVsN216Z0tycVV6T0g2eQ?oc=5",
+        "fecha": "2026-11-03T02:00:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.kGFd2mchAfa13ze15tqCcg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Deportes",
+        "titulo": "Limache supera a Audax, trepa y se aferra a zona de Sudamericana: Dutra fue figura en portería",
+        "fuente": "BioBioChile",
+        "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPeFNSYTdOR2lhejltR2lXT3VhMjdfZVR0XzZrQ284TkxZaVEzMTJET0xYb1BDUGVJVUowQTBuZzN4czluNmlOU3BFLXphRE04SnN6cHkxTy10NEtLMTZYLVBhc2NackxfbEtpcGJndENqSjBnVTR0UUF1Sm5aRE5VMEdPRER2ZVpFdVA2ZDBneEF4RDRpUWZqS0FCaHlKOWxmZ29SVE0tUWdkRVppNFVaZEZfcXo0cW1tRk5TZ0pIMWxRblNlM01HY0thSTBwY0xUdG5RdGpQRzZoMm9tT0tHSWpKR0swclFLS2hVMk8xNnNlSUJvZUE4MjVwYW91LVdaRkw5YWZ6UVc?oc=5",
+        "fecha": "2026-11-02T19:42:56-05:00",
+        "imagen": "https://www.bing.com/th?id=ORMS.df85d48da71b88588ae6fdc7fc865339&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Deportes",
+        "titulo": "Colo Colo goleó a Puerto Montt y avanzó a primera ’semi’ de Copa Chile: albos chocarán con O’Higgins",
+        "fuente": "BioBioChile",
+        "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNUTFIamY3TXNJdXA4aTlUS3VTdnZ6cHJfdnA1MEFSN1lZZFpyXzVSS0dLckcyQXdGZ2U3cEZ1QTRPdFl5emtadkRuTXNBR29TSHZFa2p6ZUVHRVptOGx1eW9ZVVJRMGZpbFJRa3V0VHh0b0JFaDFrdnlKdk5hUk1kSzJmSzZCcWstdUY2cUdSempXNjZoM0pDZmZBeEU1YzM5UzRDdHA3NThaVVZiN09qLWwyeXZ3OXZGME5VTm94SEljNDllT2M3dF9GRGc4MEdFYk5IZHRvUFJoeHU4VGpQZTJtMDFxSlJDVEwyczZtQ3ZtSDJmcERHYnVzU0xlRDJ4dDdVQTh3?oc=5",
+        "fecha": "2026-11-02T18:27:19-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.G6dGv2Obrl8G5fZ-kZjBvw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Minería y energía",
+        "titulo": "Comité de Ministros da luz verde a US$ 4.250 millones de la mano de Puerto Exterior de San Antonio",
+        "fuente": "Diario Financiero",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNUtjeWtDUDU5MmUyUFpVcmRwU1Bab3JmVzJtNnZaQTNZV0FJYlRSMjUyaTNVSnAzbTIwYjFxUXBzU05nRFpPM3kwSWI3T0wwa082YnlPa2llbFNmdDZLSnc2RF9UWmg3ZGdiOWk0M0N3TkFfakt5SUVDNWtyUUhJTjktTFRiSjJwQV8tcXhuZXpMdmZyTkpaWTV5V2dma3NRN0N3MUpLdWJ0R1dMSzZHX3VCUUVvUQ?oc=5",
+        "fecha": "2026-11-02T17:21:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.HTJLLUNZB1FS13mmdhsFKA&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Empresas",
+        "titulo": "Corte de Apelaciones multa con 1.000 UTM a CGE por sustituir de manera irregular 1.800 medidores en Biobío",
+        "fuente": "Diario Financiero",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcU93bTJDYm9fRlBEQVlPSW81Tkk5V1pQNFgtZThxN0pLeEJ2MVI5ZzdKX0Y1NFJRZldUdmNnbUNJVHl1Sk5BR19wWWdhaWJGeF9TZ1dMc3RyaXhVUTJ6SjkxWlo2YnZOWjBVdURxN1VCcGd4ZXBxSU5DWVY0Vmo0ZVU0X0VwYktmRmdHZW1JUEFSMDJVWkhOWi1nbHdZTGh3c3NKYVkyQVRjUzkwaEpVbA?oc=5",
+        "fecha": "2026-11-02T15:55:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.Uw6P1meL5OEwwYysW1qcyg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Empresas",
+        "titulo": "Dos en Santiago y dos en regiones: Cencosud cerrará cuatro de sus tiendas Easy en Chile",
+        "fuente": "Emol",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQkN3OXZDN2pWVDk3Y3ZRT3JmZ3JRMjJzc2V2LUpDTVRjRHJEenVVTC1PeWhqNlBfdFZ0S01DWUk1ajI0WURPV0JyYkw1V2lMaGlhNWpXWnFpc3FYUlZoNE9Nb1J3Y2xucnRwdE95RnI2U1QycUk4Z3U4OElrc2FEa2ZTaEpLQVlwYmVJcjUzaklnNW51cnc?oc=5",
+        "fecha": "2026-11-02T15:28:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.2ER9K7zS222PMeXVJSXcSA&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Empresas",
+        "titulo": "ANAC advierte que más de 800 modelos podrían salir del mercado en 2027 por exigencias de eficiencia energética",
+        "fuente": "Emol",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPLXlDdmFoMWFvZTh4OU1ZZTFadFM5WHM0QXZIT2ZQQ3NVV3oyYzlKQ0VrSTZnaEUyMHFjZWl5ZjU1NlhROHpMdHd3SDNjZWZaaGNIZnR2SGxZNERuWFFQQUZucEpzc2lSZW5BZXdRY1lFQUJSTGRvS3VzQlBxR2hYbHcwT1JIb2JZSDh2clBaX3pWN2JY?oc=5",
+        "fecha": "2026-11-02T14:25:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.VjriUnvwsCkWqfKJBqG-7Q&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Deportes",
+        "titulo": "Dónde y a qué hora ver los minutos pendientes de Colo Colo vs. Deportes Puerto Montt por la Copa Chile",
+        "fuente": "La Tercera",
+        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNOUVmcDVUbVc3djVHTDFVSkxGOURRYzJBS3Jid3ZvaHpHU0t0Z2cybUhNWTRYS251a1pvY0dXd19SNGxhMHZBTW9WOXAxRk9DMFB6Y0VWWE5RWEpvcWlwMm9SSmItdENRaWdoT2dnc1FYeGpEb291WC13dzJSWmJMU1I3UTBlQXFFWE44LXVLcEswcVFKaXlXTWs5dzhGd3hjTk1GdGJDVk81YUFCbmRJdjdBaFhlZHJtSkxFWnNWWlQzeHZBOEZCNlAxVmRaYllPU3MwZ0tEMnp4U3hkSjl4YjRsSdIBhAJBVV95cUxPQWdua3NjV3ZLZDFTVktlcWZEQW1CQkFub045NHRZVHJtQW5QM2pra21PM3BhYjlaQXVhRG1FZ1prR19hUVhKdHFHOUMwMnR5VkppS1hSUzAwWERXa3E5WUpCMTRINjZFcy1haDU2dENKUFN4OXJnNnY0Nmg2RWY5SnBIdk05QnZGYkdaNzNTRmVXdVFNWkwzYVM3UlZZZl9oRllmdGVIMzk2Qy1ES2ljVV9kMGtxZDJrblVmdlJBLVVfZUtnS1hTOVlWMXFQSC1NWGoweF96WXE5V1VOR1l1MUlNUWNhbFNEeHZRT0pwRGJLLTR6MjFZLWYwb3JkRVNWWnlOSA?oc=5",
+        "fecha": "2026-11-02T14:08:23-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.m-zxSyuYE_wJMMlrxg45dg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Minería y energía",
+        "titulo": "Alvaro Varela de AquaChile: \"El alcance de un bloom de algas puede ser absolutamente irresistible por más medidas que se tengan",
+        "fuente": "Diario Financiero",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdWdmS0RSM3hLOVRtMUNTcndheXNQTW1aNThvTkNLTnJ1MXN2U2NmUzhHNnJnWUZncnZWdXhqaFNyT2M1dXV1R21ZWTNMTHltMTZOTDk3VHc4Q3F2MWJ3dHNXc3dlbXIycUYyanRIMU01SGVzdkctRzNBMHhFNjY4ZFh0QUl3S1VWN0FsOGFJVkU5QXFiSWEtS2JQVjJwMFBldjMwaDNWUGw?oc=5",
+        "fecha": "2026-11-02T13:40:00-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.UGG7MpniHwRkC1SrwZ77eQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Sector financiero",
+        "titulo": "Juan Esteban Laval y Macarena Lobos asumen como nuevos comisionados de la CMF",
+        "fuente": "La Tercera",
+        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQc21IaDIzUnRTZEJUNTA0VnFUSENDMzVBV044YlpqQzF6TFFtLW1yTThJdmlIalVjQ08zNHV6d0FKQ3JEM1p0XzlaNHFDLUxLTWxtT3V4TXlKYjNBZU5DMkhvXzBfbFFWNktzekNEV001UDZnbnVQQ0RNSWVPMGIyZFBDNjhlNG15QjlLeEluOER3WTVmMnBfZEI3TUdWYjl5dHE1UTVTd1VZVU5USi1pd2JiVzdLUjExaFHSAdsBQVVfeXFMTThRdTlHeXhoa0Y1Vm0wZEZLMW8tSUJZbEdYeVM2bHpmSnZ6SFRGeFJBWjRxZVgtTXBhc0RxMWs3R0NXUmNjeXJXRm9pcHFDZjJXY0kwaDh5dk16VzYxLUloQ05aWWMxOVBjaTB6U0VhRDRUZmRtSC1VSmQ5TlVpM052dk1HRWMxNU1YTVBwa0ZyZWt6UmV6RF9OWU9ER2hoSXZqcXloSzZxYWs1QzdrRi1abDJkOFdGdzIyVlVBWHZMbTlLWXBoTDJvWk9FclZuYXY4SllGVXo1b3NR?oc=5",
+        "fecha": "2026-11-02T10:08:54-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.gD8rP436U8792xeJ-yNj5Q&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Deportes",
+        "titulo": "Revolución en la Liga de Primera: asoma el “escritorio” y puede cambiar toda la tabla de posiciones",
+        "fuente": "RedGol",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQb19Mb3FvTVBOQ3paV2s3WkN3cUd0S1dtZkF6NmpSRklmcXY5M0dWMGFzZldHRWJRWmxrdG41TXpSY1dfYjRjYzd6Z29qTmtmSzVDZXJvRm8yQTh1b3lzYXhvOFBjTFQxVDdXYl9qRnpqOTF5cTRRckhXejhmQm4tLWZJMjdMV3JjcXFaZWFwdTFvV3I0aXNLX0lZMnptY09xS1RSVTZRSWlXVF8xNDhZNlJ0djJKWE9wYmhhaNIBwgFBVV95cUxPQWRud1U2a2gta2F1WHZyQ2NQWHhlQ1pTZzRxVUxKWWI4elFpM0hBSWs0d3l0S3I3dUtVZDVfSnI4OEpWNG83bEgxb0o0SklhdUpzdXdVOXl2SE13OEZaa3RKNGttVjV2UEtuTXZ6cWE4aTZUVDh3aUhpXzN0eWlTSU0zd1dJclplc0VxdDJPN296NzdreERWX2p0SjlzSEJqYlMyYVhpUlZXSFhDR1Z5RGp6ekxNV2NfT2ZJTWhYWVRNUQ?oc=5",
+        "fecha": "2026-11-03T06:07:16-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.9ELt2IW8OBV7QjuMVCI5uw&pid=News&w=800&h=450&c=7&rs=1&p=0"
+      },
+      {
+        "categoria": "Deportes",
+        "titulo": "Maximiliano Romero lanza una indirecta sobre su renovación en Colo Colo: “Me siento cómodo”",
+        "fuente": "RedGol",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObG1ZT0xVR283cnVDZjluQmRTOU81MDBsUW9Dc2lkTlpMX0FTZ29kQWxiUF9fRmx4cnp1azNJaUJ3c1hSSU5Xb2NnbGNsdG9JVXJhcWlwekJQZi1vYlJFQm5BalRrRVcxZWw3dDdXQmhoX05lV2hwQ2pqaGJ2cWtQdm9EWjNIVGRLV3NzeXdlcEJMTXhaRThlSjNoWV9FNnNQeWc0OFNHeXBhRXRXLVdrSkM5Y25Md9IBuwFBVV95cUxOZ1FtWkNiTXU1b1VpbU5HTktnaldOdGNCMVhSSUhiWGJJdmlOMklWQXNVWmhHNFY2b1Q4OW9yUTAxWU5BY0lQbFIyN2VXQUlIcHVmTkFaMTJfNjBSbzYtUVhCWm1zR0ZzcnFEMzE1U2h1Q1pZcVl2b2VaTFJ4U2RDRGZLQmdtVWZlUTB2aXBoQVhXRDVydHAtUk5tUk1hR3FHaXd2UTFjSG1FRHdFS3NQM1o3ZDNnbUp6YnU0?oc=5",
+        "fecha": "2026-11-03T05:41:35-05:00",
+        "imagen": "https://www.bing.com/th?id=ONUT.BdF6YH6C3Fp50dTLL8pjSQ&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Trending",
-        "titulo": "El cine vuelve a llenarse: 2026 apunta a ser el mejor año en taquilla desde la pandemia",
+        "titulo": "Muere el influencer y figura de redes sociales JB The Voice a los 35 años",
         "fuente": "Cooperativa",
-        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOVVpSc3Z5NEtqUG9rbVVsSUxnZklYajBkUjlxT29SU0x3X1RJdWVfN2QxTmY4bHE2REZtSTM1Q2NkNmFOekNoTlkySUhYYnljbl9pVlNvU3Vwb3BDb2pxZldGOW56RTM1TElMUTBtTWhOX0psVm54ZUtQQWUwTkR2Zm83bWVNSDBYUl9Za0g4Z3pxWU4zUTNGdFlLaHZjc0VyZXBRNUkyQjZqcGFhdnFndzQxYURXQjBBenNILTdyV2xPakgtQkxIOTVtRmNhQTRKN0NjZzlMdEHSAYwBQVVfeXFMTklEdUhKRVlMWGx0UWl6R2p3REJNUVlwUG1VcHFncVZacHdrYVdPdUdfOHBVa3lEVFI1SklLUFR1VXFGdUNwVkJyNjhLemxVWEg1Ui13REVPQnp5SzlqS1BGSVdfZjJBOTBQTjR5c3huS3pGcF85WC0tWmhvZkNTbkd1Mk94WWNlOXZhYkc?oc=5",
-        "fecha": "2026-10-31T09:49:00-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.OWstD-eLQuCX0LnHeZ14Xw&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Trending",
-        "titulo": "Kurt Carrera fue eliminado de Fiebre de Canto tras interpretar éxito de Luis Miguel",
-        "fuente": "BioBioChile",
-        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPY0FMWmNGTEw0cEFhaFVZUFlBQWVOeDFITzA2bHgwSG5GRWdtM2l3MzdGS1RsX3J5N3Fyb2kzNVJDLTJPbHFnVzBPZzY3OG5hNkl5Rmt3dC1rNVBPZlJmb3hRd3NfaXdNU2dIWmZHamYtRmxpbjBNVDlVODV4QU1LemdZVjRQQmZmSXRpN3p4dFBKMDhPU0lqU3I4WFRqa1FjeTNWRFUtOW1mYTFNamNENW5aTTFHbFRNVkNMdlFnaTVJNERQOUVMSzZPWkkwRmJuNjZuRUM3ZmdTVnRsWHc?oc=5",
-        "fecha": "2026-11-02T04:53:40-05:00",
+        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQdnpER3VHaXQyREVMLUJNMWpfSEU3LUI2NEV3VER2bkRrLW5FREpXbHFiTGV1cDJCQTM5VXQ2N2pEeFhIb2R3eVA3cnpaU2hCZm95S0czQVJfTXE3V1ZLOGhXa21YeDVZWFRCTkkxaC1lb0owTlNrRjRINjk3R3U5bzNJTUhIZ3g2UzF4TEx2MVJQTm1LTW1qRE5FZlB0enZ2WVZybjM4eG1yS0h2dG5reTFQQlloVzk1bXdqeDk4UWh3WlhaSVVRRmd3ZWgtUzY3bDFOMGNkT1F6ZkY3SElVQVQzSHctODTSAYwBQVVfeXFMT2VoU09mekJGR3JFbEpEMGQtdkliNkE3dktNLWtiYzJyQi1JdXhhTHdLWmVnd1FJZDFxT09HWWhpZVh5d1JNX3hRbDlha1FuVmRieUQ1QWFaWXQtTTk5eFo4a0hXbkVsb1V6bU5PbWtnQUtqVjRKbXZ4aE5xUmlXU1EyS2FFVDk3NUdaUE8?oc=5",
+        "fecha": "2026-11-03T06:18:00-05:00",
         "imagen": "https://www.bing.com/th?id=ONUT.P0OtbUl5leeBGm6xplxiJw&pid=News&w=800&h=450&c=7&rs=1&p=0"
       },
       {
         "categoria": "Trending",
-        "titulo": "Lali se casó con Pedro Rosemblat: primeras fotos de boda bajo estricto protocolo de seguridad",
+        "titulo": "\"Mis Navidades siempre fueron pobres\": youtuber Ariel Osses busca entregar 10 mil regalos navideños",
         "fuente": "BioBioChile",
-        "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNUUJvYWhvaUZUeldTMkNJTmJTaF9wNkJoWTlwaTJRRnQzQk1iaE4xMWM2RnY3eGIxRGVIaXhuLU95ZXhhckc4enBDQ0otQ18zdTdGRDFYWUJkVTU4OXdlZ0JjNkNmcWotZWhqTTBEWXdvdmpNd3JWbDZGRkw2U0JoWkg2TTd6ZlZkTEhHZUVBcXpJUXJ6TjNIY3RWY2JTQmJIXzBzNEtCY3ROR2pKQnNQWlVvQ3hfWE4wYmtnQ0tXUUt1XzRlUTdzaWk4RFlWM3U0bjNNWnhrOGRpNV9sWmI4M3pZcUdfVWdfNXc?oc=5",
-        "fecha": "2026-11-01T20:55:17-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.P0OtbUl5leeBGm6xplxiJw&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Planes en Santiago",
-        "titulo": "Feria del Sánguche regresa en noviembre con una edición dedicada a sus mejores acompañamientos",
-        "fuente": "El Mostrador",
-        "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQYXRBM2dDaVBjMDZzR3RNX0trbk80YlZCTDJHVWtXeUFRdzZPTjR3WWVQcnZOdHBkMDFNTjg2bkx0OXRpY2RiYV9WYUpTRFlZNFJxbTRDN3pJZmEwd3pyMjVocWpzUUhEdFlyN0ZTbmJFSGczZHd4RVpYbm11UWtFdUJNOFBsUEMtdi1WR2VIMGdFRTdRZnpIRVYybjByZjNlVFFtWjh5UnlvY3p2T1pEMUF0NWJ4S25ISmFWalBRRkxQNVRwUmN1TnJRR2JEblhkYVBFUGxkWG5aSGZwSkRaZzlXdXdNWEkxWl9QaHV4WTJFQQ?oc=5",
-        "fecha": "2026-11-02T02:35:35-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.F2_V0AZbijSKLMgFonUfnA&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Planes en Santiago",
-        "titulo": "Festival Nacional de Música para la Infancia (FestiCRIN)",
-        "fuente": "El Mostrador",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRHlUYkR2OE90Tll5a1Q4NHNBZjdtRGgzS1d0NkpxZTktdllGSGJUQnJWQlVxc0lxZktodTNlbFlsdDZEdXh5WmUzS3NqWkRPdTNDUHlrQ2tVV3NHVkdxM3RTYkhVMk9LR01JVFBIWWtGT2NRbXhQR2YyRFlfLUpuTEtfcnZ2M3E0ZDVqNjhSemRyYms1TE1SaG1CaDZmOEp6c0o4X2k4dmxyVEJH?oc=5",
-        "fecha": "2026-11-01T22:30:03-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.Q-BLWQH2Rd4_fILsqCLA1g&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Planes en Santiago",
-        "titulo": "Cortes de calles en Ñuñoa: revisa qué sectores estarán afectados por concierto de Iron Maiden",
-        "fuente": "El Mostrador",
-        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPcnlHck05WFVGdnVHQlRRS0FEYUlwMEl1ekxtZmVKNlpVMTRFZHhScjNZOGtoTERfSElLbXp0TklXVHljaXVVOTBHVVQxZV9lSC1tcnpLSnJyenZfMUhaRlBMaEYxcGdYMXJwUkhwOThFX1E5Z29fR2hoVmpRcEIzV29iaWFqUTVlamkzZmQ2eWhjWFdxQ1JFTzRzOXpzMjhpV2lEQUxYMlF3dlN2ZXF2ZHp2anByY3VuNDNfRTNBcVYxNzNiS2ZnZUlucDNzaTlZOWN1aVNySGxqb3Jh?oc=5",
-        "fecha": "2026-11-01T09:25:53-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.BXgOLEcxNunaAwuaii4t9g&pid=News&w=800&h=450&c=7&rs=1&p=0"
-      },
-      {
-        "categoria": "Planes en Santiago",
-        "titulo": "Iron Maiden en Chile: revisa los horarios extendidos de Metro este 31 de octubre y 1 de noviembre",
-        "fuente": "El Mostrador",
-        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZjR4bnZxUVVnM3hQdnhfdW9aRXdWTG9rUzA3REoxLURZNUVuQ2l2eTlLaDVVZGZrT3pjMkZUUWhUcEtQTHpoM3NJc2dkRHVLN3Vla3RRdmdXU0VwX1RNUXZjS2lPeVphM1p1ZkVVdThLcHhwZ1N6bDlqM3ZJZXJhNFZJemhEbGxLMXROdUJleVJiMXhUZkJKYl9BNElWdHJFeUtwZThfcFlRZEFoak9KUzhBTUdKcWFtWEVTVDV2Ni1tbDBfWl93UHlvUlhIS1hfcGliZzRuaVBOMUFpVzdtSmtR?oc=5",
-        "fecha": "2026-11-01T09:25:53-05:00",
-        "imagen": "https://www.bing.com/th?id=ONUT.4AcgFQmPoimOEFw3zExNKg&pid=News&w=800&h=450&c=7&rs=1&p=0"
+        "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPRXBQOWRET0xMOHQxYWNsbnZoWGtlMGhnODAyNk9oV3NiOUtsZWRoNGNZUGlkY3J1M0UyZXh0OFR5d0tqanN1a0I0SGM5cjhLQ3d4LVBJX0dpZFpTMlhyWU9ZSFFnSl9uRUlQcjlsTGZSaUllc2NwUXRtd0hQZldoaGxZUHkzSkd2aDRrY2ZUUXo2ajFoMkN2Q3RtaUtBR0hSd1dUM3FEYTNyX05sUWRSZUh5RVIzYVVxNXQ0N3lETDhtQ2NJNU5ENHJDVGU0WjREN20yY2RSRnpIVjg0V25vLTdIYXlNMFNjTmIwMDN2V1FvWXNrMlRkYXhpQUN3REhoQ3ZjbTc5dms0a2FBVV9qNHdVSEVEbWRVTmc?oc=5",
+        "fecha": "2026-11-02T16:53:16-05:00",
+        "imagen": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Fantasmic%21_%2827663736393%29.jpg/960px-Fantasmic%21_%2827663736393%29.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
       }
     ]
   },
   "resumen": {
     "co": {
-      "titulo": "El dólar sube y tu quincena se va sola",
-      "resumen": "El dólar sigue subiendo y podría seguir así en los próximos días. Traducción: ese celular importado que querías se pone más caro y el viaje a Miami se aleja. Mientras tanto, el mercado de carros tuvo su mejor octubre desde 2014, así que alguien sí está gastando.",
-      "comentario": "El dólar subiendo, la quincena bajando y el pasaje de TransMilenio sin darse por enterado.",
+      "titulo": "El temblor le dio a la tierra su propio día de movida",
+      "resumen": "Chaparral (Tolima) lleva más de 1.100 sismos en un mes, y el de 5,6 del martes sacudió Bogotá, Cali y Pereira. Traducción: si ya no duerme bien, no es el café, es la tierra. Por ahora, el balance oficial confirma un herido por la caída de un muro en Chaparral.",
+      "comentario": "Tener que sacar el celular para ver si la tierra se mueve es el nuevo planner del colombiano.",
       "imagen": {
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/USDnotesNew.png/960px-USDnotesNew.png?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-        "pagina": "https://es.wikipedia.org/wiki/D%C3%B3lar_estadounidense",
-        "titulo": "Dólar estadounidense",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Haiti_earthquake_damage.jpg/960px-Haiti_earthquake_damage.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+        "pagina": "https://es.wikipedia.org/wiki/Terremoto",
+        "titulo": "Terremoto",
         "fuente": "Wikipedia"
       }
     },
     "ve": {
-      "titulo": "El dólar no sube, el bolsillo se encoge",
-      "resumen": "La tasa del BCV quedó en 889,5754 Bs/USD, con una subida de apenas 0,036%. Traducción: el dólar casi no se movió hoy, pero tu quincena sigue encogiéndose. Mientras tanto, el pasaje urbano sube a Bs.230 desde el 1 de noviembre, así que ya sabes: ahorra para el bus, no solo para el helado.",
-      "comentario": "El pasaje subió, la quincena no. Ahora sí toca caminar hasta la oficina con la arepa en la mano.",
+      "titulo": "Petróleo caro, bolsillo barato: el combo del día",
+      "resumen": "Las exportaciones petroleras venezolanas cayeron a su nivel más bajo de 2026 por los fletes caros, mientras PDVSA reporta ingresos de $18.700 millones entre enero y septiembre. Traducción: el dinero existe, pero se nos va en el camino, como el vuelto en la bodega. Mientras tanto, el comercio con Colombia creció 15%, así que al menos el intercambio sí tiene buena cola.",
+      "comentario": "Los barriles salen, pero el flete se los come, igual que la quincena se come el mercado del fin de semana.",
       "imagen": {
-        "url": "https://www.bing.com/th?id=ONUT.YZ4uHUFuqlc_E88E94hanw&pid=News&w=800&h=450&c=7&rs=1&p=0",
-        "pagina": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ae8782b6de34e38b72992884dffd0a2&url=https%3a%2f%2fwww.notitarde.com.ve%2fpais%2f110011%2fpatrimonio-cultural-de-venezuela-estado-bolivar-esencia-y-tradicion&c=11622589388979642386&mkt=es-xl",
-        "titulo": "Bolívar venezolano",
-        "fuente": "Notitarde"
+        "url": "https://www.bing.com/th?id=ONUT.VvH8N-nb2-KwgSEMFku8Vw&pid=News&w=800&h=450&c=7&rs=1&p=0",
+        "pagina": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ae9c94aa6514630a4648beef4b1e0b4&url=https%3a%2f%2fdiarioversionfinal.com%2fpolitica-dinero%2fempresa-ligada-a-jorge-gimenez-habria-facturado-469-millones-en-negocios-petroleros-con-pdvsa%2f&c=10487169145569709718&mkt=es-xl",
+        "titulo": "PDVSA",
+        "fuente": "Diario Versión Final"
       }
     },
     "cl": {
-      "titulo": "El Imacec creció lo mismo que tu ganas de estudiar",
-      "resumen": "La actividad económica de septiembre subió apenas 0,2%, y la minería se desplomó. Ya van tres trimestres seguidos en negativo, así que la economía anda como micro en hora punta: avanza, pero no llega a ningún lado. Para ti, traducción: el sueldo no sube y el pasaje sí.",
-      "comentario": "Tres trimestres en rojo: la noticia que sorprendió exactamente a nadie.",
+      "titulo": "Walmart paga o paga: la Suprema no bromea",
+      "resumen": "La Corte Suprema ordenó a Walmart indemnizar a 48 trabajadores por despido injustificado. Traducción para el joven: si te echan sin razón, la plata existe y se puede reclamar. Igual, el proceso demora más que la fila para la once en la Universidad.",
+      "comentario": "Ojalá la indemnización llegue antes que el próximo bono de $302 mil, que también promete ser más lento que la micro en hora punta.",
       "imagen": {
-        "url": "https://www.bing.com/th?id=ONUT.Hg7uNvQ6cPQbb-UXXrdbRQ&pid=News&w=800&h=450&c=7&rs=1&p=0",
-        "pagina": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ae8782dd418437a8d4d8bf4772a8a1a&url=https%3a%2f%2fradio.uchile.cl%2f2026%2f11%2f02%2fsigue-el-estancamiento-de-la-economia-imacec-de-septiembre-crecio-02%2f&c=1131484133944533162&mkt=es-cl",
-        "titulo": "Imacec",
-        "fuente": "Diario y Radio Universidad de Chile"
+        "url": "https://www.bing.com/th?id=ONUT.3SJFZvM1yjOz_xQ3A5XBgw&pid=News&w=800&h=450&c=7&rs=1&p=0",
+        "pagina": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ae9c94c43104bda8dd478cdd7d53bc9&url=https%3a%2f%2fwww.theclinic.cl%2f2026%2f11%2f02%2fwalmart-chile-detecta-fraude-en-compras-por-internet-transacciones-no-autorizadas-causaron-un-perjuicio-de-79-millones%2f&c=147123286874693031&mkt=es-cl",
+        "titulo": "Walmart",
+        "fuente": "The Clinic"
       }
     }
   }
